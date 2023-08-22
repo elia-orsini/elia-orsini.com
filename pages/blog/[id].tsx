@@ -1,5 +1,5 @@
 import Navigation from "@components/Navigation";
-import Link from "next/link";
+import BrutalistBuildings from "@components/blogPosts/brutalistBuildings";
 import { useRouter } from "next/router";
 
 function Design({ params }) {
@@ -9,8 +9,8 @@ function Design({ params }) {
   return (
     <div>
       <Navigation>
-        <div className="mx-auto mt-20 ml-20 text-xl">
-          <p>{id}</p>
+        <div className="mx-auto mt-20 mx-20">
+          {id === "brutalist-buildings-london" && (<BrutalistBuildings />)}
         </div>
       </Navigation>
     </div>
