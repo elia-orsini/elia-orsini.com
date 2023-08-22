@@ -10,7 +10,7 @@ export default function TwoD() {
         <p className="">
           the sun always shines in the city of sunshi. thanks to the latest
           developments in solar energy, an artificial sun has been installed to
-          light people's lives. it regulates the temperature and provides a warm
+          light people&apos;s lives. it regulates the temperature and provides a warm
           and delicate light. and when it rains, the sky is full of rainbows and
           kids can play in the streets. after a difficult decade, people started
           to leave their screens and go out for long walks. the city is now

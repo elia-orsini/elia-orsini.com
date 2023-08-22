@@ -14,7 +14,6 @@ export default function Image(props) {
       <img
         alt=""
         onLoad={() => { setIsLoaded(true); }}
-        layout="fill"
         // objectFit="contain"
         className="transition-opacity duration-300 border-0 sm:border border-1"
         style={{ opacity: isLoaded ? 1 : 0 }}
