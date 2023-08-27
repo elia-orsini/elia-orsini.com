@@ -52,7 +52,7 @@ export default function Navigation({
         <div className="w-full">{children}</div>
       </div>
 
-      <div className="flex px-20 w-full bg-black h-40 border-t">
+      <div className="flex px-20 w-full bg-black h-28 border-t">
         <a className="my-auto" href="https://github.com/elia-orsini" target="_blank" rel="noreferrer">
           github
         </a>

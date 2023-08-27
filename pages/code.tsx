@@ -8,9 +8,9 @@ export default function Code() {
   return (
     <Navigation>
       <div className="flex w-full mb-20">
-        <div className="mx-4 sm:ml-40 sm:mr-20 mx-auto flex-col">
+        <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
           <div className="flex flex-col mt-20">
-            <p className="text-left text-2xl sm:text-xl pb-4">side projects</p>
+            <p className="text-left text-xl sm:text-xl mb-2">side projects</p>
             <Project
               title="blenderWebViewer"
               url="https://github.com/elia-orsini/BlenderWebViewer"

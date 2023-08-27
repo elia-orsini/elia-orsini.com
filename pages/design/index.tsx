@@ -8,7 +8,7 @@ function Design() {
   return (
     <div>
       <Navigation>
-        <div className="mt-20 mx-5 sm:ml-40 sm:mr-20 text-2xl">
+        <div className="mt-20 mb-40 mx-5 sm:ml-40 sm:mr-20 text-2xl">
           <h4 className="text-xl mb-2">all design collections</h4>
           <p>
             <Link href="/design/2d" className={`text-lime ${koulen.className}`}>{">"} two dimensions</Link>

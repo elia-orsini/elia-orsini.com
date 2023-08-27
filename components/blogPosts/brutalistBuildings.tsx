@@ -19,7 +19,7 @@ function BrutalistBuildings() {
         <div>
           <SectionTitle title="barbican centre" />
 
-          <div className="grid grid-cols-2 p-10 gap-3">
+          <div className="grid grid-cols-2 p-1 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt=""
               src="/blog/brutalist/barbican/IMG_3716.jpg"
@@ -34,7 +34,7 @@ function BrutalistBuildings() {
             />
           </div>
 
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 p-1 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt=""
               src="/blog/brutalist/barbican/IMG_3709.jpg"
@@ -55,7 +55,7 @@ function BrutalistBuildings() {
             />
           </div>
 
-          <div className="grid  grid-cols-3 gap-3 p-10">
+          <div className="grid  grid-cols-3 p-1 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt=""
               src="/blog/brutalist/barbican/IMG_3725.jpg"
@@ -79,7 +79,7 @@ function BrutalistBuildings() {
 
         <div>
           <SectionTitle title="Institute of Education" />
-          <div className="grid grid-cols-3 gap-1">
+          <div className="grid sm:grid-cols-3 gap-1">
             <Image
               alt=""
               src="/blog/brutalist/education/IMG_3817.jpg"
@@ -145,7 +145,7 @@ function BrutalistBuildings() {
 
         <div>
           <SectionTitle title="st giles hotel" />
-          <div className="grid grid-cols-2 gap-1 px-20">
+          <div className="grid grid-cols-2 gap-1">
             <Image
               alt=""
               src="/blog/brutalist/st-giles/IMG_3828.jpg"
@@ -268,7 +268,7 @@ function BrutalistBuildings() {
           <SectionTitle title="golden lane estate" />
 
           <div className="flex flex-col p-5">
-            <div className="mx-auto px-40">
+            <div className="mx-auto">
               <Image
                 alt=""
                 src="/blog/brutalist/golden-lane-estate/IMG_3742.jpg"
@@ -276,7 +276,7 @@ function BrutalistBuildings() {
                 height={1000 / 1.33}
               />
             </div>
-            <div className="grid grid-cols-2 gap-1 px-40 pt-1">
+            <div className="grid grid-cols-2 gap-1 pt-1">
               <Image
                 alt=""
                 src="/blog/brutalist/golden-lane-estate/IMG_3744.jpg"
@@ -296,8 +296,8 @@ function BrutalistBuildings() {
         <div>
           <SectionTitle title="stelfox house" />
 
-          <div className="bg-slate-800 p-10">
-            <div className="grid  grid-cols-2 gap-10">
+          <div>
+            <div className="grid sm:grid-cols-2 gap-1">
               <Image
                 alt=""
                 src="/blog/brutalist/stelfox-house/IMG_3755.jpg"
@@ -321,7 +321,7 @@ function BrutalistBuildings() {
 const SectionTitle: FC<{ title: string }> = ({ title }) => {
   return (
     <div className="flex h-40">
-      <p className={`mx-auto my-auto text-4xl ${koulen.className}`}>{title}</p>
+      <p className={`mx-auto my-auto text-2xl sm:text-4xl ${koulen.className}`}>{title}</p>
     </div>
   );
 };
