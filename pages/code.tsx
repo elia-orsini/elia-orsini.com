@@ -1,165 +1,104 @@
 import Navigation from "@components/Navigation";
+import { Koulen } from "next/font/google";
+import { FC } from "react";
+
+const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function Code() {
   return (
     <Navigation>
-      <div className="flex w-full">
-        <div className="w-4/5 mx-auto flex-col">
-          <div className="flex flex-col sm:mt-20 mt-10">
-            <p className="text-left font-bold text-2xl sm:text-xl pb-4">
-              side projects
-            </p>
-            <ul className="text-left">
-              <li className="py-2">
-                <a
-                  href="https://github.com/elia-orsini/BlenderWebViewer"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    blenderWebViewer
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200">
-                  a web viewer for blender.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  PYTHON - REACT
-                </p>
-              </li>
-              <li className="py-2">
-                <a
-                  href="https://hor-map.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    HoR Map
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200">3D interactive map.</p>
-                <p className="text-xs font-light text-gray-400">
-                  THREE.JS - BLENDER
-                </p>
-              </li>
-              <li className="py-2">
-                <a href="https://lazyllm.xyz/" target="_blank" rel="noreferrer">
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    lazyLLM
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200">
-                  Tooling kit to create, test and analyse prompts on LLMs.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  TYPESCRIPT - NEXT.JS - TAILWIND CSS
-                </p>
-              </li>
-              <li className="py-2">
-                <a
-                  href="https://github.com/elia-orsini/mars-imagery-classification"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    mars neural net
-                  </h1>
-                </a>
-                <p className="text-sm  text-gray-200 lowercase">
-                  Neural Network that classifies images taken on Mars.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  PYTHON - TENSORFLOW
-                </p>
-              </li>
-            </ul>
+      <div className="flex w-full mb-20">
+        <div className="mx-4 sm:ml-40 sm:mr-20 mx-auto flex-col">
+          <div className="flex flex-col mt-20">
+            <p className="text-left text-2xl sm:text-xl pb-4">side projects</p>
+            <Project
+              title="blenderWebViewer"
+              url="https://github.com/elia-orsini/BlenderWebViewer"
+              description="a web viewer for blender."
+              tech="PYTHON - REACT"
+            />
+            <Project
+              title="HoR Map"
+              url="https://hor-map.vercel.app/"
+              description="3D interactive map."
+              tech="THREE.JS - BLENDER"
+            />
+            <Project
+              title="lazyLLM"
+              url="https://lazyllm.xyz/"
+              description="Tooling kit to create, test and analyse prompts on LLMs."
+              tech="TYPESCRIPT - NEXT.JS - TAILWIND CSS"
+            />
+            <Project
+              title="mars neural net"
+              url="https://github.com/elia-orsini/mars-imagery-classification"
+              description="Neural Network that classifies images taken on Mars."
+              tech="PYTHON - TENSORFLOW"
+            />
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left font-bold text-2xl sm:text-xl pb-4 block">
+            <p className="text-left text-2xl sm:text-xl pb-4 block">
               websites I built
             </p>
-            <ul className="text-left block">
-              <li className="py-2">
-                <a
-                  href="https://rhomcguire.uk"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    rho mcguire
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200">
-                  professional website for rho mcguire.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  NEXT - NOTION - TAILWIND CSS
-                </p>
-              </li>
-              <li className="py-2">
-                <a
-                  href="https://www.insomniaevents.xyz/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    insomnia
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200">
-                  website for Insomnia Events.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  REACT - TAILWIND CSS
-                </p>
-              </li>
-              <li className="py-2">
-                <a
-                  href="https://lamacinasonora.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    la macina sonora
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200">
-                  website for the recording studio La Macina Sonora.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  REACT - TAILWIND CSS
-                </p>
-              </li>
+            <ul className="text-left">
+              <Project
+                title="rho mcguire"
+                url="https://rhomcguire.uk"
+                description="professional website for rho mcguire."
+                tech="NEXT - NOTION - TAILWIND CSS"
+              />
+              <Project
+                title="insomnia"
+                url="https://www.insomniaevents.xyz/"
+                description="website for Insomnia Events."
+                tech="REACT - TAILWIND CSS"
+              />
+              <Project
+                title="la macina sonora"
+                url="https://lamacinasonora.com"
+                description="website for the recording studio La Macina Sonora."
+                tech="REACT - TAILWIND CSS"
+              />
             </ul>
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left font-bold text-2xl sm:text-xl pb-4 block">
+            <p className="text-left text-2xl sm:text-xl pb-4 block">
               projects I am part of
             </p>
-            <ul className="text-left sm:pb-44 pb-10 block">
-              <li className="py-2">
-                <a
-                  href="https://www.archivepdf.net/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h1 className="font-bold underline underline-offset-1 decoration-2">
-                    ARCHIVE.pdf
-                  </h1>
-                </a>
-                <p className="text-sm text-gray-200 lowercase">
-                  Archive Fashion Scans, Articles & Content for the World.
-                </p>
-                <p className="text-xs font-light text-gray-400">
-                  TYPESCRIPT - NEXT.JS - STRAPI
-                </p>
-              </li>
-            </ul>
+            <Project
+              title="ARCHIVE.pdf"
+              url="https://www.archivepdf.net/"
+              description="Fashion Scans Archive, Articles & Content for the World."
+              tech="TYPESCRIPT - NEXT.JS - STRAPI"
+            />
           </div>
         </div>
       </div>
     </Navigation>
   );
 }
+
+const Project: FC<{
+  title: string;
+  url: string;
+  description: string;
+  tech: string;
+}> = ({ title, url, description, tech }) => {
+  return (
+    <div className="py-2">
+      <a href={url} target="_blank" rel="noreferrer">
+        <h1 className={`text-lime text-2xl ${koulen.className}`}>
+          {">"} {title}
+        </h1>
+      </a>
+      <p className="text-sm sm:text-base text-gray-200 lowercase">
+        {description}
+      </p>
+      <p className="text-xs sm:text-sm font-light text-gray-400 uppercase">
+        {tech}
+      </p>
+    </div>
+  );
+};

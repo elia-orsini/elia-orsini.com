@@ -5,15 +5,8 @@ export default function TwoD() {
   return (
     <Navigation>
       <div className="flex-col mx-auto w-4/5 my-20">
-        <p className="">
-          Metallic elements placed in futuristic-dystopic situations represent
-          my visual understanding of the reality around me. Materialism,
-          nihilism and nature intersect to create an utopian 3D world where
-          physical limits, ethical laws and aesthetic standards are all gone and
-          chaos is what remains.
-        </p>
-        <div className="flex-col mx-auto grid grid-cols-3 mt-10">
-          <div className="flex flex-col">
+        <div className="flex-col mx-auto grid md:grid-cols-3 mt-5 gap-2">
+          <div className="flex flex-col space-y-2">
             <Image src="/design/metal/3.jpg" />
             <Image src="/design/metal/4.jpg" />
             <Image src="/design/metal/5.jpg" />
@@ -22,7 +15,7 @@ export default function TwoD() {
             <Image src="/design/metal/30.jpg" />
             <Image src="/design/metal/13.jpg" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-2">
             <Image src="/design/metal/9.jpg" />
             <Image src="/design/metal/10.jpg" />
             <Image src="/design/metal/11.jpg" />
@@ -31,7 +24,7 @@ export default function TwoD() {
             <Image src="/design/metal/13.jpg" />
             <Image src="/design/metal/14.jpg" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-2">
             <Image src="/design/metal/12.jpg" />
             <Image src="/design/metal/15.jpg" />
             <Image src="/design/metal/17.jpg" />
