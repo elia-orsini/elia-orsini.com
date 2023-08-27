@@ -7,7 +7,7 @@ export default function Navigation({
 }) {
   return (
     <div className="flex flex-col sm:flex-row">
-      <div className="h-full flex flex-col w-full sm:w-max text-white sm:ml-20 sm:mr-40">
+      <div className="h-full flex flex-col w-full sm:w-max text-white sm:ml-20 sm:mr-20">
         <Link href="/work">
           <div className="mx-auto mt-10">
             <img

@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function BlogHeader(props) {
   let { imgUrl, title } = props;
   return (
-    <div className=" sm:w-4/5 px-10 sm:mx-0">
+    <div className="sm:w-5/5 sm:mx-0">
         <div
           style={{
             backgroundImage: `url(${imgUrl})`,
