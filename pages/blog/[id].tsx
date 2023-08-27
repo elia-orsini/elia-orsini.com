@@ -9,7 +9,7 @@ function Design({ params }) {
   return (
     <div>
       <Navigation>
-        <div className="mx-auto mt-20 px-10 sm:w-4/5 lg:w-3/5">
+        <div className="mx-auto mt-20 px-2 sm:w-4/5 lg:w-3/5">
           {id === "brutalist-buildings-london" && (<BrutalistBuildings />)}
         </div>
       </Navigation>

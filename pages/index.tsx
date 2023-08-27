@@ -37,7 +37,7 @@ const Scene = () => {
 export default function Entrance() {
   return (
     <Link href="/work">
-      <div className="h-screen">
+      <div className="h-screen w-screen">
         <Canvas>
           <Scene />
         </Canvas>
