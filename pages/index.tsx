@@ -2,12 +2,11 @@ import React from "react";
 import { useRef } from "react";
 import {
   Canvas,
-  DirectionalLightProps,
   PrimitiveProps,
   useFrame,
   useLoader,
 } from "@react-three/fiber";
-import { Environment, Line } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import Link from "next/link";
 

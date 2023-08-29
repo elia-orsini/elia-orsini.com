@@ -25,5 +25,11 @@ module.exports = {
       'slate-800': '#1e293b',
       'slate-400': '#94a3b8',
     },
+    extend: {
+      height: {
+        '128': '32rem',
+        '150': '42rem',
+      }
+    }
   },
 };
