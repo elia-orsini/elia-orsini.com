@@ -113,7 +113,7 @@ function Exhale() {
 
         <p className="my-10 sm:mt-0">
           it might be the recognisable edinburgh scenery the model is placed surrounded by, or the cars or
-          the people walking by but this sense of 'real' is something i am not totally used to yet.
+          the people walking by but this sense of &apos;real&apos; is something i am not totally used to yet.
           <br /><br />
           i think i will be playing around more with
           this type of technique. in doing that, there are a few things to
