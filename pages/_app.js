@@ -22,8 +22,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>next-tailwind-starter</title>
-        <meta name="Description" content="next-tailwind-starter" />
+        <title>elia orsini</title>
+        <meta name="Description" content="elia orsini personal website 2023" />
       </Head>
 
       <main className={iAWriterQuattroS.className}>

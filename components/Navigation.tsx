@@ -53,6 +53,7 @@ export default function Navigation({
       </div>
 
       <div className="flex px-10 sm:px-20 w-full bg-lime text-black h-28 text-sm gap-10">
+        <p className="my-auto">2023</p>
         <a className="my-auto" href="https://github.com/elia-orsini" target="_blank" rel="noreferrer">
           github
         </a>
