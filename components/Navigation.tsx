@@ -19,7 +19,7 @@ export default function Navigation({
             <div className="mx-auto mt-10">
               <Image
                 alt="elig_logo"
-                className="w-28 mx-auto"
+                className="w-16 sm:w-28 mx-auto"
                 src="/elig.png"
                 width={499}
                 height={285}
@@ -27,7 +27,7 @@ export default function Navigation({
             </div>
           </Link>
 
-          <div className="mt-10 sm:mt-14 sm:text-left text-center space-y-2">
+          <div className="w-full mx-auto text-center sm:text-left mt-10 sm:mt-14 space-y-2">
             <p>
               <Link href="/design">
                 {pathDivided.includes("design") ? "design <" : "design"}
@@ -52,9 +52,12 @@ export default function Navigation({
         <div className="w-full">{children}</div>
       </div>
 
-      <div className="flex px-20 w-full bg-black h-28 border-t">
+      <div className="flex px-10 sm:px-20 w-full bg-lime text-black h-28 text-sm gap-10">
         <a className="my-auto" href="https://github.com/elia-orsini" target="_blank" rel="noreferrer">
           github
+        </a>
+        <a className="my-auto" href="mailto:elia.orsini@hotmail.com" target="_blank" rel="noreferrer">
+          email
         </a>
       </div>
     </>

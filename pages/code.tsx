@@ -9,8 +9,8 @@ export default function Code() {
     <Navigation>
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
-          <div className="flex flex-col mt-20">
-            <p className="text-left text-xl sm:text-xl mb-2">side projects</p>
+          <div className="flex flex-col mt-10 sm:mt-20">
+            <p className="text-left text-sm sm:text-xl mb-2">side projects</p>
             <Project
               title="blenderWebViewer"
               url="https://github.com/elia-orsini/BlenderWebViewer"
@@ -38,7 +38,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left text-2xl sm:text-xl pb-4 block">
+            <p className="text-left text-sm sm:text-xl pb-4 block">
               websites I built
             </p>
             <ul className="text-left">
@@ -64,7 +64,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left text-2xl sm:text-xl pb-4 block">
+            <p className="text-left text-sm sm:text-xl pb-4 block">
               projects I am part of
             </p>
             <Project

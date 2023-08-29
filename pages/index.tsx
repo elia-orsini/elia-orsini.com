@@ -37,10 +37,12 @@ const Scene = () => {
 export default function Entrance() {
   return (
     <Link href="/work">
-      <div className="h-screen w-screen">
-        <Canvas>
-          <Scene />
-        </Canvas>
+      <div className="flex">
+        <div className="bg-white w-full min-h-screen">
+          <Canvas className="z-10">
+            <Scene />
+          </Canvas>
+        </div>
       </div>
     </Link>
   );

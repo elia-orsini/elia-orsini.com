@@ -4,7 +4,7 @@ import Navigation from "@components/Navigation";
 export default function TwoD() {
   return (
     <Navigation>
-      <div className="flex-col mx-auto grid grid-cols-3 w-4/5 my-20">
+      <div className="flex-col mx-auto grid grid-cols-3 px-1 sm:px-0 sm:w-4/5 my-20">
         <div className="flex flex-col">
           <Image src="/design/2d/1.jpg" />
           <Image src="/design/2d/2.jpg" />

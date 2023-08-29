@@ -19,7 +19,7 @@ function BrutalistBuildings() {
         <div>
           <SectionTitle title="barbican centre" />
 
-          <div className="grid grid-cols-2 p-1 lg:p-5 gap-1 lg:gap-3">
+          <div className="grid grid-cols-2 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt=""
               src="/blog/brutalist/barbican/IMG_3716.jpg"
@@ -34,7 +34,7 @@ function BrutalistBuildings() {
             />
           </div>
 
-          <div className="grid grid-cols-3 p-1 lg:p-5 gap-1 lg:gap-3">
+          <div className="grid grid-cols-3 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt=""
               src="/blog/brutalist/barbican/IMG_3709.jpg"
@@ -55,7 +55,7 @@ function BrutalistBuildings() {
             />
           </div>
 
-          <div className="grid  grid-cols-3 p-1 lg:p-5 gap-1 lg:gap-3">
+          <div className="grid  grid-cols-3 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt=""
               src="/blog/brutalist/barbican/IMG_3725.jpg"
@@ -106,7 +106,7 @@ function BrutalistBuildings() {
 
         <div>
           <SectionTitle title="brunswick centre" />
-          <div className="grid grid-col gap-1 p-2">
+          <div className="grid grid-col gap-1 ">
             <div className="grid grid-cols-2 gap-4">
               <Image
                 alt=""
@@ -233,7 +233,7 @@ function BrutalistBuildings() {
 
         <div>
           <SectionTitle title="royal college of physicians" />
-          <div className="grid bg-black grid-cols-2 gap-3 p-2">
+          <div className="grid bg-black grid-cols-2 gap-3">
             <div className="flex">
               <div className="my-auto">
                 <Image
@@ -267,7 +267,7 @@ function BrutalistBuildings() {
         <div>
           <SectionTitle title="golden lane estate" />
 
-          <div className="flex flex-col p-5">
+          <div className="flex flex-col">
             <div className="mx-auto">
               <Image
                 alt=""
