@@ -130,7 +130,7 @@ function Exhale() {
         </div>
 
         <p className="my-10">
-          you can play around with the 3D frame above and this is a series of
+          you can play around with the 3D frame above and below is a series of
           bare renders of the model. although the 3D model is just a simple
           human mesh and a texture, the expression and melancholy of it always
           catch my eye.
