@@ -1,42 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navigation from "@components/Navigation";
-import Image from "next/image";
+import ThreeDIndex from "@components/3DIndex";
+import { Canvas } from "@react-three/fiber";
+import TwoDIndex from "@components/2DIndex";
 
 function Design() {
-  const imageSources = [
-    "/test1.png",
-    "/test2.png",
-    "/test3.png",
-    "/test4.png",
-    "/test5.png",
-  ];
-
-  const getRandomImage = () => {
-    const randomIndex = Math.floor(Math.random() * imageSources.length);
-    return imageSources[randomIndex];
-  };
-
-  const [currentImage, setCurrentImage] = useState(getRandomImage());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage(getRandomImage());
-    }, 200);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div>
       <Navigation>
-        <div className="flex h-screen w-full">
-          <Image
-            alt=""
-            src={currentImage}
-            className="mx-auto my-auto"
-            width={1300}
-            height={1300}
-          />
+        <div className="flex h-screen w-full sm:pl-10">
+          <div className="block sm:hidden mt-24">
+            <TwoDIndex />
+          </div>
+
+          <Canvas className="z-10 hidden sm:block">
+            <ThreeDIndex />
+          </Canvas>
         </div>
       </Navigation>
     </div>

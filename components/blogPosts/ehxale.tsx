@@ -53,6 +53,7 @@ const Scene = () => {
         minDistance={1}
         autoRotate
         autoRotateSpeed={0.5}
+        enableZoom={false}
       />
       <camera position={[0, 0, 0]} />
       {/* <color attach="background" args={["white"]} /> */}
