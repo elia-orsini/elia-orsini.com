@@ -1,17 +1,11 @@
 import React from "react";
 import { useRef } from "react";
-import {
-  Canvas,
-  PrimitiveProps,
-  useFrame,
-  useLoader,
-} from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { Canvas, PrimitiveProps, useFrame } from "@react-three/fiber";
+import { Environment, useGLTF } from "@react-three/drei";
 import Link from "next/link";
 
 const Scene = () => {
-  const gltf = useLoader(GLTFLoader, "elig.glb");
+  const gltf = useGLTF("/elig.glb", true, true);
   const ref = useRef<PrimitiveProps>();
   useFrame(() => {
     ref.current.rotation.z += 0.01;
