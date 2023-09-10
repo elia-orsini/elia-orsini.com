@@ -12,6 +12,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import * as THREE from "three";
 import { useRef } from "react";
+import Header from "@components/Header";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -71,6 +72,8 @@ function Exhale() {
     <div>
       <BlogHeader imgUrl="/blog/exhale/intro.jpg" title="exhale" />
 
+      <Header title="exhale" img="/blog/exhale/intro.jpg" />
+
       <div className="flex flex-col mb-20">
         <p className="mb-10 sm:mb-0">
           3D renders in general usually tend to be quite clean and polished.
@@ -112,15 +115,16 @@ function Exhale() {
         </div>
 
         <p className="my-10 sm:mt-0">
-          it might be the recognisable edinburgh scenery the model is placed surrounded by, or the cars or
-          the people walking by but this sense of &apos;real&apos; is something i am not totally used to yet.
-          <br /><br />
-          i think i will be playing around more with
-          this type of technique. in doing that, there are a few things to
-          correct and figure out: the main two things being the model currently flying
-          (it is not touching the ground properly :c) and the quality of the
-          recording (this is actually a screen recording of my iPhone camera)
-          although i am lovin the grainy look in this particular instance.
+          it might be the recognisable edinburgh scenery the model is placed
+          surrounded by, or the cars or the people walking by but this sense of
+          &apos;real&apos; is something i am not totally used to yet.
+          <br />
+          <br />i think i will be playing around more with this type of
+          technique. in doing that, there are a few things to correct and figure
+          out: the main two things being the model currently flying (it is not
+          touching the ground properly :c) and the quality of the recording
+          (this is actually a screen recording of my iPhone camera) although i
+          am lovin the grainy look in this particular instance.
         </p>
 
         <div className="w-full h-128 sm:h-150 my-auto min-h">

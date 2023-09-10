@@ -2,6 +2,7 @@ import BlogHeader from "@components/BlogHeader";
 import Image from "next/image";
 import { Koulen } from "next/font/google";
 import { FC } from "react";
+import Header from "@components/Header";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -13,6 +14,11 @@ function BrutalistBuildings() {
       <BlogHeader
         imgUrl="/blog/brutalist/barbican/IMG_3737.jpg"
         title="brutalist buildings of london"
+      />
+
+      <Header
+        title="brutalist buildings of london"
+        img={"/blog/brutalist/barbican/IMG_3737.jpg"}
       />
 
       <div className="flex flex-col mb-20">

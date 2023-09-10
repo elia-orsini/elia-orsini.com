@@ -14,8 +14,6 @@ const handwriting = localFont({
 export default function BlogHeader({ imgUrl, title }) {
   return (
     <>
-      <Header title={`${title} | elia orsini`} img={imgUrl} />
-
       <div className="sm:w-5/5 sm:mx-0">
         <div
           style={{
