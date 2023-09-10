@@ -1,7 +1,6 @@
 import "../css/index.css";
 import Head from "next/head";
 import Layout from "@components/layout";
-import Header from "@components/Header";
 import localFont from "next/font/local";
 
 const iAWriterQuattroS = localFont({

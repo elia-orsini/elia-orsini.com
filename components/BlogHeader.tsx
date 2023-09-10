@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import Header from "./Header";
 
 const handwriting = localFont({
   src: [
