@@ -4,6 +4,7 @@ import ThreeDIndex from "@components/3DIndex";
 import { Canvas } from "@react-three/fiber";
 import TwoDIndex from "@components/2DIndex";
 import { getGPUTier } from "detect-gpu";
+import Header from "@components/Header";
 
 function Work() {
   const [gpuTier, setGpuTier] = useState<number>(null);
@@ -18,7 +19,9 @@ function Work() {
   }, []);
 
   return (
-    <div>
+    <>
+      <Header title={`work | elia orsini`} />
+
       <Navigation>
         <div className="flex h-screen w-full sm:pl-20">
           {gpuTier === 1 ? (
@@ -34,7 +37,7 @@ function Work() {
           )}
         </div>
       </Navigation>
-    </div>
+    </>
   );
 }
 

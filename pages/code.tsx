@@ -1,3 +1,5 @@
+import BlogHeader from "@components/BlogHeader";
+import Header from "@components/Header";
 import Navigation from "@components/Navigation";
 import { Koulen } from "next/font/google";
 import { FC } from "react";
@@ -7,10 +9,14 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 export default function Code() {
   return (
     <Navigation>
+      <Header title={`code | elia orsini`} />
+
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-base bg-gray-300 w-max text-black px-2 mb-2">side projects</p>
+            <p className="text-left text-sm sm:text-base bg-gray-300 w-max text-black px-2 mb-2">
+              side projects
+            </p>
             <Project
               title="blenderWebViewer"
               url="https://github.com/elia-orsini/BlenderWebViewer"

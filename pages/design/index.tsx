@@ -1,12 +1,15 @@
 import Navigation from "@components/Navigation";
 import Link from "next/link";
 import { Koulen } from "next/font/google";
+import Header from "@components/Header";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function Design() {
   return (
-    <div>
+    <>
+      <Header title={`design | elia orsini`} />
+
       <Navigation>
         <div className="mt-10 sm:mt-20 mb-40 mx-5 sm:ml-40 sm:mr-20 text-2xl">
           <p className="text-left text-sm sm:text-base mb-4 block bg-gray-300 w-max text-black px-2">
@@ -57,7 +60,7 @@ function Design() {
           </p>
         </div>
       </Navigation>
-    </div>
+    </>
   );
 }
 

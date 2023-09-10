@@ -1,19 +1,22 @@
 import localFont from "next/font/local";
+import Header from "./Header";
 
 const handwriting = localFont({
   src: [
     {
-      path: '../public/Handwriting-Regular.ttf',
-      weight: '400',
-      style: 'normal',
+      path: "../public/Handwriting-Regular.ttf",
+      weight: "400",
+      style: "normal",
     },
   ],
-})
+});
 
-export default function BlogHeader(props) {
-  let { imgUrl, title } = props;
+export default function BlogHeader({ imgUrl, title }) {
   return (
-    <div className="sm:w-5/5 sm:mx-0">
+    <>
+      <Header title={`${title} | elia orsini`} img={imgUrl} />
+
+      <div className="sm:w-5/5 sm:mx-0">
         <div
           style={{
             backgroundImage: `url(${imgUrl})`,
@@ -28,5 +31,6 @@ export default function BlogHeader(props) {
           </h1>
         </div>
       </div>
+    </>
   );
 }
