@@ -12,7 +12,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import * as THREE from "three";
 import { useRef } from "react";
-import Header from "@components/Header";
+import Head from "next/head";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -69,10 +69,13 @@ const Scene = () => {
 
 function Exhale() {
   return (
-    <div>
-      <BlogHeader imgUrl="/blog/exhale/intro.jpg" title="exhale" />
+    <>
+      <Head>
+        <title>exhale</title>
+        <meta property="og:image" content="/blog/exhale/intro.jpg" />
+      </Head>
 
-      <Header title="exhale" img="/blog/exhale/intro.jpg" />
+      <BlogHeader imgUrl="/blog/exhale/intro.jpg" title="exhale" />
 
       <div className="flex flex-col mb-20">
         <p className="mb-10 sm:mb-0">
@@ -182,7 +185,7 @@ function Exhale() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

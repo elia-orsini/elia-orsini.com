@@ -2,7 +2,7 @@ import BlogHeader from "@components/BlogHeader";
 import Image from "next/image";
 import { Koulen } from "next/font/google";
 import { FC } from "react";
-import Header from "@components/Header";
+import Head from "next/head";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -10,16 +10,19 @@ function BrutalistBuildings() {
   const width = 1300;
 
   return (
-    <div>
+    <>
       <BlogHeader
         imgUrl="/blog/brutalist/barbican/IMG_3737.jpg"
         title="brutalist buildings of london"
       />
 
-      <Header
-        title="brutalist buildings of london"
-        img={"/blog/brutalist/barbican/IMG_3737.jpg"}
-      />
+      <Head>
+        <title>brutalist buildings of london</title>
+        <meta
+          property="og:image"
+          content="/blog/brutalist/barbican/IMG_3737.jpg"
+        />
+      </Head>
 
       <div className="flex flex-col mb-20">
         <div>
@@ -350,7 +353,7 @@ function BrutalistBuildings() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
