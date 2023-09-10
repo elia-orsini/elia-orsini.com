@@ -23,9 +23,9 @@ function Work() {
       <Header title={`work | elia orsini`} />
 
       <Navigation>
-        <div className="flex h-screen w-full sm:pl-20">
+        <div className="flex h-screen max-h-screen overflow-hidden w-full sm:pl-20">
           {gpuTier === 1 ? (
-            <div className="mt-28 sm:mt-0">
+            <div className="flex w-full mt-28 sm:mt-0">
               <TwoDIndex />
             </div>
           ) : (

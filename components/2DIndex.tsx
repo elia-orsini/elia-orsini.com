@@ -30,8 +30,8 @@ function TwoDIndex() {
       alt=""
       src={currentImage}
       className="mx-auto my-auto"
-      width={1300}
-      height={1300}
+      width={1050}
+      height={1050}
     />
   );
 }
