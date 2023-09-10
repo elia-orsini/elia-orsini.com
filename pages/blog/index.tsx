@@ -8,10 +8,11 @@ function Design() {
   return (
     <div>
       <Navigation>
-        <div className="mt-10 sm:mt-20 mx-5 sm:ml-40 sm:mr-20 text-3xl">
-          <h4 className="text-sm sm:text-xl mb-2">
+        <div className="mt-10 sm:mt-20 mx-5 sm:ml-40 sm:mr-20 text-2xl">
+          <p className="text-left text-sm sm:text-base mb-4 block bg-gray-300 w-max text-black px-2">
             all posts since august 2023
-          </h4>
+          </p>
+
           <p>
             <Link
               href="/blog/exhale"
@@ -20,6 +21,7 @@ function Design() {
               {">"} exhale
             </Link>
           </p>
+
           <p>
             <Link
               href="/blog/brutalist-buildings-london"

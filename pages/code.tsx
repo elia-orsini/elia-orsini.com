@@ -10,7 +10,7 @@ export default function Code() {
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-xl mb-2">side projects</p>
+            <p className="text-left text-sm sm:text-base bg-gray-300 w-max text-black px-2 mb-2">side projects</p>
             <Project
               title="blenderWebViewer"
               url="https://github.com/elia-orsini/BlenderWebViewer"
@@ -38,7 +38,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left text-sm sm:text-xl pb-4 block">
+            <p className="text-left text-sm sm:text-base mb-2 block  bg-gray-300 w-max text-black px-2">
               websites I built
             </p>
             <ul className="text-left">
@@ -64,7 +64,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left text-sm sm:text-xl pb-4 block">
+            <p className="text-left text-sm sm:text-base mb-2 block bg-gray-300 w-max text-black px-2">
               projects I am part of
             </p>
             <Project
@@ -93,10 +93,10 @@ const Project: FC<{
           {">"} {title}
         </h1>
       </a>
-      <p className="text-sm sm:text-base text-gray-200 lowercase">
+      <p className="text-sm sm:text-base text-gray-200 lowercase -mt-1">
         {description}
       </p>
-      <p className="text-xs sm:text-sm font-light text-gray-400 uppercase">
+      <p className="text-xs sm:text-sm font-light text-gray-200 uppercase">
         {tech}
       </p>
     </div>

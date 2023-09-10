@@ -53,7 +53,6 @@ const Scene = () => {
         minDistance={1}
         autoRotate
         autoRotateSpeed={0.5}
-        enableZoom={false}
       />
       <camera position={[0, 0, 0]} />
       {/* <color attach="background" args={["white"]} /> */}
@@ -134,7 +133,7 @@ function Exhale() {
           you can play around with the 3D frame above and below is a series of
           bare renders of the model. although the 3D model is just a simple
           human mesh and a texture, the expression and melancholy of it always
-          catch my eye.
+          catches my eye.
         </p>
 
         <Image

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Navigation from "@components/Navigation";
 import ThreeDIndex from "@components/3DIndex";
 import { Canvas } from "@react-three/fiber";
@@ -26,9 +26,11 @@ function Work() {
               <TwoDIndex />
             </div>
           ) : (
-            <Canvas className="z-10 hidden sm:block">
-              <ThreeDIndex />
-            </Canvas>
+            <Suspense fallback={<p>loading</p>}>
+              <Canvas className="z-10 hidden sm:block">
+                <ThreeDIndex />
+              </Canvas>
+            </Suspense>
           )}
         </div>
       </Navigation>
