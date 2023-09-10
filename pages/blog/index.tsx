@@ -8,7 +8,10 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 function Design() {
   return (
     <>
-      <Header title={`blog | elia orsini`} />
+      <Header
+        title={`blog | elia orsini`}
+        img={"/blog/brutalist/barbican/IMG_3737.jpg"}
+      />
 
       <Navigation>
         <div className="mt-10 sm:mt-20 mx-5 sm:ml-40 sm:mr-20 text-2xl">

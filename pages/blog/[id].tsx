@@ -8,11 +8,6 @@ function BlogPost() {
   const router = useRouter();
   const { id } = router.query;
 
-  <Header
-    title="brutalist buildings of london | elia orsini"
-    img={"/blog/brutalist/barbican/IMG_3737.jpg"}
-  />;
-
   return (
     <div>
       <Navigation>
