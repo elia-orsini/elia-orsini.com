@@ -26,7 +26,7 @@ function Work() {
 
       <Navigation>
         <div className="flex h-screen max-h-screen overflow-hidden w-full sm:pl-20">
-          {true ? (
+          {gpuTier === 1 ? (
             <>
               <Canvas className="z-10 hidden sm:block">
                 <ThreeDIndexWeakGPU />
@@ -40,6 +40,9 @@ function Work() {
               <Canvas className="z-10 hidden sm:block">
                 <ThreeDIndex />
               </Canvas>
+              <div className="flex block sm:hidden">
+                <TwoDIndex />
+              </div>
             </Suspense>
           )}
         </div>
