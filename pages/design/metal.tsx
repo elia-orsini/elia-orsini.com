@@ -14,6 +14,7 @@ export default function TwoD() {
             <Image src="/design/metal/26.jpg" />
             <Image src="/design/metal/30.jpg" />
             <Image src="/design/metal/13.jpg" />
+            <Image src="/design/metal/33.jpg" />
           </div>
           <div className="flex flex-col space-y-2">
             <Image src="/design/metal/9.jpg" />
@@ -23,6 +24,7 @@ export default function TwoD() {
             <Image src="/design/metal/28.jpg" />
             <Image src="/design/metal/13.jpg" />
             <Image src="/design/metal/14.jpg" />
+            <Image src="/design/metal/32.jpg" />
           </div>
           <div className="flex flex-col space-y-2">
             <Image src="/design/metal/12.jpg" />
@@ -32,6 +34,7 @@ export default function TwoD() {
             <Image src="/design/metal/29.jpg" />
             <Image src="/design/metal/20.jpg" />
             <Image src="/design/metal/16.jpg" />
+            <Image src="/design/metal/31.jpg" />
           </div>
         </div>
       </div>

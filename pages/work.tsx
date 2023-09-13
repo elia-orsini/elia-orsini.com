@@ -5,6 +5,8 @@ import { Canvas } from "@react-three/fiber";
 import TwoDIndex from "@components/2DIndex";
 import { getGPUTier } from "detect-gpu";
 import Header from "@components/Header";
+import { Hor } from "@components/Hor";
+import ThreeDIndexWeakGPU from "@components/3DIndexWeakGPU";
 
 function Work() {
   const [gpuTier, setGpuTier] = useState<number>(null);
@@ -24,10 +26,15 @@ function Work() {
 
       <Navigation>
         <div className="flex h-screen max-h-screen overflow-hidden w-full sm:pl-20">
-          {gpuTier === 1 ? (
-            <div className="flex w-full mt-28 sm:mt-0">
-              <TwoDIndex />
-            </div>
+          {true ? (
+            <>
+              <Canvas className="z-10 hidden sm:block">
+                <ThreeDIndexWeakGPU />
+              </Canvas>
+              <div className="flex block sm:hidden">
+                <TwoDIndex />
+              </div>
+            </>
           ) : (
             <Suspense fallback={<p>loading</p>}>
               <Canvas className="z-10 hidden sm:block">

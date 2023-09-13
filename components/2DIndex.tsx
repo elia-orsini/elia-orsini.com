@@ -20,7 +20,7 @@ function TwoDIndex() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage(getRandomImage());
-    }, 200);
+    }, 100);
 
     return () => clearInterval(interval);
   }, []);
@@ -30,8 +30,8 @@ function TwoDIndex() {
       alt=""
       src={currentImage}
       className="mx-auto my-auto"
-      width={1050}
-      height={1050}
+      width={1500}
+      height={1500}
     />
   );
 }

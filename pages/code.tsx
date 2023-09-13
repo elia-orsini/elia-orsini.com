@@ -32,7 +32,7 @@ export default function Code() {
             <Project
               title="lazyLLM"
               url="https://lazyllm.xyz/"
-              description="Tooling kit to create, test and analyse prompts on LLMs."
+              description="Toolkit to create, test and analyse prompts on LLMs."
               tech="TYPESCRIPT - NEXT.JS - TAILWIND CSS"
             />
             <Project
@@ -51,19 +51,19 @@ export default function Code() {
               <Project
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
-                description="professional website for rho mcguire."
+                description="website for rho mcguire."
                 tech="NEXT - NOTION - TAILWIND CSS"
               />
+                <Project
+                  title="la macina sonora"
+                  url="https://lamacinasonora.com"
+                  description="website for the recording studio La Macina Sonora."
+                  tech="REACT - TAILWIND CSS"
+                />
               <Project
                 title="insomnia"
                 url="https://www.insomniaevents.xyz/"
                 description="website for Insomnia Events."
-                tech="REACT - TAILWIND CSS"
-              />
-              <Project
-                title="la macina sonora"
-                url="https://lamacinasonora.com"
-                description="website for the recording studio La Macina Sonora."
                 tech="REACT - TAILWIND CSS"
               />
             </ul>
