@@ -11,7 +11,7 @@ import { Hor } from "./Hor";
 import { SunshiDesert } from "./SunshiDesert";
 import { getGPUTier } from "detect-gpu";
 
-const ThreeDIndex = () => {
+const ThreeDIndexMobile = () => {
   const cameraRef = useRef<any>();
   const cameraControlRef = useRef<CameraControls | null>(null);
 
@@ -19,7 +19,7 @@ const ThreeDIndex = () => {
   const [directionLeft, setDirectionLeft] = useState(true);
   const [transition, setTransition] = useState(false);
   const [cameraPosition, setCameraPosition] = useState([0, 0, 10]);
-  const [scene, setScene] = useState<number>(0);
+  const [scene, setScene] = useState<number>(Math.floor(Math.random() * 3) + 1);
 
   useEffect(() => {
     const handlePointerMove = (event) => {
@@ -45,48 +45,30 @@ const ThreeDIndex = () => {
     window.addEventListener("mousemove", handlePointerMove);
     getToken();
 
-    setInterval(() => {
+    const intervalId = setInterval(() => {
       setDirectionLeft((prev) => !prev);
+    }, 8000);
+
+    const intervalId2 = setInterval(() => {
+      setScene((prev) => prev + 1);
     }, 8000);
 
     return () => {
       window.removeEventListener("mousemove", handlePointerMove);
+      clearInterval(intervalId)
+      clearInterval(intervalId2)
     };
   }, [transition]);
 
   useFrame(() => {
-    if (directionLeft) {
-      cameraPosition[0] += 0.002;
-      cameraPosition[1] += 0.002;
-    } else {
-      cameraPosition[0] -= 0.002;
-      cameraPosition[1] -= 0.002;
+    if (directionLeft && cameraRef.current) {
+      cameraRef.current.position.z += 0.006
     }
 
-    if (transition) {
-      cameraPosition[2] += 3;
+    if (!directionLeft && cameraRef.current) {
+      cameraRef.current.position.z -= 0.006
     }
-
-    cameraControlRef.current?.setLookAt(
-      cameraPosition[0],
-      cameraPosition[1],
-      cameraPosition[2],
-      0,
-      0,
-      0,
-      true
-    );
-  });
-
-  function changeScene() {
-    setTransition(true);
-
-    setTimeout(() => {
-      setScene(scene + 1);
-      setTransition(false);
-      setCameraPosition([0, 0, 10]);
-    }, 300);
-  }
+  })
 
   return (
     <>
@@ -98,19 +80,8 @@ const ThreeDIndex = () => {
           makeDefault
           ref={cameraRef}
           fov={80}
-          position={[cameraPosition[0], cameraPosition[1], cameraPosition[2]]}
+          position={[0, 0, 10]}
         />
-
-        <CameraControls ref={cameraControlRef} makeDefault />
-
-        <Annotation gpuTier>
-          <button
-            onClick={() => changeScene()}
-            className="ml-7 text-2xs px-2 border border-white cursor-pointer hover:bg-white hover:text-black hover:shadow-2xl shadow-white"
-          >
-            TELEPORT
-          </button>
-        </Annotation>
 
         {gpuTier === 3 && (
           <Sparkles
@@ -130,14 +101,4 @@ const ThreeDIndex = () => {
   );
 };
 
-function Annotation({ children, gpuTier, ...props }) {
-  return (
-    <>
-      <Html {...props} transform fullscreen>
-        <div className="flex">{children}</div>
-      </Html>
-    </>
-  );
-}
-
-export default ThreeDIndex;
+export default ThreeDIndexMobile;
