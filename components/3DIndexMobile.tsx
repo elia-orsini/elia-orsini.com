@@ -1,7 +1,6 @@
 import { useFrame } from "@react-three/fiber";
 import {
   CameraControls,
-  Html,
   PerspectiveCamera,
   Sparkles,
 } from "@react-three/drei";
@@ -19,7 +18,7 @@ const ThreeDIndexMobile = () => {
   const [directionLeft, setDirectionLeft] = useState(true);
   const [transition, setTransition] = useState(false);
   const [cameraPosition, setCameraPosition] = useState([0, 0, 10]);
-  const [scene, setScene] = useState<number>(Math.floor(Math.random() * 3) + 1);
+  const [scene, setScene] = useState<number>(0);
 
   useEffect(() => {
     const handlePointerMove = (event) => {
@@ -62,11 +61,11 @@ const ThreeDIndexMobile = () => {
 
   useFrame(() => {
     if (directionLeft && cameraRef.current) {
-      cameraRef.current.position.z += 0.007
+      cameraRef.current.position.z += 0.006
     }
 
     if (!directionLeft && cameraRef.current) {
-      cameraRef.current.position.z -= 0.007
+      cameraRef.current.position.z -= 0.006
     }
   })
 
