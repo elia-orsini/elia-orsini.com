@@ -62,11 +62,11 @@ const ThreeDIndexMobile = () => {
 
   useFrame(() => {
     if (directionLeft && cameraRef.current) {
-      cameraRef.current.position.z += 0.006
+      cameraRef.current.position.z += 0.007
     }
 
     if (!directionLeft && cameraRef.current) {
-      cameraRef.current.position.z -= 0.006
+      cameraRef.current.position.z -= 0.007
     }
   })
 
