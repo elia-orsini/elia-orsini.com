@@ -24,10 +24,16 @@ export default function Code() {
               tech="PYTHON - REACT"
             />
             <Project
-              title="HoR Map"
+              title="Roman Map"
               url="https://hor-map.vercel.app/"
               description="3D interactive map."
               tech="THREE.JS - BLENDER"
+            />
+            <Project
+              title="Rooms in ancient rome"
+              url="https://ancient-rome-3d-scenes.vercel.app/"
+              description="walkable 3D rooms in ancient rome."
+              tech="REACT THREE FIBER - TYPESCRIPT"
             />
             <Project
               title="lazyLLM"
@@ -54,12 +60,12 @@ export default function Code() {
                 description="website for rho mcguire."
                 tech="NEXT - NOTION - TAILWIND CSS"
               />
-                <Project
-                  title="la macina sonora"
-                  url="https://lamacinasonora.com"
-                  description="website for the recording studio La Macina Sonora."
-                  tech="REACT - TAILWIND CSS"
-                />
+              <Project
+                title="la macina sonora"
+                url="https://lamacinasonora.com"
+                description="website for the recording studio La Macina Sonora."
+                tech="REACT - TAILWIND CSS"
+              />
               <Project
                 title="insomnia"
                 url="https://www.insomniaevents.xyz/"
