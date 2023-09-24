@@ -79,23 +79,25 @@ function Exhale() {
 
       <div className="flex flex-col mb-20">
         <p className="mb-10 sm:mb-0">
-          3D renders in general usually tend to be quite clean and polished.
-          they lack that characteristic typical of videos taken in the real
-          world. in a certain way, they lack that granularity and imperfection
-          that many of those videos have.
+          3D renders, in general, tend to be clean and polished, lacking the
+          characteristic imperfections often seen in real-world videos. they
+          often lack the granularity and imperfections that many real videos
+          exhibit.
           <br />
           <br />
-          this project is one experiment trying to overcome those limitations
-          and trying to merge real videos of real places (in this case
-          edinburgh, scotland) with 3D renders and objects through the use of
-          augmented reality (AR).
+          this project is an experiment aimed at overcoming these limitations by
+          merging real videos of real places, in this case, edinburgh, scotland,
+          with 3D renders and objects using augmented reality (AR).
           <br />
           <br />
-          in the video the distinction between the two mediums (AR and
-          rendering) can be easily seen but although rendering is great at
-          focusing the attention on specific parts of the 3D model with high-res
-          shots and pitch black background, AR has a sort of depth that is very
-          unique and which in this case i love.
+          In the video, the distinction between the two mediums (AR and
+          rendering) is easily noticeable. while rendering excels at directing
+          attention to specific parts of the 3D model with high-resolution shots
+          and pitch-black backgrounds, AR offers a unique depth that, in this
+          case, i quite like. it could be the recognizable edinburgh scenery
+          surrounding the model, the passing cars, or the pedestrians, but this
+          sense of &apos;real&apos; is something i&apos;m not entirely accustomed to
+          yet.
         </p>
 
         <div
@@ -118,16 +120,12 @@ function Exhale() {
         </div>
 
         <p className="my-10 sm:mt-0">
-          it might be the recognisable edinburgh scenery the model is placed
-          surrounded by, or the cars or the people walking by but this sense of
-          &apos;real&apos; is something i am not totally used to yet.
-          <br />
-          <br />i think i will be playing around more with this type of
-          technique. in doing that, there are a few things to correct and figure
-          out: the main two things being the model currently flying (it is not
-          touching the ground properly :c) and the quality of the recording
-          (this is actually a screen recording of my iPhone camera) although i
-          am lovin the grainy look in this particular instance.
+          i believe i&apos;ll be exploring this technique further. in doing so,
+          there are a few things to correct and figure out, with the main issues
+          being the model currently floating (not touching the ground properly
+          :c) and the quality of the recording (this is actually a screen
+          recording from my iPhone camera), although i must say i am quite fond
+          of the grainy look in this particular instance.
         </p>
 
         <div className="w-full h-128 sm:h-150 my-auto min-h">
@@ -137,10 +135,10 @@ function Exhale() {
         </div>
 
         <p className="my-10">
-          you can play around with the 3D frame above and below is a series of
-          bare renders of the model. although the 3D model is just a simple
-          human mesh and a texture, the expression and melancholy of it always
-          catches my eye.
+          you can interact with the 3D frame above, and below,
+          there is a series of raw renders of the model. despite the 3D model
+          being a simple human mesh with a texture, its expression and
+          melancholy always captures my attention.
         </p>
 
         <Image

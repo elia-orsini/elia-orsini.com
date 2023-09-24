@@ -18,6 +18,15 @@ function Design() {
 
           <p>
             <Link
+              href="/blog/always-ending-tunnel"
+              className={`text-lime ${koulen.className}`}
+            >
+              {">"} always ending tunnel
+            </Link>
+          </p>
+
+          <p>
+            <Link
               href="/blog/exhale"
               className={`text-lime ${koulen.className}`}
             >
