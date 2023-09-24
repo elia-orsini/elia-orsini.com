@@ -15,7 +15,7 @@ export default function Navigation({
     <>
       <div className="flex flex-col sm:flex-row min-h-screen w-screen overflow-clip">
         <div className="h-full flex flex-col w-full sm:w-max text-white sm:ml-20">
-          <Link href="/work">
+          <Link href="/work" passHref>
             <div className="mx-auto mt-10">
               <Image
                 alt="elig_logo"
