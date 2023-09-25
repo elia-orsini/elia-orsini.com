@@ -16,7 +16,7 @@ function AlwaysEndingTunnel() {
       />
 
       <div
-        className="w-full sm:w-full mx-auto -mt-40 -mb-20"
+        className="w-full sm:w-full mx-auto -mt-16 sm:-mt-40 sm:-mb-20"
         style={{ padding: "100% 0 0 0", position: "relative" }}
       >
         <iframe
@@ -34,7 +34,7 @@ function AlwaysEndingTunnel() {
         ></iframe>
       </div>
 
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2">
         <Image
           alt=""
           src="/blog/alwaysEndingTunnel/1.jpg"
