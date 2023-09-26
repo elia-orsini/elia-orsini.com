@@ -21,31 +21,31 @@ export default function Code() {
               title="blenderWebViewer"
               url="https://github.com/elia-orsini/BlenderWebViewer"
               description="a web viewer for blender."
-              tech="PYTHON - REACT"
+              tech={["PYTHON", "REACT"]}
             />
             <Project
               title="Roman Map"
               url="https://hor-map.vercel.app/"
               description="3D interactive map."
-              tech="THREE.JS - BLENDER"
+              tech={["THREE.JS", "BLENDER"]}
             />
             <Project
               title="Rooms in ancient rome"
               url="https://ancient-rome-3d-scenes.vercel.app/"
               description="walkable 3D rooms in ancient rome."
-              tech="REACT THREE FIBER - TYPESCRIPT"
+              tech={["REACT THREE FIBER", "TYPESCRIPT"]}
             />
             <Project
               title="lazyLLM"
               url="https://lazyllm.xyz/"
               description="Toolkit to create, test and analyse prompts on LLMs."
-              tech="TYPESCRIPT - NEXT.JS - TAILWIND CSS"
+              tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
             />
             <Project
               title="mars neural net"
               url="https://github.com/elia-orsini/mars-imagery-classification"
               description="Neural Network that classifies images taken on Mars."
-              tech="PYTHON - TENSORFLOW"
+              tech={["PYTHON", "TENSORFLOW"]}
             />
           </div>
 
@@ -58,19 +58,19 @@ export default function Code() {
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
                 description="website for rho mcguire."
-                tech="NEXT - NOTION - TAILWIND CSS"
+                tech={["NEXT", "NOTION", "TAILWIND CSS"]}
               />
               <Project
                 title="la macina sonora"
                 url="https://lamacinasonora.com"
                 description="website for the recording studio La Macina Sonora."
-                tech="REACT - TAILWIND CSS"
+                tech={["REACT", "TAILWIND CSS"]}
               />
               <Project
                 title="insomnia"
                 url="https://www.insomniaevents.xyz/"
                 description="website for Insomnia Events."
-                tech="REACT - TAILWIND CSS"
+                tech={["REACT", "TAILWIND CSS"]}
               />
             </ul>
           </div>
@@ -83,7 +83,7 @@ export default function Code() {
               title="ARCHIVE.pdf"
               url="https://www.archivepdf.net/"
               description="Fashion Scans Archive, Articles & Content for the World."
-              tech="TYPESCRIPT - NEXT.JS - STRAPI"
+              tech={["TYPESCRIPT", "NEXT.JS", "STRAPI"]}
             />
           </div>
         </div>
@@ -96,7 +96,7 @@ const Project: FC<{
   title: string;
   url: string;
   description: string;
-  tech: string;
+  tech: Array<string>;
 }> = ({ title, url, description, tech }) => {
   return (
     <div className="py-2">
@@ -108,9 +108,13 @@ const Project: FC<{
       <p className="text-sm sm:text-base text-gray-200 lowercase -mt-1">
         {description}
       </p>
-      <p className="text-xs sm:text-sm font-light text-gray-200 uppercase">
-        {tech}
-      </p>
+      <div className="-ml-1">
+        {tech.map((technology) => (
+          <span className="text-sm bg-gray-600 px-1 ml-1 w-max uppercase">
+            {technology}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };

@@ -16,36 +16,43 @@ function Design() {
             all posts since august 2023
           </p>
 
-          <p>
-            <Link
-              href="/blog/always-ending-tunnel"
-              className={`text-lime ${koulen.className}`}
-            >
-              {">"} always ending tunnel
-            </Link>
-          </p>
+          <BlogArticle
+            link="/blog/always-ending-tunnel"
+            title="always ending tunnel"
+            tags={["3D", "unreal engine"]}
+          />
 
-          <p>
-            <Link
-              href="/blog/exhale"
-              className={`text-lime ${koulen.className}`}
-            >
-              {">"} exhale
-            </Link>
-          </p>
+          <BlogArticle
+            link="/blog/exhale"
+            title="exhale"
+            tags={["3D", "ar"]}
+          />
 
-          <p>
-            <Link
-              href="/blog/brutalist-buildings-london"
-              className={`text-lime ${koulen.className}`}
-            >
-              {">"} brutalist buildings of london
-            </Link>
-          </p>
+          <BlogArticle
+            link="/blog/brutalist-buildings-london"
+            title="brutalist buildings of london"
+            tags={["photography", "london"]}
+          />
         </div>
       </Navigation>
     </>
   );
 }
+
+const BlogArticle = ({ link, title, tags }) => (
+  <div className="mt-2">
+    <Link href={link} className={`text-lime ${koulen.className}`}>
+      {">"} {title}
+    </Link>
+
+    <div className="-mt-4 -ml-1 sm:ml-3">
+      {tags.map((tag) => (
+        <span className="text-sm bg-gray-600 px-1 w-max ml-1 uppercase">
+          {tag}
+        </span>
+      ))}
+    </div>
+  </div>
+);
 
 export default Design;
