@@ -109,8 +109,8 @@ const Project: FC<{
         {description}
       </p>
       <div className="-ml-1">
-        {tech.map((technology) => (
-          <span className="text-sm bg-gray-600 px-1 ml-1 w-max uppercase">
+        {tech.map((technology, i) => (
+          <span key={i} className="text-sm bg-gray-600 px-1 ml-1 w-max uppercase">
             {technology}
           </span>
         ))}

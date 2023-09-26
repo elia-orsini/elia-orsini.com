@@ -2,6 +2,7 @@ import Navigation from "@components/Navigation";
 import Link from "next/link";
 import { Koulen } from "next/font/google";
 import Header from "@components/Header";
+import { FC } from "react";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -39,15 +40,19 @@ function Design() {
   );
 }
 
-const BlogArticle = ({ link, title, tags }) => (
+const BlogArticle: FC<{
+  url: string;
+  title: string;
+  tags: Array<string>;
+}>  = ({ url, title, tags }) => (
   <div className="mt-2">
-    <Link href={link} className={`text-lime ${koulen.className}`}>
+    <Link href={url} passHref className={`text-lime ${koulen.className}`}>
       {">"} {title}
     </Link>
 
     <div className="-mt-4 -ml-1 sm:ml-3">
-      {tags.map((tag) => (
-        <span className="text-sm bg-gray-600 px-1 w-max ml-1 uppercase">
+      {tags.map((tag, i) => (
+        <span key={i} className="text-sm bg-gray-600 px-1 w-max ml-1 uppercase">
           {tag}
         </span>
       ))}
