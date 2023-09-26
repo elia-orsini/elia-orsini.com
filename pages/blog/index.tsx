@@ -18,19 +18,19 @@ function Design() {
           </p>
 
           <BlogArticle
-            link="/blog/always-ending-tunnel"
+            url="/blog/always-ending-tunnel"
             title="always ending tunnel"
             tags={["3D", "unreal engine"]}
           />
 
           <BlogArticle
-            link="/blog/exhale"
+            url="/blog/exhale"
             title="exhale"
             tags={["3D", "ar"]}
           />
 
           <BlogArticle
-            link="/blog/brutalist-buildings-london"
+            url="/blog/brutalist-buildings-london"
             title="brutalist buildings of london"
             tags={["photography", "london"]}
           />
