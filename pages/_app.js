@@ -5,7 +5,7 @@ import Layout from "@components/layout";
 import localFont from "next/font/local";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import * as gtag from "../lib/gtag";
+import * as gtag from "../lib/gtag"
 
 const iAWriterQuattroS = localFont({
   src: [
@@ -23,15 +23,16 @@ const iAWriterQuattroS = localFont({
 });
 
 function MyApp({ Component, pageProps }) {
+
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
     };
-
+ 
     router.events.on("routeChangeComplete", handleRouteChange);
-
+ 
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
@@ -62,20 +63,23 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Script
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
       />
-
-      <Script strategy="lazyOnload">
-        {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', '${process.env.GA_MEASUREMENT_ID}', {
-                    page_path: window.location.pathname,
-                    });
-                `}
-      </Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.GA_MEASUREMENT_ID}', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+      />
 
       <main className={iAWriterQuattroS.className}>
         <Component {...pageProps} />
