@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps }) {
 
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID2}`}
       />
       <Script
         id="google-analytics"
@@ -74,7 +74,7 @@ function MyApp({ Component, pageProps }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${process.env.GA_MEASUREMENT_ID}', {
+          gtag('config', '${process.env.GA_MEASUREMENT_ID2}', {
             page_path: window.location.pathname,
           });
         `,
