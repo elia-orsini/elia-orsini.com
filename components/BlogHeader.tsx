@@ -1,14 +1,4 @@
-import localFont from "next/font/local";
 
-const handwriting = localFont({
-  src: [
-    {
-      path: "../public/Handwriting-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-});
 
 export default function BlogHeader({ imgUrl, title }) {
   return (
@@ -21,7 +11,7 @@ export default function BlogHeader({ imgUrl, title }) {
             backgroundPosition: "center",
             height: "60vh",
           }}
-          className={`${handwriting.className} flex mb-10`}
+          className={` flex mb-10`}
         >
           <h1 className="mx-auto my-auto text-white text-4xl sm:text-6xl text-center leading-11 px-10 sm:px-20">
             {title}
