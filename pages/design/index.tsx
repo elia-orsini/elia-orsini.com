@@ -1,9 +1,7 @@
 import Navigation from "@components/Navigation";
 import Link from "next/link";
-import { Koulen } from "next/font/google";
 import Header from "@components/Header";
 
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function Design() {
   return (
@@ -16,7 +14,7 @@ function Design() {
             all design collections
           </p>
           <p>
-            <Link href="/design/2d" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/2d" className={`text-lime`}>
               {">"} two dimensions
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
@@ -27,7 +25,7 @@ function Design() {
           <p>
             <Link
               href="/design/sunshi"
-              className={`text-lime ${koulen.className}`}
+              className={`text-lime`}
             >
               {">"} sunshi
             </Link>
@@ -38,7 +36,7 @@ function Design() {
           <p>
             <Link
               href="/design/metal"
-              className={`text-lime ${koulen.className}`}
+              className={`text-lime`}
             >
               {">"} metallic utopia
             </Link>
@@ -50,7 +48,7 @@ function Design() {
           <p>
             <Link
               href="/design/aliens"
-              className={`text-lime ${koulen.className}`}
+              className={`text-lime`}
             >
               {">"} aliens
             </Link>

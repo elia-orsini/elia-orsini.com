@@ -1,10 +1,7 @@
 import BlogHeader from "@components/BlogHeader";
 import Image from "next/image";
-import { Koulen } from "next/font/google";
 import { FC } from "react";
 import Head from "next/head";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function BrutalistBuildings() {
   const width = 1300;
@@ -360,7 +357,7 @@ function BrutalistBuildings() {
 const SectionTitle: FC<{ title: string }> = ({ title }) => {
   return (
     <div className="flex h-40">
-      <p className={`mx-auto my-auto text-2xl sm:text-4xl ${koulen.className}`}>
+      <p className={`mx-auto my-auto text-2xl sm:text-4xl`}>
         {title}
       </p>
     </div>

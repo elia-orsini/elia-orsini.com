@@ -1,11 +1,7 @@
 import BlogHeader from "@components/BlogHeader";
 import Header from "@components/Header";
 import Navigation from "@components/Navigation";
-import { Koulen } from "next/font/google";
 import { FC } from "react";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
-
 export default function Code() {
   return (
     <Navigation>
@@ -101,7 +97,7 @@ const Project: FC<{
   return (
     <div className="py-2">
       <a href={url} target="_blank" rel="noreferrer">
-        <h1 className={`text-lime text-2xl ${koulen.className}`}>
+        <h1 className={`text-lime text-2xl `}>
           {">"} {title}
         </h1>
       </a>

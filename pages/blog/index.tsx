@@ -1,10 +1,8 @@
 import Navigation from "@components/Navigation";
 import Link from "next/link";
-import { Koulen } from "next/font/google";
 import Header from "@components/Header";
 import { FC } from "react";
 
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function Design() {
   return (
@@ -46,7 +44,7 @@ const BlogArticle: FC<{
   tags: Array<string>;
 }>  = ({ url, title, tags }) => (
   <div className="mt-2">
-    <Link href={url} passHref className={`text-lime ${koulen.className}`}>
+    <Link href={url} passHref className={`text-lime `}>
       {">"} {title}
     </Link>
 
