@@ -58,9 +58,11 @@ const ThreeDIndex = () => {
     if (directionLeft) {
       cameraPosition[0] += 0.002;
       cameraPosition[1] += 0.002;
+      cameraPosition[2] += 0.005
     } else {
       cameraPosition[0] -= 0.002;
       cameraPosition[1] -= 0.002;
+      cameraPosition[2] -= 0.005
     }
 
     if (transition) {
@@ -91,7 +93,6 @@ const ThreeDIndex = () => {
   return (
     <>
       <Suspense fallback={null}>
-        {/* <Environment files="skylit.hdr" /> */}
         <color attach="background" args={["black"]} />
 
         <PerspectiveCamera
@@ -134,7 +135,7 @@ function Annotation({ children, gpuTier, ...props }) {
   return (
     <>
       <Html {...props} transform fullscreen>
-        <div className="flex">{children}</div>
+        <div className="flex -mt-40">{children}</div>
       </Html>
     </>
   );
