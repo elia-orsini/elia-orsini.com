@@ -72,7 +72,6 @@ const ThreeDIndexMobile = () => {
   return (
     <>
       <Suspense fallback={null}>
-        {/* <Environment files="skylit.hdr" /> */}
         <color attach="background" args={["black"]} />
 
         <PerspectiveCamera
