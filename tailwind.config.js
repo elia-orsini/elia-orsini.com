@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   variants: {},
   plugins: [],
@@ -29,6 +30,8 @@ module.exports = {
       'slate-700': '#334155',
       'slate-800': '#1e293b',
       'slate-400': '#94a3b8',
+      'sky-100': '#e0f2fe',
+      'sky-700': '#7dd3fc'
     },
     extend: {
       height: {
