@@ -46,11 +46,11 @@ const ThreeDIndexMobile = () => {
 
     const intervalId = setInterval(() => {
       setDirectionLeft((prev) => !prev);
-    }, 8000);
+    }, 5000);
 
     const intervalId2 = setInterval(() => {
       setScene((prev) => prev + 1);
-    }, 8000);
+    }, 5000);
 
     return () => {
       window.removeEventListener("mousemove", handlePointerMove);
@@ -61,11 +61,11 @@ const ThreeDIndexMobile = () => {
 
   useFrame(() => {
     if (directionLeft && cameraRef.current) {
-      cameraRef.current.position.z += 0.006
+      cameraRef.current.position.z += 0.008
     }
 
     if (!directionLeft && cameraRef.current) {
-      cameraRef.current.position.z -= 0.006
+      cameraRef.current.position.z -= 0.008
     }
   })
 

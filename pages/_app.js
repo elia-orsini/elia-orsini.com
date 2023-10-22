@@ -2,25 +2,25 @@ import "../css/index.css";
 import Head from "next/head";
 import Script from "next/script";
 import Layout from "@components/layout";
-import localFont from "next/font/local";
+// import localFont from "@next/font";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as gtag from "../lib/gtag"
 
-const iAWriterQuattroS = localFont({
-  src: [
-    {
-      path: "../public/iAWriterQuattroS-Regular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/iAWriterQuattroS-Bold.woff",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-});
+// const iAWriterQuattroS = localFont({
+//   src: [
+//     {
+//       path: "../public/iAWriterQuattroS-Regular.woff",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "../public/iAWriterQuattroS-Bold.woff",
+//       weight: "700",
+//       style: "normal",
+//     },
+//   ],
+// });
 
 function MyApp({ Component, pageProps }) {
 
@@ -81,7 +81,7 @@ function MyApp({ Component, pageProps }) {
         }}
       />
 
-      <main className={iAWriterQuattroS.className}>
+      <main>
         <Component {...pageProps} />
       </main>
     </Layout>
