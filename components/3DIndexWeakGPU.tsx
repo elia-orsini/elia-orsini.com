@@ -1,9 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import {
   CameraControls,
-  Html,
   PerspectiveCamera,
-  Sparkles,
 } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { Hor } from "./Hor";
@@ -17,7 +15,6 @@ const ThreeDIndexWeakGPU = () => {
   const [directionLeft, setDirectionLeft] = useState(true);
   const [transition, setTransition] = useState(false);
   const [cameraPosition, setCameraPosition] = useState([0, 0, 10]);
-  const [scene, setScene] = useState<number>(0);
 
   useEffect(() => {
     const handlePointerMove = (event) => {
@@ -76,16 +73,6 @@ const ThreeDIndexWeakGPU = () => {
     );
   });
 
-  function changeScene() {
-    setTransition(true);
-
-    setTimeout(() => {
-      setScene(scene + 1);
-      setTransition(false);
-      setCameraPosition([0, 0, 10]);
-    }, 300);
-  }
-
   return (
     <>
       <Suspense fallback={null}>
@@ -105,15 +92,5 @@ const ThreeDIndexWeakGPU = () => {
     </>
   );
 };
-
-function Annotation({ children, gpuTier, ...props }) {
-  return (
-    <>
-      <Html {...props} transform>
-        <div className="flex">{children}</div>
-      </Html>
-    </>
-  );
-}
 
 export default ThreeDIndexWeakGPU;

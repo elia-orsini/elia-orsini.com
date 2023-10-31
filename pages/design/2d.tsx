@@ -16,6 +16,7 @@ export default function TwoD() {
           <Image src="/design/2d/10.jpg" />
           <Image src="/design/2d/6.jpg" />
           <Image src="/design/2d/7.jpg" />
+          <Image src="/design/2d/18.jpg" />
         </div>
         <div>
           <Image src="/design/2d/5.jpg" />
@@ -27,6 +28,7 @@ export default function TwoD() {
           <Image src="/design/2d/8.jpg" />
           <Image src="/design/2d/9.jpg" />
           <Image src="/design/2d/15.jpg" />
+          <Image src="/design/2d/17.jpg" />
         </div>
       </div>
     </Navigation>

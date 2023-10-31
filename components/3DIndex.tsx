@@ -6,10 +6,11 @@ import {
   Sparkles,
 } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
+import { getGPUTier } from "detect-gpu";
+
 import { Sunshi } from "./Sunshi";
 import { Hor } from "./Hor";
 import { SunshiDesert } from "./SunshiDesert";
-import { getGPUTier } from "detect-gpu";
 
 const ThreeDIndex = () => {
   const cameraRef = useRef<any>();
@@ -37,13 +38,14 @@ const ThreeDIndex = () => {
       }
     };
 
-    async function getToken() {
+    async function getGPU() {
       const gpuDetails = await getGPUTier();
       setGpuTier(gpuDetails.tier);
     }
 
     window.addEventListener("mousemove", handlePointerMove);
-    getToken();
+    
+    getGPU();
 
     setInterval(() => {
       setDirectionLeft((prev) => !prev);
@@ -107,7 +109,7 @@ const ThreeDIndex = () => {
         <Annotation gpuTier>
           <button
             onClick={() => changeScene()}
-            className="ml-7 text-2xs px-2 border border-white cursor-pointer hover:bg-white hover:text-black hover:shadow-2xl shadow-white"
+            className="ml-7 text-[0.4rem] px-2 border opacity-40 hover:opacity-80 border-white cursor-pointer hover:bg-white hover:text-black hover:shadow-2xl shadow-white"
           >
             TELEPORT
           </button>
@@ -135,7 +137,7 @@ function Annotation({ children, gpuTier, ...props }) {
   return (
     <>
       <Html {...props} transform fullscreen>
-        <div className="flex -mt-40">{children}</div>
+        <div className="flex">{children}</div>
       </Html>
     </>
   );
