@@ -9,7 +9,7 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 export default function Code() {
   return (
     <Navigation>
-      <Header title={`code | elia orsini`} />
+      <Header title={`code | elia orsini`} description="code portfolio of elia orsini." />
 
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">

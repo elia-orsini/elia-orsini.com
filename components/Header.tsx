@@ -3,7 +3,7 @@ import React from "react";
 
 function Header({
   title = "elia orsini",
-  description = "personal website of elia orsini",
+  description = "personal website of elia orsini.",
   img = "/favicon.ico",
 }) {
   return (

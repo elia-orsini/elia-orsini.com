@@ -8,7 +8,7 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 function Design() {
   return (
     <>
-      <Header title={`design | elia orsini`} />
+      <Header title={`design | elia orsini`} description="design work by elia orsini." />
 
       <Navigation>
         <div className="mt-10 sm:mt-20 mb-40 mx-5 sm:ml-40 sm:mr-20 text-2xl">

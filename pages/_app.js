@@ -2,37 +2,21 @@ import "../css/index.css";
 import Head from "next/head";
 import Script from "next/script";
 import Layout from "@components/layout";
-// import localFont from "@next/font";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import * as gtag from "../lib/gtag"
 
-// const iAWriterQuattroS = localFont({
-//   src: [
-//     {
-//       path: "../public/iAWriterQuattroS-Regular.woff",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../public/iAWriterQuattroS-Bold.woff",
-//       weight: "700",
-//       style: "normal",
-//     },
-//   ],
-// });
+import * as gtag from "../lib/gtag";
 
 function MyApp({ Component, pageProps }) {
-
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
     };
- 
+
     router.events.on("routeChangeComplete", handleRouteChange);
- 
+
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
@@ -41,6 +25,17 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+        <title>elia orsini</title>
+        <meta property="og:title" content="elia orsini" />
+
+        <meta name="description" content="personal website of elia orsini." />
+        <meta
+          property="og:description"
+          content="personal website of elia orsini."
+        />
+
+        <meta property="og:image" content="/favicon.ico" />
+
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
