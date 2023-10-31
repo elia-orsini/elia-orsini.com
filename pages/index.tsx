@@ -12,7 +12,7 @@ const Scene = () => {
   });
   return (
     <>
-      <Environment path="/" files="skylit.hdr" />
+      <Environment path="./" files="skylit.hdr" />
       <directionalLight position={[-5, 5, 0]} />
       <directionalLight position={[5, -5, 0]} />
       <camera position={[0, 1, 0]} />
