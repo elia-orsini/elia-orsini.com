@@ -13,6 +13,7 @@ import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import * as THREE from "three";
 import { useRef } from "react";
 import Head from "next/head";
+import Header from "@components/Header";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -70,10 +71,7 @@ const Scene = () => {
 function Exhale() {
   return (
     <>
-      <Head>
-        <title>exhale</title>
-        <meta property="og:image" content="/blog/exhale/intro.jpg" />
-      </Head>
+      <Header title="exhale" img="/blog/exhale/intro.jpg" />
 
       <BlogHeader imgUrl="/blog/exhale/intro.jpg" title="exhale" />
 
@@ -96,8 +94,8 @@ function Exhale() {
           and pitch-black backgrounds, AR offers a unique depth that, in this
           case, i quite like. it could be the recognizable edinburgh scenery
           surrounding the model, the passing cars, or the pedestrians, but this
-          sense of &apos;real&apos; is something i&apos;m not entirely accustomed to
-          yet.
+          sense of &apos;real&apos; is something i&apos;m not entirely
+          accustomed to yet.
         </p>
 
         <div
@@ -135,10 +133,10 @@ function Exhale() {
         </div>
 
         <p className="my-10">
-          you can interact with the 3D frame above, and below,
-          there is a series of raw renders of the model. despite the 3D model
-          being a simple human mesh with a texture, its expression and
-          melancholy always captures my attention.
+          you can interact with the 3D frame above, and below, there is a series
+          of raw renders of the model. despite the 3D model being a simple human
+          mesh with a texture, its expression and melancholy always captures my
+          attention.
         </p>
 
         <Image

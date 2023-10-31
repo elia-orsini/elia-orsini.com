@@ -1,14 +1,13 @@
 import BlogHeader from "@components/BlogHeader";
 import Image from "next/image";
 import Head from "next/head";
+import Header from "@components/Header";
 
 function AlwaysEndingTunnel() {
   return (
     <>
-      <Head>
-        <title>always ending tunnel</title>
-        <meta property="og:image" content="/blog/exhale/intro.jpg" />
-      </Head>
+
+      <Header title="always ending tunnel" img="/blog/exhale/intro.jpg" />
 
       <BlogHeader
         imgUrl="/blog/alwaysEndingTunnel/1.jpg"

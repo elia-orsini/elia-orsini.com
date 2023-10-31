@@ -9,12 +9,15 @@ function Header({
   return (
     <Head>
       <title>{title}</title>
+      <meta name="title" content={title} />
       <meta property="og:title" content={title} />
 
       <meta name="description" content={description} />
       <meta property="og:description" content={description} />
+      <meta property="og:description" content={description} />
 
       <meta property="og:image" content={img} />
+      <meta property="twitter:image" content={img} />
     </Head>
   );
 }
