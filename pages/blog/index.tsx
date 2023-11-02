@@ -52,7 +52,7 @@ const BlogArticle: FC<{
 
     <div className="-mt-4 -ml-1 sm:ml-3">
       {tags.map((tag, i) => (
-        <span key={i} className="text-sm bg-gray-600 px-1 w-max ml-1 uppercase">
+        <span key={i} className="opacity-80 text-sm bg-gray-600 px-1 w-max ml-1 uppercase">
           {tag}
         </span>
       ))}

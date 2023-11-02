@@ -107,3 +107,7 @@ const TexturedPlane = ({
     </mesh>
   );
 };
+
+useTexture.preload("/index/hor.jpg");
+useTexture.preload("/index/greenpeace.jpg");
+useTexture.preload("/index/tigerhead.jpg");

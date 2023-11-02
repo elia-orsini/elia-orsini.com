@@ -5,7 +5,8 @@ import {
   Sparkles,
 } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
-import { Sunshi } from "./Sunshi";
+
+import { Sunshi } from "./SunshiHall";
 import { Hor } from "./Hor";
 import { SunshiDesert } from "./SunshiDesert";
 import { getGPUTier } from "detect-gpu";
