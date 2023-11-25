@@ -58,6 +58,17 @@ function Design() {
               the next generation of inhabitants.
             </span>
           </p>
+          <p>
+            <Link
+              href="/design/visualisers"
+              className={`text-lime ${koulen.className}`}
+            >
+              {">"} visualisers
+            </Link>
+            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
+              renders for music videos.
+            </span>
+          </p>
         </div>
       </Navigation>
     </>
