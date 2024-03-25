@@ -50,6 +50,18 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
+            <p className="text-left text-sm sm:text-base mb-2 block bg-gray-300 w-max text-black px-2">
+              projects I am part of
+            </p>
+            <Project
+              title="ARCHIVE.pdf"
+              url="https://beta.archivepdf.net/"
+              description="Fashion Scans Archive, Articles & Content for the World."
+              tech={["TYPESCRIPT", "NEXT.JS", "STRAPI"]}
+            />
+          </div>
+
+          <div className="flex flex-col mt-20">
             <p className="text-left text-sm sm:text-base mb-2 block  bg-gray-300 w-max text-black px-2">
               websites I built
             </p>
@@ -73,18 +85,6 @@ export default function Code() {
                 tech={["REACT", "TAILWIND CSS"]}
               />
             </ul>
-          </div>
-
-          <div className="flex flex-col mt-20">
-            <p className="text-left text-sm sm:text-base mb-2 block bg-gray-300 w-max text-black px-2">
-              projects I am part of
-            </p>
-            <Project
-              title="ARCHIVE.pdf"
-              url="https://www.archivepdf.net/"
-              description="Fashion Scans Archive, Articles & Content for the World."
-              tech={["TYPESCRIPT", "NEXT.JS", "STRAPI"]}
-            />
           </div>
         </div>
       </div>
