@@ -9,7 +9,10 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 export default function Code() {
   return (
     <Navigation>
-      <Header title={`code | elia orsini`} description="code portfolio of elia orsini." />
+      <Header
+        title={`code | elia orsini`}
+        description="code portfolio of elia orsini."
+      />
 
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
@@ -34,6 +37,12 @@ export default function Code() {
               url="https://ancient-rome-3d-scenes.vercel.app/"
               description="walkable 3D rooms in ancient rome."
               tech={["REACT THREE FIBER", "TYPESCRIPT"]}
+            />
+            <Project
+              title="elia's personal database"
+              url="https://eliaelia.xyz/"
+              description="funny little website to save things I enjoy."
+              tech={["NEXT", "TYPESCRIPT", "NOTION"]}
             />
             <Project
               title="lazyLLM"
@@ -110,7 +119,10 @@ const Project: FC<{
       </p>
       <div className="-ml-1">
         {tech.map((technology, i) => (
-          <span key={i} className="opacity-80 text-sm bg-gray-600 px-1 ml-1 w-max uppercase">
+          <span
+            key={i}
+            className="opacity-80 text-sm bg-gray-600 px-1 ml-1 w-max uppercase"
+          >
             {technology}
           </span>
         ))}
