@@ -41,7 +41,7 @@ export default function Code() {
             <Project
               title="elia's personal database"
               url="https://eliaelia.xyz/"
-              description="funny little website to save things I enjoy."
+              description="silly little website to save things I enjoy."
               tech={["NEXT", "TYPESCRIPT", "NOTION"]}
             />
             <Project
@@ -83,7 +83,7 @@ export default function Code() {
               />
               <Project
                 title="la macina sonora"
-                url="https://lamacinasonora.com"
+                url="https://macina-sonora-elia-orsini.vercel.app/"
                 description="website for the recording studio La Macina Sonora."
                 tech={["REACT", "TAILWIND CSS"]}
               />
@@ -92,6 +92,12 @@ export default function Code() {
                 url="https://www.insomniaevents.xyz/"
                 description="website for Insomnia Events."
                 tech={["REACT", "TAILWIND CSS"]}
+              />
+              <Project
+                title="digital gardens"
+                url="https://digital-gardens-sepia.vercel.app/"
+                description="your cute little corner of the internet."
+                tech={["NEXT", "TAILWIND CSS"]}
               />
             </ul>
           </div>
