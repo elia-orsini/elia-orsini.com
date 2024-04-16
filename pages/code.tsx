@@ -76,16 +76,16 @@ export default function Code() {
             </p>
             <ul className="text-left">
               <Project
-                title="rho mcguire"
-                url="https://rhomcguire.uk"
-                description="website for rho mcguire."
-                tech={["NEXT", "NOTION", "TAILWIND CSS"]}
-              />
-              <Project
                 title="la macina sonora"
                 url="https://macina-sonora-elia-orsini.vercel.app/"
                 description="website for the recording studio La Macina Sonora."
                 tech={["REACT", "TAILWIND CSS"]}
+              />
+              <Project
+                title="rho mcguire"
+                url="https://rhomcguire.uk"
+                description="website for rho mcguire."
+                tech={["NEXT", "NOTION", "TAILWIND CSS"]}
               />
               <Project
                 title="insomnia"

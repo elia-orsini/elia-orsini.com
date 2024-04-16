@@ -19,14 +19,6 @@ function Design() {
             all design collections
           </p>
           <p>
-            <Link href="/design/2d" className={`text-lime ${koulen.className}`}>
-              {">"} two dimensions
-            </Link>
-            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
-              graphics which blend 3D elements with 2D text.
-            </span>
-          </p>
-          <p>
             <Link
               href="/design/sunshi"
               className={`text-lime ${koulen.className}`}
@@ -37,6 +29,7 @@ function Design() {
               the city where the sun shines at any time of the day.
             </span>
           </p>
+
           <p>
             <Link
               href="/design/metal"
@@ -45,21 +38,11 @@ function Design() {
               {">"} metallic utopia
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
-              anarchy. a world without physical limits, ethical laws or aesthetic
-              standards.
+              anarchy. a world without physical limits, ethical laws or
+              aesthetic standards.
             </span>
           </p>
-          <p>
-            <Link
-              href="/design/aliens"
-              className={`text-lime ${koulen.className}`}
-            >
-              {">"} aliens
-            </Link>
-            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
-              the next generation of inhabitants.
-            </span>
-          </p>
+
           <p>
             <Link
               href="/design/photogrammetry"
@@ -69,6 +52,27 @@ function Design() {
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
               when the real becomes unreal.
+            </span>
+          </p>
+
+          <p>
+            <Link href="/design/2d" className={`text-lime ${koulen.className}`}>
+              {">"} two dimensions
+            </Link>
+            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
+              graphics which blend 3D elements with 2D text.
+            </span>
+          </p>
+
+          <p>
+            <Link
+              href="/design/aliens"
+              className={`text-lime ${koulen.className}`}
+            >
+              {">"} aliens
+            </Link>
+            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
+              the next generation of inhabitants.
             </span>
           </p>
         </div>

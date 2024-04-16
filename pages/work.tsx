@@ -23,6 +23,13 @@ function Work() {
     <>
       <Header title={`work | elia orsini`} />
 
+      <div className="absolute w-full h-20 bg-red-200 z-20 font-mono uppercase text-xs xl:flex hidden">
+        <p className="mx-auto text-white">
+          this is a repository of ideas, unfinished projects, commercial works
+          and experiments that have been accumulating for the past 5 years
+        </p>
+      </div>
+
       <Navigation>
         <div className="flex h-screen max-h-screen overflow-hidden w-full sm:pl-20">
           {gpuTier === 1 ? (
