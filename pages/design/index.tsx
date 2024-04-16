@@ -8,7 +8,10 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 function Design() {
   return (
     <>
-      <Header title={`design | elia orsini`} description="design work by elia orsini." />
+      <Header
+        title={`design | elia orsini`}
+        description="design work by elia orsini."
+      />
 
       <Navigation>
         <div className="mt-10 sm:mt-20 mb-40 mx-5 sm:ml-40 sm:mr-20 text-2xl">
@@ -20,8 +23,7 @@ function Design() {
               {">"} two dimensions
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
-              graphics mostly made for commercial purposes which blends 3D
-              elements with 2d text.
+              graphics which blend 3D elements with 2D text.
             </span>
           </p>
           <p>
@@ -43,8 +45,8 @@ function Design() {
               {">"} metallic utopia
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
-              anarchy. a world where physical limits, ethical laws and aesthetic
-              standards do not exist.
+              anarchy. a world without physical limits, ethical laws or aesthetic
+              standards.
             </span>
           </p>
           <p>
@@ -56,6 +58,17 @@ function Design() {
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
               the next generation of inhabitants.
+            </span>
+          </p>
+          <p>
+            <Link
+              href="/design/photogrammetry"
+              className={`text-lime ${koulen.className}`}
+            >
+              {">"} photogrammetry
+            </Link>
+            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
+              when the real becomes unreal.
             </span>
           </p>
         </div>

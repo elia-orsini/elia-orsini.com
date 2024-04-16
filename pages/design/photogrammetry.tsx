@@ -1,0 +1,53 @@
+import Header from "@components/Header";
+import Image from "@components/Image";
+import Navigation from "@components/Navigation";
+import { Koulen } from "next/font/google";
+
+const koulen = Koulen({ weight: "400", subsets: ["latin"] });
+
+export default function TwoD() {
+  return (
+    <>
+      <Header title={`photogrammetry | elia orsini`} />
+
+      <Navigation>
+        <div className="flex-col mx-auto w-4/5 my-20 justify-between">
+          <p className={`text-3xl ${koulen.className}`}>PHOTOGRAMMETRY</p>
+
+          <p className="text-sm lg:text-base mt-10 mb-2">
+            This is Edinburgh, Scotland . But, at the same time, this is not Edinburgh, Scotland . <span className="text-lime">55°56'56.9"N 3°11'39.9"W</span>
+          </p>
+          <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
+            <Image src="/design/photogrammetry/3.jpg" />
+            <Image src="/design/photogrammetry/4.jpg" />
+          </div>
+
+          <p className="text-sm lg:text-base mt-10 mb-2">
+            Thomas Thomson and his grave . <span className="text-lime">55°57'11.2"N 3°10'35.0"W</span>
+          </p>
+          <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
+            <Image src="/design/photogrammetry/5.jpg" />
+            <Image src="/design/photogrammetry/6.jpg" />
+          </div>
+
+          <p className="text-sm lg:text-base mt-10 mb-2">
+            The Last Phone Booth . <span className="text-lime">55°56'59.1"N 3°10'47.4"W</span>
+          </p>
+          <div className="flex-col mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            <Image src="/design/photogrammetry/7.jpg" />
+            <Image src="/design/photogrammetry/8.jpg" />
+            <Image src="/design/photogrammetry/9.jpg" />
+          </div>
+
+          <p className="text-sm lg:text-base mt-10 mb-2">
+            An eroding bedroom . <span className="text-lime">55°57'26.4"N 3°10'06.1"W</span>
+          </p>
+          <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
+            <Image src="/design/photogrammetry/10.jpg" />
+            <Image src="/design/photogrammetry/11.jpg" />
+          </div>
+        </div>
+      </Navigation>
+    </>
+  );
+}
