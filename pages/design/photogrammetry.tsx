@@ -15,7 +15,11 @@ export default function TwoD() {
           <p className={`text-3xl ${koulen.className}`}>PHOTOGRAMMETRY</p>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
-            This is Edinburgh, Scotland . But, at the same time, this is not Edinburgh, Scotland . <span className="text-lime">55°56'56.9"N 3°11'39.9"W</span>
+            This is Edinburgh, Scotland . But, at the same time, this is not
+            Edinburgh, Scotland .{" "}
+            <span className="text-lime">
+              55°56&apos;56.9&quot;N 3°11&apos;39.9&quot;W
+            </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
             <Image src="/design/photogrammetry/3.jpg" />
@@ -23,7 +27,10 @@ export default function TwoD() {
           </div>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
-            Thomas Thomson and his grave . <span className="text-lime">55°57'11.2"N 3°10'35.0"W</span>
+            Thomas Thomson and his grave .{" "}
+            <span className="text-lime">
+              55°57&apos;11.2&quot;N 3°10&apos;35.0&quot;W
+            </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
             <Image src="/design/photogrammetry/5.jpg" />
@@ -31,7 +38,10 @@ export default function TwoD() {
           </div>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
-            The Last Phone Booth . <span className="text-lime">55°56'59.1"N 3°10'47.4"W</span>
+            The Last Phone Booth .{" "}
+            <span className="text-lime">
+              55°56&apos;59.1&quot;N 3°10&apos;47.4&quot;W
+            </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
             <Image src="/design/photogrammetry/7.jpg" />
@@ -40,7 +50,10 @@ export default function TwoD() {
           </div>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
-            An eroding bedroom . <span className="text-lime">55°57'26.4"N 3°10'06.1"W</span>
+            An eroding bedroom .{" "}
+            <span className="text-lime">
+              55°57&apos;26.4&quot;N 3°10&apos;06.1&quot;W
+            </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
             <Image src="/design/photogrammetry/10.jpg" />
