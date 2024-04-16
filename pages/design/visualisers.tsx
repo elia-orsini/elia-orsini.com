@@ -2,6 +2,7 @@ import Header from "@components/Header";
 import Image from "@components/Image";
 import Navigation from "@components/Navigation";
 import { Koulen } from "next/font/google";
+import Link from "next/link";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -56,17 +57,53 @@ export default function TwoD() {
             </div>
 
             <div>
-              <p className={`text-3xl ${koulen.className}`}>
-                IN$0MN1A Temple
-              </p>
+              <p className={`text-3xl ${koulen.className}`}>IN$0MN1A Temple</p>
               <p>
-                made to be experienced in a club. when the bass hits your face and you fall into a dream.
+                Made to be experienced in a club. When the bass hits your face
+                and you fall into a dream.
               </p>
-              <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
+              <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
                 <Image src="/design/visualisers/temple/temple4.jpg" />
                 <Image src="/design/visualisers/temple/temple3.jpg" />
                 <Image src="/design/visualisers/temple/temple2.jpg" />
                 <Image src="/design/visualisers/temple/temple1.jpg" />
+              </div>
+            </div>
+
+            <div>
+              <p className={`text-3xl ${koulen.className}`}>exhale</p>
+              <a
+                href="https://youtu.be/TizlMnP-K7g"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h1 className={`text-lime text-xl ${koulen.className}`}>
+                  {">"} LINK
+                </h1>
+              </a>
+              <p>
+                The{" "}
+                <Link
+                  href="/blog/exhale"
+                  className={`underline italic`}
+                >
+                  exhale blog post
+                </Link>{" "}
+                explains how this was made.
+              </p>
+              <div className="flex-col mx-auto grid sm:grid-cols-3 lg:grid-cols-4 gap-2 mt-2">
+                <Image src="/design/visualisers/exhale/cr1.jpg" />
+                <Image src="/design/visualisers/exhale/cr11.webp" />
+                <Image src="/design/visualisers/exhale/cr2.jpg" />
+                <Image src="/design/visualisers/exhale/cr3.jpg" />
+                <Image src="/design/visualisers/exhale/cr8.webp" />
+                <Image src="/design/visualisers/exhale/cr4.jpg" />
+                <Image src="/design/visualisers/exhale/cr9.webp" />
+                <Image src="/design/visualisers/exhale/cr5.jpg" />
+                <Image src="/design/visualisers/exhale/cr10.webp" />
+                <Image src="/design/visualisers/exhale/cr6.jpg" />
+                <Image src="/design/visualisers/exhale/cr12.webp" />
+                <Image src="/design/visualisers/exhale/cr7.jpg" />
               </div>
             </div>
           </div>
