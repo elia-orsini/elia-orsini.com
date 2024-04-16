@@ -14,36 +14,60 @@ export default function TwoD() {
         <div className="flex-col mx-auto w-4/5 my-20 justify-between">
           <div className="flex-col mx-auto gap-y-20 grid mt-10">
             <div>
-              <h2>Olive Hatake - 1975</h2>
-              <iframe
-                className="w-full h-96"
-                src="https://www.youtube.com/embed/BbcvxFVh0wQ?si=FQoMUUfVVhX5kZI9"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              <p className={`text-3xl ${koulen.className}`}>
+                1975 - olive hatake
+              </p>
+              <a
+                href="https://youtu.be/BbcvxFVh0wQ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h1 className={`text-lime text-xl ${koulen.className}`}>
+                  {">"} LINK
+                </h1>
+              </a>
+              <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
+                <Image src="/design/visualisers/1975/1975-1.jpg" />
+                <Image src="/design/visualisers/1975/1975-2.jpg" />
+                <Image src="/design/visualisers/1975/1975-3.jpg" />
+                <Image src="/design/visualisers/1975/1975-4.jpg" />
+              </div>
             </div>
 
             <div>
-              <h2>OliveyOlive - growing pains</h2>
-              <iframe
-                className="w-full h-96"
-                src="https://www.youtube.com/embed/TizlMnP-K7g?si=utLB8ThdEojEIJsY"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              <p className={`text-3xl ${koulen.className}`}>
+                growing pains - olive hatake
+              </p>
+              <a
+                href="https://youtu.be/TizlMnP-K7g"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h1 className={`text-lime text-xl ${koulen.className}`}>
+                  {">"} LINK
+                </h1>
+              </a>
+              <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
+                <Image src="/design/visualisers/growing-pains/olive4.jpg" />
+                <Image src="/design/visualisers/growing-pains/olive3.jpg" />
+                <Image src="/design/visualisers/growing-pains/olive2.jpg" />
+                <Image src="/design/visualisers/growing-pains/olive1.jpg" />
+              </div>
             </div>
 
             <div>
-              <h2>Olive Hatake - random memories</h2>
-              <iframe
-                className="w-full h-96"
-                src="https://www.youtube.com/embed/ySzzK6iUXHQ?si=J8t5KdAralv7g9C6"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              <p className={`text-3xl ${koulen.className}`}>
+                IN$0MN1A Temple
+              </p>
+              <p>
+                made to be experienced in a club. when the bass hits your face and you fall into a dream.
+              </p>
+              <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
+                <Image src="/design/visualisers/temple/temple4.jpg" />
+                <Image src="/design/visualisers/temple/temple3.jpg" />
+                <Image src="/design/visualisers/temple/temple2.jpg" />
+                <Image src="/design/visualisers/temple/temple1.jpg" />
+              </div>
             </div>
           </div>
         </div>

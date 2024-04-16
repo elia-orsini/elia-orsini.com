@@ -32,6 +32,18 @@ function Design() {
 
           <p>
             <Link
+              href="/design/visualisers"
+              className={`text-lime ${koulen.className}`}
+            >
+              {">"} visualisers
+            </Link>
+            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
+              music + 3D graphics = {`<`}3
+            </span>
+          </p>
+
+          <p>
+            <Link
               href="/design/metal"
               className={`text-lime ${koulen.className}`}
             >
