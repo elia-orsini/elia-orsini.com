@@ -21,8 +21,10 @@ export default function TwoD() {
             <Image src="/design/2d/6.jpg" />
             <Image src="/design/2d/7.jpg" />
             <Image src="/design/2d/18.jpg" />
+            <Image src="/design/2d/20.jpg" />
           </div>
           <div>
+            <Image src="/design/2d/19.jpg" />
             <Image src="/design/2d/5.jpg" />
             <Image src="/design/2d/13.jpg" />
             <Image src="/design/2d/12.jpg" />
