@@ -19,7 +19,7 @@ export default function TwoD() {
 
               <p>
                 This 5.5 minutes long visualiser was made to represent what Rino
-                Bellandi's new EP{" "}
+                Bellandi&apos;s new EP{" "}
                 <a
                   href="https://open.spotify.com/album/2VC5fdJqE7Wl59e5ti3Ij1?si=RBq5HXmZQ9u6j5cV-Uad_g"
                   target="_blank"
