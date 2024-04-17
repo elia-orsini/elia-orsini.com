@@ -26,6 +26,7 @@ export default function TwoD() {
               <Image src="/design/metal/9.jpg" />
               <Image src="/design/metal/10.jpg" />
               <Image src="/design/metal/11.jpg" />
+              <Image src="/design/metal/35.jpg" />
               <Image src="/design/metal/8.jpg" />
               <Image src="/design/metal/13.jpg" />
               <Image src="/design/metal/14.jpg" />
@@ -38,6 +39,7 @@ export default function TwoD() {
               <Image src="/design/metal/15.jpg" />
               <Image src="/design/metal/17.jpg" />
               <Image src="/design/metal/16.jpg" />
+              <Image src="/design/metal/36.jpg" />
               <Image src="/design/metal/25.jpg" />
               <Image src="/design/metal/29.jpg" />
               <Image src="/design/metal/20.jpg" />
