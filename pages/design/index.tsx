@@ -75,7 +75,7 @@ function Design() {
               {">"} luce artificiale
             </Link>
             <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
-              music synesthesia
+              music synesthesia.
             </span>
           </p>
 
