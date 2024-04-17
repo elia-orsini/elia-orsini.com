@@ -68,6 +68,18 @@ function Design() {
           </p>
 
           <p>
+            <Link
+              href="/design/luce-artificiale"
+              className={`text-lime ${koulen.className}`}
+            >
+              {">"} luce artificiale
+            </Link>
+            <span className="block text-sm sm:text-base -mt-1 mb-4 ml-5">
+              music synesthesia
+            </span>
+          </p>
+
+          <p>
             <Link href="/design/2d" className={`text-lime ${koulen.className}`}>
               {">"} two dimensions
             </Link>

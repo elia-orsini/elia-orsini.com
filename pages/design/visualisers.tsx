@@ -73,7 +73,7 @@ export default function TwoD() {
             <div>
               <p className={`text-3xl ${koulen.className}`}>exhale</p>
               <a
-                href="https://youtu.be/TizlMnP-K7g"
+                href="https://vimeo.com/859099636"
                 target="_blank"
                 rel="noreferrer"
               >
