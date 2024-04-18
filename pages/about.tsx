@@ -37,7 +37,7 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row mx-auto w-full mt-10">
           <div className="border border-white md:w-3/5">
-            <h2 className="my-2 ml-1">software</h2>
+            <h2 className="my-2 ml-1">tech</h2>
             <div className="ml-3 mx-2 pb-2">
               <h3 className="pl-1 bg-lime text-black">software development</h3>
               <ul className="ml-4">
@@ -51,10 +51,15 @@ export default function About() {
                 <li>Babylon.js</li>
                 <li>GraphQL</li>
                 <li>WebSockets</li>
+                <li>Docker</li>
                 <li>React Three Fiber</li>
                 <li>Bootstrap</li>
+                <li>Electron</li>
+                <li>Vercel</li>
                 <li>RESTful APIs</li>
                 <li>GitHub Actions</li>
+                <li>Google Analytics</li>
+                <li>Postman</li>
               </ul>
 
               <h3 className="pl-1 bg-lime text-black">3D</h3>
@@ -63,6 +68,7 @@ export default function About() {
                 <li>Unreal Engine</li>
                 <li>Geometry Nodes</li>
                 <li>Adobe Suite</li>
+                <li>Draco</li>
                 <li>Marvelous Designer</li>
                 <li>Processing</li>
               </ul>
@@ -87,10 +93,11 @@ export default function About() {
                 <li>3D Modelling</li>
                 <li>Concept Design</li>
                 <li>Geometry Nodes</li>
-                <li>UV Unwrapping</li>
+                <li>Animations</li>
                 <li>Blueprints creation</li>
-                <li>3D Assets Optimisation</li>
-                <li>Blender Addons creation</li>
+                <li>Assets Optimisation</li>
+                <li>Blender Addons</li>
+                <li>UV Unwrapping</li>
               </ul>
             </div>
           </div>
