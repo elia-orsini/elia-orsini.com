@@ -54,6 +54,7 @@ export default function About() {
                 <li>Docker</li>
                 <li>React Three Fiber</li>
                 <li>Bootstrap</li>
+                <li>Remix</li>
                 <li>Electron</li>
                 <li>Vercel</li>
                 <li>RESTful APIs</li>
@@ -61,6 +62,7 @@ export default function About() {
                 <li>Redis</li>
                 <li>Google Analytics</li>
                 <li>Postman</li>
+                <li>Figma</li>
               </ul>
 
               <h3 className="pl-1 bg-lime text-black">3D</h3>
@@ -69,9 +71,9 @@ export default function About() {
                 <li>Unreal Engine</li>
                 <li>Geometry Nodes</li>
                 <li>Adobe Suite</li>
-                <li>Draco</li>
                 <li>Marvelous Designer</li>
                 <li>Processing</li>
+                <li>Metashape</li>
               </ul>
             </div>
           </div>
