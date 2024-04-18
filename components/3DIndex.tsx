@@ -1,6 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import {
   CameraControls,
+  Environment,
   Html,
   PerspectiveCamera,
   Sparkles,
@@ -126,6 +127,10 @@ const ThreeDIndex = () => {
             size={8}
             speed={1.5}
           />
+        )}
+
+        {scene % NUMBER_OF_SCENES === 0 && (
+          <Environment background={true} files="/index/hdri.hdr" />
         )}
 
         {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}

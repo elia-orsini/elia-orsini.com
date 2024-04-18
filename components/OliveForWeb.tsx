@@ -28,7 +28,6 @@ export function OliveForWeb(props) {
       position={[0, -6, 0]}
       scale={0.5}
     >
-      <Environment background={true} files="/index/hdri.hdr" />
       <group
         position={[0, 22.951, 8.956]}
         rotation={[-0.878, 0, 0]}
