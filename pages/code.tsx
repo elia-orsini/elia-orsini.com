@@ -17,7 +17,7 @@ export default function Code() {
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-base bg-gray-300 w-max text-black px-2 mb-2">
+            <p className="text-left text-sm sm:text-base bg-white w-max text-black px-2 mb-2">
               side projects
             </p>
             <Project
@@ -59,7 +59,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left text-sm sm:text-base mb-2 block bg-gray-300 w-max text-black px-2">
+            <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
               projects I am part of
             </p>
             <Project
@@ -71,7 +71,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-20">
-            <p className="text-left text-sm sm:text-base mb-2 block  bg-gray-300 w-max text-black px-2">
+            <p className="text-left text-sm sm:text-base mb-2 block  bg-white w-max text-black px-2">
               websites I built
             </p>
             <ul className="text-left">

@@ -13,7 +13,7 @@ function Design() {
 
       <Navigation>
         <div className="mt-10 sm:mt-20 mx-5 sm:ml-40 sm:mr-20 text-2xl">
-          <p className="text-left text-sm sm:text-base mb-4 block bg-gray-300 w-max text-black px-2">
+          <p className="text-left text-sm sm:text-base mb-4 block bg-white w-max text-black px-2">
             all posts
           </p>
 
