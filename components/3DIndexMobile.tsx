@@ -1,15 +1,14 @@
 import { useFrame } from "@react-three/fiber";
-import {
-  CameraControls,
-  PerspectiveCamera,
-  Sparkles,
-} from "@react-three/drei";
+import { CameraControls, Environment, PerspectiveCamera, Sparkles } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import { Sunshi } from "./SunshiHall";
 import { Hor } from "./Hor";
 import { SunshiDesert } from "./SunshiDesert";
 import { getGPUTier } from "detect-gpu";
+import { OliveForWeb } from "./OliveForWeb";
+
+const NUMBER_OF_SCENES = 4;
 
 const ThreeDIndexMobile = () => {
   const cameraRef = useRef<any>();
@@ -47,28 +46,28 @@ const ThreeDIndexMobile = () => {
 
     const intervalId = setInterval(() => {
       setDirectionLeft((prev) => !prev);
-    }, 5000);
+    }, 4000);
 
     const intervalId2 = setInterval(() => {
       setScene((prev) => prev + 1);
-    }, 5000);
+    }, 4000);
 
     return () => {
       window.removeEventListener("mousemove", handlePointerMove);
-      clearInterval(intervalId)
-      clearInterval(intervalId2)
+      clearInterval(intervalId);
+      clearInterval(intervalId2);
     };
   }, [transition]);
 
   useFrame(() => {
     if (directionLeft && cameraRef.current) {
-      cameraRef.current.position.z += 0.008
+      cameraRef.current.position.z += 0.02;
     }
 
     if (!directionLeft && cameraRef.current) {
-      cameraRef.current.position.z -= 0.008
+      cameraRef.current.position.z -= 0.02;
     }
-  })
+  });
 
   return (
     <>
@@ -92,9 +91,14 @@ const ThreeDIndexMobile = () => {
           />
         )}
 
-        {scene % 3 === 0 && <Sunshi />}
-        {scene % 3 === 1 && <SunshiDesert />}
-        {scene % 3 === 2 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 0 && (
+          <Environment background={true} files="/index/hdri.hdr" />
+        )}
+
+        {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
+        {scene % NUMBER_OF_SCENES === 1 && <Sunshi />}
+        {scene % NUMBER_OF_SCENES === 2 && <SunshiDesert />}
+        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
       </Suspense>
     </>
   );

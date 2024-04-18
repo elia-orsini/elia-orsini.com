@@ -95,6 +95,7 @@ export default function About() {
                 <li>Geometry Nodes</li>
                 <li>Animations</li>
                 <li>Blueprints creation</li>
+                <li>MetaHuman</li>
                 <li>Assets Optimisation</li>
                 <li>Blender Addons</li>
                 <li>UV Unwrapping</li>
