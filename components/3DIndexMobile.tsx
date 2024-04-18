@@ -61,11 +61,11 @@ const ThreeDIndexMobile = () => {
 
   useFrame(() => {
     if (directionLeft && cameraRef.current) {
-      cameraRef.current.position.z += 0.008;
+      cameraRef.current.position.z += 0.01;
     }
 
     if (!directionLeft && cameraRef.current) {
-      cameraRef.current.position.z -= 0.008;
+      cameraRef.current.position.z -= 0.01;
     }
   });
 
