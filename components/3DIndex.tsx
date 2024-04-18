@@ -11,6 +11,9 @@ import { getGPUTier } from "detect-gpu";
 import { Sunshi } from "./SunshiHall";
 import { Hor } from "./Hor";
 import { SunshiDesert } from "./SunshiDesert";
+import { OliveForWeb } from "./OliveForWeb";
+
+const NUMBER_OF_SCENES = 4;
 
 const ThreeDIndex = () => {
   const cameraRef = useRef<any>();
@@ -44,7 +47,7 @@ const ThreeDIndex = () => {
     }
 
     window.addEventListener("mousemove", handlePointerMove);
-    
+
     getGPU();
 
     setInterval(() => {
@@ -60,11 +63,11 @@ const ThreeDIndex = () => {
     if (directionLeft) {
       cameraPosition[0] += 0.002;
       cameraPosition[1] += 0.002;
-      cameraPosition[2] += 0.005
+      cameraPosition[2] += 0.005;
     } else {
       cameraPosition[0] -= 0.002;
       cameraPosition[1] -= 0.002;
-      cameraPosition[2] -= 0.005
+      cameraPosition[2] -= 0.005;
     }
 
     if (transition) {
@@ -117,17 +120,18 @@ const ThreeDIndex = () => {
 
         {gpuTier === 3 && (
           <Sparkles
-            count={30}
+            count={40}
             position={[0, 0, 0]}
             scale={15}
-            size={5}
-            speed={1}
+            size={8}
+            speed={1.5}
           />
         )}
 
-        {scene % 3 === 0 && <Sunshi />}
-        {scene % 3 === 1 && <SunshiDesert />}
-        {scene % 3 === 2 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
+        {scene % NUMBER_OF_SCENES === 1 && <Sunshi />}
+        {scene % NUMBER_OF_SCENES === 2 && <SunshiDesert />}
+        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
       </Suspense>
     </>
   );
