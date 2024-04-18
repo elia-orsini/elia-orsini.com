@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import {
   useGLTF,
   useAnimations,
-  Environment,
-  MeshReflectorMaterial,
   MeshWobbleMaterial,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
