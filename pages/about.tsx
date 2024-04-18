@@ -58,6 +58,7 @@ export default function About() {
                 <li>Vercel</li>
                 <li>RESTful APIs</li>
                 <li>GitHub Actions</li>
+                <li>Redis</li>
                 <li>Google Analytics</li>
                 <li>Postman</li>
               </ul>
