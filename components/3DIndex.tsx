@@ -134,9 +134,9 @@ const ThreeDIndex = () => {
         )}
 
         {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
-        {scene % NUMBER_OF_SCENES === 1 && <Sunshi />}
-        {scene % NUMBER_OF_SCENES === 2 && <SunshiDesert />}
-        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 1 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 2 && <Sunshi />}
+        {scene % NUMBER_OF_SCENES === 3 && <SunshiDesert />}
       </Suspense>
     </>
   );

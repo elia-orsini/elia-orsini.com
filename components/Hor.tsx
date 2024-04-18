@@ -20,14 +20,16 @@ export const Hor = () => {
     "/index/hor.jpg",
     "/index/greenpeace.jpg",
     "/index/tigerhead.jpg",
+    "/index/head.jpg",
+    "/index/metalflower.jpg",
   ];
 
-  const colours = ["#a3e635", "#24a794", "#f39caa"];
+  const colours = ["#a3e635", "#24a794", "#f68083", "#f53659", "#47afce"];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTextureIndex((prevCount) => prevCount + 1);
-    }, 1000);
+    }, 600);
     return () => {
       clearInterval(intervalId); // Clear the interval when the component unmounts
     };
@@ -35,11 +37,11 @@ export const Hor = () => {
 
   return (
     <>
-      <Screen textureUrl={textures[textureIndex % 3]} />
+      <Screen textureUrl={textures[textureIndex % textures.length]} />
 
       <pointLight
         position={[0, 0, 0]}
-        color={colours[textureIndex % 3]}
+        color={colours[textureIndex % colours.length]}
         intensity={1}
       />
 

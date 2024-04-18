@@ -46,11 +46,11 @@ const ThreeDIndexMobile = () => {
 
     const intervalId = setInterval(() => {
       setDirectionLeft((prev) => !prev);
-    }, 4000);
+    }, 3000);
 
     const intervalId2 = setInterval(() => {
       setScene((prev) => prev + 1);
-    }, 4000);
+    }, 3000);
 
     return () => {
       window.removeEventListener("mousemove", handlePointerMove);
@@ -96,9 +96,9 @@ const ThreeDIndexMobile = () => {
         )}
 
         {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
-        {scene % NUMBER_OF_SCENES === 1 && <Sunshi />}
-        {scene % NUMBER_OF_SCENES === 2 && <SunshiDesert />}
-        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 1 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 2 && <Sunshi />}
+        {scene % NUMBER_OF_SCENES === 3 && <SunshiDesert />}
       </Suspense>
     </>
   );
