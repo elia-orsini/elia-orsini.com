@@ -72,7 +72,7 @@ const ThreeDIndex = () => {
     }
 
     if (transition) {
-      cameraPosition[2] += 3;
+      cameraPosition[2] += 7;
     }
 
     cameraControlRef.current?.setLookAt(
