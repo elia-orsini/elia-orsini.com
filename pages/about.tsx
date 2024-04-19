@@ -70,6 +70,7 @@ export default function About() {
                 <li>Blender</li>
                 <li>Unreal Engine</li>
                 <li>Geometry Nodes</li>
+                <li>C++ For Unreal Engine</li>
                 <li>Adobe Suite</li>
                 <li>Marvelous Designer</li>
                 <li>Processing</li>
@@ -98,6 +99,7 @@ export default function About() {
                 <li>Geometry Nodes</li>
                 <li>Animations</li>
                 <li>Blueprints creation</li>
+                <li>C++ Blueprints creation</li>
                 <li>MetaHuman</li>
                 <li>Assets Optimisation</li>
                 <li>Blender Addons</li>
