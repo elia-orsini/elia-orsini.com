@@ -53,16 +53,16 @@ export default function About() {
                 <li>WebSockets</li>
                 <li>Docker</li>
                 <li>React Three Fiber</li>
-                <li>Bootstrap</li>
                 <li>Remix</li>
                 <li>Electron</li>
-                <li>Vercel</li>
                 <li>RESTful APIs</li>
                 <li>GitHub Actions</li>
                 <li>Redis</li>
-                <li>Google Analytics</li>
-                <li>Postman</li>
+                <li>SQL</li>
                 <li>Figma</li>
+                <li>Postman</li>
+                <li>Google Analytics</li>
+                <li>GIT</li>
               </ul>
 
               <h3 className="pl-1 bg-lime text-black">3D</h3>
@@ -70,7 +70,7 @@ export default function About() {
                 <li>Blender</li>
                 <li>Unreal Engine</li>
                 <li>Geometry Nodes</li>
-                <li>C++ For Unreal Engine</li>
+                <li>C++ For UE</li>
                 <li>Adobe Suite</li>
                 <li>Marvelous Designer</li>
                 <li>Processing</li>
@@ -99,7 +99,6 @@ export default function About() {
                 <li>Geometry Nodes</li>
                 <li>Animations</li>
                 <li>Blueprints creation</li>
-                <li>C++ Blueprints creation</li>
                 <li>MetaHuman</li>
                 <li>Assets Optimisation</li>
                 <li>Blender Addons</li>
