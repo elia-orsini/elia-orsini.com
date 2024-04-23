@@ -50,6 +50,7 @@ export default function About() {
                 <li>Three.js</li>
                 <li>Babylon.js</li>
                 <li>GraphQL</li>
+                <li>Python</li>
                 <li>WebSockets</li>
                 <li>Docker</li>
                 <li>React Three Fiber</li>
@@ -75,6 +76,7 @@ export default function About() {
                 <li>Marvelous Designer</li>
                 <li>Processing</li>
                 <li>Metashape</li>
+                <li>Draco</li>
               </ul>
             </div>
           </div>
