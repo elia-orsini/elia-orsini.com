@@ -44,9 +44,11 @@ export default function About() {
                 <li>Typescript</li>
                 <li>React</li>
                 <li>Next.js</li>
+                <li>Node.js</li>
                 <li>TailwindCSS</li>
                 <li>Strapi</li>
                 <li>Redux</li>
+                <li>Prisma</li>
                 <li>Three.js</li>
                 <li>Babylon.js</li>
                 <li>GraphQL</li>
@@ -87,8 +89,8 @@ export default function About() {
               <h3 className="pl-1 bg-lime text-black">software development</h3>
 
               <ul className="ml-4">
-                <li>Frontend web dev</li>
-                <li>Backend web dev</li>
+                <li>Frontend dev</li>
+                <li>Backend dev</li>
                 <li>CI/CD Workflows</li>
                 <li>UI/UX Design</li>
                 <li>CMS Integration</li>
@@ -101,7 +103,6 @@ export default function About() {
                 <li>Geometry Nodes</li>
                 <li>Animations</li>
                 <li>Blueprints creation</li>
-                <li>MetaHuman</li>
                 <li>Assets Optimisation</li>
                 <li>Blender Addons</li>
                 <li>UV Unwrapping</li>
