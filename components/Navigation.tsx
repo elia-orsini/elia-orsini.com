@@ -39,13 +39,13 @@ export default function Navigation({
               </Link>
             </p>
             <p>
-              <Link href="/blog">
-                {pathDivided.includes("blog") ? 'blog <' : 'blog'}
+              <Link href="/about">
+                {pathDivided.includes("about") ? 'about <' : 'about'}
               </Link>
             </p>
             <p>
-              <Link href="/about">
-                {pathDivided.includes("about") ? 'about <' : 'about'}
+              <Link href="/blog">
+                {pathDivided.includes("blog") ? 'blog <' : 'blog'}
               </Link>
             </p>
             {/* <p>
