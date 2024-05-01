@@ -49,35 +49,29 @@ export default function About() {
                 <li>React</li>
                 <li>Next.js</li>
                 <li>Node.js</li>
-                <li>TailwindCSS</li>
-                <li>Strapi</li>
-                <li>Redux</li>
-                <li>Prisma</li>
-                <li>Three.js</li>
-                <li>Babylon.js</li>
-                <li>GraphQL</li>
+                <li>TailwindCSS / Bootstrap</li>
+                <li>REST APIs / WebSockets</li>
                 <li>Python</li>
-                <li>WebSockets</li>
+                <li>Redux</li>
+                <li>Three.js / Babylon.js</li>
+                <li>GraphQL / SQL</li>
                 <li>Docker</li>
-                <li>React Three Fiber</li>
-                <li>Remix</li>
                 <li>Electron</li>
-                <li>RESTful APIs</li>
-                <li>GitHub Actions</li>
-                <li>Redis</li>
-                <li>SQL</li>
+                <li>Strapi</li>
+                <li>Git / GitHub Actions</li>
                 <li>Figma</li>
                 <li>Postman</li>
                 <li>Google Analytics</li>
-                <li>GIT</li>
+                <li>Remix</li>
+                <li>Prisma</li>
               </ul>
 
               <h3 className="pl-1 bg-lime text-black">3D</h3>
               <ul className="ml-4">
-                <li>Blender</li>
                 <li>Unreal Engine</li>
+                <li>Blender</li>
+                <li>C++ / Blueprints</li>
                 <li>Geometry Nodes</li>
-                <li>C++ For UE</li>
                 <li>Adobe Suite</li>
                 <li>Marvelous Designer</li>
                 <li>Processing</li>
@@ -101,6 +95,7 @@ export default function About() {
                 <li>Backend dev</li>
                 <li>CI/CD Workflows</li>
                 <li>UI/UX Design</li>
+                <li>Scripts</li>
                 <li>CMS Integration</li>
               </ul>
 
