@@ -28,10 +28,10 @@ function MyApp({ Component, pageProps }) {
         <title>elia orsini</title>
         <meta property="og:title" content="elia orsini" />
 
-        <meta name="description" content="personal website of elia orsini." />
+        <meta name="description" content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland." />
         <meta
           property="og:description"
-          content="personal website of elia orsini."
+          content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland."
         />
 
         <meta property="og:image" content="/favicon.ico" />
@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="keywords"
-          content="elia, orsini, eliaorsini, 2023, 3D, designer, software developer, three.js, photographer, scotland, edinburgh, 3D graphic design, developer"
+          content="elia orsini, elia, orsini, eliaorsini, 2024, 3D, designer, software developer, three.js, photographer, scotland, edinburgh, 3D graphic design, developer, technical artist, glasgow"
         />
         <meta name="author" content="elia orsini" />
 
