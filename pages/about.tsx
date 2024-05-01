@@ -35,8 +35,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row mx-auto w-full mt-10">
-          <div className="border border-white md:w-3/5">
+        <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-10">
+          <div className="border border-white">
             <h2 className="my-2 ml-1">tech</h2>
             <div className="ml-3 mx-2 pb-2">
               <h3 className="pl-1 bg-lime text-black">software development</h3>
@@ -83,7 +83,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border border-white md:w-3/5">
+          <div className="border border-white">
             <h2 className="my-2 ml-1">skills</h2>
             <div className="ml-3 mx-2 pb-2">
               <h3 className="pl-1 bg-lime text-black">software development</h3>
@@ -134,11 +134,64 @@ export default function About() {
                 dates="Jan 2022 / July 2022"
                 descriptions={[
                   `Software developer in charge of the Three.js team to develop
-                  interactive 3D experiences for the browser.`,
+                  interactive 3D experiences for the browser using React and Next.js.`,
                   ` Worked side by side with front-end developers and 3D artists
                   to ship optimised 3D environments able to run on most devices.`,
                 ]}
-              />
+              >
+                <div>
+                  <div className="flex h-40 bg-lime overflow-x-scroll gap-x-[0.25px] py-[0.5px]">
+                    <div className="flex-none relative w-64">
+                      <Image
+                        src="/about/HoR/hor1.jpg"
+                        alt="HoR"
+                        objectFit="contain"
+                        fill
+                      />
+                    </div>
+                    <div className="flex-none relative w-64">
+                      <Image
+                        src="/about/HoR/hor2.jpg"
+                        alt="HoR"
+                        objectFit="contain"
+                        fill
+                      />
+                    </div>
+                    <div className="flex-none relative w-64">
+                      <Image
+                        src="/about/HoR/hor3.jpg"
+                        alt="HoR"
+                        objectFit="contain"
+                        fill
+                      />
+                    </div>
+                    <div className="flex-none relative w-64">
+                      <Image
+                        src="/about/HoR/hor4.jpg"
+                        alt="HoR"
+                        objectFit="contain"
+                        fill
+                      />
+                    </div>
+                    <div className="flex-none relative w-64">
+                      <Image
+                        src="/about/HoR/hor7.jpg"
+                        alt="HoR"
+                        objectFit="contain"
+                        fill
+                      />
+                    </div>
+                    <div className="flex-none relative w-64">
+                      <Image
+                        src="/about/HoR/hor8.jpg"
+                        alt="HoR"
+                        objectFit="contain"
+                        fill
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Experience>
 
               <Experience
                 role="3D Graphic Designer"
