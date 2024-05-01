@@ -11,7 +11,7 @@ export default function Code() {
     <Navigation>
       <Header
         title={`code | elia orsini`}
-        description="code portfolio of elia orsini."
+        description="Code projects by Elia Orsini, Software Developer and 3D Artist based in Scotland."
       />
 
       <div className="flex w-full mb-20">

@@ -10,7 +10,7 @@ function Design() {
     <>
       <Header
         title={`design | elia orsini`}
-        description="design work by elia orsini."
+        description="Design work by Elia Orsini, Software Developer and 3D Artist based in Scotland."
       />
 
       <Navigation>
