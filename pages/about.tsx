@@ -38,6 +38,10 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-10">
           <div className="border border-white">
             <h2 className="my-2 ml-1">tech</h2>
+
+            <hr className="border border-[0.5px] border-white" />
+            <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
+
             <div className="ml-3 mx-2 pb-2">
               <h3 className="pl-1 bg-lime text-black">software development</h3>
               <ul className="ml-4">
@@ -85,6 +89,10 @@ export default function About() {
 
           <div className="border border-white">
             <h2 className="my-2 ml-1">skills</h2>
+
+            <hr className="border border-[0.5px] border-white" />
+            <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
+
             <div className="ml-3 mx-2 pb-2">
               <h3 className="pl-1 bg-lime text-black">software development</h3>
 
@@ -113,6 +121,9 @@ export default function About() {
           <div className="border border-white md:col-span-2">
             <h2 className="my-2 ml-1">experience</h2>
 
+            <hr className="border border-[0.5px] border-white" />
+            <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
+
             <div className="mx-2">
               <Experience
                 role="Junior Software Developer"
@@ -140,7 +151,7 @@ export default function About() {
                 ]}
               >
                 <div>
-                  <div className="flex h-40 bg-lime overflow-x-scroll gap-x-[0.25px] py-[0.5px]">
+                  <div className="flex h-40 overflow-x-scroll gap-x-1">
                     <div className="flex-none relative w-64">
                       <Image
                         src="/about/HoR/hor1.jpg"
