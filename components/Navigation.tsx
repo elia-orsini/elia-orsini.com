@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import RotatingSVG from "./RotatingSVG";
+
 export default function Navigation({
   children,
 }: {
@@ -73,24 +75,28 @@ export default function Navigation({
         <div className="w-full">{children}</div>
       </div>
 
-      <div className="flex px-10 sm:px-20 w-full bg-lime text-black h-28 text-sm gap-10">
-        <p className="my-auto">2024</p>
-        <a
-          className="my-auto"
-          href="https://github.com/elia-orsini"
-          target="_blank"
-          rel="noreferrer"
-        >
-          github
-        </a>
-        <a
-          className="my-auto"
-          href="mailto:elia.orsini@hotmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          email
-        </a>
+      <div className="flex px-10 sm:px-20 w-full bg-lime text-black h-28 text-sm justify-between">
+        <div className="flex flex-row gap-10">
+          <p className="my-auto">2024</p>
+          <a
+            className="my-auto"
+            href="https://github.com/elia-orsini"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github
+          </a>
+          <a
+            className="my-auto"
+            href="mailto:elia.orsini@hotmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            email
+          </a>
+        </div>
+
+        <RotatingSVG />
       </div>
     </>
   );
