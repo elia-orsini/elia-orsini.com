@@ -17,7 +17,7 @@ const RotatingSVG: React.FC = () => {
       />
       <text>
         <textPath xlinkHref="#circlePath">
-          → Based in Glasgow . Scotland → →
+          → Based in Glasgow, Scotland
         </textPath>
       </text>
       <animateTransform
@@ -27,7 +27,7 @@ const RotatingSVG: React.FC = () => {
         from="0 0 0"
         to="360 0 0"
         dur="12s"
-        begin="0.1s"
+        begin="0.5s"
         repeatCount="indefinite"
       />
     </svg>
