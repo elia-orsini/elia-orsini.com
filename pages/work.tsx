@@ -1,11 +1,11 @@
 import React, { Suspense, useEffect, useState } from "react";
 import Navigation from "@components/Navigation";
-import ThreeDIndex from "@components/3DIndex";
+import ThreeDIndex from "@components/3D/3DIndex";
 import { Canvas } from "@react-three/fiber";
 import { getGPUTier } from "detect-gpu";
 import Header from "@components/Header";
-import ThreeDIndexWeakGPU from "@components/3DIndexWeakGPU";
-import ThreeDIndexMobile from "@components/3DIndexMobile";
+import ThreeDIndexWeakGPU from "@components/3D/3DIndexWeakGPU";
+import ThreeDIndexMobile from "@components/3D/3DIndexMobile";
 
 function Work() {
   const [gpuTier, setGpuTier] = useState<number>(null);
