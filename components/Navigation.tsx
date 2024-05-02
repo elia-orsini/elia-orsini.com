@@ -27,25 +27,41 @@ export default function Navigation({
             </div>
           </Link>
 
-          <div className="w-full mx-auto text-center sm:text-left mt-10 sm:mt-14 space-y-2">
-            <p>
+          <div className="w-full mx-auto text-center sm:text-left mt-6 sm:mt-14 space-y-2">
+            <p
+              className={`hover:italic ${
+                pathDivided.includes("design") && "text-lime"
+              }`}
+            >
               <Link href="/design">
                 {pathDivided.includes("design") ? "design <" : "design"}
               </Link>
             </p>
-            <p>
+            <p
+              className={`hover:italic ${
+                pathDivided.includes("code") && "text-lime"
+              }`}
+            >
               <Link href="/code">
-                {pathDivided.includes("code") ? 'code <' : 'code'}
+                {pathDivided.includes("code") ? "code <" : "code"}
               </Link>
             </p>
-            <p>
+            <p
+              className={`hover:italic ${
+                pathDivided.includes("about") && "text-lime"
+              }`}
+            >
               <Link href="/about">
-                {pathDivided.includes("about") ? 'about <' : 'about'}
+                {pathDivided.includes("about") ? "about <" : "about"}
               </Link>
             </p>
-            <p>
+            <p
+              className={`hover:italic ${
+                pathDivided.includes("blog") && "text-lime"
+              }`}
+            >
               <Link href="/blog">
-                {pathDivided.includes("blog") ? 'blog <' : 'blog'}
+                {pathDivided.includes("blog") ? "blog <" : "blog"}
               </Link>
             </p>
             {/* <p>
@@ -56,17 +72,26 @@ export default function Navigation({
 
         <div className="w-full">{children}</div>
       </div>
-      
+
       <div className="flex px-10 sm:px-20 w-full bg-lime text-black h-28 text-sm gap-10">
         <p className="my-auto">2024</p>
-        <a className="my-auto" href="https://github.com/elia-orsini" target="_blank" rel="noreferrer">
+        <a
+          className="my-auto"
+          href="https://github.com/elia-orsini"
+          target="_blank"
+          rel="noreferrer"
+        >
           github
         </a>
-        <a className="my-auto" href="mailto:elia.orsini@hotmail.com" target="_blank" rel="noreferrer">
+        <a
+          className="my-auto"
+          href="mailto:elia.orsini@hotmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           email
         </a>
       </div>
-
     </>
   );
 }
