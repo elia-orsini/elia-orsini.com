@@ -5,7 +5,7 @@ const RotatingSVG: React.FC = () => {
       viewBox="5 5 90 90"
       width="75"
       height="75"
-      className="my-auto"
+      className="my-auto hidden sm:inline-block"
     >
       <path
         id="circlePath"
@@ -15,11 +15,13 @@ const RotatingSVG: React.FC = () => {
         fill="none"
         transform="translate(-50,-50) "
       />
+
       <text>
         <textPath xlinkHref="#circlePath">
           → Based in Glasgow, Scotland
         </textPath>
       </text>
+
       <animateTransform
         attributeType="xml"
         attributeName="transform"
@@ -27,7 +29,7 @@ const RotatingSVG: React.FC = () => {
         from="0 0 0"
         to="360 0 0"
         dur="12s"
-        begin="0.5s"
+        begin="0.1s"
         repeatCount="indefinite"
       />
     </svg>
