@@ -20,7 +20,6 @@ const ThreeDIndex = () => {
   const cameraRef = useRef<any>();
   const cameraControlRef = useRef<CameraControls | null>(null);
 
-  const [gpuTier, setGpuTier] = useState<number>(null);
   const [directionLeft, setDirectionLeft] = useState(true);
   const [transition, setTransition] = useState(false);
   const [cameraPosition, setCameraPosition] = useState([0, 0, 10]);
@@ -42,14 +41,7 @@ const ThreeDIndex = () => {
       }
     };
 
-    async function getGPU() {
-      const gpuDetails = await getGPUTier();
-      setGpuTier(gpuDetails.tier);
-    }
-
     window.addEventListener("mousemove", handlePointerMove);
-
-    getGPU();
 
     setInterval(() => {
       setDirectionLeft((prev) => !prev);
@@ -119,15 +111,13 @@ const ThreeDIndex = () => {
           </button>
         </Annotation>
 
-        {gpuTier === 3 && (
-          <Sparkles
-            count={40}
-            position={[0, 0, 0]}
-            scale={15}
-            size={8}
-            speed={1.5}
-          />
-        )}
+        <Sparkles
+          count={40}
+          position={[0, 0, 0]}
+          scale={15}
+          size={8}
+          speed={1.5}
+        />
 
         {scene % NUMBER_OF_SCENES === 0 && (
           <Environment background={true} files="/index/hdri.hdr" />

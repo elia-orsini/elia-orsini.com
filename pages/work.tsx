@@ -32,35 +32,19 @@ function Work() {
 
       <Navigation>
         <div className="flex h-screen max-h-screen overflow-hidden w-full sm:pl-20">
-          {gpuTier === 1 ? (
-            <Suspense fallback={<p>loading</p>}>
-              <Canvas className="z-10 hidden sm:block">
-                <ThreeDIndexWeakGPU />
-              </Canvas>
+          <Suspense fallback={<p>loading</p>}>
+            <Canvas className="z-10 hidden sm:block">
+              <ThreeDIndex />
+            </Canvas>
 
-              <div className="flex sm:hidden mt-10">
-                <div className="bg-white w-screen min-h-screen flex">
-                  <Canvas className="z-10">
-                    <ThreeDIndexMobile />
-                  </Canvas>
-                </div>
+            <div className="flex sm:hidden mt-10">
+              <div className="bg-white w-screen min-h-screen flex">
+                <Canvas className="z-10">
+                  <ThreeDIndexMobile />
+                </Canvas>
               </div>
-            </Suspense>
-          ) : (
-            <Suspense fallback={<p>loading</p>}>
-              <Canvas className="z-10 hidden sm:block">
-                <ThreeDIndex />
-              </Canvas>
-
-              <div className="flex sm:hidden mt-10">
-                <div className="bg-white w-screen min-h-screen flex">
-                  <Canvas className="z-10">
-                    <ThreeDIndexMobile />
-                  </Canvas>
-                </div>
-              </div>
-            </Suspense>
-          )}
+            </div>
+          </Suspense>
         </div>
       </Navigation>
     </>
