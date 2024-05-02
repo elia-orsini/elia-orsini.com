@@ -10,7 +10,6 @@ export function OliveForWeb(props) {
   const group = useRef();
   // @ts-ignore
   const { nodes, materials, animations } = useGLTF("/index/olive-for-web.glb");
-  const { actions } = useAnimations(animations, group);
 
   useFrame(() => {
     if (group.current) {

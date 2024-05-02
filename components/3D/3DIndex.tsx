@@ -133,10 +133,14 @@ const ThreeDIndex = () => {
           <Environment background={true} files="/index/hdri.hdr" />
         )}
 
+        {scene % NUMBER_OF_SCENES === 1 && (
+          <Environment background={true} files="/index/bluesky.hdr" />
+        )}
+
         {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
-        {scene % NUMBER_OF_SCENES === 1 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 1 && <SunshiDesert />}
         {scene % NUMBER_OF_SCENES === 2 && <Sunshi />}
-        {scene % NUMBER_OF_SCENES === 3 && <SunshiDesert />}
+        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
       </Suspense>
     </>
   );

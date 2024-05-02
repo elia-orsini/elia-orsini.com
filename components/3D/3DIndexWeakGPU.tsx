@@ -1,8 +1,5 @@
 import { useFrame } from "@react-three/fiber";
-import {
-  CameraControls,
-  PerspectiveCamera,
-} from "@react-three/drei";
+import { CameraControls, PerspectiveCamera } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { Hor } from "./Hor";
 import { getGPUTier } from "detect-gpu";

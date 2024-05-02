@@ -1,5 +1,10 @@
 import { useFrame } from "@react-three/fiber";
-import { CameraControls, Environment, PerspectiveCamera, Sparkles } from "@react-three/drei";
+import {
+  CameraControls,
+  Environment,
+  PerspectiveCamera,
+  Sparkles,
+} from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import { Sunshi } from "./SunshiHall";
@@ -95,10 +100,14 @@ const ThreeDIndexMobile = () => {
           <Environment background={true} files="/index/hdri.hdr" />
         )}
 
+        {scene % NUMBER_OF_SCENES === 1 && (
+          <Environment background={true} files="/index/bluesky.hdr" />
+        )}
+
         {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
-        {scene % NUMBER_OF_SCENES === 1 && <Hor />}
+        {scene % NUMBER_OF_SCENES === 1 && <SunshiDesert />}
         {scene % NUMBER_OF_SCENES === 2 && <Sunshi />}
-        {scene % NUMBER_OF_SCENES === 3 && <SunshiDesert />}
+        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
       </Suspense>
     </>
   );
