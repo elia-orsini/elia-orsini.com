@@ -28,7 +28,10 @@ function MyApp({ Component, pageProps }) {
         <title>elia orsini</title>
         <meta property="og:title" content="elia orsini" />
 
-        <meta name="description" content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland." />
+        <meta
+          name="description"
+          content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland."
+        />
         <meta
           property="og:description"
           content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland."

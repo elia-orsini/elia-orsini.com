@@ -21,7 +21,10 @@ function Work() {
 
   return (
     <>
-      <Header title={`work | elia orsini`} />
+      <Header
+        title={`work | elia orsini`}
+        description="Explore the work of Elia Orsini, Software Developer and 3D Artist based in Scotland."
+      />
 
       <div className="absolute w-full h-20 bg-red-200 z-20 font-mono uppercase text-xs xl:flex hidden">
         <p className="mx-auto text-white">

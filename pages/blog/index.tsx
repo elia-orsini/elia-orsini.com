@@ -9,7 +9,10 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 function Design() {
   return (
     <>
-      <Header title={`blog | elia orsini`} description="blog by elia orsini." />
+      <Header
+        title={`blog | elia orsini`}
+        description="Blog by Elia Orsini, Software Developer and 3D Artist based in Scotland."
+      />
 
       <Navigation>
         <div className="mt-10 sm:mt-20 mx-5 sm:ml-40 sm:mr-20 text-2xl">
@@ -23,11 +26,7 @@ function Design() {
             tags={["3D", "unreal engine"]}
           />
 
-          <BlogArticle
-            url="/blog/exhale"
-            title="exhale"
-            tags={["3D", "ar"]}
-          />
+          <BlogArticle url="/blog/exhale" title="exhale" tags={["3D", "ar"]} />
 
           <BlogArticle
             url="/blog/brutalist-buildings-london"
@@ -44,7 +43,7 @@ const BlogArticle: FC<{
   url: string;
   title: string;
   tags: Array<string>;
-}>  = ({ url, title, tags }) => (
+}> = ({ url, title, tags }) => (
   <div className="mt-2">
     <Link href={url} passHref className={`text-lime ${koulen.className}`}>
       {">"} {title}
@@ -52,7 +51,10 @@ const BlogArticle: FC<{
 
     <div className="-mt-4 -ml-1 sm:ml-3">
       {tags.map((tag, i) => (
-        <span key={i} className="opacity-80 text-sm bg-gray-600 px-1 w-max ml-1 uppercase">
+        <span
+          key={i}
+          className="opacity-80 text-sm bg-gray-600 px-1 w-max ml-1 uppercase"
+        >
           {tag}
         </span>
       ))}
