@@ -82,6 +82,12 @@ export default function Code() {
                 tech={["REACT", "TAILWIND CSS"]}
               />
               <Project
+                title="gft forever"
+                url="https://gft-forever.vercel.app/"
+                description="an archive of every film shown at my local independent cinema."
+                tech={["NEXT", "TAILWIND CSS"]}
+              />
+              <Project
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
                 description="website for rho mcguire."
