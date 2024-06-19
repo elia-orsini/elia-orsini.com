@@ -41,8 +41,8 @@ export default function Code() {
             <Project
               title="elia's personal database"
               url="https://eliaelia.xyz/"
-              description="silly little website to save things I enjoy."
-              tech={["NEXT", "TYPESCRIPT", "NOTION"]}
+              description="little website to save things I enjoy."
+              tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
             />
             <Project
               title="lazyLLM"
@@ -91,7 +91,7 @@ export default function Code() {
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
                 description="website for rho mcguire."
-                tech={["NEXT", "NOTION", "TAILWIND CSS"]}
+                tech={["NEXT", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
                 title="insomnia"

@@ -9,7 +9,10 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 export default function About() {
   return (
     <Navigation>
-      <Header title={`about | elia orsini`} description="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland." />
+      <Header
+        title={`about | elia orsini`}
+        description="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland."
+      />
 
       <div className="w-full h-full flex flex-col px-4 sm:px-10 lg:px-20 mb-40">
         <div className="flex flex-row">
