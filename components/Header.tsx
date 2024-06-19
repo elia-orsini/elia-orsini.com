@@ -12,8 +12,7 @@ function Header({
       <meta name="title" content={title} />
       <meta property="og:title" content={title} />
 
-      <meta name="description" content={description} />
-      <meta property="og:description" content={description} />
+      <meta name="description" content={description} key="desc" />
       <meta property="og:description" content={description} />
 
       <meta property="og:image" content={img} />

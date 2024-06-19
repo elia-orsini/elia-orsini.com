@@ -30,11 +30,11 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="description"
-          content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland."
+          content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
         />
         <meta
           property="og:description"
-          content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Scotland."
+          content="Personal Website of Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
         />
 
         <meta property="og:image" content="/favicon.ico" />

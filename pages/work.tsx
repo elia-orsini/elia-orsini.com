@@ -23,12 +23,12 @@ function Work() {
     <>
       <Header
         title={`work | elia orsini`}
-        description="Explore the work of Elia Orsini, Software Developer and 3D Artist based in Scotland."
+        description="Explore the work of Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
       />
 
       <div className="absolute w-full h-20 bg-red-200 z-20 font-mono uppercase text-xs xl:flex hidden">
         <p className="mx-auto text-white">
-          this is a repository of ideas, unfinished projects, commercial works
+          This is a repository of ideas, unfinished projects, commercial works
           and experiments that have been accumulating for the past 5 years
         </p>
       </div>

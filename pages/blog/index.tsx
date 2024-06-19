@@ -11,7 +11,7 @@ function Design() {
     <>
       <Header
         title={`blog | elia orsini`}
-        description="Blog by Elia Orsini, Software Developer and 3D Artist based in Scotland."
+        description="Blog by Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
       />
 
       <Navigation>
