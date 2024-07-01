@@ -18,7 +18,7 @@ export default function Code() {
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
           <div className="flex flex-col mt-10 sm:mt-20">
             <p className="text-left text-sm sm:text-base bg-white w-max text-black px-2 mb-2">
-              side projects
+              3D projects
             </p>
             <Project
               title="blenderWebViewer"
@@ -38,29 +38,11 @@ export default function Code() {
               description="walkable 3D rooms in ancient rome."
               tech={["REACT THREE FIBER", "TYPESCRIPT"]}
             />
-            <Project
-              title="elia's personal database"
-              url="https://eliaelia.xyz/"
-              description="little website to save things I enjoy."
-              tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
-            />
-            <Project
-              title="lazyLLM"
-              url="https://lazyllm.xyz/"
-              description="Toolkit to create, test and analyse prompts on LLMs."
-              tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
-            />
-            <Project
-              title="mars neural net"
-              url="https://github.com/elia-orsini/mars-imagery-classification"
-              description="Neural Network that classifies images taken on Mars."
-              tech={["PYTHON", "TENSORFLOW"]}
-            />
           </div>
 
-          <div className="flex flex-col mt-20">
+          <div className="flex flex-col mt-10">
             <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
-              projects I am part of
+              websites i collaborated on
             </p>
             <Project
               title="ARCHIVE.pdf"
@@ -70,7 +52,7 @@ export default function Code() {
             />
           </div>
 
-          <div className="flex flex-col mt-20">
+          <div className="flex flex-col mt-10">
             <p className="text-left text-sm sm:text-base mb-2 block  bg-white w-max text-black px-2">
               websites I built
             </p>
@@ -82,10 +64,16 @@ export default function Code() {
                 tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
               />
               <Project
-                title="la macina sonora"
-                url="https://macina-sonora-elia-orsini.vercel.app/"
-                description="website for the recording studio La Macina Sonora."
-                tech={["REACT", "TAILWIND CSS"]}
+                title="lazyLLM"
+                url="https://lazyllm.xyz/"
+                description="Toolkit to create, test and analyse prompts on LLMs."
+                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
+              />
+              <Project
+                title="elia's personal database"
+                url="https://eliaelia.xyz/"
+                description="little website to save things I enjoy."
+                tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
               />
               <Project
                 title="gft forever"
@@ -100,6 +88,12 @@ export default function Code() {
                 tech={["NEXT", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
+                title="la macina sonora"
+                url="https://macina-sonora-elia-orsini.vercel.app/"
+                description="website for the recording studio La Macina Sonora."
+                tech={["REACT", "TAILWIND CSS"]}
+              />
+              <Project
                 title="insomnia"
                 url="https://www.insomniaevents.xyz/"
                 description="website for Insomnia Events."
@@ -112,6 +106,18 @@ export default function Code() {
                 tech={["NEXT", "TAILWIND CSS"]}
               />
             </ul>
+          </div>
+
+          <div className="flex flex-col mt-10">
+            <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
+              other projects
+            </p>
+            <Project
+              title="mars neural net"
+              url="https://github.com/elia-orsini/mars-imagery-classification"
+              description="Neural Network that classifies images taken on Mars."
+              tech={["PYTHON", "TENSORFLOW"]}
+            />
           </div>
         </div>
       </div>
