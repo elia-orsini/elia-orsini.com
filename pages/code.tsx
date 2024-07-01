@@ -76,6 +76,12 @@ export default function Code() {
             </p>
             <ul className="text-left">
               <Project
+                title="yu's Cafes"
+                url="https://yu-coffee-six.vercel.app/"
+                description="website for collecting cafes visits around the world."
+                tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
+              />
+              <Project
                 title="la macina sonora"
                 url="https://macina-sonora-elia-orsini.vercel.app/"
                 description="website for the recording studio La Macina Sonora."
