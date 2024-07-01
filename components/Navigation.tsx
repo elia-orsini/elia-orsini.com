@@ -56,7 +56,7 @@ export default function Navigation({
                 {pathDivided.includes("about") ? "about <" : "about"}
               </Link>
             </p>
-            <p
+            {/* <p
               className={`hover:italic ${
                 pathDivided.includes("blog") && "text-lime"
               }`}
@@ -64,7 +64,7 @@ export default function Navigation({
               <Link href="/blog">
                 {pathDivided.includes("blog") ? "blog <" : "blog"}
               </Link>
-            </p>
+            </p> */}
             {/* <p>
             <Link href="/photography">photography</Link>
           </p> */}

@@ -56,6 +56,7 @@ export default function About() {
                 <li>REST APIs / WebSockets</li>
                 <li>Python</li>
                 <li>Redux</li>
+                <li>GSAP</li>
                 <li>Three.js / Babylon.js</li>
                 <li>GraphQL / SQL</li>
                 <li>Docker</li>
