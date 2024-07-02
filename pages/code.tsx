@@ -60,16 +60,16 @@ export default function Code() {
                 tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
               />
               <Project
-                title="lazyLLM"
-                url="https://lazyllm.xyz/"
-                description="Toolkit to create, test and analyse prompts on LLMs."
-                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
-              />
-              <Project
                 title="elia's personal database"
                 url="https://eliaelia.xyz/"
                 description="little website to save things I enjoy."
                 tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
+              />
+              <Project
+                title="lazyLLM"
+                url="https://lazyllm.xyz/"
+                description="Toolkit to create, test and analyse prompts on LLMs."
+                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
               />
               <Project
                 title="gft forever"
