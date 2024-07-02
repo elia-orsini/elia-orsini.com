@@ -8,17 +8,6 @@ import ThreeDIndexWeakGPU from "@components/3D/3DIndexWeakGPU";
 import ThreeDIndexMobile from "@components/3D/3DIndexMobile";
 
 function Work() {
-  const [gpuTier, setGpuTier] = useState<number>(null);
-
-  useEffect(() => {
-    async function getToken() {
-      const gpuDetails = await getGPUTier();
-      setGpuTier(gpuDetails.tier);
-    }
-
-    getToken();
-  }, []);
-
   return (
     <>
       <Header

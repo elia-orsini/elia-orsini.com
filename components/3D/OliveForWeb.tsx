@@ -1,15 +1,11 @@
 import React, { useRef } from "react";
-import {
-  useGLTF,
-  useAnimations,
-  MeshWobbleMaterial,
-} from "@react-three/drei";
+import { useGLTF, MeshWobbleMaterial } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export function OliveForWeb(props) {
   const group = useRef();
   // @ts-ignore
-  const { nodes, materials, animations } = useGLTF("/index/olive-for-web.glb");
+  const { nodes, materials } = useGLTF("/index/olive-for-web.glb");
 
   useFrame(() => {
     if (group.current) {

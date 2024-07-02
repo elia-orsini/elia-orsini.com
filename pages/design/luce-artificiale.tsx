@@ -53,6 +53,7 @@ export default function TwoD() {
                 <Image src="/design/luce-artificiale/6.jpg" />
                 <Image src="/design/luce-artificiale/10.jpg" />
                 <Image src="/design/luce-artificiale/11.jpg" />
+                <Image src="/design/luce-artificiale/12.jpg" />
               </div>
             </div>
           </div>

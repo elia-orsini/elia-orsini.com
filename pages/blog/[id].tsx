@@ -1,7 +1,7 @@
 import Navigation from "@components/Navigation";
-import AlwaysEndingTunnel from "@components/blogPosts/alwaysEndingTunnel";
-import BrutalistBuildings from "@components/blogPosts/brutalistBuildings";
-import Exhale from "@components/blogPosts/ehxale";
+import AlwaysEndingTunnel from "@components/blog/alwaysEndingTunnel";
+import BrutalistBuildings from "@components/blog/brutalistBuildings";
+import Exhale from "@components/blog/ehxale";
 import { useRouter } from "next/router";
 
 function BlogPost() {

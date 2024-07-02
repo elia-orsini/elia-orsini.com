@@ -40,7 +40,6 @@ export default function TwoD() {
             <Image src="/design/sunshi/5.jpg" />
             <Image src="/design/sunshi/6.jpg" />
             <Image src="/design/sunshi/4.jpg" />
-            {/* <Image src="/design/sunshi/7.jpg" /> */}
           </div>
         </div>
       </Navigation>

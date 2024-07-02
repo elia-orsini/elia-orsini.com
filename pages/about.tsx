@@ -42,7 +42,6 @@ export default function About() {
           <div className="border border-white">
             <h2 className="my-2 ml-1">tech</h2>
 
-            <hr className="border border-[0.5px] border-white" />
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="ml-3 mx-2 pb-2">
@@ -88,7 +87,6 @@ export default function About() {
           <div className="border border-white">
             <h2 className="my-2 ml-1">skills</h2>
 
-            <hr className="border border-[0.5px] border-white" />
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="ml-3 mx-2 pb-2">
@@ -120,7 +118,6 @@ export default function About() {
           <div className="border border-white md:col-span-2">
             <h2 className="my-2 ml-1">experience</h2>
 
-            <hr className="border border-[0.5px] border-white" />
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="mx-2">
