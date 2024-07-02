@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 const handwriting = localFont({
   src: [
     {
-      path: "../public/Handwriting-Regular.ttf",
+      path: "../../public/Handwriting-Regular.ttf",
       weight: "400",
       style: "normal",
     },
