@@ -1,9 +1,8 @@
-import BlogHeader from "@components/BlogHeader";
 import Image from "next/image";
 import { Koulen } from "next/font/google";
 import { FC } from "react";
-import Head from "next/head";
 import Header from "@components/Header";
+import BlogHeader from "./BlogHeader";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 

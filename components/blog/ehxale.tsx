@@ -1,4 +1,4 @@
-import BlogHeader from "@components/BlogHeader";
+import * as THREE from "three";
 import Image from "next/image";
 import { Koulen } from "next/font/google";
 import {
@@ -7,13 +7,14 @@ import {
   useFrame,
   useLoader,
 } from "@react-three/fiber";
-import { CameraControls, Environment, OrbitControls } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
-import * as THREE from "three";
 import { useRef } from "react";
-import Head from "next/head";
+
 import Header from "@components/Header";
+
+import BlogHeader from "./BlogHeader";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 

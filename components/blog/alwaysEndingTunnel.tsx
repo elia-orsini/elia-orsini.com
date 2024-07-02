@@ -1,7 +1,7 @@
-import BlogHeader from "@components/BlogHeader";
+
 import Image from "next/image";
-import Head from "next/head";
 import Header from "@components/Header";
+import BlogHeader from "./BlogHeader";
 
 function AlwaysEndingTunnel() {
   return (
