@@ -60,22 +60,28 @@ export default function Code() {
                 tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
               />
               <Project
-                title="elia's personal database"
-                url="https://eliaelia.xyz/"
-                description="little website to save things I enjoy."
-                tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
+                title="Immortal Mags"
+                url="https://immortal-tau.vercel.app/"
+                description="documenting independent magazines."
+                tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
               />
               <Project
-                title="lazyLLM"
-                url="https://lazyllm.xyz/"
-                description="Toolkit to create, test and analyse prompts on LLMs."
-                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
+                title="elia's personal database"
+                url="https://eliaelia.xyz/"
+                description="little website to store things I enjoy (films, cafes, books)."
+                tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
               />
               <Project
                 title="gft forever"
                 url="https://gft-forever.vercel.app/"
                 description="an archive of every film shown at my local independent cinema."
                 tech={["NEXT", "TAILWIND CSS"]}
+              />
+              <Project
+                title="lazyLLM"
+                url="https://lazyllm.xyz/"
+                description="Toolkit to create, test and analyse prompts on LLMs."
+                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
               />
               <Project
                 title="rho mcguire"
