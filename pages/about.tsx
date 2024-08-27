@@ -19,7 +19,7 @@ export default function About() {
           <div className="mt-10">
             <Image
               alt=""
-              src="/me.png"
+              src="/me.webp"
               className="border border-white"
               width={200}
               height={200}
@@ -124,7 +124,7 @@ export default function About() {
               <Experience
                 role="Junior Software Developer"
                 company="IMG ARENA"
-                dates="Oct 2022 / Present"
+                dates="Oct 2022 / July 2024"
                 descriptions={[
                   `Part of the 3D Labs team developing 3D interactive experiences for the sports industry`,
                   `Throughout this role, I used many different technologies including Unreal Engine, 
