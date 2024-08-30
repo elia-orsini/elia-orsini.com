@@ -55,6 +55,7 @@ export default function About() {
                 <li>REST APIs / WebSockets</li>
                 <li>Python</li>
                 <li>Redux</li>
+                <li>Figma</li>
                 <li>GSAP</li>
                 <li>Three.js / Babylon.js</li>
                 <li>GraphQL / SQL</li>
@@ -62,7 +63,6 @@ export default function About() {
                 <li>Electron</li>
                 <li>Strapi</li>
                 <li>Git / GitHub Actions</li>
-                <li>Figma</li>
                 <li>Postman</li>
                 <li>Google Analytics</li>
                 <li>Remix</li>
@@ -94,9 +94,9 @@ export default function About() {
 
               <ul className="ml-4">
                 <li>Frontend dev</li>
+                <li>UI/UX Design</li>
                 <li>Backend dev</li>
                 <li>CI/CD Workflows</li>
-                <li>UI/UX Design</li>
                 <li>Scripts</li>
                 <li>CMS Integration</li>
               </ul>

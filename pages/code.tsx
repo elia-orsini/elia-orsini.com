@@ -74,7 +74,7 @@ export default function Code() {
             </ul>
           </div>
 
-          <div className="flex flex-col mt-10">
+          <div className="flex flex-col mt-10 sm:mt-20">
             <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
               websites i collaborated on
             </p>
@@ -110,7 +110,7 @@ export default function Code() {
             />
           </div>
 
-          <div className="flex flex-col mt-10">
+          <div className="flex flex-col mt-10 sm:mt-20">
             <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
               other projects
             </p>
