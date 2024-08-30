@@ -130,7 +130,7 @@ export default function About() {
                   `Throughout this role, I used many different technologies including Unreal Engine, 
                   Babylon.js, Blender and React to produce 3D virtual experiences able to run on the web, 
                   on VR headsets but also on any OS.`,
-                  `Built custom frontend solutions using React, Redux, 
+                  `Designed and built custom frontend solutions using React, Redux, 
                   Node.js, WebSockets, Bootstrap CSS and Electron.`,
                 ]}
               />
@@ -143,7 +143,7 @@ export default function About() {
                   `Software developer in charge of the Three.js team to develop
                   interactive 3D experiences for the browser using React and Next.js.`,
                   ` Worked side by side with front-end developers and 3D artists
-                  to ship optimised 3D environments able to run on most devices.`,
+                  to design and ship optimised 3D environments able to run on most devices.`,
                 ]}
               >
                 <div>
