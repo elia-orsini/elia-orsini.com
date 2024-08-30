@@ -65,9 +65,12 @@ export default function About() {
                 <li>Three.js / Babylon.js</li>
                 <li>GraphQL / SQL</li>
                 <li>Docker</li>
+                <li>NestJS</li>
                 <li>Electron</li>
                 <li>Strapi</li>
+                <li>ExpressJS</li>
                 <li>Git / GH Actions</li>
+                <li>CircleCI</li>
                 <li>Postman</li>
                 <li>Google Analytics</li>
                 <li>Remix</li>
