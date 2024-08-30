@@ -16,9 +16,9 @@ function Design() {
       opacity: 0,
       translateX: "-50px",
       duration: 0.5,
-      stagger: 0.2
+      stagger: 0.2,
     });
-  });
+  }, []);
 
   return (
     <>
@@ -29,7 +29,7 @@ function Design() {
 
       <Navigation>
         <div className="mt-10 sm:mt-20 mb-40 mx-5 sm:ml-40 sm:mr-20 text-2xl">
-          <p className="text-left text-sm sm:text-base mb-4 block bg-white w-max text-black px-2">
+          <p className="appearingText text-left text-sm sm:text-base mb-4 block bg-white w-max text-black px-2">
             all design collections
           </p>
           <p className="appearingText">

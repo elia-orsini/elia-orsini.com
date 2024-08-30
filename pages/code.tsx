@@ -14,7 +14,7 @@ export default function Code() {
       duration: 0.5,
       stagger: 0.2,
     });
-  });
+  }, []);
 
   return (
     <Navigation>
@@ -26,7 +26,7 @@ export default function Code() {
       <div className="flex w-full mb-20">
         <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-base mb-2 block  bg-white w-max text-black px-2">
+            <p className="appearingText text-left text-sm sm:text-base mb-2 block  bg-white w-max text-black px-2">
               websites I built
             </p>
             <ul className="text-left">
@@ -88,7 +88,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
+            <p className="appearingText text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
               websites i collaborated on
             </p>
             <Project
@@ -100,7 +100,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-base bg-white w-max text-black px-2 mb-2">
+            <p className="appearingText text-left text-sm sm:text-base bg-white w-max text-black px-2 mb-2">
               3D projects
             </p>
             <Project
@@ -124,7 +124,7 @@ export default function Code() {
           </div>
 
           <div className="flex flex-col mt-10 sm:mt-20">
-            <p className="text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
+            <p className="appearingText text-left text-sm sm:text-base mb-2 block bg-white w-max text-black px-2">
               other projects
             </p>
             <Project
