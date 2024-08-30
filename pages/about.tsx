@@ -39,13 +39,13 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-10">
-          <div className="border border-white">
-            <h2 className="my-2 ml-1">tech</h2>
+          <div className="border border-b-0 sm:border-b border-white">
+            <h2 className="my-2 ml-1 uppercase">tech</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
-            <div className="ml-3 mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black">software development</h3>
+            <div className="mx-2 pb-2">
+              <h3 className="pl-1 bg-lime text-black">Software Development</h3>
               <ul className="ml-4">
                 <li>Typescript</li>
                 <li>React</li>
@@ -53,10 +53,10 @@ export default function About() {
                 <li>Node.js</li>
                 <li>TailwindCSS / Bootstrap</li>
                 <li>REST APIs / WebSockets</li>
+                <li>Figma / FigJam</li>
                 <li>Python</li>
                 <li>Redux</li>
-                <li>Figma</li>
-                <li>GSAP</li>
+                <li>GSAP / Framer Motion</li>
                 <li>Three.js / Babylon.js</li>
                 <li>GraphQL / SQL</li>
                 <li>Docker</li>
@@ -84,13 +84,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border border-white">
-            <h2 className="my-2 ml-1">skills</h2>
+          <div className="border border-b-0 sm:border-b border-white">
+            <h2 className="my-2 ml-1 uppercase">skills</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
-            <div className="ml-3 mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black">software development</h3>
+            <div className="mx-2 pb-2">
+              <h3 className="pl-1 bg-lime text-black">Software Development</h3>
 
               <ul className="ml-4">
                 <li>Frontend dev</li>
@@ -116,7 +116,7 @@ export default function About() {
           </div>
 
           <div className="border border-white md:col-span-2">
-            <h2 className="my-2 ml-1">experience</h2>
+            <h2 className="my-2 ml-1 uppercase">experience</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
