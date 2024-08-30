@@ -9,7 +9,7 @@ const Project: React.FC<{
   tech: Array<string>;
 }> = ({ title, url, description, tech }) => {
   return (
-    <div className="py-2">
+    <div className="appearingText py-2">
       <a href={url} target="_blank" rel="noreferrer">
         <h1 className={`text-lime text-2xl ${koulen.className}`}>
           {">"} {title}

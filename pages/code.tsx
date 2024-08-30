@@ -1,8 +1,21 @@
 import Header from "@components/Header";
 import Navigation from "@components/Navigation";
 import Project from "@components/code/Project";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Code() {
+  useGSAP(() => {
+    const elements = gsap.utils.toArray(".appearingText");
+
+    gsap.from(elements, {
+      opacity: 0,
+      translateX: "-50px",
+      duration: 0.5,
+      stagger: 0.2,
+    });
+  });
+
   return (
     <Navigation>
       <Header

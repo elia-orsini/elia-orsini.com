@@ -1,11 +1,25 @@
-import Navigation from "@components/Navigation";
 import Link from "next/link";
 import { Koulen } from "next/font/google";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
+import Navigation from "@components/Navigation";
 import Header from "@components/Header";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function Design() {
+  useGSAP(() => {
+    const elements = gsap.utils.toArray(".appearingText");
+
+    gsap.from(elements, {
+      opacity: 0,
+      translateX: "-50px",
+      duration: 0.5,
+      stagger: 0.2
+    });
+  });
+
   return (
     <>
       <Header
@@ -18,7 +32,7 @@ function Design() {
           <p className="text-left text-sm sm:text-base mb-4 block bg-white w-max text-black px-2">
             all design collections
           </p>
-          <p>
+          <p className="appearingText">
             <Link
               href="/design/sunshi"
               className={`text-lime ${koulen.className}`}
@@ -30,7 +44,7 @@ function Design() {
             </span>
           </p>
 
-          <p>
+          <p className="appearingText">
             <Link
               href="/design/metal"
               className={`text-lime ${koulen.className}`}
@@ -43,7 +57,7 @@ function Design() {
             </span>
           </p>
 
-          <p>
+          <p className="appearingText">
             <Link
               href="/design/visualisers"
               className={`text-lime ${koulen.className}`}
@@ -55,7 +69,7 @@ function Design() {
             </span>
           </p>
 
-          <p>
+          <p className="appearingText">
             <Link
               href="/design/photogrammetry"
               className={`text-lime ${koulen.className}`}
@@ -67,7 +81,7 @@ function Design() {
             </span>
           </p>
 
-          <p>
+          <p className="appearingText">
             <Link
               href="/design/luce-artificiale"
               className={`text-lime ${koulen.className}`}
@@ -79,7 +93,7 @@ function Design() {
             </span>
           </p>
 
-          <p>
+          <p className="appearingText">
             <Link href="/design/2d" className={`text-lime ${koulen.className}`}>
               {">"} two dimensions
             </Link>
@@ -88,7 +102,7 @@ function Design() {
             </span>
           </p>
 
-          <p>
+          <p className="appearingText">
             <Link
               href="/design/aliens"
               className={`text-lime ${koulen.className}`}
