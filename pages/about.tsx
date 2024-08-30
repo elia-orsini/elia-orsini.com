@@ -17,9 +17,8 @@ export default function About() {
       delay: 2.3,
     });
 
-    const elements = gsap.utils.toArray(".appearingText");
-
-    gsap.from(elements, {
+    const appearingTexts = gsap.utils.toArray(".appearingText");
+    gsap.from(appearingTexts, {
       opacity: 0,
       duration: 0.2,
       stagger: 0.05,

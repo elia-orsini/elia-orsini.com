@@ -16,7 +16,7 @@ function Design() {
       opacity: 0,
       translateX: "-30px",
       duration: 0.4,
-      stagger: 0.2,
+      stagger: 0.1,
     });
   }, []);
 
