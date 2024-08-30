@@ -9,15 +9,13 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
 }) => {
   const first = useRef<HTMLDivElement>(null);
 
-  const startingPoint = Math.floor(Math.random() * 100);
-
   useGSAP(() => {
-    let translation = startingPoint;
+    let translation = 0;
     const animationSpeed = 0.7;
 
     const gsapAnimation = () => {
       if (translation < images.length * -274) {
-        translation = startingPoint;
+        translation = 0;
       }
       gsap.set(first.current, { x: `${translation}px` });
       translation -= animationSpeed;
@@ -40,12 +38,24 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
       >
         {images &&
           images.map((image: string) => (
-            <Image key={`${image}`} alt="todo" width={270} height={200} src={image} />
+            <Image
+              key={`${image}`}
+              alt="todo"
+              width={270}
+              height={200}
+              src={image}
+            />
           ))}
 
         {images.length > 0 &&
           images.map((image: string) => (
-            <Image key={`${image}`} alt="todo" width={270} height={200} src={image} />
+            <Image
+              key={`${image}`}
+              alt="todo"
+              width={270}
+              height={200}
+              src={image}
+            />
           ))}
       </div>
     </div>
