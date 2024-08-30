@@ -29,7 +29,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
   return (
     <div
       id={`scrollingContainer-${sectionTitle}`}
-      className="imageScroller flex overflow-hidden w-full select-none"
+      className="flex overflow-hidden w-full select-none"
     >
       <div
         ref={first}
@@ -40,6 +40,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
           images.map((image: string) => (
             <Image
               key={`${image}`}
+              className="imageScroller"
               alt="todo"
               width={270}
               height={200}
@@ -51,6 +52,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
           images.map((image: string) => (
             <Image
               key={`${image}`}
+              className="imageScroller"
               alt="todo"
               width={270}
               height={200}

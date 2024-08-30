@@ -13,7 +13,8 @@ export default function About() {
   useGSAP(() => {
     gsap.from(".imageScroller", {
       opacity: 0,
-      duration: 2,
+      duration: 1.5,
+      delay: 2.3,
     });
 
     const elements = gsap.utils.toArray(".appearingText");
