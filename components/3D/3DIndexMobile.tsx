@@ -50,11 +50,11 @@ const ThreeDIndexMobile = () => {
     getToken();
 
     const intervalId = setInterval(() => {
-      setDirectionLeft((prev) => !prev);
+      // setDirectionLeft((prev) => !prev);
     }, 3000);
 
     const intervalId2 = setInterval(() => {
-      setScene((prev) => prev + 1);
+      // setScene((prev) => prev + 1);
     }, 3000);
 
     return () => {
@@ -64,15 +64,15 @@ const ThreeDIndexMobile = () => {
     };
   }, [transition]);
 
-  useFrame(() => {
-    if (directionLeft && cameraRef.current) {
-      cameraRef.current.position.z += 0.02;
-    }
+  // useFrame(() => {
+  //   if (directionLeft && cameraRef.current) {
+  //     cameraRef.current.position.z += 0.02;
+  //   }
 
-    if (!directionLeft && cameraRef.current) {
-      cameraRef.current.position.z -= 0.02;
-    }
-  });
+  //   if (!directionLeft && cameraRef.current) {
+  //     cameraRef.current.position.z -= 0.02;
+  //   }
+  // });
 
   return (
     <>

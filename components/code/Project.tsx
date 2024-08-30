@@ -15,7 +15,7 @@ const Project: React.FC<{
           {">"} {title}
         </h1>
       </a>
-      <p className="text-sm sm:text-base text-gray-200 -mt-1">{description}</p>
+      <p className="text-sm sm:text-base -mt-1">{description}</p>
       <div className="-ml-1">
         {tech.map((technology, i) => (
           <span

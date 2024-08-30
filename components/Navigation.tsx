@@ -73,7 +73,7 @@ export default function Navigation({
 
       <div className="flex px-10 sm:px-20 w-full bg-lime text-black h-28 text-sm justify-between">
         <div className="flex flex-row gap-10">
-          <p className="my-auto">2024</p>
+          <p className="my-auto">© 2024</p>
           <a
             className="my-auto"
             href="https://github.com/elia-orsini"

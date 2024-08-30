@@ -1,10 +1,8 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import Navigation from "@components/Navigation";
 import ThreeDIndex from "@components/3D/3DIndex";
 import { Canvas } from "@react-three/fiber";
-import { getGPUTier } from "detect-gpu";
 import Header from "@components/Header";
-import ThreeDIndexWeakGPU from "@components/3D/3DIndexWeakGPU";
 import ThreeDIndexMobile from "@components/3D/3DIndexMobile";
 
 function Work() {
@@ -30,7 +28,7 @@ function Work() {
             </Canvas>
 
             <div className="flex sm:hidden mt-10">
-              <div className="bg-white w-screen min-h-screen flex">
+              <div className="w-screen min-h-screen flex">
                 <Canvas className="z-10">
                   <ThreeDIndexMobile />
                 </Canvas>

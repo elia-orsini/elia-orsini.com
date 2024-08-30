@@ -14,7 +14,7 @@ export default function About() {
         description="About page of Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
       />
 
-      <div className="w-full h-full flex flex-col px-4 sm:px-10 lg:px-20 mb-40">
+      <div className="w-full h-full flex flex-col px-4 sm:px-10 lg:px-20 mb-20 md:mb-40">
         <div className="flex flex-row">
           <div className="mt-10">
             <Image
@@ -38,16 +38,16 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-10">
-          <div className="border border-b-0 md:border-b border-white">
-            <h2 className="my-2 ml-1 uppercase">tech</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-6 md:mt-10">
+          <div className="border border-b-0 md:border-b border-white text-sm">
+            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">tech</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black">Software Development</h3>
-              <ul className="ml-4">
-                <li>Typescript</li>
+              <h3 className="pl-1 bg-lime text-black font-semibold">Software Development</h3>
+              <ul className="ml-4 font-mono">
+                <li>Typescript / JS</li>
                 <li>React</li>
                 <li>Next.js</li>
                 <li>Node.js</li>
@@ -62,15 +62,15 @@ export default function About() {
                 <li>Docker</li>
                 <li>Electron</li>
                 <li>Strapi</li>
-                <li>Git / GitHub Actions</li>
+                <li>Git / GH Actions</li>
                 <li>Postman</li>
                 <li>Google Analytics</li>
                 <li>Remix</li>
                 <li>Prisma</li>
               </ul>
 
-              <h3 className="pl-1 bg-lime text-black">3D</h3>
-              <ul className="ml-4">
+              <h3 className="pl-1 bg-lime text-black mt-2 font-semibold">3D</h3>
+              <ul className="ml-4 font-mono">
                 <li>Unreal Engine</li>
                 <li>Blender</li>
                 <li>C++ / Blueprints</li>
@@ -84,15 +84,15 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border md:border-l-0 border-b-0 md:border-b border-white">
-            <h2 className="my-2 ml-1 uppercase">skills</h2>
+          <div className="border md:border-l-0 border-b-0 md:border-b border-white text-sm">
+            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">skills</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black">Software Development</h3>
+              <h3 className="pl-1 bg-lime text-black font-semibold">Software Development</h3>
 
-              <ul className="ml-4">
+              <ul className="ml-4 font-mono">
                 <li>Frontend dev</li>
                 <li>UI/UX Design</li>
                 <li>Backend dev</li>
@@ -101,8 +101,9 @@ export default function About() {
                 <li>CMS Integration</li>
               </ul>
 
-              <h3 className="pl-1 bg-lime text-black">3D</h3>
-              <ul className="ml-4">
+              <h3 className="pl-1 bg-lime text-black mt-2 font-semibold">3D</h3>
+
+              <ul className="ml-4 font-mono">
                 <li>3D Modelling</li>
                 <li>Concept Design</li>
                 <li>Geometry Nodes</li>
@@ -115,8 +116,8 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border md:border-l-0 border-white md:col-span-2">
-            <h2 className="my-2 ml-1 uppercase">experience</h2>
+          <div className="border md:border-l-0 border-white md:col-span-2 text-sm">
+            <h2 className="my-4 md:my-2 ml-2 uppercase font-bold">experience</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
