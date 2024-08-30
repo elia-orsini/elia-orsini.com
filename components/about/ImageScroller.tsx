@@ -29,7 +29,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
   return (
     <div
       id={`scrollingContainer-${sectionTitle}`}
-      className="flex overflow-hidden w-full select-none"
+      className="imageScroller flex overflow-hidden w-full select-none"
     >
       <div
         ref={first}

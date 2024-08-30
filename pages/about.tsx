@@ -4,10 +4,27 @@ import Experience from "@components/about/Experience";
 import ImageScroller from "@components/about/ImageScroller";
 import { Koulen } from "next/font/google";
 import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
+  useGSAP(() => {
+    gsap.from(".imageScroller", {
+      opacity: 0,
+      duration: 2,
+    });
+
+    const elements = gsap.utils.toArray(".appearingText");
+
+    gsap.from(elements, {
+      opacity: 0,
+      duration: 0.2,
+      stagger: 0.05,
+    });
+  }, []);
+
   return (
     <Navigation>
       <Header
@@ -52,42 +69,42 @@ export default function About() {
                 Software Development
               </h3>
               <ul className="ml-4 font-mono">
-                <li>Typescript / JS</li>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node.js</li>
-                <li>TailwindCSS / Bootstrap</li>
-                <li>REST APIs / WebSockets</li>
-                <li>Figma / FigJam</li>
-                <li>Python</li>
-                <li>Redux</li>
-                <li>GSAP / Framer Motion</li>
-                <li>Three.js / Babylon.js</li>
-                <li>GraphQL / SQL</li>
-                <li>Docker</li>
-                <li>NestJS</li>
-                <li>Electron</li>
-                <li>Strapi</li>
-                <li>ExpressJS</li>
-                <li>Git / GH Actions</li>
-                <li>CircleCI</li>
-                <li>Postman</li>
-                <li>Google Analytics</li>
-                <li>Remix</li>
-                <li>Prisma</li>
+                <li className="appearingText">Typescript / JS</li>
+                <li className="appearingText">React</li>
+                <li className="appearingText">Next.js</li>
+                <li className="appearingText">Node.js</li>
+                <li className="appearingText">TailwindCSS / Bootstrap</li>
+                <li className="appearingText">REST APIs / WebSockets</li>
+                <li className="appearingText">Figma / FigJam</li>
+                <li className="appearingText">Python</li>
+                <li className="appearingText">Redux</li>
+                <li className="appearingText">GSAP / Framer Motion</li>
+                <li className="appearingText">Three.js / Babylon.js</li>
+                <li className="appearingText">GraphQL / SQL</li>
+                <li className="appearingText">Docker</li>
+                <li className="appearingText">NestJS</li>
+                <li className="appearingText">Electron</li>
+                <li className="appearingText">Strapi</li>
+                <li className="appearingText">ExpressJS</li>
+                <li className="appearingText">Git / GH Actions</li>
+                <li className="appearingText">CircleCI</li>
+                <li className="appearingText">Postman</li>
+                <li className="appearingText">Google Analytics</li>
+                <li className="appearingText">Remix</li>
+                <li className="appearingText">Prisma</li>
               </ul>
 
               <h3 className="pl-1 bg-lime text-black mt-2 font-semibold">3D</h3>
               <ul className="ml-4 font-mono">
-                <li>Unreal Engine</li>
-                <li>Blender</li>
-                <li>C++ / Blueprints</li>
-                <li>Geometry Nodes</li>
-                <li>Adobe Suite</li>
-                <li>Marvelous Designer</li>
-                <li>Processing</li>
-                <li>Metashape</li>
-                <li>Draco</li>
+                <li className="appearingText">Unreal Engine</li>
+                <li className="appearingText">Blender</li>
+                <li className="appearingText">C++ / Blueprints</li>
+                <li className="appearingText">Geometry Nodes</li>
+                <li className="appearingText">Adobe Suite</li>
+                <li className="appearingText">Marvelous Designer</li>
+                <li className="appearingText">Processing</li>
+                <li className="appearingText">Metashape</li>
+                <li className="appearingText">Draco</li>
               </ul>
             </div>
           </div>
@@ -105,25 +122,25 @@ export default function About() {
               </h3>
 
               <ul className="ml-4 font-mono">
-                <li>Frontend dev</li>
-                <li>UI/UX Design</li>
-                <li>Backend dev</li>
-                <li>CI/CD Workflows</li>
-                <li>Scripts</li>
-                <li>CMS Integration</li>
+                <li className="appearingText">Frontend dev</li>
+                <li className="appearingText">UI/UX Design</li>
+                <li className="appearingText">Backend dev</li>
+                <li className="appearingText">CI/CD Workflows</li>
+                <li className="appearingText">Scripts</li>
+                <li className="appearingText">CMS Integration</li>
               </ul>
 
               <h3 className="pl-1 bg-lime text-black mt-2 font-semibold">3D</h3>
 
               <ul className="ml-4 font-mono">
-                <li>3D Modelling</li>
-                <li>Concept Design</li>
-                <li>Geometry Nodes</li>
-                <li>Animations</li>
-                <li>Blueprints creation</li>
-                <li>Assets Optimisation</li>
-                <li>Blender Addons</li>
-                <li>UV Unwrapping</li>
+                <li className="appearingText">3D Modelling</li>
+                <li className="appearingText">Concept Design</li>
+                <li className="appearingText">Geometry Nodes</li>
+                <li className="appearingText">Animations</li>
+                <li className="appearingText">Blueprints creation</li>
+                <li className="appearingText">Assets Optimisation</li>
+                <li className="appearingText">Blender Addons</li>
+                <li className="appearingText">UV Unwrapping</li>
               </ul>
             </div>
           </div>

@@ -14,8 +14,8 @@ function Design() {
 
     gsap.from(elements, {
       opacity: 0,
-      translateX: "-50px",
-      duration: 0.5,
+      translateX: "-30px",
+      duration: 0.4,
       stagger: 0.2,
     });
   }, []);

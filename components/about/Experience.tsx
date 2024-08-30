@@ -16,7 +16,7 @@ const Experience: React.FC<{
       </p>
       <ul className="list-disc ml-6">
         {descriptions.map((description, i) => {
-          return <li key={"desc_" + i}>{description}</li>;
+          return <li className="appearingText" key={"desc_" + i}>{description}</li>;
         })}
       </ul>
       <div>{children}</div>
