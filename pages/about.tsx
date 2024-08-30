@@ -39,7 +39,7 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-10">
-          <div className="border border-b-0 sm:border-b border-white">
+          <div className="border border-b-0 md:border-b border-white">
             <h2 className="my-2 ml-1 uppercase">tech</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
@@ -84,7 +84,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border border-b-0 sm:border-b border-white">
+          <div className="border md:border-l-0 border-b-0 md:border-b border-white">
             <h2 className="my-2 ml-1 uppercase">skills</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
@@ -115,7 +115,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border border-white md:col-span-2">
+          <div className="border md:border-l-0 border-white md:col-span-2">
             <h2 className="my-2 ml-1 uppercase">experience</h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
@@ -126,7 +126,7 @@ export default function About() {
                 company="IMG ARENA"
                 dates="Oct 2022 / July 2024"
                 descriptions={[
-                  `Part of the 3D Labs team developing 3D interactive experiences for the sports industry`,
+                  `Part of the 3D Labs team developing 3D interactive experiences for the sports industry (clients include ATP, Roland Garros, The Open, MLS).`,
                   `Throughout this role, I used many different technologies including Unreal Engine, 
                   Babylon.js, Blender and React to produce 3D virtual experiences able to run on the web, 
                   on VR headsets but also on any OS.`,
