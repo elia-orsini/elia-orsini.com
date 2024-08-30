@@ -1,6 +1,7 @@
 import Header from "@components/Header";
 import Navigation from "@components/Navigation";
 import Experience from "@components/about/Experience";
+import ImageScroller from "@components/about/ImageScroller";
 import { Koulen } from "next/font/google";
 import Image from "next/image";
 
@@ -40,12 +41,16 @@ export default function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-6 md:mt-10">
           <div className="border border-b-0 md:border-b border-white text-sm">
-            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">tech</h2>
+            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">
+              tech
+            </h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black font-semibold">Software Development</h3>
+              <h3 className="pl-1 bg-lime text-black font-semibold">
+                Software Development
+              </h3>
               <ul className="ml-4 font-mono">
                 <li>Typescript / JS</li>
                 <li>React</li>
@@ -85,12 +90,16 @@ export default function About() {
           </div>
 
           <div className="border md:border-l-0 border-b-0 md:border-b border-white text-sm">
-            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">skills</h2>
+            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">
+              skills
+            </h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black font-semibold">Software Development</h3>
+              <h3 className="pl-1 bg-lime text-black font-semibold">
+                Software Development
+              </h3>
 
               <ul className="ml-4 font-mono">
                 <li>Frontend dev</li>
@@ -117,7 +126,9 @@ export default function About() {
           </div>
 
           <div className="border md:border-l-0 border-white md:col-span-2 text-sm">
-            <h2 className="my-4 md:my-2 ml-2 uppercase font-bold">experience</h2>
+            <h2 className="my-4 md:my-2 ml-2 uppercase font-bold">
+              experience
+            </h2>
 
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
@@ -134,7 +145,26 @@ export default function About() {
                   `Designed and built custom frontend solutions using React, Redux, 
                   Node.js, WebSockets, Bootstrap CSS and Electron.`,
                 ]}
-              />
+              >
+                <div>
+                  <ImageScroller
+                    images={[
+                      "/about/img/img1.jpg",
+                      "/about/img/img2.jpg",
+                      "/about/img/img3.jpg",
+                      "/about/img/img4.jpg",
+                      "/about/img/img5.jpg",
+                      "/about/img/img6.jpg",
+                      "/about/img/img7.jpg",
+                      "/about/img/img8.jpg",
+                      "/about/img/img9.jpg",
+                      "/about/img/img10.jpg",
+                      "/about/img/img11.jpg",
+                    ]}
+                    sectionTitle="HoR"
+                  />
+                </div>
+              </Experience>
 
               <Experience
                 role="Three.js Lead"
@@ -148,56 +178,18 @@ export default function About() {
                 ]}
               >
                 <div>
-                  <div className="flex h-40 overflow-x-scroll gap-x-1">
-                    <div className="flex-none relative w-64">
-                      <Image
-                        src="/about/HoR/hor1.jpg"
-                        alt="HoR"
-                        objectFit="contain"
-                        fill
-                      />
-                    </div>
-                    <div className="flex-none relative w-64">
-                      <Image
-                        src="/about/HoR/hor2.jpg"
-                        alt="HoR"
-                        objectFit="contain"
-                        fill
-                      />
-                    </div>
-                    <div className="flex-none relative w-64">
-                      <Image
-                        src="/about/HoR/hor3.jpg"
-                        alt="HoR"
-                        objectFit="contain"
-                        fill
-                      />
-                    </div>
-                    <div className="flex-none relative w-64">
-                      <Image
-                        src="/about/HoR/hor4.jpg"
-                        alt="HoR"
-                        objectFit="contain"
-                        fill
-                      />
-                    </div>
-                    <div className="flex-none relative w-64">
-                      <Image
-                        src="/about/HoR/hor7.jpg"
-                        alt="HoR"
-                        objectFit="contain"
-                        fill
-                      />
-                    </div>
-                    <div className="flex-none relative w-64">
-                      <Image
-                        src="/about/HoR/hor8.jpg"
-                        alt="HoR"
-                        objectFit="contain"
-                        fill
-                      />
-                    </div>
-                  </div>
+                  <ImageScroller
+                    images={[
+                      "/about/HoR/hor1.jpg",
+                      "/about/HoR/hor2.jpg",
+                      "/about/HoR/hor3.jpg",
+                      "/about/HoR/hor4.jpg",
+                      "/about/HoR/hor5.jpg",
+                      "/about/HoR/hor6.jpg",
+                      "/about/HoR/hor7.jpg",
+                    ]}
+                    sectionTitle="HoR"
+                  />
                 </div>
               </Experience>
 
