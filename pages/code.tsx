@@ -34,25 +34,25 @@ export default function Code() {
                 title="yu's Cafes"
                 url="https://yu-coffee-six.vercel.app/"
                 description="Website for collecting cafes visits around the world."
-                tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
+                tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
                 title="Immortal Mags"
                 url="https://immortal-tau.vercel.app/"
                 description="Documenting independent magazines."
-                tech={["NEXT", "GSAP", "NOTION CMS", "TAILWIND CSS"]}
+                tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
                 title="elia's personal database"
                 url="https://eliaelia.xyz/"
                 description="Little personal website to store things I enjoy (films, cafes, books)."
-                tech={["NEXT", "TYPESCRIPT", "NOTION API"]}
+                tech={["NEXT.JS", "TYPESCRIPT", "NOTION API"]}
               />
               <Project
                 title="gft forever"
                 url="https://gft-forever.vercel.app/"
                 description="An archive of every film shown at my local independent cinema."
-                tech={["NEXT", "TAILWIND CSS"]}
+                tech={["NEXT.JS", "TAILWIND CSS"]}
               />
               <Project
                 title="lazyLLM"
@@ -64,7 +64,7 @@ export default function Code() {
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
                 description="Website for Scotland-based artist Rho Mcguire."
-                tech={["NEXT", "NOTION API", "TAILWIND CSS"]}
+                tech={["NEXT.JS", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
                 title="la macina sonora"
