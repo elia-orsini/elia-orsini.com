@@ -1,3 +1,4 @@
+import DesignFooter from "@components/design/footer";
 import Header from "@components/Header";
 import Image from "@components/Image";
 import Navigation from "@components/Navigation";
@@ -11,7 +12,7 @@ export default function TwoD() {
       <Header title={`photogrammetry | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto w-4/5 my-20 justify-between">
+        <div className="flex-col mx-auto w-4/5 mt-20 justify-between">
           <p className={`text-3xl ${koulen.className}`}>PHOTOGRAMMETRY</p>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
@@ -60,6 +61,7 @@ export default function TwoD() {
             <Image src="/design/photogrammetry/11.jpg" />
           </div>
         </div>
+        <DesignFooter previous="/design/visualisers" next="/design/luce-artificiale" />
       </Navigation>
     </>
   );

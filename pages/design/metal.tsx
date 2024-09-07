@@ -1,3 +1,4 @@
+import DesignFooter from "@components/design/footer";
 import Header from "@components/Header";
 import Image from "@components/Image";
 import Navigation from "@components/Navigation";
@@ -8,7 +9,7 @@ export default function TwoD() {
       <Header title={`metallic utopia | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto w-4/5 my-20">
+        <div className="flex-col mx-auto w-4/5 mt-20">
           <div className="flex-col mx-auto grid md:grid-cols-3 mt-5 gap-2">
             <div className="flex flex-col space-y-2">
               <Image src="/design/metal/39.jpg" />
@@ -51,6 +52,7 @@ export default function TwoD() {
             </div>
           </div>
         </div>
+        <DesignFooter previous="/design/sunshi" next="/design/visualisers" />
       </Navigation>
     </>
   );

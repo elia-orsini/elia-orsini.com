@@ -1,3 +1,4 @@
+import DesignFooter from "@components/design/footer";
 import Header from "@components/Header";
 import Image from "@components/Image";
 import Navigation from "@components/Navigation";
@@ -8,7 +9,7 @@ export default function TwoD() {
       <Header title={`aliens | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto grid sm:grid-cols-3 w-4/5 my-20 gap-2">
+        <div className="flex-col mx-auto grid sm:grid-cols-3 w-4/5 mt-20 gap-2">
           <div className="flex flex-col my-auto">
             <Image src="/design/aliens/alien3.jpg" />
           </div>
@@ -19,6 +20,7 @@ export default function TwoD() {
             <Image src="/design/aliens/alien1.jpg" />
           </div>
         </div>
+        <DesignFooter previous="/design/2d" />
       </Navigation>
     </>
   );

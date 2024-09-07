@@ -1,3 +1,4 @@
+import DesignFooter from "@components/design/footer";
 import Header from "@components/Header";
 import Image from "@components/Image";
 import Navigation from "@components/Navigation";
@@ -12,7 +13,7 @@ export default function TwoD() {
       <Header title={`sunshi | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto w-4/5 my-20 justify-between">
+        <div className="flex-col mx-auto w-4/5 mt-20 justify-between">
           <div className="flex-col mx-auto gap-y-20 grid mt-10">
             <div>
               <p className={`text-3xl ${koulen.className}`}>luce artificiale</p>
@@ -58,6 +59,7 @@ export default function TwoD() {
             </div>
           </div>
         </div>
+        <DesignFooter previous="/design/photogrammetry" next="/design/2d" />
       </Navigation>
     </>
   );

@@ -1,3 +1,4 @@
+import DesignFooter from "@components/design/footer";
 import Header from "@components/Header";
 import Image from "@components/Image";
 import Navigation from "@components/Navigation";
@@ -11,7 +12,7 @@ export default function TwoD() {
       <Header title={`sunshi | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto w-4/5 my-20 justify-between">
+        <div className="flex-col mx-auto w-4/5 mt-20 justify-between">
           <p className={`text-3xl ${koulen.className}`}>SUNSHI</p>
           <p className="text-sm lg:text-base">
             the sun always shines in the city of sunshi. <br />
@@ -33,7 +34,7 @@ export default function TwoD() {
             everything worked out in the end.
           </p>
 
-          <div className="flex-col mx-auto grid sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-2">
+          <div className="flex-col mx-auto grid sm:grid-cols-2 lg:grid-cols-3 mt-5 gap-2">
             <Image src="/design/sunshi/1.jpg" />
             <Image src="/design/sunshi/2.jpg" />
             <Image src="/design/sunshi/3.jpg" />
@@ -42,6 +43,7 @@ export default function TwoD() {
             <Image src="/design/sunshi/4.jpg" />
           </div>
         </div>
+        <DesignFooter next="/design/metal" />
       </Navigation>
     </>
   );
