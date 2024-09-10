@@ -45,6 +45,10 @@ const RadioPlayer = () => {
             audioRef.current.src = `https://elia-radio.s3.eu-west-2.amazonaws.com/${songToPlay.title}.mp3`;
 
             audioRef.current.currentTime = offset;
+
+            if (isRadioPlaying) {
+              audioRef.current.play();
+            }
           }
         }
       }
@@ -80,19 +84,19 @@ const RadioPlayer = () => {
   }
 
   return (
-    <div>
+    <div className="mx-auto">
       {currentSong ? (
-        <div>
+        <div className="flex flex-col mt-10">
           <button
             onClick={() => {
               onButtonClick();
             }}
-            className="bg-white text-black px-10"
+            className="bg-white mx-auto text-black px-10"
           >
             {isRadioPlaying ? "pause" : "play"}
           </button>
 
-          <h2>Now Playing: {currentSong.title}</h2>
+          <h2 className="mt-5">Now Playing: {currentSong.title}</h2>
           <audio ref={audioRef} controls className="hidden">
             <source
               src={`https://elia-radio.s3.eu-west-2.amazonaws.com/${currentSong?.title}.mp3`}
