@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
 const getCurrentUnixTimestamp = () => {
@@ -108,6 +109,14 @@ const RadioPlayer = () => {
       ) : (
         <h2>Loading...</h2>
       )}
+
+      <Image
+        className="mt-5"
+        alt="radioImage"
+        src="/radioImages/BMud - Tahoe:Ranger.jpg"
+        width="265"
+        height="265"
+      />
     </div>
   );
 };
