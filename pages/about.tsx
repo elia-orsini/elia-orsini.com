@@ -78,6 +78,7 @@ export default function About() {
                 <li className="appearingText">Figma / FigJam</li>
                 <li className="appearingText">Python</li>
                 <li className="appearingText">Redux</li>
+                <li className="appearingText">Zustand</li>
                 <li className="appearingText">GSAP / Framer Motion</li>
                 <li className="appearingText">Three.js / Babylon.js</li>
                 <li className="appearingText">GraphQL / SQL</li>
