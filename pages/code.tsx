@@ -33,7 +33,7 @@ export default function Code() {
               <Project
                 title="yu's Cafes"
                 url="https://yu-coffee-six.vercel.app/"
-                description="Website for collecting cafes visits around the world."
+                description="Website for collecting cafes around the world."
                 tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
