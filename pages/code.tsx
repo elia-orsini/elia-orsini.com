@@ -32,7 +32,7 @@ export default function Code() {
             <ul className="text-left">
               <Project
                 title="yu's Cafes"
-                url="https://yu-coffee-six.vercel.app/"
+                url="https://yu-coffee-map.vercel.app/"
                 description="Website for collecting cafes around the world."
                 tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
               />
