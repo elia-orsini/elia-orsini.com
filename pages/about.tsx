@@ -20,7 +20,7 @@ export default function About() {
     const appearingTexts = gsap.utils.toArray(".appearingText");
     gsap.from(appearingTexts, {
       opacity: 0,
-      duration: 0.2,
+      duration: 0.05,
       stagger: 0.05,
     });
   }, []);
@@ -159,8 +159,7 @@ export default function About() {
                 dates="Oct 2022 / July 2024"
                 descriptions={[
                   `Part of the 3D Labs team developing 3D interactive experiences for the sports industry (clients include ATP, Roland Garros, The Open, MLS).`,
-                  `Throughout this role, I used many different technologies including Unreal Engine, 
-                  Babylon.js, Blender and React to produce 3D virtual experiences able to run on the web, 
+                  `Used Unreal Engine, Babylon.js and Blender to produce 3D virtual experiences able to run on the web, 
                   on VR headsets but also on any OS.`,
                   `Designed and built custom frontend solutions using React, Redux, 
                   Node.js, WebSockets, Bootstrap CSS and Electron.`,

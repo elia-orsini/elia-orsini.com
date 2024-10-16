@@ -11,7 +11,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
 
   useGSAP(() => {
     let translation = 0;
-    const animationSpeed = 0.7;
+    const animationSpeed = 1;
 
     const gsapAnimation = () => {
       if (translation < images.length * -274) {
