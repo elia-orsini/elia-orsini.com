@@ -37,7 +37,7 @@ export default function About() {
           <div className="mt-10">
             <Image
               alt=""
-              src="/me.webp"
+              src="/me.jpeg"
               className="border border-white"
               width={200}
               height={200}
