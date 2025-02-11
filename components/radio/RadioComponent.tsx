@@ -98,7 +98,7 @@ const RadioPlayer = () => {
           </button>
 
           <h2 className="mt-5">Now Playing: {currentSong.title}</h2>
-          <audio ref={audioRef} autoPlay controls className="hidden">
+          <audio ref={audioRef} controls className="hidden">
             <source
               src={`https://elia-radio.s3.eu-west-2.amazonaws.com/${currentSong?.title}.mp3`}
               type="audio/mpeg"
@@ -111,7 +111,7 @@ const RadioPlayer = () => {
       )}
 
       <Image
-        className="mt-5"
+        className="mt-5 mx-auto"
         alt="radioImage"
         src="/radioImages/BMud - Tahoe:Ranger.jpg"
         width="265"
