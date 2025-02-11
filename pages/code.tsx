@@ -49,6 +49,12 @@ export default function Code() {
                 tech={["NEXT.JS", "TYPESCRIPT", "NOTION API"]}
               />
               <Project
+                title="rho mcguire"
+                url="https://rhomcguire.uk"
+                description="Website for Scotland-based artist Rho Mcguire."
+                tech={["NEXT.JS", "NOTION API", "TAILWIND CSS"]}
+              />
+              <Project
                 title="gft forever"
                 url="https://gft-forever.vercel.app/"
                 description="An archive of every film shown at my local independent cinema."
@@ -59,12 +65,6 @@ export default function Code() {
                 url="https://lazyllm.xyz/"
                 description="Toolkit to create, test and analyse prompts for Large Language Models (LLMs)."
                 tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
-              />
-              <Project
-                title="rho mcguire"
-                url="https://rhomcguire.uk"
-                description="Website for Scotland-based artist Rho Mcguire."
-                tech={["NEXT.JS", "NOTION API", "TAILWIND CSS"]}
               />
               <Project
                 title="la macina sonora"
@@ -78,12 +78,12 @@ export default function Code() {
                 description="Website for Insomnia Events."
                 tech={["REACT", "TAILWIND CSS"]}
               />
-              {/* <Project
+              <Project
                 title="digital gardens"
                 url="https://digital-gardens-sepia.vercel.app/"
                 description="Your cute little corner of the internet."
                 tech={["NEXT", "TAILWIND CSS"]}
-              /> */}
+              />
             </ul>
           </div>
 
