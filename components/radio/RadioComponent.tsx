@@ -44,7 +44,6 @@ const RadioPlayer = () => {
 
           if (audioRef.current) {
             audioRef.current.src = `https://elia-radio.s3.eu-west-2.amazonaws.com/${songToPlay.title}.mp3`;
-
             audioRef.current.currentTime = offset;
 
             if (isRadioPlaying) {
@@ -58,7 +57,63 @@ const RadioPlayer = () => {
     const interval = setInterval(checkSong, 1000);
 
     return () => clearInterval(interval);
-  }, [playlist, currentSong]);
+  }, [playlist, currentSong, isRadioPlaying]);
+
+  useEffect(() => {
+    const handleEnded = () => {
+      const currentTimestamp = getCurrentUnixTimestamp();
+      const nextSong = playlist.find(
+        (song) => song.startTime > currentTimestamp
+      );
+
+      if (nextSong) {
+        setCurrentSong(nextSong);
+        audioRef.current.src = `https://elia-radio.s3.eu-west-2.amazonaws.com/${nextSong.title}.mp3`;
+        audioRef.current.currentTime = 0;
+        if (isRadioPlaying) {
+          audioRef.current.play();
+        }
+      }
+    };
+
+    if (audioRef.current) {
+      audioRef.current.addEventListener("ended", handleEnded);
+    }
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.removeEventListener("ended", handleEnded);
+      }
+    };
+  }, [playlist, isRadioPlaying]);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        const currentTimestamp = getCurrentUnixTimestamp();
+        const songToPlay = playlist.find(
+          (song) =>
+            currentTimestamp >= song.startTime &&
+            currentTimestamp < song.startTime + song.duration
+        );
+
+        if (songToPlay && (!currentSong || currentSong.title !== songToPlay.title)) {
+          setCurrentSong(songToPlay);
+          audioRef.current.src = `https://elia-radio.s3.eu-west-2.amazonaws.com/${songToPlay.title}.mp3`;
+          audioRef.current.currentTime = currentTimestamp - songToPlay.startTime;
+          if (isRadioPlaying) {
+            audioRef.current.play();
+          }
+        }
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [playlist, currentSong, isRadioPlaying]);
 
   function onButtonClick() {
     const currentTimestamp = getCurrentUnixTimestamp();
