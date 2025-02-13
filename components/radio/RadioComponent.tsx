@@ -11,6 +11,7 @@ const RadioPlayer = () => {
   const audioRef = useRef(null);
 
   const [isRadioPlaying, setIsRadioPlaying] = useState(false);
+  const [listeners, setListeners] = useState(0);
 
   useEffect(() => {
     const fetchPlaylist = async () => {
@@ -25,6 +26,59 @@ const RadioPlayer = () => {
 
     fetchPlaylist();
   }, []);
+
+  // Fetch the current listener count on component mount
+  useEffect(() => {
+    fetch("/api/listeners/count")
+      .then((res) => res.json())
+      .then((data) => setListeners(data.listeners))
+      .catch((error) =>
+        console.error("Failed to fetch listener count:", error)
+      );
+  }, []);
+
+  // Increment listener count when playback starts
+  const startListening = async () => {
+    try {
+      const response = await fetch("/api/listeners/increment", {
+        method: "POST",
+      });
+      const data = await response.json();
+      setListeners(data.listeners);
+    } catch (error) {
+      console.error("Failed to increment listener count:", error);
+    }
+  };
+
+  // Decrement listener count when playback stops
+  const stopListening = async () => {
+    try {
+      const response = await fetch("/api/listeners/decrement", {
+        method: "POST",
+      });
+      const data = await response.json();
+      setListeners(data.listeners);
+    } catch (error) {
+      console.error("Failed to decrement listener count:", error);
+    }
+  };
+
+  // Handle page refresh or tab close
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (isRadioPlaying) {
+        stopListening();
+      }
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    window.addEventListener("unload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      window.removeEventListener("unload", handleBeforeUnload);
+    };
+  }, [isRadioPlaying]);
 
   useEffect(() => {
     const checkSong = () => {
@@ -73,6 +127,12 @@ const RadioPlayer = () => {
         if (isRadioPlaying) {
           audioRef.current.play();
         }
+        fetch("/api/listeners/count")
+          .then((res) => res.json())
+          .then((data) => setListeners(data.listeners))
+          .catch((error) =>
+            console.error("Failed to fetch listener count:", error)
+          );
       }
     };
 
@@ -104,11 +164,13 @@ const RadioPlayer = () => {
       navigator.mediaSession.setActionHandler("play", () => {
         audioRef.current.play();
         setIsRadioPlaying(true);
+        startListening();
       });
 
       navigator.mediaSession.setActionHandler("pause", () => {
         audioRef.current.pause();
         setIsRadioPlaying(false);
+        stopListening();
       });
     }
   }, [currentSong]);
@@ -162,8 +224,10 @@ const RadioPlayer = () => {
 
     if (!isRadioPlaying) {
       audioRef.current.play();
+      startListening();
     } else {
       audioRef.current.pause();
+      stopListening();
     }
 
     setIsRadioPlaying(!isRadioPlaying);
@@ -177,12 +241,16 @@ const RadioPlayer = () => {
             onClick={() => {
               onButtonClick();
             }}
-            className="bg-white mx-auto text-black px-10"
+            className="bg-white mx-auto text-black px-10 hover:opacity-80 py-1"
           >
             {isRadioPlaying ? "pause" : "play"}
           </button>
+          <p className="opacity-80 text-sm mt-4">
+            {listeners.toString().padStart(2, "0")} other people currently
+            listening to
+          </p>
 
-          <h2 className="mt-5">Now Playing: {currentSong.title}</h2>
+          <h2 className="">{currentSong.title}</h2>
           <audio
             ref={audioRef}
             autoPlay={isRadioPlaying}
@@ -201,7 +269,7 @@ const RadioPlayer = () => {
       )}
 
       <Image
-        className="mt-5"
+        className="mt-5 mx-auto"
         alt="radioImage"
         src="/radioImages/BMud - Tahoe:Ranger.jpg"
         width="265"
