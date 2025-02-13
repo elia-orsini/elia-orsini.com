@@ -88,6 +88,32 @@ const RadioPlayer = () => {
   }, [playlist, isRadioPlaying]);
 
   useEffect(() => {
+    if ("mediaSession" in navigator && currentSong) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: currentSong.title,
+        artist: "Elia's Radio",
+        artwork: [
+          {
+            src: "/radioImages/BMud - Tahoe:Ranger.jpg",
+            sizes: "265x265",
+            type: "image/jpeg",
+          },
+        ],
+      });
+
+      navigator.mediaSession.setActionHandler("play", () => {
+        audioRef.current.play();
+        setIsRadioPlaying(true);
+      });
+
+      navigator.mediaSession.setActionHandler("pause", () => {
+        audioRef.current.pause();
+        setIsRadioPlaying(false);
+      });
+    }
+  }, [currentSong]);
+
+  useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.visibilityState === "visible") {
         const currentTimestamp = getCurrentUnixTimestamp();
@@ -97,10 +123,14 @@ const RadioPlayer = () => {
             currentTimestamp < song.startTime + song.duration
         );
 
-        if (songToPlay && (!currentSong || currentSong.title !== songToPlay.title)) {
+        if (
+          songToPlay &&
+          (!currentSong || currentSong.title !== songToPlay.title)
+        ) {
           setCurrentSong(songToPlay);
           audioRef.current.src = `https://elia-radio.s3.eu-west-2.amazonaws.com/${songToPlay.title}.mp3`;
-          audioRef.current.currentTime = currentTimestamp - songToPlay.startTime;
+          audioRef.current.currentTime =
+            currentTimestamp - songToPlay.startTime;
           if (isRadioPlaying) {
             audioRef.current.play();
           }
