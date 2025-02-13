@@ -27,14 +27,23 @@ const RadioPlayer = () => {
     fetchPlaylist();
   }, []);
 
-  // Fetch the current listener count on component mount
   useEffect(() => {
-    fetch("/api/listeners/count")
-      .then((res) => res.json())
-      .then((data) => setListeners(data.listeners))
-      .catch((error) =>
-        console.error("Failed to fetch listener count:", error)
-      );
+    const fetchListeners = async () => {
+      try {
+        const response = await fetch("/api/listeners/count");
+        const data = await response.json();
+        setListeners(data.listeners);
+      } catch (error) {
+        console.error("Failed to fetch listener count:", error);
+      }
+    };
+
+    fetchListeners();
+
+    // Refresh the listener count every 20 seconds
+    const interval = setInterval(fetchListeners, 20000);
+
+    return () => clearInterval(interval);
   }, []);
 
   // Increment listener count when playback starts
