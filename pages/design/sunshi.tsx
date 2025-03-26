@@ -35,12 +35,12 @@ export default function TwoD() {
           </p>
 
           <div className="flex-col mx-auto grid sm:grid-cols-2 lg:grid-cols-3 mt-5 gap-2">
-            <Image src="/design/sunshi/1.jpg" />
-            <Image src="/design/sunshi/2.jpg" />
-            <Image src="/design/sunshi/3.jpg" />
-            <Image src="/design/sunshi/5.jpg" />
-            <Image src="/design/sunshi/6.jpg" />
-            <Image src="/design/sunshi/4.jpg" />
+            <Image alt="" src="/design/sunshi/1.jpg" />
+            <Image alt="" src="/design/sunshi/2.jpg" />
+            <Image alt="" src="/design/sunshi/3.jpg" />
+            <Image alt="" src="/design/sunshi/5.jpg" />
+            <Image alt="" src="/design/sunshi/6.jpg" />
+            <Image alt="" src="/design/sunshi/4.jpg" />
           </div>
         </div>
         <DesignFooter next="/design/metal" />

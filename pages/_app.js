@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta
           name="keywords"
-          content="elia orsini, elia, orsini, eliaorsini, 2024, 3D, designer, software developer, three.js, photographer, scotland, edinburgh, 3D graphic design, developer, technical artist, glasgow"
+          content="elia orsini, elia, orsini, eliaorsini, 2025, 3D, designer, software developer, three.js, photographer, scotland, edinburgh, 3D graphic design, developer, technical artist, glasgow"
         />
         <meta name="author" content="elia orsini" />
 

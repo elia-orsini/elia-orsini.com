@@ -43,18 +43,18 @@ export default function TwoD() {
               </p>
 
               <div className="flex-col mx-auto grid grid-cols-3 lg:grid-cols-4 gap-2 mt-2">
-                <Image src="/design/luce-artificiale/1.jpg" />
-                <Image src="/design/luce-artificiale/2.jpg" />
-                <Image src="/design/luce-artificiale/5.jpg" />
-                <Image src="/design/luce-artificiale/7.jpg" />
-                <Image src="/design/luce-artificiale/8.jpg" />
-                <Image src="/design/luce-artificiale/3.jpg" />
-                <Image src="/design/luce-artificiale/9.jpg" />
-                <Image src="/design/luce-artificiale/4.jpg" />
-                <Image src="/design/luce-artificiale/6.jpg" />
-                <Image src="/design/luce-artificiale/10.jpg" />
-                <Image src="/design/luce-artificiale/11.jpg" />
-                <Image src="/design/luce-artificiale/12.jpg" />
+                <Image alt="" src="/design/luce-artificiale/1.jpg" />
+                <Image alt="" src="/design/luce-artificiale/2.jpg" />
+                <Image alt="" src="/design/luce-artificiale/5.jpg" />
+                <Image alt="" src="/design/luce-artificiale/7.jpg" />
+                <Image alt="" src="/design/luce-artificiale/8.jpg" />
+                <Image alt="" src="/design/luce-artificiale/3.jpg" />
+                <Image alt="" src="/design/luce-artificiale/9.jpg" />
+                <Image alt="" src="/design/luce-artificiale/4.jpg" />
+                <Image alt="" src="/design/luce-artificiale/6.jpg" />
+                <Image alt="" src="/design/luce-artificiale/10.jpg" />
+                <Image alt="" src="/design/luce-artificiale/11.jpg" />
+                <Image alt="" src="/design/luce-artificiale/12.jpg" />
               </div>
             </div>
           </div>

@@ -29,10 +29,10 @@ export default function TwoD() {
                 </h1>
               </a>
               <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
-                <Image src="/design/visualisers/1975/1975-1.jpg" />
-                <Image src="/design/visualisers/1975/1975-2.jpg" />
-                <Image src="/design/visualisers/1975/1975-3.jpg" />
-                <Image src="/design/visualisers/1975/1975-4.jpg" />
+                <Image alt="" src="/design/visualisers/1975/1975-1.jpg" />
+                <Image alt="" src="/design/visualisers/1975/1975-2.jpg" />
+                <Image alt="" src="/design/visualisers/1975/1975-3.jpg" />
+                <Image alt="" src="/design/visualisers/1975/1975-4.jpg" />
               </div>
             </div>
 
@@ -50,10 +50,10 @@ export default function TwoD() {
                 </h1>
               </a>
               <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
-                <Image src="/design/visualisers/growing-pains/olive4.jpg" />
-                <Image src="/design/visualisers/growing-pains/olive3.jpg" />
-                <Image src="/design/visualisers/growing-pains/olive2.jpg" />
-                <Image src="/design/visualisers/growing-pains/olive1.jpg" />
+                <Image alt="" src="/design/visualisers/growing-pains/olive4.jpg" />
+                <Image alt="" src="/design/visualisers/growing-pains/olive3.jpg" />
+                <Image alt="" src="/design/visualisers/growing-pains/olive2.jpg" />
+                <Image alt="" src="/design/visualisers/growing-pains/olive1.jpg" />
               </div>
             </div>
 
@@ -64,10 +64,10 @@ export default function TwoD() {
                 and you fall into a dream.
               </p>
               <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
-                <Image src="/design/visualisers/temple/temple4.jpg" />
-                <Image src="/design/visualisers/temple/temple3.jpg" />
-                <Image src="/design/visualisers/temple/temple2.jpg" />
-                <Image src="/design/visualisers/temple/temple1.jpg" />
+                <Image alt="" src="/design/visualisers/temple/temple4.jpg" />
+                <Image alt="" src="/design/visualisers/temple/temple3.jpg" />
+                <Image alt="" src="/design/visualisers/temple/temple2.jpg" />
+                <Image alt="" src="/design/visualisers/temple/temple1.jpg" />
               </div>
             </div>
 
@@ -93,18 +93,18 @@ export default function TwoD() {
                 explains how this was made.
               </p>
               <div className="flex-col mx-auto grid sm:grid-cols-3 lg:grid-cols-4 gap-2 mt-2">
-                <Image src="/design/visualisers/exhale/cr1.jpg" />
-                <Image src="/design/visualisers/exhale/cr11.webp" />
-                <Image src="/design/visualisers/exhale/cr2.jpg" />
-                <Image src="/design/visualisers/exhale/cr3.jpg" />
-                <Image src="/design/visualisers/exhale/cr8.webp" />
-                <Image src="/design/visualisers/exhale/cr4.jpg" />
-                <Image src="/design/visualisers/exhale/cr9.webp" />
-                <Image src="/design/visualisers/exhale/cr5.jpg" />
-                <Image src="/design/visualisers/exhale/cr10.webp" />
-                <Image src="/design/visualisers/exhale/cr6.jpg" />
-                <Image src="/design/visualisers/exhale/cr12.webp" />
-                <Image src="/design/visualisers/exhale/cr7.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr1.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr11.webp" />
+                <Image alt="" src="/design/visualisers/exhale/cr2.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr3.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr8.webp" />
+                <Image alt="" src="/design/visualisers/exhale/cr4.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr9.webp" />
+                <Image alt="" src="/design/visualisers/exhale/cr5.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr10.webp" />
+                <Image alt="" src="/design/visualisers/exhale/cr6.jpg" />
+                <Image alt="" src="/design/visualisers/exhale/cr12.webp" />
+                <Image alt="" src="/design/visualisers/exhale/cr7.jpg" />
               </div>
             </div>
           </div>

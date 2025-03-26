@@ -23,8 +23,8 @@ export default function TwoD() {
             </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
-            <Image src="/design/photogrammetry/3.jpg" />
-            <Image src="/design/photogrammetry/4.jpg" />
+            <Image alt="" src="/design/photogrammetry/3.jpg" />
+            <Image alt="" src="/design/photogrammetry/4.jpg" />
           </div>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
@@ -34,8 +34,8 @@ export default function TwoD() {
             </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
-            <Image src="/design/photogrammetry/5.jpg" />
-            <Image src="/design/photogrammetry/6.jpg" />
+            <Image alt="" src="/design/photogrammetry/5.jpg" />
+            <Image alt="" src="/design/photogrammetry/6.jpg" />
           </div>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
@@ -45,9 +45,9 @@ export default function TwoD() {
             </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
-            <Image src="/design/photogrammetry/7.jpg" />
-            <Image src="/design/photogrammetry/8.jpg" />
-            <Image src="/design/photogrammetry/9.jpg" />
+            <Image alt="" src="/design/photogrammetry/7.jpg" />
+            <Image alt="" src="/design/photogrammetry/8.jpg" />
+            <Image alt="" src="/design/photogrammetry/9.jpg" />
           </div>
 
           <p className="text-sm lg:text-base mt-10 mb-2">
@@ -57,11 +57,14 @@ export default function TwoD() {
             </span>
           </p>
           <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2">
-            <Image src="/design/photogrammetry/10.jpg" />
-            <Image src="/design/photogrammetry/11.jpg" />
+            <Image alt="" src="/design/photogrammetry/10.jpg" />
+            <Image alt="" src="/design/photogrammetry/11.jpg" />
           </div>
         </div>
-        <DesignFooter previous="/design/visualisers" next="/design/luce-artificiale" />
+        <DesignFooter
+          previous="/design/visualisers"
+          next="/design/luce-artificiale"
+        />
       </Navigation>
     </>
   );
