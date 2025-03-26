@@ -18,12 +18,12 @@ const WebsiteCard: React.FC<{
             <Image
               alt=""
               src={imageSrc}
-              className="opacity-60"
+              className="opacity-80"
               width={254}
               height={192}
               objectFit="cover"
             />
-            <div className="absolute w-[254px] h-[190px] inset-0 inset-0 bg-gradient-to-t from-black from-1%" />
+            <div className="absolute w-[254px] h-[190px] inset-0 bg-gradient-to-t from-black from-1%" />
           </div>
         )}
 
