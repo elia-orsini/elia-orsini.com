@@ -12,9 +12,9 @@ const WebsiteCard: React.FC<{
 }> = ({ title, url, description, tech, imageSrc }) => {
   return (
     <a href={url} target="_blank" rel="noreferrer">
-      <div className="appearingCards flex border border-lime/50 h-48 w-64">
+      <div className="appearingCards flex border border-lime/50 h-48 w-[calc(100vw-45px)] sm:w-64">
         {imageSrc && (
-          <div className="absolute">
+          <div className="absolute hidden sm:block">
             <Image
               alt=""
               src={imageSrc}
@@ -24,6 +24,21 @@ const WebsiteCard: React.FC<{
               objectFit="cover"
             />
             <div className="absolute w-[254px] h-[190px] inset-0 bg-gradient-to-t from-black from-1%" />
+          </div>
+        )}
+
+        {imageSrc && (
+          <div className="absolute block sm:hidden">
+            <div className="relative w-[calc(100vw-47px)] bg-red-200 h-[190px]">
+              <Image
+                alt=""
+                src={imageSrc}
+                className="opacity-80"
+                fill
+                objectFit="cover"
+              />
+            </div>
+            <div className="absolute w-[calc(100vw-47px)] h-[190px] inset-0 bg-gradient-to-t from-black from-1%" />
           </div>
         )}
 
