@@ -61,6 +61,13 @@ export default function Code() {
 
               <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
                 <WebsiteCard
+                  title="talome"
+                  url="https://www.talome.com/"
+                  description="Website for Talome talent agency based in Paris."
+                  tech={["NEXT.JS", "GSAP", "SANITY", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/talome.webp"
+                />
+                <WebsiteCard
                   title="yu's Cafes"
                   url="https://yu-coffee-map.vercel.app/"
                   description="Website for collecting cafes around the world."
