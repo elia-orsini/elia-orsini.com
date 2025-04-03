@@ -61,6 +61,13 @@ export default function Code() {
 
               <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
                 <WebsiteCard
+                  title="angela ricciardi"
+                  url="https://angela-ricciardi.vercel.app/"
+                  description="Website for photographer and artist Angela Ricciardi."
+                  tech={["NEXT.JS", "SANITY", "GSAP", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/angela-ricciardi.webp"
+                />
+                <WebsiteCard
                   title="talome"
                   url="https://www.talome.com/"
                   description="Website for Talome talent agency based in Paris."

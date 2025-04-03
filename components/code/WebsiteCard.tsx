@@ -23,7 +23,7 @@ const WebsiteCard: React.FC<{
               height={192}
               objectFit="cover"
             />
-            <div className="absolute w-[254px] h-[190px] inset-0 bg-gradient-to-t from-black from-1%" />
+            <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black from-90% to-transparent to-100%" />
           </div>
         )}
 
