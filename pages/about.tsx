@@ -14,14 +14,14 @@ export default function About() {
     gsap.from(".imageScroller", {
       opacity: 0,
       duration: 1.5,
-      delay: 2.3,
+      delay: 1.7,
     });
 
     const appearingTexts = gsap.utils.toArray(".appearingText");
     gsap.from(appearingTexts, {
       opacity: 0,
-      duration: 0.05,
-      stagger: 0.05,
+      duration: 0.08,
+      stagger: 0.03,
     });
   }, []);
 
@@ -154,6 +154,15 @@ export default function About() {
             <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
 
             <div className="mx-2">
+              <Experience
+                role="Unreal Engine Developer"
+                company="Robohive"
+                dates="Nov 2024 / "
+                descriptions={[
+                  `Developed a VR training application in Unreal Engine for orthopaedic robotic surgery for the NHS.`,
+                ]}
+              />
+
               <Experience
                 role="Junior Software Developer"
                 company="IMG ARENA"
