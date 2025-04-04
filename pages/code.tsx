@@ -82,6 +82,13 @@ export default function Code() {
                   imageSrc="/code/websites-screens/yu.webp"
                 />
                 <WebsiteCard
+                  title="la macina sonora"
+                  url="https://macina-sonora-elia-orsini.vercel.app/"
+                  description="Website for the recording studio La Macina Sonora."
+                  tech={["REACT", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/macina.webp"
+                />
+                <WebsiteCard
                   title="Immortal Mags"
                   url="https://immortal-tau.vercel.app/"
                   description="Documenting independent magazines."
@@ -115,13 +122,6 @@ export default function Code() {
                   description="Toolkit to create, test and analyse prompts for Large Language Models."
                   tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/lazyllm.webp"
-                />
-                <WebsiteCard
-                  title="la macina sonora"
-                  url="https://macina-sonora-elia-orsini.vercel.app/"
-                  description="Website for the recording studio La Macina Sonora."
-                  tech={["REACT", "TAILWIND CSS"]}
-                  imageSrc="/code/websites-screens/macina.webp"
                 />
                 <WebsiteCard
                   title="insomnia events"
