@@ -83,7 +83,7 @@ export default function Code() {
                 />
                 <WebsiteCard
                   title="la macina sonora"
-                  url="https://macina-sonora-elia-orsini.vercel.app/"
+                  url="https://www.lamacinasonora.com/"
                   description="Website for the recording studio La Macina Sonora."
                   tech={["REACT", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/macina.webp"
