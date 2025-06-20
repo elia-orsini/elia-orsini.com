@@ -141,7 +141,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="appearingCards z-30 text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 websites i collaborated on
               </p>
               <WebsiteCard
@@ -154,7 +154,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards text-left text-sm bg-white w-max text-black px-2 mb-2">
+              <p className="appearingCards z-30 text-left text-sm bg-white w-max text-black px-2 mb-2">
                 3D projects
               </p>
               <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
@@ -183,7 +183,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="appearingCards z-30 text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 other projects
               </p>
               <WebsiteCard
