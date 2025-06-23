@@ -62,7 +62,7 @@ export default function Code() {
               <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
                 <WebsiteCard
                   title="angela ricciardi"
-                  url="https://angela-ricciardi.vercel.app/"
+                  url="https://www.angelaricciardi.com/"
                   description="Website for photographer and artist Angela Ricciardi."
                   tech={["NEXT.JS", "SANITY", "GSAP", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/angela-ricciardi.webp"
@@ -110,6 +110,13 @@ export default function Code() {
                   imageSrc="/code/websites-screens/rho.webp"
                 />
                 <WebsiteCard
+                  title="insomnia events"
+                  url="https://www.insomniaevents.xyz/"
+                  description="Website for Insomnia Events."
+                  tech={["REACT", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/insomnia.webp"
+                />
+                <WebsiteCard
                   title="gft forever"
                   url="https://gft-forever.vercel.app/"
                   description="An archive of every film shown at my local independent cinema."
@@ -122,13 +129,6 @@ export default function Code() {
                   description="Toolkit to create, test and analyse prompts for Large Language Models."
                   tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/lazyllm.webp"
-                />
-                <WebsiteCard
-                  title="insomnia events"
-                  url="https://www.insomniaevents.xyz/"
-                  description="Website for Insomnia Events."
-                  tech={["REACT", "TAILWIND CSS"]}
-                  imageSrc="/code/websites-screens/insomnia.webp"
                 />
                 <WebsiteCard
                   title="digital gardens"
