@@ -61,6 +61,13 @@ export default function Code() {
 
               <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
                 <WebsiteCard
+                  title="readu"
+                  url="https://readu-group-reading.vercel.app//"
+                  description="Readu brings friends together through shared reading experiences."
+                  tech={["NEXT.JS", "DYNAMO DB", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/readu.webp"
+                />
+                <WebsiteCard
                   title="angela ricciardi"
                   url="https://www.angelaricciardi.com/"
                   description="Website for photographer and artist Angela Ricciardi."
