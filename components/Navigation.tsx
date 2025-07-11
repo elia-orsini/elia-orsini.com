@@ -30,6 +30,15 @@ export default function Navigation({
         ease: "power3.inOut",
       });
     }
+
+    if (pathname === "/" && width < 642) {
+      gsap.to(".navigation", {
+        translateY: "250px",
+        duration: 0.1,
+        fontSize: 30,
+        ease: "power3.inOut",
+      });
+    }
   }, [pathname, width]);
 
   return (
