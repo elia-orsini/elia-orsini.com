@@ -38,20 +38,22 @@ export default function Code() {
       <div className="flex mx-5 mt-10 md:mt-20 mx-5 gap-x-3">
         <button
           onClick={() => setGridView(!gridView)}
-          className={`border border-[0.4px] opacity-70 ${
+          className={`flex flex-row bg-black border border-[0.4px] opacity-70 ${
             !gridView && "opacity-30"
           }`}
         >
           <Image src="/grid-view.svg" width={30} height={30} alt="" />
+          <span className="my-auto mx-2">GRID</span>
         </button>
 
         <button
           onClick={() => setGridView(!gridView)}
-          className={`border border-[0.4px] opacity-70 ${
+          className={`flex flex-row bg-black border border-[0.4px] opacity-70 ${
             gridView && "opacity-30"
           }`}
         >
           <Image src="/list-view.svg" width={30} height={30} alt="" />
+          <span className="my-auto px-2">ROW</span>
         </button>
       </div>
 
