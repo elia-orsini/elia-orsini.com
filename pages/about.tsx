@@ -62,7 +62,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-6 md:mt-10 backdrop-blur-xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-6 md:mt-10 backdrop-blur-xl leading-[20px]">
           <div className="border border-b-0 md:border-b border-white text-sm">
             <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">
               tech

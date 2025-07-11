@@ -21,9 +21,9 @@ function Work() {
 
       <Navigation>
         <div className="z-30 absolute top-0 left-0 !h-[100dvh] w-screen">
-          <Canvas>
+          {/* <Canvas>
             <SpinningLogo />
-          </Canvas>
+          </Canvas> */}
         </div>
       </Navigation>
     </>

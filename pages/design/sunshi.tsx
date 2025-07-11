@@ -15,10 +15,10 @@ export default function TwoD() {
         <div className="flex-col w-4/5 mt-20 justify-between">
           <p className={`text-3xl ${koulen.className}`}>SUNSHI</p>
           <p className="text-sm lg:text-base">
-            The sun always shines in the city of sunshi. <br />
-            thanks to the latest developments in solar energy, an artificial sun
+            The sun always shines in the city of Sunshi. <br />
+            Thanks to the latest developments in solar energy, an artificial sun
             has been installed to light people&apos;s lives. <br />
-            it regulates the temperature and provides a warm and delicate light.
+            It regulates the temperature and provides a warm and delicate light.
             and when it rains, the sky is full of rainbows and kids can play in
             the streets.
             <br />

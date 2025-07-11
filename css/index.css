@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 ::selection {
-    background: #a3e635;
-    color: black;
-  }
+  background: #a3e635;
+  color: black;
+}
+
+.main-content {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  opacity: 0;
+}
+
+.main-content.loaded {
+  opacity: 1;
+}
+
+.page-transition {
+  opacity: 0 !important;
+}
