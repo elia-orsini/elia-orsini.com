@@ -196,7 +196,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards z-30 text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="appearingCards z-50 text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 other projects
               </p>
               <WebsiteCard

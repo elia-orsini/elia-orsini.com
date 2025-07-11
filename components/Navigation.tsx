@@ -30,27 +30,33 @@ export default function Navigation({
           </Link>
 
           <div className="w-full flex md:flex-col gap-x-10 md:gap-x-0 flex-row mx-auto text-center md:text-left mt-6 md:mt-14 space-y-2">
-            <p
-              className={`hover:underline md:ml-0 ml-auto mt-2 ${
-                pathDivided.includes("design") && "text-lime"
-              }`}
-            >
-              <Link href="/design">design</Link>
-            </p>
-            <p
-              className={`hover:underline ${
-                pathDivided.includes("code") && "text-lime"
-              }`}
-            >
-              <Link href="/code">code</Link>
-            </p>
-            <p
-              className={`hover:underline mr-auto ${
-                pathDivided.includes("about") && "text-lime"
-              }`}
-            >
-              <Link href="/about">about</Link>
-            </p>
+            {pathDivided.includes("design") ? (
+              <p className="hover:cursor-default md:ml-0 ml-auto mt-2 text-lime">
+                design
+              </p>
+            ) : (
+              <p className="hover:underline md:ml-0 ml-auto mt-2">
+                <Link href="/design">design</Link>
+              </p>
+            )}
+            {pathDivided.includes("code") ? (
+              <p className="hover:cursor-default md:ml-0 ml-auto mt-2 text-lime">
+                code
+              </p>
+            ) : (
+              <p className="hover:underline md:ml-0 ml-auto mt-2">
+                <Link href="/code">code</Link>
+              </p>
+            )}
+            {pathDivided.includes("about") ? (
+              <p className="hover:cursor-default md:ml-0 ml-auto mt-2 text-lime">
+                about
+              </p>
+            ) : (
+              <p className="hover:underline md:ml-0 ml-auto mt-2">
+                <Link href="/about">about</Link>
+              </p>
+            )}
           </div>
         </div>
 
