@@ -135,14 +135,4 @@ const ThreeDIndex = () => {
   );
 };
 
-function Annotation({ children, gpuTier, ...props }) {
-  return (
-    <>
-      <Html {...props} transform fullscreen>
-        <div className="flex">{children}</div>
-      </Html>
-    </>
-  );
-}
-
 export default ThreeDIndex;

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import RotatingSVG from "./footer/RotatingSVG";
 
 export default function Navigation({
   children,
@@ -12,15 +11,17 @@ export default function Navigation({
 
   const { pathname } = router;
   const pathDivided = pathname.split("/");
+
   return (
     <>
-      <div className="flex flex-col md:flex-row min-h-screen w-screen overflow-clip">
-        <div className="h-full flex flex-col w-full md:w-max text-white md:ml-20">
-          <Link href="/work" passHref>
+      <div className="flex flex-col md:flex-row min-h-screen w-screen overflow-clip z-30">
+        <div className="md:fixed h-full md:h-screen flex flex-col w-full md:w-max text-white md:px-20 z-40">
+          <Link href="/" passHref>
             <div className="mx-auto mt-10">
               <Image
                 alt="elig_logo"
-                className="w-16 md:w-28 mx-auto"
+                className="w-16 md:w-24 mx-auto"
+                style={{ filter: "drop-shadow(3px 3px 3px #222)" }}
                 src="/elig.png"
                 width={499}
                 height={285}
@@ -30,31 +31,25 @@ export default function Navigation({
 
           <div className="w-full mx-auto text-center md:text-left mt-6 md:mt-14 space-y-2">
             <p
-              className={`hover:italic ${
+              className={`hover:underline ${
                 pathDivided.includes("design") && "text-lime"
               }`}
             >
-              <Link href="/design">
-                {pathDivided.includes("design") ? "design <" : "design"}
-              </Link>
+              <Link href="/design">design</Link>
             </p>
             <p
-              className={`hover:italic ${
+              className={`hover:underline ${
                 pathDivided.includes("code") && "text-lime"
               }`}
             >
-              <Link href="/code">
-                {pathDivided.includes("code") ? "code <" : "code"}
-              </Link>
+              <Link href="/code">code</Link>
             </p>
             <p
-              className={`hover:italic ${
+              className={`hover:underline ${
                 pathDivided.includes("about") && "text-lime"
               }`}
             >
-              <Link href="/about">
-                {pathDivided.includes("about") ? "about <" : "about"}
-              </Link>
+              <Link href="/about">about</Link>
             </p>
             {/* <p
               className={`hover:italic ${
@@ -68,10 +63,10 @@ export default function Navigation({
           </div>
         </div>
 
-        <div className="w-full">{children}</div>
+        <div className="w-full z-30 md:pl-56 lg:pl-72">{children}</div>
       </div>
 
-      <div className="flex px-10 md:px-20 w-full bg-lime text-black h-28 text-sm justify-between">
+      {/* <div className="flex px-10 md:px-20 w-full bg-lime text-black h-28 text-sm justify-between">
         <div className="flex flex-row gap-10">
           <p className="my-auto">© 2025</p>
           <a
@@ -93,7 +88,7 @@ export default function Navigation({
         </div>
 
         <RotatingSVG />
-      </div>
+      </div> */}
     </>
   );
 }

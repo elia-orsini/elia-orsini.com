@@ -11,6 +11,11 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
   useGSAP(() => {
+    gsap.from(".headshot", {
+      opacity: 0,
+      duration: 1.5,
+    });
+
     gsap.from(".imageScroller", {
       opacity: 0,
       duration: 1.5,
@@ -29,16 +34,16 @@ export default function About() {
     <Navigation>
       <Header
         title={`about | elia orsini`}
-        description="About page of Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
+        description="About page of Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
-      <div className="w-full h-full flex flex-col px-4 sm:px-10 lg:px-20 mb-20 md:mb-40">
+      <div className="w-full h-full flex flex-col px-4 sm:pr-10 lg:pr-20 mb-20 md:mb-40">
         <div className="flex flex-row">
-          <div className="mt-10">
+          <div className="mt-10 w-[130px] sm:w-[200px]">
             <Image
               alt=""
               src="/me.jpeg"
-              className="border border-white"
+              className="headshot border border-white"
               width={200}
               height={200}
             />
@@ -46,12 +51,13 @@ export default function About() {
 
           <div className="mt-auto ml-2 sm:ml-10">
             <h1
+              id="NameSurname"
               className={`${koulen.className} text-lime text-[40px] sm:text-[60px] lg:text-[80px]`}
             >
               Elia Orsini
             </h1>
             <h1 className="text-[20px] sm:text-[25px] lg:text-[30px] -mt-2 sm:-mt-5 lg:-mt-7">
-              Software Developer and 3D Artist
+              Software Developer
             </h1>
           </div>
         </div>

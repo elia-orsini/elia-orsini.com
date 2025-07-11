@@ -24,11 +24,11 @@ function Design() {
     <>
       <Header
         title={`design | elia orsini`}
-        description="Design work by Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
+        description="Design work by Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
       <Navigation>
-        <div className="mt-10 sm:mt-20 mb-40 mx-5 sm:ml-40 sm:mr-20 text-2xl">
+        <div className="mt-10 sm:mt-20 mb-40 mx-5 sm:mr-20 text-2xl">
           <p className="appearingText text-left text-sm sm:text-base mb-4 block bg-white w-max text-black px-2">
             all design collections
           </p>

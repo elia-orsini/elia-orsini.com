@@ -20,7 +20,7 @@ const Project: React.FC<{
         {tech.map((technology, i) => (
           <span
             key={i}
-            className="opacity-80 text-sm bg-gray-600 px-1 ml-1 w-max uppercase"
+            className="border-[0.5px] border-white/80 opacity-80 text-sm bg-black px-2 ml-1 w-max uppercase"
           >
             {technology}
           </span>

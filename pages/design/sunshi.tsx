@@ -12,25 +12,26 @@ export default function TwoD() {
       <Header title={`sunshi | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto w-4/5 mt-20 justify-between">
+        <div className="flex-col w-4/5 mt-20 justify-between">
           <p className={`text-3xl ${koulen.className}`}>SUNSHI</p>
           <p className="text-sm lg:text-base">
-            the sun always shines in the city of sunshi. <br />
+            The sun always shines in the city of sunshi. <br />
             thanks to the latest developments in solar energy, an artificial sun
             has been installed to light people&apos;s lives. <br />
             it regulates the temperature and provides a warm and delicate light.
             and when it rains, the sky is full of rainbows and kids can play in
             the streets.
-            <br /> after a difficult decade, people started to leave their
-            screens and go out for long walks. the city is now vibrant with
-            life.
-            <br /> every day is a sunny sunday morning.
             <br />
-            people are happier and they walk to work. and after they are done,
+            After a difficult decade, people started to leave their screens and
+            go out for long walks. the city is now vibrant with life.
+            <br />
+            Every day is a sunny sunday morning.
+            <br />
+            People are happier and they walk to work. and after they are done,
             they have their dinner on the roofs of those buildings.
-            <br /> they sunbathe while they eat the fruits of that light. every
-            corner of the city is tinted by a delicate palette of warm colours.{" "}
             <br />
+            They sunbathe while they eat the fruits of that light. every corner
+            of the city is tinted by a delicate palette of warm colours. <br />
             everything worked out in the end.
           </p>
 
