@@ -16,7 +16,7 @@ export default function Layout(props) {
             </Canvas>
 
             <div className="flex sm:hidden">
-              <div className="w-screen !min-h-dvh flex">
+              <div className="w-screen !min-h-[100dvh] flex">
                 <Canvas className="z-10">
                   <ThreeDIndexMobile />
                 </Canvas>
