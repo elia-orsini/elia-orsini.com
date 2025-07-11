@@ -23,8 +23,8 @@ export default function Navigation({
                 className="w-16 md:w-24 mx-auto"
                 style={{ filter: "drop-shadow(3px 3px 3px #222)" }}
                 src="/elig.png"
-                width={499}
-                height={285}
+                width={80}
+                height={80}
               />
             </div>
           </Link>
