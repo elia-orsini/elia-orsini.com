@@ -8,7 +8,7 @@ export default function Layout(props) {
     <div className="flex flex-col min-h-screen bg-black text-white">
       <main className="flex-1 w-full mx-auto">
         <Suspense fallback={<p>loading</p>}>
-          <div className="fixed z-20 w-screen h-screen bg-black/60 backdrop-blur-sm" />
+          <div className="fixed z-20 w-screen h-[100dvh] bg-black/60 backdrop-blur-sm" />
 
           <div className="fixed pointer-events-none w-screen h-screen left-0 top-0 z-10">
             <Canvas className="hidden sm:block">

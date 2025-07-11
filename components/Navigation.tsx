@@ -29,9 +29,9 @@ export default function Navigation({
             </div>
           </Link>
 
-          <div className="w-full mx-auto text-center md:text-left mt-6 md:mt-14 space-y-2">
+          <div className="w-full flex md:flex-col gap-x-10 md:gap-x-0 flex-row mx-auto text-center md:text-left mt-6 md:mt-14 space-y-2">
             <p
-              className={`hover:underline ${
+              className={`hover:underline md:ml-0 ml-auto mt-2 ${
                 pathDivided.includes("design") && "text-lime"
               }`}
             >
@@ -45,7 +45,7 @@ export default function Navigation({
               <Link href="/code">code</Link>
             </p>
             <p
-              className={`hover:underline ${
+              className={`hover:underline mr-auto ${
                 pathDivided.includes("about") && "text-lime"
               }`}
             >

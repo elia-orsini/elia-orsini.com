@@ -20,7 +20,7 @@ function Work() {
       </div>
 
       <Navigation>
-        <div className="z-30 absolute top-0 left-0 !h-[100dvh] sm:!h-screen w-screen">
+        <div className="z-30 absolute top-0 left-0 !h-[100dvh] w-screen">
           <Canvas>
             <SpinningLogo />
           </Canvas>
