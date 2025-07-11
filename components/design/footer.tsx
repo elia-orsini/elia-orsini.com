@@ -5,7 +5,7 @@ const DesignFooter: React.FC<{ previous?: string; next?: string }> = ({
   next,
 }) => {
   return (
-    <div className="flex w-4/5 h-40 mx-auto">
+    <div className="flex w-4/5 h-40">
       {previous && (
         <div className="my-auto">
           <svg

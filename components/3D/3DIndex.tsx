@@ -2,7 +2,6 @@ import { useFrame } from "@react-three/fiber";
 import {
   CameraControls,
   Environment,
-  Html,
   PerspectiveCamera,
   Sparkles,
 } from "@react-three/drei";
@@ -101,15 +100,6 @@ const ThreeDIndex = () => {
 
         <CameraControls ref={cameraControlRef} makeDefault />
 
-        {/* <Annotation gpuTier>
-          <button
-            onClick={() => changeScene()}
-            className="ml-7 text-[0.4rem] px-2 border opacity-40 hover:opacity-80 border-white cursor-pointer hover:bg-white hover:text-black hover:shadow-2xl shadow-white"
-          >
-            TELEPORT
-          </button>
-        </Annotation> */}
-
         <Sparkles
           count={40}
           position={[0, 0, 0]}
@@ -134,15 +124,5 @@ const ThreeDIndex = () => {
     </>
   );
 };
-
-function Annotation({ children, gpuTier, ...props }) {
-  return (
-    <>
-      <Html {...props} transform fullscreen>
-        <div className="flex">{children}</div>
-      </Html>
-    </>
-  );
-}
 
 export default ThreeDIndex;

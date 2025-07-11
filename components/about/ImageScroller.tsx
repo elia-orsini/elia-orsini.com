@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -29,7 +29,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
   return (
     <div
       id={`scrollingContainer-${sectionTitle}`}
-      className="flex overflow-hidden w-full select-none"
+      className="imageScroller flex bg-black overflow-hidden w-full select-none"
     >
       <div
         ref={first}

@@ -32,28 +32,34 @@ export default function Code() {
     <Navigation>
       <Header
         title={`code | elia orsini`}
-        description="Code projects by Elia Orsini, Software Developer and 3D Artist based in Glasgow, Scotland."
+        description="Code projects by Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
-      <div className="flex mx-5 md:ml-40 mt-10 md:mt-20 mx-5 gap-x-3">
+      <div className="flex mx-5 mt-10 md:mt-20 mx-5 gap-x-3">
         <button
           onClick={() => setGridView(!gridView)}
-          className={`border border-[0.4px] ${!gridView && "opacity-50"}`}
+          className={`flex flex-row bg-black border border-[0.4px] opacity-70 ${
+            !gridView && "opacity-30"
+          }`}
         >
           <Image src="/grid-view.svg" width={30} height={30} alt="" />
+          <span className="my-auto mx-2">GRID</span>
         </button>
 
         <button
           onClick={() => setGridView(!gridView)}
-          className={`border border-[0.4px] ${gridView && "opacity-50"}`}
+          className={`flex flex-row bg-black border border-[0.4px] opacity-70 ${
+            gridView && "opacity-30"
+          }`}
         >
           <Image src="/list-view.svg" width={30} height={30} alt="" />
+          <span className="my-auto px-2">ROW</span>
         </button>
       </div>
 
       {gridView ? (
         <div className="flex w-full mb-20">
-          <div className="flex mx-5 md:ml-40 flex-col w-full">
+          <div className="flex mx-5 flex-col w-full">
             <div className="flex flex-col w-full mt-6 sm:mt-14">
               <p className="appearingCards text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 websites I built
@@ -148,7 +154,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards z-30 text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="appearingCards z-50 text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 websites i collaborated on
               </p>
               <WebsiteCard
@@ -190,7 +196,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards z-30 text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="appearingCards z-50 text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 other projects
               </p>
               <WebsiteCard
@@ -204,17 +210,41 @@ export default function Code() {
         </div>
       ) : (
         <div className="flex w-full mb-20">
-          <div className="mx-5 sm:ml-40 sm:mr-20 flex-col">
+          <div className="mx-5 sm:mr-20 flex-col">
             <div className="flex flex-col mt-6 sm:mt-14">
-              <p className="appearingText text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 websites I built
               </p>
               <ul className="text-left">
+                <Project
+                  title="readu"
+                  url="https://readu-group-reading.vercel.app//"
+                  description="Readu brings friends together through shared reading experiences."
+                  tech={["NEXT.JS", "DYNAMO DB", "TAILWIND CSS"]}
+                />
+                <Project
+                  title="angela ricciardi"
+                  url="https://www.angelaricciardi.com/"
+                  description="Website for photographer and artist Angela Ricciardi."
+                  tech={["NEXT.JS", "SANITY", "GSAP", "TAILWIND CSS"]}
+                />
+                <Project
+                  title="talome"
+                  url="https://www.talome.com/"
+                  description="Website for Talome talent agency based in Paris."
+                  tech={["NEXT.JS", "GSAP", "SANITY", "TAILWIND CSS"]}
+                />
                 <Project
                   title="yu's Cafes"
                   url="https://yu-coffee-map.vercel.app/"
                   description="Website for collecting cafes around the world."
                   tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
+                />
+                <Project
+                  title="la macina sonora"
+                  url="https://www.lamacinasonora.com/"
+                  description="Website for the recording studio La Macina Sonora."
+                  tech={["REACT", "TAILWIND CSS"]}
                 />
                 <Project
                   title="Immortal Mags"
@@ -235,6 +265,12 @@ export default function Code() {
                   tech={["NEXT.JS", "NOTION API", "TAILWIND CSS"]}
                 />
                 <Project
+                  title="insomnia events"
+                  url="https://www.insomniaevents.xyz/"
+                  description="Website for Insomnia Events."
+                  tech={["REACT", "TAILWIND CSS"]}
+                />
+                <Project
                   title="gft forever"
                   url="https://gft-forever.vercel.app/"
                   description="An archive of every film shown at my local independent cinema."
@@ -247,18 +283,6 @@ export default function Code() {
                   tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
                 />
                 <Project
-                  title="la macina sonora"
-                  url="https://macina-sonora-elia-orsini.vercel.app/"
-                  description="Website for the recording studio La Macina Sonora."
-                  tech={["REACT", "TAILWIND CSS"]}
-                />
-                <Project
-                  title="insomnia events"
-                  url="https://www.insomniaevents.xyz/"
-                  description="Website for Insomnia Events."
-                  tech={["REACT", "TAILWIND CSS"]}
-                />
-                <Project
                   title="digital gardens"
                   url="https://digital-gardens-sepia.vercel.app/"
                   description="Your cute little corner of the internet."
@@ -268,7 +292,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingText text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 websites i collaborated on
               </p>
               <Project
@@ -280,7 +304,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingText text-left text-sm bg-white w-max text-black px-2 mb-2">
+              <p className="text-left text-sm bg-white w-max text-black px-2 mb-2">
                 3D projects
               </p>
               <Project
@@ -304,7 +328,7 @@ export default function Code() {
             </div>
 
             <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingText text-left text-sm mb-2 block bg-white w-max text-black px-2">
+              <p className="text-left text-sm mb-2 block bg-white w-max text-black px-2">
                 other projects
               </p>
               <Project

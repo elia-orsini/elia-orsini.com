@@ -12,15 +12,15 @@ const WebsiteCard: React.FC<{
 }> = ({ title, url, description, tech, imageSrc }) => {
   return (
     <a href={url} target="_blank" rel="noreferrer">
-      <div className="appearingCards flex border border-lime/50 h-48 w-[calc(100vw-45px)] sm:w-64">
+      <div className="appearingCards flex bg-black border border-lime/50 h-48 w-[calc(100vw-45px)] sm:w-60">
         {imageSrc && (
           <div className="absolute hidden sm:block">
             <Image
               alt=""
               src={imageSrc}
               className="opacity-80"
-              width={254}
-              height={192}
+              width={238}
+              height={240}
               objectFit="cover"
             />
             <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black from-90% to-transparent to-100%" />
