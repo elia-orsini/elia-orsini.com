@@ -35,7 +35,7 @@ export default function Navigation({
                 design
               </p>
             ) : (
-              <p className="hover:underline md:ml-0 ml-auto mt-2">
+              <p className="hover:underline hover:cursor-pointer md:ml-0 ml-auto mt-2">
                 <Link href="/design">design</Link>
               </p>
             )}
@@ -44,7 +44,7 @@ export default function Navigation({
                 code
               </p>
             ) : (
-              <p className="hover:underline md:ml-0 ml-auto mt-2">
+              <p className="hover:underline hover:cursor-pointer md:ml-0 ml-auto mt-2">
                 <Link href="/code">code</Link>
               </p>
             )}
@@ -53,7 +53,7 @@ export default function Navigation({
                 about
               </p>
             ) : (
-              <p className="hover:underline md:ml-0 ml-auto mt-2">
+              <p className="hover:underline hover:cursor-pointer md:ml-0 ml-auto mt-2">
                 <Link href="/about">about</Link>
               </p>
             )}
