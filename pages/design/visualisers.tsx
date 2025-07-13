@@ -13,7 +13,7 @@ export default function TwoD() {
       <Header title={`sunshi | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col w-4/5 mt-20 justify-between">
+        <div className="flex-col mx-auto md:m-0 w-4/5 mt-20 justify-between">
           <div className="flex-col mx-auto gap-y-20 grid mt-10">
             <div>
               <p className={`text-3xl ${koulen.className}`}>
@@ -50,10 +50,22 @@ export default function TwoD() {
                 </h1>
               </a>
               <div className="flex-col mx-auto grid sm:grid-cols-2 gap-2 mt-2">
-                <Image alt="" src="/design/visualisers/growing-pains/olive4.jpg" />
-                <Image alt="" src="/design/visualisers/growing-pains/olive3.jpg" />
-                <Image alt="" src="/design/visualisers/growing-pains/olive2.jpg" />
-                <Image alt="" src="/design/visualisers/growing-pains/olive1.jpg" />
+                <Image
+                  alt=""
+                  src="/design/visualisers/growing-pains/olive4.jpg"
+                />
+                <Image
+                  alt=""
+                  src="/design/visualisers/growing-pains/olive3.jpg"
+                />
+                <Image
+                  alt=""
+                  src="/design/visualisers/growing-pains/olive2.jpg"
+                />
+                <Image
+                  alt=""
+                  src="/design/visualisers/growing-pains/olive1.jpg"
+                />
               </div>
             </div>
 
@@ -84,10 +96,7 @@ export default function TwoD() {
               </a>
               <p>
                 The{" "}
-                <Link
-                  href="/blog/exhale"
-                  className={`underline italic`}
-                >
+                <Link href="/blog/exhale" className={`underline italic`}>
                   exhale blog post
                 </Link>{" "}
                 explains how this was made.

@@ -14,7 +14,7 @@ export default function Layout(props) {
         <Suspense fallback={<p>loading</p>}>
           <div
             className={`fixed z-20 w-screen h-[100dvh] bg-black backdrop-blur-sm transition-opacity duration-500 ${
-              pathname === "/" ? "opacity-10" : "opacity-[80%]"
+              pathname === "/" ? "opacity-10" : "opacity-[90%] md:opacity-[80%]"
             }`}
           />
 
