@@ -9,7 +9,7 @@ export default function TwoD() {
       <Header title={`aliens | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto md:m-0 grid sm:grid-cols-3 w-4/5 mt-20 gap-2">
+        <div className="flex-col mx-auto md:mx-0 grid sm:grid-cols-3 w-4/5 mt-20 gap-2">
           <div className="flex flex-col my-auto">
             <Image alt="" src="/design/aliens/alien3.jpg" />
           </div>

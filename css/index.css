@@ -10,7 +10,7 @@
 .main-content {
   transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 800ms;
+  transition-duration: 1000ms;
   opacity: 0;
 }
 

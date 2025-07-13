@@ -13,7 +13,7 @@ export default function TwoD() {
       <Header title={`sunshi | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col mx-auto md:m-0 w-4/5 mt-20 justify-between">
+        <div className="flex-col mx-auto md:mx-0 w-4/5 mt-20 justify-between">
           <div className="flex-col mx-auto gap-y-20 grid mt-10">
             <div>
               <p className={`text-3xl ${koulen.className}`}>
