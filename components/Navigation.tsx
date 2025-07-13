@@ -49,7 +49,7 @@ export default function Navigation({
             <div className="mx-auto mt-10">
               <svg
                 id="Logo"
-                className={`w-16 md:w-24 mx-auto transition-opacity duration-[1500ms] ${
+                className={`w-16 md:w-20 mx-auto transition-opacity duration-[1500ms] ${
                   pathname === "/" ? "opacity-0" : "opacity-100"
                 }`}
                 data-name="Logo"
