@@ -12,7 +12,7 @@ export default function TwoD() {
       <Header title={`sunshi | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col w-4/5 mt-20 justify-between">
+        <div className="flex-col w-4/5 mx-auto md:m-0 mt-20 justify-between">
           <p className={`text-3xl ${koulen.className}`}>SUNSHI</p>
           <p className="text-sm lg:text-base">
             The sun always shines in the city of Sunshi. <br />

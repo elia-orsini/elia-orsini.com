@@ -37,8 +37,8 @@ export default function Code() {
 
       <div className="flex mx-5 mt-10 md:mt-20 mx-5 gap-x-3">
         <button
-          onClick={() => setGridView(!gridView)}
-          className={`flex flex-row bg-black border border-[0.4px] opacity-70 ${
+          onClick={() => setGridView(true)}
+          className={`p-0.5 flex flex-row bg-black border border-[0.4px] opacity-70 ${
             !gridView && "opacity-30"
           }`}
         >
@@ -47,8 +47,8 @@ export default function Code() {
         </button>
 
         <button
-          onClick={() => setGridView(!gridView)}
-          className={`flex flex-row bg-black border border-[0.4px] opacity-70 ${
+          onClick={() => setGridView(false)}
+          className={`p-0.5 flex flex-row bg-black border border-[0.4px] opacity-70 ${
             gridView && "opacity-30"
           }`}
         >

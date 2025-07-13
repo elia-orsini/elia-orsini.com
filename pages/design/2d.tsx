@@ -9,7 +9,7 @@ export default function TwoD() {
       <Header title={`2D design | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col grid grid-cols-4 px-1 sm:px-0 sm:w-4/5 mt-10 gap-1">
+        <div className="flex-col mx-auto md:m-0 grid grid-cols-4 px-1 sm:px-0 sm:w-4/5 mt-10 gap-1">
           <div>
             <Image alt="" src="/design/2d/1.jpg" />
             <Image alt="" src="/design/2d/2.jpg" />
@@ -48,7 +48,10 @@ export default function TwoD() {
             <Image alt="" src="/design/2d/27.jpg" />
           </div>
         </div>
-        <DesignFooter previous="/design/luce-artificiale" next="/design/aliens" />
+        <DesignFooter
+          previous="/design/luce-artificiale"
+          next="/design/aliens"
+        />
       </Navigation>
     </>
   );

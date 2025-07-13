@@ -9,7 +9,7 @@ export default function TwoD() {
       <Header title={`metallic utopia | elia orsini`} />
 
       <Navigation>
-        <div className="flex-col w-4/5 mt-20">
+        <div className="flex-col mx-auto md:m-0 w-4/5 mt-20">
           <div className="flex-col mx-auto grid md:grid-cols-3 mt-5 gap-2">
             <div className="flex flex-col space-y-2">
               <Image alt="" src="/design/metal/39.jpg" />
