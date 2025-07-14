@@ -33,10 +33,11 @@ export default function Navigation({
 
     if (pathname === "/" && width < 642) {
       gsap.to(".navigation", {
-        translateY: "30vh",
-        duration: 0.1,
+        translateY: "45vh",
+        duration: 0,
         fontSize: 30,
         ease: "power3.inOut",
+        position: "fixed"
       });
     }
   }, [pathname, width]);

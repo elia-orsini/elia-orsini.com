@@ -29,7 +29,7 @@ export const TransitionLink = ({
     const body = document.querySelector(".main-content");
     body?.classList.add("page-transition");
 
-    await sleep(800);
+    await sleep(600);
 
     await router.push(href);
 
