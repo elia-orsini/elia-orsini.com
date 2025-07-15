@@ -18,7 +18,7 @@ const WebsiteCard: React.FC<{
             <Image
               alt=""
               src={imageSrc}
-              className="opacity-80"
+              className="opacity-90"
               width={238}
               height={240}
               objectFit="cover"
@@ -33,7 +33,7 @@ const WebsiteCard: React.FC<{
               <Image
                 alt=""
                 src={imageSrc}
-                className="opacity-80"
+                className="opacity-90"
                 fill
                 objectFit="cover"
               />

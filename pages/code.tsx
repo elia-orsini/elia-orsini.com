@@ -91,7 +91,7 @@ export default function Code() {
                   title="yu's Cafes"
                   url="https://yu-coffee-map.vercel.app/"
                   description="Website for collecting cafes around the world."
-                  tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
+                  tech={["NEXT.JS", "GSAP", "NOTION", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/yu.webp"
                 />
                 <WebsiteCard
@@ -105,7 +105,7 @@ export default function Code() {
                   title="Immortal Mags"
                   url="https://immortal-tau.vercel.app/"
                   description="Documenting independent magazines."
-                  tech={["NEXT.JS", "GSAP", "NOTION API", "TAILWIND CSS"]}
+                  tech={["NEXT.JS", "GSAP", "NOTION", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/immortal.webp"
                 />
                 <WebsiteCard
