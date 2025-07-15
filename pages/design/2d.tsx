@@ -6,7 +6,7 @@ import Navigation from "@components/Navigation";
 export default function TwoD() {
   return (
     <>
-      <Header title={`2D design | elia orsini`} />
+      <Header title={`2D design | Elia Orsini`} />
 
       <Navigation>
         <div className="flex-col mx-auto md:mx-0 grid grid-cols-4 px-1 sm:px-0 sm:w-4/5 mt-10 gap-1">

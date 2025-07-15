@@ -2,8 +2,8 @@ import Head from "next/head";
 import React from "react";
 
 function Header({
-  title = "elia orsini",
-  description = "personal website of elia orsini.",
+  title = "Elia Orsini",
+  description = "Personal Website of Elia Orsini.",
   img = "/cover-img.png",
 }) {
   return (

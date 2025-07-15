@@ -25,8 +25,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>elia orsini</title>
-        <meta property="og:title" content="elia orsini" />
+        <title>Elia Orsini</title>
+        <meta property="og:title" content="Elia Orsini" />
 
         <meta
           name="description"
@@ -44,20 +44,14 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="og:site_name" content="elia orsini" />
-        <meta property="twitter:title" content="elia orsini" />
+        <meta name="og:site_name" content="elia Orsini" />
+        <meta property="twitter:title" content="Elia Orsini" />
         <meta property="twitter:image" content="/favicon.ico" />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <meta
-          name="keywords"
-          content="elia orsini, elia, orsini, eliaorsini, 2025, 3D, designer, software developer, three.js, photographer, scotland, edinburgh, 3D graphic design, developer, technical artist, glasgow"
-        />
-        <meta name="author" content="elia orsini" />
+        <meta name="author" content="Elia Orsini" />
 
         <link rel="apple-touch-icon" href="/favicon.ico" />
-
-        <link rel="manifest" href="/favicon.ico" />
       </Head>
 
       <Script

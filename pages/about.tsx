@@ -33,7 +33,7 @@ export default function About() {
   return (
     <Navigation>
       <Header
-        title={`about | elia orsini`}
+        title={`about | Elia Orsini`}
         description="About page of Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 

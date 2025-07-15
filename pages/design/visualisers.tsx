@@ -10,7 +10,7 @@ const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 export default function TwoD() {
   return (
     <>
-      <Header title={`sunshi | elia orsini`} />
+      <Header title={`Visualisers | Elia Orsini`} />
 
       <Navigation>
         <div className="flex-col mx-auto md:mx-0 w-4/5 mt-20 justify-between">
