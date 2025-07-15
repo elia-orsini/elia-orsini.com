@@ -8,7 +8,7 @@ function Work() {
   return (
     <>
       <Header
-        title={`work | elia orsini`}
+        title={`Elia Orsini`}
         description="Explore the work of Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 

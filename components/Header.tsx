@@ -4,7 +4,7 @@ import React from "react";
 function Header({
   title = "elia orsini",
   description = "personal website of elia orsini.",
-  img = "/favicon.ico",
+  img = "/cover-img.png",
 }) {
   return (
     <Head>
@@ -14,8 +14,10 @@ function Header({
 
       <meta name="description" content={description} key="desc" />
       <meta property="og:description" content={description} />
+      <meta property="twitter:description" content={description} />
 
       <meta property="og:image" content={img} />
+      <meta property="og:url" content="https://elia-orsini.com" />
       <meta property="twitter:image" content={img} />
     </Head>
   );
