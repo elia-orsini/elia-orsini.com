@@ -37,7 +37,7 @@ export default function Navigation({
         duration: 0,
         fontSize: 30,
         ease: "power3.inOut",
-        position: "fixed"
+        position: "fixed",
       });
     }
   }, [pathname, width]);
@@ -50,7 +50,7 @@ export default function Navigation({
             <div className="mx-auto mt-10">
               <svg
                 id="Logo"
-                className={`w-16 md:w-20 mx-auto transition-opacity duration-[1500ms] ${
+                className={`w-16 md:-ml-4 md:w-20 mx-auto transition-opacity duration-[1500ms] ${
                   pathname === "/" ? "opacity-0" : "opacity-100"
                 }`}
                 data-name="Logo"
