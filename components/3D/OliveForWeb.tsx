@@ -36,7 +36,7 @@ export function OliveForWeb(props) {
             metalness={1}
             roughness={0}
             factor={0.01}
-            speed={10}
+            speed={7}
           />
         </mesh>
         <mesh

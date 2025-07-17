@@ -6,13 +6,7 @@ import {
   Sparkles,
 } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
-
-import { Sunshi } from "./SunshiHall";
-import { Hor } from "./Hor";
-import { SunshiDesert } from "./SunshiDesert";
 import { OliveForWeb } from "./OliveForWeb";
-
-const NUMBER_OF_SCENES = 4;
 
 const ThreeDIndex = () => {
   const cameraRef = useRef<any>();
@@ -101,25 +95,16 @@ const ThreeDIndex = () => {
         <CameraControls ref={cameraControlRef} makeDefault />
 
         <Sparkles
-          count={40}
+          count={50}
           position={[0, 0, 0]}
-          scale={15}
-          size={8}
+          scale={14}
+          size={10}
           speed={1.5}
         />
 
-        {scene % NUMBER_OF_SCENES === 0 && (
-          <Environment background={true} files="/index/hdri.hdr" />
-        )}
+        <Environment background={true} files="/index/hdri.hdr" />
 
-        {scene % NUMBER_OF_SCENES === 1 && (
-          <Environment background={true} files="/index/bluesky.hdr" />
-        )}
-
-        {scene % NUMBER_OF_SCENES === 0 && <OliveForWeb />}
-        {scene % NUMBER_OF_SCENES === 1 && <SunshiDesert />}
-        {scene % NUMBER_OF_SCENES === 2 && <Sunshi />}
-        {scene % NUMBER_OF_SCENES === 3 && <Hor />}
+        <OliveForWeb />
       </Suspense>
     </>
   );
