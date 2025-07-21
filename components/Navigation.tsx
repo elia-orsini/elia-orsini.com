@@ -70,7 +70,7 @@ export default function Navigation({
           </TransitionLink>
 
           <div
-            className={`w-full flex text-xl transition-all md:flex-col gap-x-10 md:gap-x-0 flex-row mx-auto text-center md:text-left mt-3 md:mt-14 space-y-2 duration-700 navigation`}
+            className={`w-full flex text-xl transition-all md:flex-col gap-x-8 md:gap-x-0 flex-row mx-auto text-center md:text-left mt-3 md:mt-14 space-y-2 duration-700 navigation`}
           >
             {pathDivided.includes("design") ? (
               <p className="hover:cursor-default md:ml-0 ml-auto mt-2 text-lime">
