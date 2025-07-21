@@ -95,18 +95,24 @@ export default function Navigation({
                 about
               </p>
             ) : (
-              <p className="hover:underline hover:cursor-pointer md:mr-0 mt-2">
+              <p
+                className={`hover:underline hover:cursor-pointer md:mr-0 mt-2 ${
+                  pathname === "/" ? "mr-auto" : ""
+                }`}
+              >
                 <TransitionLink href="/about">about</TransitionLink>
               </p>
             )}
-            <a
-              className="mr-auto md:mr-0 hover:underline hover:cursor-pointer"
-              href="https://diary.elia-orsini.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              diary<span className="text-base">↗</span>
-            </a>
+            {pathname !== "/" && (
+              <a
+                className="mr-auto md:mr-0 hover:underline hover:cursor-pointer"
+                href="https://diary.elia-orsini.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                diary<span className="text-base">↗</span>
+              </a>
+            )}
           </div>
         </div>
 
