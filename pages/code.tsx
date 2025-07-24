@@ -35,20 +35,20 @@ export default function Code() {
         description="Code projects by Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
-      <div className="flex mx-5 mt-10 md:mt-20 mx-5 gap-x-3">
+      <div className="mx-5 mt-10 flex gap-x-3 md:mt-20">
         <button
           onClick={() => setGridView(true)}
-          className={`p-0.5 flex flex-row bg-black border border-[0.4px] opacity-70 transition-opacity duration-600 ${
+          className={`duration-600 flex flex-row border border-[0.4px] bg-black p-0.5 opacity-70 transition-opacity ${
             !gridView && "opacity-30"
           }`}
         >
           <Image src="/grid-view.svg" width={30} height={30} alt="" />
-          <span className="my-auto mx-2">GRID</span>
+          <span className="mx-2 my-auto">GRID</span>
         </button>
 
         <button
           onClick={() => setGridView(false)}
-          className={`p-0.5 flex flex-row bg-black border border-[0.4px] opacity-70 transition-opacity duration-600 ${
+          className={`duration-600 flex flex-row border border-[0.4px] bg-black p-0.5 opacity-70 transition-opacity ${
             gridView && "opacity-30"
           }`}
         >
@@ -58,24 +58,24 @@ export default function Code() {
       </div>
 
       {gridView ? (
-        <div className="flex w-full mb-20">
-          <div className="flex mx-5 flex-col w-full">
-            <div className="flex flex-col w-full mt-6 sm:mt-14">
-              <p className="appearingCards text-left text-sm mb-2 block bg-white w-max text-black px-2">
+        <div className="mb-20 flex w-full">
+          <div className="mx-5 flex w-full flex-col">
+            <div className="mt-6 flex w-full flex-col sm:mt-14">
+              <p className="appearingCards mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 websites I built
               </p>
 
-              <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
+              <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3">
                 <WebsiteCard
                   title="visual gpx"
-                  url="https://readu-group-reading.vercel.app//"
+                  url="https://visual-gpx.vercel.app/"
                   description="Generate cool graphics out of your Strava activities."
                   tech={["NEXT.JS", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/visual-gpx.webp"
                 />
                 <WebsiteCard
                   title="readu"
-                  url="https://readu-group-reading.vercel.app//"
+                  url="https://readu-group-reading.vercel.app/"
                   description="Readu brings friends together through shared reading experiences."
                   tech={["NEXT.JS", "DYNAMO DB", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/readu.webp"
@@ -160,8 +160,8 @@ export default function Code() {
               </div>
             </div>
 
-            <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards z-50 text-left text-sm mb-2 block bg-white w-max text-black px-2">
+            <div className="mt-10 flex flex-col sm:mt-20">
+              <p className="appearingCards z-50 mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 websites i collaborated on
               </p>
               <WebsiteCard
@@ -173,11 +173,11 @@ export default function Code() {
               />
             </div>
 
-            <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards z-30 text-left text-sm bg-white w-max text-black px-2 mb-2">
+            <div className="mt-10 flex flex-col sm:mt-20">
+              <p className="appearingCards z-30 mb-2 w-max bg-white px-2 text-left text-sm text-black">
                 3D projects
               </p>
-              <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
+              <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3">
                 <WebsiteCard
                   title="blenderWebViewer"
                   url="https://github.com/elia-orsini/BlenderWebViewer"
@@ -202,8 +202,8 @@ export default function Code() {
               </div>
             </div>
 
-            <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="appearingCards z-50 text-left text-sm mb-2 block bg-white w-max text-black px-2">
+            <div className="mt-10 flex flex-col sm:mt-20">
+              <p className="appearingCards z-50 mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 other projects
               </p>
               <WebsiteCard
@@ -217,22 +217,22 @@ export default function Code() {
           </div>
         </div>
       ) : (
-        <div className="flex w-full mb-20">
-          <div className="mx-5 sm:mr-20 flex-col">
-            <div className="flex flex-col mt-6 sm:mt-14">
-              <p className="text-left text-sm mb-2 block bg-white w-max text-black px-2">
+        <div className="mb-20 flex w-full">
+          <div className="mx-5 flex-col sm:mr-20">
+            <div className="mt-6 flex flex-col sm:mt-14">
+              <p className="mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 websites I built
               </p>
               <ul className="text-left">
                 <Project
                   title="visual gpx"
-                  url="https://readu-group-reading.vercel.app//"
+                  url="https://visual-gpx.vercel.app/"
                   description="Generate cool graphics out of your Strava activities."
                   tech={["NEXT.JS", "TAILWIND CSS"]}
                 />
                 <Project
                   title="readu"
-                  url="https://readu-group-reading.vercel.app//"
+                  url="https://readu-group-reading.vercel.app/"
                   description="Readu brings friends together through shared reading experiences."
                   tech={["NEXT.JS", "DYNAMO DB", "TAILWIND CSS"]}
                 />
@@ -305,8 +305,8 @@ export default function Code() {
               </ul>
             </div>
 
-            <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="text-left text-sm mb-2 block bg-white w-max text-black px-2">
+            <div className="mt-10 flex flex-col sm:mt-20">
+              <p className="mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 websites i collaborated on
               </p>
               <Project
@@ -317,10 +317,8 @@ export default function Code() {
               />
             </div>
 
-            <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="text-left text-sm bg-white w-max text-black px-2 mb-2">
-                3D projects
-              </p>
+            <div className="mt-10 flex flex-col sm:mt-20">
+              <p className="mb-2 w-max bg-white px-2 text-left text-sm text-black">3D projects</p>
               <Project
                 title="blenderWebViewer"
                 url="https://github.com/elia-orsini/BlenderWebViewer"
@@ -341,8 +339,8 @@ export default function Code() {
               />
             </div>
 
-            <div className="flex flex-col mt-10 sm:mt-20">
-              <p className="text-left text-sm mb-2 block bg-white w-max text-black px-2">
+            <div className="mt-10 flex flex-col sm:mt-20">
+              <p className="mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 other projects
               </p>
               <Project
