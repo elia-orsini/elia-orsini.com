@@ -12,49 +12,39 @@ const WebsiteCard: React.FC<{
 }> = ({ title, url, description, tech, imageSrc }) => {
   return (
     <a href={url} target="_blank" rel="noreferrer">
-      <div className="appearingCards flex bg-black border border-lime/50 h-48 w-[calc(100vw-45px)] sm:w-60 overflow-hidden">
+      <div className="appearingCards flex h-48 w-[calc(100vw-45px)] overflow-hidden border border-lime/50 bg-black sm:w-60">
         {imageSrc && (
           <div className="absolute hidden sm:block">
             <Image
               alt=""
               src={imageSrc}
-              className="opacity-90"
+              className="object-cover opacity-90"
               width={238}
               height={240}
-              objectFit="cover"
             />
-            <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black from-90% to-transparent to-100%" />
+            <div className="from-90% to-100% absolute inset-0 h-full w-full bg-gradient-to-t from-black to-transparent" />
           </div>
         )}
 
         {imageSrc && (
           <div className="absolute block sm:hidden">
-            <div className="relative w-[calc(100vw-47px)] bg-red-200 h-[190px]">
-              <Image
-                alt=""
-                src={imageSrc}
-                className="opacity-90"
-                fill
-                objectFit="cover"
-              />
+            <div className="bg-red-200 relative h-[190px] w-[calc(100vw-47px)]">
+              <Image alt="" src={imageSrc} className="opacity-90" fill objectFit="cover" />
             </div>
-            <div className="absolute w-[calc(100vw-47px)] h-[190px] inset-0 bg-gradient-to-t from-black from-1%" />
+            <div className="from-1% absolute inset-0 h-[190px] w-[calc(100vw-47px)] bg-gradient-to-t from-black" />
           </div>
         )}
 
-        <div className="p-2 z-20 mt-auto">
-          <h1 className={`text-lime text-xl ${koulen.className}`}>
+        <div className="z-20 mt-auto p-2">
+          <h1 className={`text-xl text-lime ${koulen.className}`}>
             {">"} {title}
           </h1>
 
-          <p className="text-sm -mt-1">{description}</p>
+          <p className="-mt-1 text-sm">{description}</p>
 
           <div className="-ml-1">
             {tech.map((technology, i) => (
-              <span
-                key={i}
-                className="opacity-80 text-xs bg-gray-600 px-1 ml-1 w-max uppercase"
-              >
+              <span key={i} className="ml-1 w-max bg-gray-600 px-1 text-xs uppercase opacity-80">
                 {technology}
               </span>
             ))}

@@ -9,22 +9,22 @@ export default function Layout(props) {
 
   const { pathname } = router;
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
-      <main className="flex-1 w-full mx-auto">
+    <div className="flex min-h-screen flex-col bg-black text-white">
+      <main className="mx-auto w-full flex-1">
         <Suspense fallback={<p>loading</p>}>
           <div
-            className={`fixed z-20 w-screen h-[100dvh] bg-black backdrop-blur-sm transition-opacity duration-500 ${
+            className={`fixed z-20 h-[100dvh] w-screen bg-black backdrop-blur-sm transition-opacity duration-500 ${
               pathname === "/" ? "opacity-10" : "opacity-[90%] md:opacity-[80%]"
             }`}
           />
 
-          <div className="fixed pointer-events-none w-screen h-screen left-0 top-0 z-10">
+          <div className="pointer-events-none fixed left-0 top-0 z-10 h-screen w-screen">
             <Canvas className="hidden sm:block">
               <ThreeDIndex />
             </Canvas>
 
             <div className="flex sm:hidden">
-              <div className="w-screen !min-h-[100dvh] flex">
+              <div className="flex !min-h-[100dvh] w-screen">
                 <Canvas className="z-10">
                   <ThreeDIndexMobile />
                 </Canvas>
@@ -33,7 +33,7 @@ export default function Layout(props) {
           </div>
         </Suspense>
 
-        <div className="flex flex-col min-h-screen">{props.children}</div>
+        <div className="flex min-h-screen flex-col">{props.children}</div>
       </main>
     </div>
   );
