@@ -67,6 +67,13 @@ export default function Code() {
 
               <div className="grid grid-cols-1 md:ml-0 sm:grid-cols-2 lg:grid-cols-3 w-max gap-2">
                 <WebsiteCard
+                  title="visual gpx"
+                  url="https://readu-group-reading.vercel.app//"
+                  description="Generate cool graphics out of your Strava activities."
+                  tech={["NEXT.JS", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/visual-gpx.webp"
+                />
+                <WebsiteCard
                   title="readu"
                   url="https://readu-group-reading.vercel.app//"
                   description="Readu brings friends together through shared reading experiences."
@@ -204,6 +211,7 @@ export default function Code() {
                 url="https://github.com/elia-orsini/mars-imagery-classification"
                 description="Neural Network that classifies images taken on Mars."
                 tech={["PYTHON", "TENSORFLOW"]}
+                imageSrc="/code/websites-screens/mars.webp"
               />
             </div>
           </div>
@@ -216,6 +224,12 @@ export default function Code() {
                 websites I built
               </p>
               <ul className="text-left">
+                <Project
+                  title="visual gpx"
+                  url="https://readu-group-reading.vercel.app//"
+                  description="Generate cool graphics out of your Strava activities."
+                  tech={["NEXT.JS", "TAILWIND CSS"]}
+                />
                 <Project
                   title="readu"
                   url="https://readu-group-reading.vercel.app//"

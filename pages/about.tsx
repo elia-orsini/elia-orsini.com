@@ -88,6 +88,7 @@ export default function About() {
                 <li className="appearingText">Three.js / Babylon.js</li>
                 <li className="appearingText">GraphQL / SQL</li>
                 <li className="appearingText">Docker</li>
+                <li className="appearingText">DynamoDB</li>
                 <li className="appearingText">NestJS</li>
                 <li className="appearingText">Electron</li>
                 <li className="appearingText">Strapi</li>
@@ -105,7 +106,7 @@ export default function About() {
               <ul className="ml-4 font-mono">
                 <li className="appearingText">Unreal Engine</li>
                 <li className="appearingText">Blender</li>
-                <li className="appearingText">C++ / Blueprints</li>
+                <li className="appearingText">Blueprints / C++</li>
                 <li className="appearingText">Geometry Nodes</li>
                 <li className="appearingText">Adobe Suite</li>
                 <li className="appearingText">Marvelous Designer</li>
