@@ -28,7 +28,7 @@ const WebsiteCard: React.FC<{
 
         {imageSrc && (
           <div className="absolute block sm:hidden">
-            <div className="bg-red-200 relative h-[190px] w-[calc(100vw-47px)]">
+            <div className="relative h-[190px] w-[calc(100vw-47px)]">
               <Image alt="" src={imageSrc} className="opacity-90" fill objectFit="cover" />
             </div>
             <div className="from-1% absolute inset-0 h-[190px] w-[calc(100vw-47px)] bg-gradient-to-t from-black" />

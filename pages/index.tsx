@@ -12,15 +12,15 @@ function Work() {
         description="Explore the work of Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
-      <div className="absolute w-full h-20 bg-red-200 z-20 font-mono uppercase text-xs xl:flex hidden">
+      <div className="absolute z-20 hidden h-20 w-full font-mono text-xs uppercase xl:flex">
         <p className="mx-auto text-white">
-          This is a repository of ideas, unfinished projects, commercial works
-          and experiments that have been accumulating for the past 5 years
+          This is a repository of ideas, unfinished projects, commercial works and experiments that
+          have been accumulating for the past 5 years
         </p>
       </div>
 
       <Navigation>
-        <div className="z-30 absolute top-0 left-0 !h-[100dvh] w-screen">
+        <div className="absolute left-0 top-0 z-30 !h-[100dvh] w-screen">
           {/* <Canvas>
             <SpinningLogo />
           </Canvas> */}
