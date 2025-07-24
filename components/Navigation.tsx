@@ -6,11 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import useWindowWidth from "hooks/useWindowWidth";
 
-export default function Navigation({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Navigation({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const width = useWindowWidth();
 
@@ -44,13 +40,13 @@ export default function Navigation({
 
   return (
     <>
-      <div className="flex flex-col md:flex-row min-h-screen w-screen overflow-clip z-30">
-        <div className="md:fixed h-full md:h-screen flex flex-col w-full md:w-max text-white md:px-20 z-40">
+      <div className="z-30 flex min-h-screen w-screen flex-col overflow-clip md:flex-row">
+        <div className="z-40 flex h-full w-full flex-col text-white md:fixed md:h-screen md:w-max md:px-20">
           <TransitionLink href="/" passHref>
             <div className="mx-auto mt-10">
               <svg
                 id="Logo"
-                className={`w-16 md:-ml-4 md:w-20 mx-auto transition-opacity duration-[1500ms] ${
+                className={`mx-auto w-16 transition-opacity duration-[1500ms] md:-ml-4 md:w-20 ${
                   pathname === "/" ? "opacity-0" : "opacity-100"
                 }`}
                 data-name="Logo"
@@ -70,33 +66,29 @@ export default function Navigation({
           </TransitionLink>
 
           <div
-            className={`w-full flex text-xl transition-all md:flex-col gap-x-8 md:gap-x-0 flex-row mx-auto text-center md:text-left mt-3 md:mt-14 space-y-2 duration-700 navigation`}
+            className={`navigation mx-auto mt-3 flex w-full flex-row gap-x-8 space-y-2 text-center text-xl transition-all duration-700 md:mt-14 md:flex-col md:gap-x-0 md:text-left`}
           >
             {pathDivided.includes("design") ? (
-              <p className="hover:cursor-default md:ml-0 ml-auto mt-2 text-lime">
-                design
+              <p className="ml-auto mt-2 text-lime hover:cursor-pointer hover:underline md:ml-0">
+                <TransitionLink href="/design">design</TransitionLink>
               </p>
             ) : (
-              <p className="hover:underline hover:cursor-pointer md:ml-0 ml-auto mt-2">
+              <p className="ml-auto mt-2 hover:cursor-pointer hover:underline md:ml-0">
                 <TransitionLink href="/design">design</TransitionLink>
               </p>
             )}
             {pathDivided.includes("code") ? (
-              <p className="hover:cursor-default md:mx-0 ml-0 mt-2 text-lime">
-                code
-              </p>
+              <p className="ml-0 mt-2 text-lime hover:cursor-default md:mx-0">code</p>
             ) : (
-              <p className="hover:underline hover:cursor-pointer md:mx-0 ml-0 mt-2">
+              <p className="ml-0 mt-2 hover:cursor-pointer hover:underline md:mx-0">
                 <TransitionLink href="/code">code</TransitionLink>
               </p>
             )}
             {pathDivided.includes("about") ? (
-              <p className="hover:cursor-default md:mr-0 mt-2 text-lime">
-                about
-              </p>
+              <p className="mt-2 text-lime hover:cursor-default md:mr-0">about</p>
             ) : (
               <p
-                className={`hover:underline hover:cursor-pointer md:mr-0 mt-2 ${
+                className={`mt-2 hover:cursor-pointer hover:underline md:mr-0 ${
                   pathname === "/" ? "mr-auto" : ""
                 }`}
               >
@@ -105,7 +97,7 @@ export default function Navigation({
             )}
             {pathname !== "/" && (
               <a
-                className="mr-auto md:mr-0 hover:underline hover:cursor-pointer"
+                className="mr-auto hover:cursor-pointer hover:underline md:mr-0"
                 href="https://diary.elia-orsini.com"
                 target="_blank"
                 rel="noreferrer"
@@ -116,9 +108,7 @@ export default function Navigation({
           </div>
         </div>
 
-        <div className="main-content w-full z-30 md:pl-56 lg:pl-72">
-          {children}
-        </div>
+        <div className="main-content z-30 flex w-full flex-col md:pl-56 lg:pl-72">{children}</div>
       </div>
 
       {/* <div className="flex px-10 md:px-20 w-full bg-lime text-black h-28 text-sm justify-between">

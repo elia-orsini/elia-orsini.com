@@ -1,14 +1,12 @@
-import React, { Suspense } from "react";
+import React from "react";
 import Navigation from "@components/Navigation";
-import { Canvas } from "@react-three/fiber";
 import Header from "@components/Header";
-import SpinningLogo from "@components/3D/SpinningLogo";
 
 function Work() {
   return (
     <>
       <Header
-        title={`Elia Orsini`}
+        title="Elia Orsini"
         description="Explore the work of Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
@@ -20,11 +18,7 @@ function Work() {
       </div>
 
       <Navigation>
-        <div className="absolute left-0 top-0 z-30 !h-[100dvh] w-screen">
-          {/* <Canvas>
-            <SpinningLogo />
-          </Canvas> */}
-        </div>
+        <></>
       </Navigation>
     </>
   );
