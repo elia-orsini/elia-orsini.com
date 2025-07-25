@@ -29,11 +29,11 @@ export const TransitionLink = ({
     const body = document.querySelector(".main-content");
     body?.classList.add("page-transition");
 
-    await sleep(600);
+    await sleep(500);
 
     await router.push(href);
 
-    await sleep(200);
+    await sleep(500);
 
     body?.classList.remove("page-transition");
   };
