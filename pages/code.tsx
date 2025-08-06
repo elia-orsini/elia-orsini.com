@@ -31,7 +31,7 @@ export default function Code() {
   return (
     <Navigation>
       <Header
-        title={`code | Elia Orsini`}
+        title={`Code | Elia Orsini`}
         description="Code projects by Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
