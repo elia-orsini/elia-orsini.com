@@ -34,7 +34,7 @@ export default function About() {
     <Navigation>
       <Header
         title={`About`}
-        description="About page of Elia Orsini, Software Developer based in Glasgow, Scotland."
+        description="About page of Elia Orsini."
       />
 
       <div className="w-full h-full flex flex-col px-4 sm:pr-10 lg:pr-20 mb-20 md:mb-40">

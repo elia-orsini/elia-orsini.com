@@ -32,7 +32,7 @@ export default function Code() {
     <Navigation>
       <Header
         title={`Code`}
-        description="Code projects by Elia Orsini, Software Developer based in Glasgow, Scotland."
+        description="Code projects by Elia Orsini."
       />
 
       <div className="mx-5 mt-10 flex gap-x-3 md:mt-20">
