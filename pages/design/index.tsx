@@ -24,7 +24,7 @@ function Design() {
   return (
     <>
       <Header
-        title={`Design | Elia Orsini`}
+        title={`Design`}
         description="Design work by Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
