@@ -30,10 +30,7 @@ export default function Code() {
 
   return (
     <Navigation>
-      <Header
-        title={`Code`}
-        description="Code projects by Elia Orsini."
-      />
+      <Header title={`Code`} description="Code projects by Elia Orsini." />
 
       <div className="mx-5 mt-10 flex gap-x-3 md:mt-20">
         <button
@@ -67,11 +64,11 @@ export default function Code() {
 
               <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3">
                 <WebsiteCard
-                  title="visual gpx"
+                  title="shelved fruits"
                   url="https://visual-gpx.vercel.app/"
-                  description="Generate cool graphics out of your Strava activities."
-                  tech={["NEXT.JS", "TAILWIND CSS"]}
-                  imageSrc="/code/websites-screens/visual-gpx.webp"
+                  description="Explore the translated and indexed archive of Fruits magazine."
+                  tech={["NEXT.JS", "SANITY", "SWIPER.JS"]}
+                  imageSrc="/code/websites-screens/shelved-fruits.webp"
                 />
                 <WebsiteCard
                   title="readu"
@@ -206,13 +203,22 @@ export default function Code() {
               <p className="appearingCards z-50 mb-2 block w-max bg-white px-2 text-left text-sm text-black">
                 other projects
               </p>
-              <WebsiteCard
-                title="mars neural net"
-                url="https://github.com/elia-orsini/mars-imagery-classification"
-                description="Neural Network that classifies images taken on Mars."
-                tech={["PYTHON", "TENSORFLOW"]}
-                imageSrc="/code/websites-screens/mars.webp"
-              />
+              <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3">
+                <WebsiteCard
+                  title="visual gpx"
+                  url="https://visual-gpx.vercel.app/"
+                  description="Generate cool graphics out of your Strava activities."
+                  tech={["NEXT.JS", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/visual-gpx.webp"
+                />
+                <WebsiteCard
+                  title="mars neural net"
+                  url="https://github.com/elia-orsini/mars-imagery-classification"
+                  description="Neural Network that classifies images taken on Mars."
+                  tech={["PYTHON", "TENSORFLOW"]}
+                  imageSrc="/code/websites-screens/mars.webp"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -225,16 +231,16 @@ export default function Code() {
               </p>
               <ul className="text-left">
                 <Project
-                  title="visual gpx"
+                  title="shelved fruits"
                   url="https://visual-gpx.vercel.app/"
-                  description="Generate cool graphics out of your Strava activities."
-                  tech={["NEXT.JS", "TAILWIND CSS"]}
+                  description="Explore the translated and indexed archive of Fruits magazine."
+                  tech={["NEXT.JS", "SANITY", "SWIPER.JS", "TAILWIND CSS"]}
                 />
                 <Project
                   title="readu"
                   url="https://readu-group-reading.vercel.app/"
                   description="Readu brings friends together through shared reading experiences."
-                  tech={["NEXT.JS", "DYNAMO DB", "TAILWIND CSS"]}
+                  tech={["NEXT.JS", "AWS", "DYNAMO DB", "TAILWIND CSS"]}
                 />
                 <Project
                   title="angela ricciardi"
@@ -313,7 +319,7 @@ export default function Code() {
                 title="ARCHIVE.pdf"
                 url="https://beta.archivepdf.net/"
                 description="Fashion Scans Archive, Articles & Content for the World."
-                tech={["TYPESCRIPT", "NEXT.JS", "STRAPI"]}
+                tech={["TYPESCRIPT", "NEXT.JS", "AWS", "STRAPI"]}
               />
             </div>
 
@@ -340,9 +346,15 @@ export default function Code() {
             </div>
 
             <div className="mt-10 flex flex-col sm:mt-20">
-              <p className="mb-2 block w-max bg-white px-2 text-left text-sm text-black">
+              <p className="mb-2 w-max bg-white px-2 text-left text-sm text-black">
                 other projects
               </p>
+              <Project
+                title="visual gpx"
+                url="https://visual-gpx.vercel.app/"
+                description="Generate cool graphics out of your Strava activities."
+                tech={["NEXT.JS", "TAILWIND CSS"]}
+              />
               <Project
                 title="mars neural net"
                 url="https://github.com/elia-orsini/mars-imagery-classification"
