@@ -1,3 +1,4 @@
+import { TransitionLink } from "@components/TransitionLink";
 import Link from "next/link";
 
 const DesignFooter: React.FC<{ previous?: string; next?: string }> = ({
@@ -17,17 +18,17 @@ const DesignFooter: React.FC<{ previous?: string; next?: string }> = ({
           >
             <path d="M13 7L4.414 7L14.707 17.293L13.293 18.707L3 8.414V17H1V5H13V7z" />
           </svg>
-          <Link href={previous} className="underline">
+          <TransitionLink href={previous} className="underline">
             PREVIOUS
-          </Link>
+          </TransitionLink>
         </div>
       )}
 
       {next && (
         <div className="my-auto ml-auto">
-          <Link href={next} className="underline">
+          <TransitionLink href={next} className="underline">
             NEXT
-          </Link>
+          </TransitionLink>
           <svg
             className="inline mb-1"
             fill="white"

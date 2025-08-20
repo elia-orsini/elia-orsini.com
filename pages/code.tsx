@@ -65,7 +65,7 @@ export default function Code() {
               <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3">
                 <WebsiteCard
                   title="shelved fruits"
-                  url="https://visual-gpx.vercel.app/"
+                  url="https://shelved-fruits.vercel.app/"
                   description="Explore the translated and indexed archive of Fruits magazine."
                   tech={["NEXT.JS", "SANITY", "SWIPER.JS"]}
                   imageSrc="/code/websites-screens/shelved-fruits.webp"
@@ -232,7 +232,7 @@ export default function Code() {
               <ul className="text-left">
                 <Project
                   title="shelved fruits"
-                  url="https://visual-gpx.vercel.app/"
+                  url="https://shelved-fruits.vercel.app/"
                   description="Explore the translated and indexed archive of Fruits magazine."
                   tech={["NEXT.JS", "SANITY", "SWIPER.JS", "TAILWIND CSS"]}
                 />
