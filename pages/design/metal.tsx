@@ -18,6 +18,14 @@ export default function TwoD() {
                 style={{ width: "100%", height: "auto" }}
                 sizes="700px"
                 alt=""
+                src="/design/metal/41.jpg"
+              />
+              <Image
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                sizes="700px"
+                alt=""
                 src="/design/metal/39.jpg"
               />
               <Image
@@ -102,6 +110,14 @@ export default function TwoD() {
               />
             </div>
             <div className="flex flex-col space-y-2">
+              <Image
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                sizes="700px"
+                alt=""
+                src="/design/metal/40.jpeg"
+              />
               <Image
                 width={0}
                 height={0}
@@ -198,7 +214,7 @@ export default function TwoD() {
                 style={{ width: "100%", height: "auto" }}
                 sizes="700px"
                 alt=""
-                src="/design/metal/12.jpg"
+                src="/design/metal/15.jpg"
               />
               <Image
                 width={0}
@@ -206,7 +222,15 @@ export default function TwoD() {
                 style={{ width: "100%", height: "auto" }}
                 sizes="700px"
                 alt=""
-                src="/design/metal/15.jpg"
+                src="/design/metal/42.jpg"
+              />
+              <Image
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                sizes="700px"
+                alt=""
+                src="/design/metal/12.jpg"
               />
               <Image
                 width={0}

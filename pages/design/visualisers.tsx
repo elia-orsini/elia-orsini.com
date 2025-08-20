@@ -261,13 +261,6 @@ export default function TwoD() {
               <a href="https://vimeo.com/859099636" target="_blank" rel="noreferrer">
                 <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
               </a>
-              <p>
-                The{" "}
-                <Link href="/blog/exhale" className={`italic underline`}>
-                  exhale blog post
-                </Link>{" "}
-                explains how this was made.
-              </p>
               <div className="mx-auto mt-2 grid grid-cols-3 flex-col gap-2 lg:grid-cols-4">
                 <Image
                   width={0}

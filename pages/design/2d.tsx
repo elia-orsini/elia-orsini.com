@@ -75,8 +75,24 @@ export default function TwoD() {
               alt=""
               src="/design/2d/21.jpg"
             />
+            <Image
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+              sizes="700px"
+              alt=""
+              src="/design/2d/25.jpg"
+            />
           </div>
           <div>
+            <Image
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+              sizes="700px"
+              alt=""
+              src="/design/2d/31.jpeg"
+            />
             <Image
               width={0}
               height={0}
@@ -124,14 +140,6 @@ export default function TwoD() {
               sizes="700px"
               alt=""
               src="/design/2d/23.jpg"
-            />
-            <Image
-              width={0}
-              height={0}
-              style={{ width: "100%", height: "auto" }}
-              sizes="700px"
-              alt=""
-              src="/design/2d/25.jpg"
             />
           </div>
           <div>
