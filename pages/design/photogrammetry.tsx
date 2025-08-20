@@ -115,7 +115,7 @@ export default function TwoD() {
             />
           </div>
         </div>
-        <DesignFooter previous="/design/visualisers" next="/design/luce-artificiale" />
+        <DesignFooter previous="/design/visualisers" next="/design/2d" />
       </Navigation>
     </>
   );

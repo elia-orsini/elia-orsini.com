@@ -16,7 +16,124 @@ export default function TwoD() {
         <div className="mx-auto mt-20 w-4/5 flex-col justify-between md:mx-0">
           <div className="mx-auto mt-10 grid flex-col gap-y-20">
             <div>
-              <p className={`text-3xl ${koulen.className}`}>1975 - olive hatake</p>
+              <p className={`text-2xl ${koulen.className}`}>Luce Artificiale - Rino Bellandi</p>
+              <p className="">
+                This 5.5 minutes long visualiser was made to represent what Rino Bellandi&apos;s new
+                EP{" "}
+                <a
+                  href="https://open.spotify.com/album/2VC5fdJqE7Wl59e5ti3Ij1?si=RBq5HXmZQ9u6j5cV-Uad_g"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className={`underline`}>Luce Artificiale</span>
+                </a>{" "}
+                feels like.
+              </p>
+              <a href="https://www.instagram.com/p/C2cJqhRKtb-/" target="_blank" rel="noreferrer">
+                <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
+              </a>
+              <div className="mx-auto mt-2 grid grid-cols-3 flex-col gap-2 sm:grid-cols-4">
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "auto", height: "100%" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/1.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/2.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/5.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/7.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/8.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/3.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/9.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/4.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/6.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/10.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/11.jpg"
+                />
+                <Image
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "auto" }}
+                  sizes="700px"
+                  alt=""
+                  src="/design/luce-artificiale/12.jpg"
+                />
+              </div>
+            </div>
+
+            <div>
+              <p className={`text-2xl ${koulen.className}`}>1975 - olive hatake</p>
               <a href="https://youtu.be/BbcvxFVh0wQ" target="_blank" rel="noreferrer">
                 <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
               </a>
@@ -57,7 +174,7 @@ export default function TwoD() {
             </div>
 
             <div>
-              <p className={`text-3xl ${koulen.className}`}>growing pains - olive hatake</p>
+              <p className={`text-2xl ${koulen.className}`}>growing pains - olive hatake</p>
               <a href="https://youtu.be/TizlMnP-K7g" target="_blank" rel="noreferrer">
                 <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
               </a>
@@ -98,12 +215,12 @@ export default function TwoD() {
             </div>
 
             <div>
-              <p className={`text-3xl ${koulen.className}`}>IN$0MN1A Temple</p>
+              <p className={`text-2xl ${koulen.className}`}>IN$0MN1A Temple</p>
               <p>
                 Made to be experienced in a club. When the bass hits your face and you fall into a
                 dream.
               </p>
-              <div className="mx-auto mt-2 grid flex-col gap-2 sm:grid-cols-2">
+              <div className="mx-auto mt-2 grid grid-cols-2 flex-col gap-2">
                 <Image
                   width={0}
                   height={0}
@@ -140,7 +257,7 @@ export default function TwoD() {
             </div>
 
             <div>
-              <p className={`text-3xl ${koulen.className}`}>exhale</p>
+              <p className={`text-2xl ${koulen.className}`}>exhale</p>
               <a href="https://vimeo.com/859099636" target="_blank" rel="noreferrer">
                 <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
               </a>
@@ -151,7 +268,7 @@ export default function TwoD() {
                 </Link>{" "}
                 explains how this was made.
               </p>
-              <div className="mx-auto mt-2 grid flex-col gap-2 sm:grid-cols-3 lg:grid-cols-4">
+              <div className="mx-auto mt-2 grid grid-cols-3 flex-col gap-2 lg:grid-cols-4">
                 <Image
                   width={0}
                   height={0}

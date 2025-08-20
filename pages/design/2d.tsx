@@ -251,7 +251,7 @@ export default function TwoD() {
             />
           </div>
         </div>
-        <DesignFooter previous="/design/luce-artificiale" next="/design/aliens" />
+        <DesignFooter previous="/design/photogrammetry" next="/design/aliens" />
       </Navigation>
     </>
   );

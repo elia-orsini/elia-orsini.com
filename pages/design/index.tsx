@@ -23,10 +23,7 @@ function Design() {
 
   return (
     <>
-      <Header
-        title={`Design`}
-        description="All design works by Elia Orsini."
-      />
+      <Header title={`Design`} description="All design works by Elia Orsini." />
 
       <Navigation>
         <div className="mx-5 mb-40 mt-10 text-2xl sm:mr-20 sm:mt-20">
@@ -70,16 +67,6 @@ function Design() {
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
               when the real becomes unreal.
             </span>
-          </p>
-
-          <p className="appearingText">
-            <TransitionLink
-              href="/design/luce-artificiale"
-              className={`text-lime ${koulen.className}`}
-            >
-              {">"} luce artificiale
-            </TransitionLink>
-            <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">music synesthesia.</span>
           </p>
 
           <p className="appearingText">
