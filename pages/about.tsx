@@ -32,12 +32,9 @@ export default function About() {
 
   return (
     <Navigation>
-      <Header
-        title={`About`}
-        description="About page of Elia Orsini."
-      />
+      <Header title={`About`} description="About page of Elia Orsini." />
 
-      <div className="w-full h-full flex flex-col px-4 sm:pr-10 lg:pr-20 mb-20 md:mb-40">
+      <div className="mb-20 flex h-full w-full flex-col px-4 sm:pr-10 md:mb-40 lg:pr-20">
         <div className="flex flex-row">
           <div className="mt-10 w-[130px] sm:w-[200px]">
             <Image
@@ -49,43 +46,42 @@ export default function About() {
             />
           </div>
 
-          <div className="mt-auto ml-2 sm:ml-10">
+          <div className="ml-2 mt-auto sm:ml-10">
             <h1
               id="NameSurname"
-              className={`${koulen.className} text-lime text-[40px] sm:text-[60px] lg:text-[80px]`}
+              className={`${koulen.className} text-[40px] text-lime sm:text-[60px] lg:text-[80px]`}
             >
               Elia Orsini
             </h1>
-            <h1 className="text-[20px] sm:text-[25px] lg:text-[30px] -mt-2 sm:-mt-5 lg:-mt-7">
+            <h1 className="-mt-2 text-[20px] sm:-mt-5 sm:text-[25px] lg:-mt-7 lg:text-[30px]">
               Software Developer
             </h1>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 w-full mt-6 md:mt-10 backdrop-blur-xl leading-[20px]">
-          <div className="border border-b-0 md:border-b border-white text-sm">
-            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">
-              tech
-            </h2>
+        <div className="mt-6 grid w-full grid-cols-1 leading-[20px] backdrop-blur-xl md:mt-10 md:grid-cols-4">
+          <div className="border border-b-0 border-white text-sm md:border-b">
+            <h2 className="my-4 ml-2 font-bold uppercase md:my-2">tech</h2>
 
-            <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
+            <hr className="mb-2 mt-0.5 border border-[0.5px] border-white" />
 
             <div className="mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black font-semibold">
-                Software Development
-              </h3>
-              <ul className="ml-4 font-mono">
+              <h3 className="bg-lime pl-1 font-semibold text-black">Software Development</h3>
+              <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Typescript / JS</li>
                 <li className="appearingText">React</li>
                 <li className="appearingText">Next.js</li>
                 <li className="appearingText">Node.js</li>
-                <li className="appearingText">TailwindCSS / Bootstrap</li>
-                <li className="appearingText">REST APIs / WebSockets</li>
+                <li className="appearingText">TailwindCSS</li>
+                <li className="appearingText">REST APIs</li>
+                <li className="appearingText">WebSockets</li>
                 <li className="appearingText">Figma / FigJam</li>
+                <li className="appearingText">AWS</li>
                 <li className="appearingText">Python</li>
                 <li className="appearingText">Redux / Zustand</li>
                 <li className="appearingText">GSAP / Framer Motion</li>
-                <li className="appearingText">Three.js / Babylon.js</li>
+                <li className="appearingText">Three.js</li>
+                <li className="appearingText">Babylon.js</li>
                 <li className="appearingText">GraphQL / SQL</li>
                 <li className="appearingText">Docker</li>
                 <li className="appearingText">DynamoDB</li>
@@ -97,13 +93,14 @@ export default function About() {
                 <li className="appearingText">Git / GH Actions</li>
                 <li className="appearingText">CircleCI</li>
                 <li className="appearingText">Postman</li>
+                <li className="appearingText">Bootstrap</li>
                 <li className="appearingText">Google Analytics</li>
                 <li className="appearingText">Remix</li>
                 <li className="appearingText">Prisma</li>
               </ul>
 
-              <h3 className="pl-1 bg-lime text-black mt-2 font-semibold">3D</h3>
-              <ul className="ml-4 font-mono">
+              <h3 className="mt-2 bg-lime pl-1 font-semibold text-black">3D</h3>
+              <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Unreal Engine</li>
                 <li className="appearingText">Blender</li>
                 <li className="appearingText">Blueprints / C++</li>
@@ -117,30 +114,28 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border md:border-l-0 border-b-0 md:border-b border-white text-sm">
-            <h2 className="my-4 md:my-2 ml-2 md:ml-1 uppercase font-bold">
-              skills
-            </h2>
+          <div className="border border-b-0 border-white text-sm md:border-b md:border-l-0">
+            <h2 className="my-4 ml-2 font-bold uppercase md:my-2">skills</h2>
 
-            <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
+            <hr className="mb-2 mt-0.5 border border-[0.5px] border-white" />
 
             <div className="mx-2 pb-2">
-              <h3 className="pl-1 bg-lime text-black font-semibold">
-                Software Development
-              </h3>
+              <h3 className="bg-lime pl-1 font-semibold text-black">Software Development</h3>
 
-              <ul className="ml-4 font-mono">
+              <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Frontend dev</li>
                 <li className="appearingText">UI/UX Design</li>
                 <li className="appearingText">Backend dev</li>
                 <li className="appearingText">CI/CD Workflows</li>
                 <li className="appearingText">Scripts</li>
+                <li className="appearingText">System Design</li>
                 <li className="appearingText">CMS Integration</li>
+                <li className="appearingText">Web Scraping</li>
               </ul>
 
-              <h3 className="pl-1 bg-lime text-black mt-2 font-semibold">3D</h3>
+              <h3 className="mt-2 bg-lime pl-1 font-semibold text-black">3D</h3>
 
-              <ul className="ml-4 font-mono">
+              <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">3D Modelling</li>
                 <li className="appearingText">Concept Design</li>
                 <li className="appearingText">Geometry Nodes</li>
@@ -153,18 +148,16 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border md:border-l-0 border-white md:col-span-2 text-sm">
-            <h2 className="my-4 md:my-2 ml-2 uppercase font-bold">
-              experience
-            </h2>
+          <div className="border border-white text-sm md:col-span-2 md:border-l-0">
+            <h2 className="my-4 ml-2 font-bold uppercase md:my-2">experience</h2>
 
-            <hr className="border border-[0.5px] border-white mt-0.5 mb-2" />
+            <hr className="mb-2 mt-0.5 border border-[0.5px] border-white" />
 
             <div className="mx-2">
               <Experience
                 role="Unreal Engine Developer"
                 company="Robohive"
-                dates="Nov 2024 / "
+                dates="Nov 2024 / May 2025"
                 descriptions={[
                   `Developed a VR training application in Unreal Engine for orthopaedic robotic surgery for the NHS.`,
                 ]}

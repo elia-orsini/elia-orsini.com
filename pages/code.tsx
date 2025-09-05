@@ -64,6 +64,13 @@ export default function Code() {
 
               <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3">
                 <WebsiteCard
+                  title="nine point six three"
+                  url="https://ninepointsixthree.co/"
+                  description="Website for creative studio Nine Point Six Three."
+                  tech={["NEXT.JS", "SANITY", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/ninepointsixthree.webp"
+                />
+                <WebsiteCard
                   title="shelved fruits"
                   url="https://shelved-fruits.vercel.app/"
                   description="Explore the translated and indexed archive of Fruits magazine."
@@ -147,13 +154,6 @@ export default function Code() {
                   tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
                   imageSrc="/code/websites-screens/lazyllm.webp"
                 />
-                <WebsiteCard
-                  title="digital gardens"
-                  url="https://digital-gardens-sepia.vercel.app/"
-                  description="Your cute little corner of the internet."
-                  tech={["NEXT", "TAILWIND CSS"]}
-                  imageSrc="/code/websites-screens/gardens.webp"
-                />
               </div>
             </div>
 
@@ -212,6 +212,13 @@ export default function Code() {
                   imageSrc="/code/websites-screens/visual-gpx.webp"
                 />
                 <WebsiteCard
+                  title="digital gardens"
+                  url="https://digital-gardens-sepia.vercel.app/"
+                  description="Your cute little corner of the internet."
+                  tech={["NEXT", "TAILWIND CSS"]}
+                  imageSrc="/code/websites-screens/gardens.webp"
+                />
+                <WebsiteCard
                   title="mars neural net"
                   url="https://github.com/elia-orsini/mars-imagery-classification"
                   description="Neural Network that classifies images taken on Mars."
@@ -230,6 +237,12 @@ export default function Code() {
                 websites I built
               </p>
               <ul className="text-left">
+                <Project
+                  title="nine point six three"
+                  url="https://ninepointsixthree.co/"
+                  description="Website for creative studio Nine Point Six Three."
+                  tech={["NEXT.JS", "SANITY", "TAILWIND CSS"]}
+                />
                 <Project
                   title="shelved fruits"
                   url="https://shelved-fruits.vercel.app/"
@@ -302,12 +315,6 @@ export default function Code() {
                   description="Toolkit to create, test and analyse prompts for Large Language Models."
                   tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND CSS"]}
                 />
-                <Project
-                  title="digital gardens"
-                  url="https://digital-gardens-sepia.vercel.app/"
-                  description="Your cute little corner of the internet."
-                  tech={["NEXT", "TAILWIND CSS"]}
-                />
               </ul>
             </div>
 
@@ -354,6 +361,12 @@ export default function Code() {
                 url="https://visual-gpx.vercel.app/"
                 description="Generate cool graphics out of your Strava activities."
                 tech={["NEXT.JS", "TAILWIND CSS"]}
+              />
+              <Project
+                title="digital gardens"
+                url="https://digital-gardens-sepia.vercel.app/"
+                description="Your cute little corner of the internet."
+                tech={["NEXT", "TAILWIND CSS"]}
               />
               <Project
                 title="mars neural net"
