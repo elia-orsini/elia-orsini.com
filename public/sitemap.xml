@@ -1,4 +1,6 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://elia-orsini.com/</loc>
     <lastmod>2024-06-19T11:02:12.123Z</lastmod>
@@ -16,47 +18,467 @@
     <lastmod>2024-06-19T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/angela-ricciardi.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/apdf.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/bedroom.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/blender.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/gardens.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/gft.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/immortal.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/insomnia.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/lazyllm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/macina.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/mars.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/ninepointsixthree.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/personal-db.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/readu.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/rho.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/rome.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/shelved-fruits.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/talome.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/visual-gpx.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/code/websites-screens/yu.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/about</loc>
     <lastmod>2024-06-19T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/me.jpeg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/design/sunshi</loc>
     <lastmod>2025-07-15T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/sunshi/1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/sunshi/2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/sunshi/3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/sunshi/4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/sunshi/5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/sunshi/6.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/design/metal</loc>
     <lastmod>2025-07-15T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/10.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/11.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/12.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/13.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/14.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/15.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/16.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/17.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/18.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/20.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/22.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/25.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/26.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/28.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/29.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/30.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/31.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/32.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/33.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/34.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/35.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/36.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/37.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/38.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/39.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/40.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/41.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/42.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/6.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/8.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/metal/9.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/design/visualisers</loc>
     <lastmod>2025-07-15T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/10.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/11.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/12.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/6.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/7.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/8.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/luce-artificiale/9.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/1975/1975-1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/1975/1975-2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/1975/1975-3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/1975/1975-4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr10.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr11.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr12.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr6.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr7.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr8.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/exhale/cr9.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/growing-pains/olive1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/growing-pains/olive2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/growing-pains/olive3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/growing-pains/olive4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/temple/temple1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/temple/temple2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/temple/temple3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/visualisers/temple/temple4.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/design/photogrammetry</loc>
     <lastmod>2025-07-15T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/10.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/11.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/6.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/7.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/8.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/photogrammetry/9.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/design/2d</loc>
     <lastmod>2025-07-15T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/10.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/11.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/12.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/13.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/15.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/16.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/17.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/18.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/19.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/20.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/21.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/22.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/23.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/24.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/25.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/26.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/27.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/28.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/29.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/30.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/31.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/6.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/7.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/8.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/2d/9.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://elia-orsini.com/design/aliens</loc>
     <lastmod>2025-07-15T11:02:12.123Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/aliens/alien1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/aliens/alien2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://elia-orsini.com/design/aliens/alien3.jpg</image:loc>
+    </image:image>
   </url>
 </urlset>
