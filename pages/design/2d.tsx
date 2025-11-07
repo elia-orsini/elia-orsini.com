@@ -16,7 +16,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 1 by Elia Orsini"
               src="/design/2d/1.jpg"
             />
             <Image
@@ -24,7 +24,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 2 by Elia Orsini"
               src="/design/2d/2.jpg"
             />
             <Image
@@ -32,7 +32,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 3 by Elia Orsini"
               src="/design/2d/3.jpg"
             />
             <Image
@@ -40,7 +40,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 4 by Elia Orsini"
               src="/design/2d/4.jpg"
             />
             <Image
@@ -48,7 +48,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 5 by Elia Orsini"
               src="/design/2d/26.jpg"
             />
             <Image
@@ -56,7 +56,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 6 by Elia Orsini"
               src="/design/2d/29.jpg"
             />
             <Image
@@ -64,7 +64,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 7 by Elia Orsini"
               src="/design/2d/16.jpg"
             />
             <Image
@@ -72,7 +72,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 8 by Elia Orsini"
               src="/design/2d/21.jpg"
             />
             <Image
@@ -80,7 +80,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 9 by Elia Orsini"
               src="/design/2d/25.jpg"
             />
           </div>
@@ -90,7 +90,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 10 by Elia Orsini"
               src="/design/2d/31.jpeg"
             />
             <Image
@@ -98,7 +98,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 11 by Elia Orsini"
               src="/design/2d/10.jpg"
             />
             <Image
@@ -106,7 +106,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 12 by Elia Orsini"
               src="/design/2d/6.jpg"
             />
             <Image
@@ -114,7 +114,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 13 by Elia Orsini"
               src="/design/2d/7.jpg"
             />
             <Image
@@ -122,7 +122,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 14 by Elia Orsini"
               src="/design/2d/18.jpg"
             />
             <Image
@@ -130,7 +130,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 15 by Elia Orsini"
               src="/design/2d/20.jpg"
             />
             <Image
@@ -138,7 +138,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 16 by Elia Orsini"
               src="/design/2d/23.jpg"
             />
           </div>
@@ -148,7 +148,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 17 by Elia Orsini"
               src="/design/2d/19.jpg"
             />
             <Image
@@ -156,7 +156,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 18 by Elia Orsini"
               src="/design/2d/5.jpg"
             />
             <Image
@@ -164,7 +164,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 19 by Elia Orsini"
               src="/design/2d/13.jpg"
             />
             <Image
@@ -172,7 +172,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 20 by Elia Orsini"
               src="/design/2d/12.jpg"
             />
             <Image
@@ -180,7 +180,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 21 by Elia Orsini"
               src="/design/2d/11.jpg"
             />
             <Image
@@ -188,7 +188,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 22 by Elia Orsini"
               src="/design/2d/24.jpg"
             />
             <Image
@@ -196,7 +196,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 23 by Elia Orsini"
               src="/design/2d/28.jpg"
             />
           </div>
@@ -206,7 +206,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 24 by Elia Orsini"
               src="/design/2d/8.jpg"
             />
             <Image
@@ -214,7 +214,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 25 by Elia Orsini"
               src="/design/2d/9.jpg"
             />
             <Image
@@ -222,7 +222,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 26 by Elia Orsini"
               src="/design/2d/15.jpg"
             />
             <Image
@@ -230,7 +230,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 27 by Elia Orsini"
               src="/design/2d/30.jpg"
             />
             <Image
@@ -238,7 +238,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 28 by Elia Orsini"
               src="/design/2d/17.jpg"
             />
             <Image
@@ -246,7 +246,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 29 by Elia Orsini"
               src="/design/2d/22.jpg"
             />
             <Image
@@ -254,7 +254,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="2D design image 30 by Elia Orsini"
               src="/design/2d/27.jpg"
             />
           </div>

@@ -190,7 +190,7 @@ export default function About() {
                       "/about/img/img10.jpg",
                       "/about/img/img11.jpg",
                     ]}
-                    sectionTitle="HoR"
+                    sectionTitle="IMG Arena"
                   />
                 </div>
               </Experience>
@@ -217,7 +217,7 @@ export default function About() {
                       "/about/HoR/hor6.jpg",
                       "/about/HoR/hor7.jpg",
                     ]}
-                    sectionTitle="HoR"
+                    sectionTitle="Houses of Rome"
                   />
                 </div>
               </Experience>

@@ -35,13 +35,13 @@ function BrutalistBuildings() {
 
           <div className="grid grid-cols-2 lg:p-5 gap-1 lg:gap-3">
             <Image
-              alt=""
+              alt="barbican centre image 1 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3716.jpg"
               width={width}
               height={width / 1.33}
             />
             <Image
-              alt=""
+              alt="barbican centre image 2 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3713.jpg"
               width={width}
               height={width / 1.33}
@@ -50,19 +50,19 @@ function BrutalistBuildings() {
 
           <div className="grid grid-cols-3 lg:p-5 gap-1 lg:gap-3">
             <Image
-              alt=""
+              alt="barbican centre image 3 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3709.jpg"
               width={width / 1.33}
               height={width}
             />
             <Image
-              alt=""
+              alt="barbican centre image 4 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3727.jpg"
               width={width / 1.33}
               height={width}
             />
             <Image
-              alt=""
+              alt="barbican centre image 5 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3717.jpg"
               width={width / 1.33}
               height={width}
@@ -71,19 +71,19 @@ function BrutalistBuildings() {
 
           <div className="grid  grid-cols-3 lg:p-5 gap-1 lg:gap-3">
             <Image
-              alt=""
+              alt="barbican centre image 6 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3725.jpg"
               width={width / 1.33}
               height={width}
             />
             <Image
-              alt=""
+              alt="barbican centre image 7 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3724.jpg"
               width={width / 1.33}
               height={width}
             />
             <Image
-              alt=""
+              alt="barbican centre image 8 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3721.jpg"
               width={width / 1.33}
               height={width}
@@ -98,21 +98,21 @@ function BrutalistBuildings() {
 
           <div className="grid sm:grid-cols-3 gap-1">
             <Image
-              alt=""
+              alt="Institute of Education image 1 by Elia Orsini"
               src="/blog/brutalist/education/IMG_3817.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Institute of Education image 2 by Elia Orsini"
               src="/blog/brutalist/education/IMG_3818.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Institute of Education image 3 by Elia Orsini"
               src="/blog/brutalist/education/IMG_3819.jpg"
               className=""
               width={1000 / 1.33}
@@ -129,14 +129,14 @@ function BrutalistBuildings() {
           <div className="grid grid-col gap-1 ">
             <div className="grid grid-cols-2 gap-4">
               <Image
-                alt=""
+                alt="Brunswick Centre image 1 by Elia Orsini"
                 src="/blog/brutalist/brunswick/IMG_3799.jpg"
                 className=""
                 width={1000 / 1.33}
                 height={1000}
               />
               <Image
-                alt=""
+                alt="Brunswick Centre image 2 by Elia Orsini"
                 src="/blog/brutalist/brunswick/IMG_3800.jpg"
                 className=""
                 width={1000 / 1.33}
@@ -145,7 +145,7 @@ function BrutalistBuildings() {
             </div>
             <div className="mx-auto grid grid-cols-3 gap-4 mt-4">
               <Image
-                alt=""
+                alt="Brunswick Centre image 3 by Elia Orsini"
                 src="/blog/brutalist/brunswick/IMG_3798.jpg"
                 className="my-auto"
                 width={1000 / 1.33}
@@ -153,7 +153,7 @@ function BrutalistBuildings() {
               />
               <div className="col-span-2">
                 <Image
-                  alt=""
+                  alt="Brunswick Centre image 4 by Elia Orsini"
                   src="/blog/brutalist/brunswick/IMG_3803.jpg"
                   width={1000}
                   height={1000 / 1.33}
@@ -170,28 +170,28 @@ function BrutalistBuildings() {
 
           <div className="grid grid-cols-2 gap-1">
             <Image
-              alt=""
+              alt="St Giles Hotel image 1 by Elia Orsini"
               src="/blog/brutalist/st-giles/IMG_3828.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="St Giles Hotel image 2 by Elia Orsini"
               src="/blog/brutalist/st-giles/IMG_3829.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="St Giles Hotel image 3 by Elia Orsini"
               src="/blog/brutalist/st-giles/IMG_3830.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="St Giles Hotel image 4 by Elia Orsini"
               src="/blog/brutalist/st-giles/IMG_3831.jpg"
               className=""
               width={1000 / 1.33}
@@ -207,14 +207,14 @@ function BrutalistBuildings() {
 
           <div className="grid grid-cols-2 gap-2">
             <Image
-              alt=""
+              alt="Centre Point image 1 by Elia Orsini"
               src="/blog/brutalist/centre-point/IMG_3842.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Centre Point image 2 by Elia Orsini"
               src="/blog/brutalist/centre-point/IMG_3843.jpg"
               className=""
               width={1000 / 1.33}
@@ -230,28 +230,28 @@ function BrutalistBuildings() {
 
           <div className="grid grid-cols-2">
             <Image
-              alt=""
+              alt="Mermaid House image 1 by Elia Orsini"
               src="/blog/brutalist/mermaid/IMG_3864.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Mermaid House image 2 by Elia Orsini"
               src="/blog/brutalist/mermaid/IMG_3865.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Mermaid House image 3 by Elia Orsini"
               src="/blog/brutalist/mermaid/IMG_3866.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Mermaid House image 4 by Elia Orsini"
               src="/blog/brutalist/mermaid/IMG_3867.jpg"
               className=""
               width={1000 / 1.33}
@@ -269,7 +269,7 @@ function BrutalistBuildings() {
             <div className="flex">
               <div className="my-auto">
                 <Image
-                  alt=""
+                  alt="Royal College of Physicians image 1 by Elia Orsini"
                   src="/blog/brutalist/physicians/IMG_3781.jpg"
                   className="border border-white"
                   width={1000 / 1.33}
@@ -279,14 +279,14 @@ function BrutalistBuildings() {
             </div>
             <div>
               <Image
-                alt=""
+                alt="Royal College of Physicians image 2 by Elia Orsini"
                 className="border border-white"
                 src="/blog/brutalist/physicians/IMG_3788.jpg"
                 width={1000}
                 height={1000 / 1.33}
               />
               <Image
-                alt=""
+                alt="Royal College of Physicians image 3 by Elia Orsini"
                 className="mt-3 border border-white"
                 src="/blog/brutalist/physicians/IMG_3794.jpg"
                 width={1000 / 1.33}
@@ -304,7 +304,7 @@ function BrutalistBuildings() {
           <div className="flex flex-col">
             <div className="mx-auto">
               <Image
-                alt=""
+                alt="Golden Lane Estate image 1 by Elia Orsini"
                 src="/blog/brutalist/golden-lane-estate/IMG_3742.jpg"
                 width={1100}
                 height={1100 / 1.33}
@@ -312,13 +312,13 @@ function BrutalistBuildings() {
             </div>
             <div className="grid grid-cols-2 gap-1 pt-1">
               <Image
-                alt=""
+                alt="Golden Lane Estate image 2 by Elia Orsini"
                 src="/blog/brutalist/golden-lane-estate/IMG_3744.jpg"
                 width={1000 / 1.33}
                 height={1000}
               />
               <Image
-                alt=""
+                alt="Golden Lane Estate image 3 by Elia Orsini"
                 src="/blog/brutalist/golden-lane-estate/IMG_3745.jpg"
                 width={1000 / 1.33}
                 height={1000}
@@ -335,13 +335,13 @@ function BrutalistBuildings() {
           <div>
             <div className="grid sm:grid-cols-2 gap-1">
               <Image
-                alt=""
+                alt="Stelfox House image 1 by Elia Orsini"
                 src="/blog/brutalist/stelfox-house/IMG_3755.jpg"
                 width={1000 / 1.33}
                 height={1000}
               />
               <Image
-                alt=""
+                alt="Stelfox House image 2 by Elia Orsini"
                 src="/blog/brutalist/stelfox-house/IMG_3753.jpg"
                 width={1000 / 1.33}
                 height={1000}

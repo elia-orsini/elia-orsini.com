@@ -25,7 +25,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 1 by Elia Orsini"
               src="/design/photogrammetry/3.jpg"
             />
             <Image
@@ -33,7 +33,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 2 by Elia Orsini"
               src="/design/photogrammetry/4.jpg"
             />
           </div>
@@ -48,7 +48,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 3 by Elia Orsini"
               src="/design/photogrammetry/5.jpg"
             />
             <Image
@@ -56,7 +56,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 4 by Elia Orsini"
               src="/design/photogrammetry/6.jpg"
             />
           </div>
@@ -71,7 +71,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 5 by Elia Orsini"
               src="/design/photogrammetry/7.jpg"
             />
             <Image
@@ -79,7 +79,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 6 by Elia Orsini"
               src="/design/photogrammetry/8.jpg"
             />
             <Image
@@ -87,7 +87,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 7 by Elia Orsini"
               src="/design/photogrammetry/9.jpg"
             />
           </div>
@@ -102,7 +102,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 8 by Elia Orsini"
               src="/design/photogrammetry/10.jpg"
             />
             <Image
@@ -110,7 +110,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Photogrammetry image 9 by Elia Orsini"
               src="/design/photogrammetry/11.jpg"
             />
           </div>

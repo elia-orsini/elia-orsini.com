@@ -141,7 +141,7 @@ function Exhale() {
         </p>
 
         <Image
-          alt=""
+          alt="Exhale 3D Render by Elia Orsini"
           src="/blog/exhale/6.jpg"
           className="mx-auto"
           width={1000 / 1.33}
@@ -150,14 +150,14 @@ function Exhale() {
         <div className="grid grid-cols-2">
           <div>
             <Image
-              alt=""
+              alt="Exhale image 1 by Elia Orsini"
               src="/blog/exhale/1.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Exhale image 2 by Elia Orsini"
               src="/blog/exhale/3.jpg"
               className=""
               width={1000 / 1.33}
@@ -166,14 +166,14 @@ function Exhale() {
           </div>
           <div>
             <Image
-              alt=""
+              alt="Exhale image 3 by Elia Orsini"
               src="/blog/exhale/4.jpg"
               className=""
               width={1000 / 1.33}
               height={1000}
             />
             <Image
-              alt=""
+              alt="Exhale image 4 by Elia Orsini"
               src="/blog/exhale/5.jpg"
               className=""
               width={1000 / 1.33}

@@ -42,7 +42,7 @@ export default function TwoD() {
                 sizes="700px"
                 style={{ height: "auto", width: "100%" }}
                 className="object-contain"
-                alt=""
+                alt="Sunshi image 1 by Elia Orsini"
                 src="/design/sunshi/1.jpg"
               />
             </div>
@@ -53,7 +53,7 @@ export default function TwoD() {
                 sizes="700px"
                 style={{ height: "auto", width: "100%" }}
                 className="object-contain"
-                alt=""
+                alt="Sunshi image 2 by Elia Orsini"
                 src="/design/sunshi/2.jpg"
               />
             </div>
@@ -64,7 +64,7 @@ export default function TwoD() {
                 sizes="700px"
                 style={{ height: "auto", width: "100%" }}
                 className="object-contain"
-                alt=""
+                alt="Sunshi image 3 by Elia Orsini"
                 src="/design/sunshi/3.jpg"
               />
             </div>
@@ -75,7 +75,7 @@ export default function TwoD() {
                 sizes="700px"
                 style={{ height: "auto", width: "100%" }}
                 className="object-contain"
-                alt=""
+                alt="Sunshi image 4 by Elia Orsini"
                 src="/design/sunshi/5.jpg"
               />
             </div>
@@ -86,7 +86,7 @@ export default function TwoD() {
                 sizes="700px"
                 style={{ height: "auto", width: "100%" }}
                 className="object-contain"
-                alt=""
+                alt="Sunshi image 5 by Elia Orsini"
                 src="/design/sunshi/6.jpg"
               />
             </div>
@@ -97,7 +97,7 @@ export default function TwoD() {
                 sizes="700px"
                 style={{ height: "auto", width: "100%" }}
                 className="object-contain"
-                alt=""
+                alt="Sunshi image 6 by Elia Orsini"
                 src="/design/sunshi/4.jpg"
               />
             </div>

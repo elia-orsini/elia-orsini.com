@@ -16,7 +16,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Aliens image 1 by Elia Orsini"
               src="/design/aliens/alien3.jpg"
             />
           </div>
@@ -26,7 +26,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Aliens image 2 by Elia Orsini"
               src="/design/aliens/alien2.jpg"
             />
           </div>
@@ -36,7 +36,7 @@ export default function TwoD() {
               height={0}
               style={{ width: "100%", height: "auto" }}
               sizes="700px"
-              alt=""
+              alt="Aliens image 3 by Elia Orsini"
               src="/design/aliens/alien1.jpg"
             />
           </div>

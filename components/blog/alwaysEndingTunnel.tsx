@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Header from "@components/Header";
 import BlogHeader from "./BlogHeader";
@@ -6,16 +5,12 @@ import BlogHeader from "./BlogHeader";
 function AlwaysEndingTunnel() {
   return (
     <>
-
       <Header title="always ending tunnel" img="/blog/exhale/intro.jpg" />
 
-      <BlogHeader
-        imgUrl="/blog/alwaysEndingTunnel/1.jpg"
-        title="always ending tunnel"
-      />
+      <BlogHeader imgUrl="/blog/alwaysEndingTunnel/1.jpg" title="always ending tunnel" />
 
       <div
-        className="w-full sm:w-full mx-auto -mt-16 sm:-mt-40 sm:-mb-20"
+        className="mx-auto -mt-16 w-full sm:-mb-20 sm:-mt-40 sm:w-full"
         style={{ padding: "100% 0 0 0", position: "relative" }}
       >
         <iframe
@@ -35,28 +30,28 @@ function AlwaysEndingTunnel() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2">
         <Image
-          alt=""
+          alt="always ending tunnel image 1 by Elia Orsini"
           src="/blog/alwaysEndingTunnel/1.jpg"
           className=""
           width={2886}
           height={1804}
         />
         <Image
-          alt=""
+          alt="always ending tunnel image 2 by Elia Orsini"
           src="/blog/alwaysEndingTunnel/2.jpg"
           className=""
           width={2886}
           height={1804}
         />
         <Image
-          alt=""
+          alt="always ending tunnel image 3 by Elia Orsini"
           src="/blog/alwaysEndingTunnel/3.jpg"
           className=""
           width={2886}
           height={1804}
         />
         <Image
-          alt=""
+          alt="always ending tunnel image 4 by Elia Orsini"
           src="/blog/alwaysEndingTunnel/4.jpg"
           className=""
           width={2886}
@@ -64,48 +59,40 @@ function AlwaysEndingTunnel() {
         />
       </div>
 
-      <div className="flex flex-col mb-20 mt-20">
+      <div className="mb-20 mt-20 flex flex-col">
         <p className="">
-          &apos;always ending tunnel&apos; is a simple low effort 3d scene
-          rendered in unreal engine. the aim of this project was to mostly test
-          out the UE5 suites of tools to render high quality scenes given that i
-          am planning to slowly transition from rendering in blender cycles to
-          completely render my scenes in UE.
+          &apos;always ending tunnel&apos; is a simple low effort 3d scene rendered in unreal
+          engine. the aim of this project was to mostly test out the UE5 suites of tools to render
+          high quality scenes given that i am planning to slowly transition from rendering in
+          blender cycles to completely render my scenes in UE.
           <br />
-          i have actually been using unreal engine for about six months,
-          however, before this project i had not properly rendered anything out
-          of it.
+          i have actually been using unreal engine for about six months, however, before this
+          project i had not properly rendered anything out of it.
           <br />
           <br />
-          when i say it was a low-effort type of project what i mean is that all
-          the meshes and textures present in the scene you see have actually
-          been imported using quixel bridge and i must say they are insane in
-          terms of level of details.
+          when i say it was a low-effort type of project what i mean is that all the meshes and
+          textures present in the scene you see have actually been imported using quixel bridge and
+          i must say they are insane in terms of level of details.
           <br />
           <br />
-          the whole thing probably took me about four hours that were mostly
-          spent reorganising ideas and understanding light settings and effects.
-          everything was quite smooth except for a few random crashes of the
-          editor and for one very big issue i couldn&apos;t solve. this
-          limitation is also the reason the final scene does not include any
-          natural light and i think it&apos;s also the main factor that led me
-          opting for a tunnel. the issue is that, somehow, the objects i import
-          from quixel bridge are not affected whatsoever by the sky light. this
-          basically means that when a mesh is not hit by the sun is completely
-          dark. the parts that stay in the shadows are fully black. i am sure
-          there is a solution to this but after having spent more than half a
-          hour looking for the solution i then gave up.
+          the whole thing probably took me about four hours that were mostly spent reorganising
+          ideas and understanding light settings and effects. everything was quite smooth except for
+          a few random crashes of the editor and for one very big issue i couldn&apos;t solve. this
+          limitation is also the reason the final scene does not include any natural light and i
+          think it&apos;s also the main factor that led me opting for a tunnel. the issue is that,
+          somehow, the objects i import from quixel bridge are not affected whatsoever by the sky
+          light. this basically means that when a mesh is not hit by the sun is completely dark. the
+          parts that stay in the shadows are fully black. i am sure there is a solution to this but
+          after having spent more than half a hour looking for the solution i then gave up.
           <br />
           <br />
-          the main elements in the scene you see are textured surfaces (like the
-          pavements and the walls), various textured meshes (like the railings
-          or the bins) and decals. decals are basically these
-          &apos;stickers&apos; you can apply on any surface you want. they are
-          created from simply using a transparent texture and in this case i
-          used them for the various graffiti on the walls and for the rubbish
-          next to the fallen bin. if you get close enough to the rubbish you
-          will clearly notice that it&apos;s flat (duh) but i think it works
-          well for situations where you only get a glimpse of it.
+          the main elements in the scene you see are textured surfaces (like the pavements and the
+          walls), various textured meshes (like the railings or the bins) and decals. decals are
+          basically these &apos;stickers&apos; you can apply on any surface you want. they are
+          created from simply using a transparent texture and in this case i used them for the
+          various graffiti on the walls and for the rubbish next to the fallen bin. if you get close
+          enough to the rubbish you will clearly notice that it&apos;s flat (duh) but i think it
+          works well for situations where you only get a glimpse of it.
         </p>
       </div>
     </>

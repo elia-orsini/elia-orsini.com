@@ -16,7 +16,7 @@ const WebsiteCard: React.FC<{
         {imageSrc && (
           <div className="absolute hidden sm:block">
             <Image
-              alt=""
+              alt={`${title} Website by Elia Orsini`}
               src={imageSrc}
               className="object-cover opacity-90"
               width={238}
@@ -29,7 +29,13 @@ const WebsiteCard: React.FC<{
         {imageSrc && (
           <div className="absolute block sm:hidden">
             <div className="relative h-[190px] w-[calc(100vw-47px)]">
-              <Image alt="" src={imageSrc} className="opacity-90" fill objectFit="cover" />
+              <Image
+                alt={`${title} Website by Elia Orsini`}
+                src={imageSrc}
+                className="opacity-90"
+                fill
+                objectFit="cover"
+              />
             </div>
             <div className="from-1% absolute inset-0 h-[190px] w-[calc(100vw-47px)] bg-gradient-to-t from-black" />
           </div>

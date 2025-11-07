@@ -38,7 +38,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "auto", height: "100%" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 1 by Elia Orsini"
                   src="/design/luce-artificiale/1.jpg"
                 />
                 <Image
@@ -46,7 +46,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 2 by Elia Orsini"
                   src="/design/luce-artificiale/2.jpg"
                 />
                 <Image
@@ -54,7 +54,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 3 by Elia Orsini"
                   src="/design/luce-artificiale/5.jpg"
                 />
                 <Image
@@ -62,7 +62,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 4 by Elia Orsini"
                   src="/design/luce-artificiale/7.jpg"
                 />
                 <Image
@@ -70,7 +70,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 5 by Elia Orsini"
                   src="/design/luce-artificiale/8.jpg"
                 />
                 <Image
@@ -78,7 +78,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 6 by Elia Orsini"
                   src="/design/luce-artificiale/3.jpg"
                 />
                 <Image
@@ -86,7 +86,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 7 by Elia Orsini"
                   src="/design/luce-artificiale/9.jpg"
                 />
                 <Image
@@ -94,7 +94,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 8 by Elia Orsini"
                   src="/design/luce-artificiale/4.jpg"
                 />
                 <Image
@@ -102,7 +102,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 9 by Elia Orsini"
                   src="/design/luce-artificiale/6.jpg"
                 />
                 <Image
@@ -110,7 +110,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 10 by Elia Orsini"
                   src="/design/luce-artificiale/10.jpg"
                 />
                 <Image
@@ -118,7 +118,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 11 by Elia Orsini"
                   src="/design/luce-artificiale/11.jpg"
                 />
                 <Image
@@ -126,7 +126,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="Luce Artificiale image 12 by Elia Orsini"
                   src="/design/luce-artificiale/12.jpg"
                 />
               </div>
@@ -143,7 +143,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="1975 image 1 by Elia Orsini"
                   src="/design/visualisers/1975/1975-1.jpg"
                 />
                 <Image
@@ -151,7 +151,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="1975 image 2 by Elia Orsini"
                   src="/design/visualisers/1975/1975-2.jpg"
                 />
                 <Image
@@ -159,7 +159,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="1975 image 3 by Elia Orsini"
                   src="/design/visualisers/1975/1975-3.jpg"
                 />
                 <Image
@@ -167,7 +167,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="1975 image 4 by Elia Orsini"
                   src="/design/visualisers/1975/1975-4.jpg"
                 />
               </div>
@@ -184,7 +184,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="growing pains image 1 by Elia Orsini"
                   src="/design/visualisers/growing-pains/olive4.jpg"
                 />
                 <Image
@@ -192,7 +192,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="growing pains image 2 by Elia Orsini"
                   src="/design/visualisers/growing-pains/olive3.jpg"
                 />
                 <Image
@@ -200,7 +200,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="growing pains image 3 by Elia Orsini"
                   src="/design/visualisers/growing-pains/olive2.jpg"
                 />
                 <Image
@@ -208,7 +208,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="growing pains image 4 by Elia Orsini"
                   src="/design/visualisers/growing-pains/olive1.jpg"
                 />
               </div>
@@ -226,7 +226,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="IN$0MN1A Temple image 1 by Elia Orsini"
                   src="/design/visualisers/temple/temple4.jpg"
                 />
                 <Image
@@ -234,7 +234,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="IN$0MN1A Temple image 2 by Elia Orsini"
                   src="/design/visualisers/temple/temple3.jpg"
                 />
                 <Image
@@ -242,7 +242,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="IN$0MN1A Temple image 3 by Elia Orsini"
                   src="/design/visualisers/temple/temple2.jpg"
                 />
                 <Image
@@ -250,7 +250,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="IN$0MN1A Temple image 4 by Elia Orsini"
                   src="/design/visualisers/temple/temple1.jpg"
                 />
               </div>
@@ -267,7 +267,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 1 by Elia Orsini"
                   src="/design/visualisers/exhale/cr1.jpg"
                 />
                 <Image
@@ -275,7 +275,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 2 by Elia Orsini"
                   src="/design/visualisers/exhale/cr11.webp"
                 />
                 <Image
@@ -283,7 +283,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 3 by Elia Orsini"
                   src="/design/visualisers/exhale/cr2.jpg"
                 />
                 <Image
@@ -291,7 +291,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 4 by Elia Orsini"
                   src="/design/visualisers/exhale/cr3.jpg"
                 />
                 <Image
@@ -299,7 +299,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 5 by Elia Orsini"
                   src="/design/visualisers/exhale/cr8.webp"
                 />
                 <Image
@@ -307,7 +307,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 6 by Elia Orsini"
                   src="/design/visualisers/exhale/cr4.jpg"
                 />
                 <Image
@@ -315,7 +315,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 7 by Elia Orsini"
                   src="/design/visualisers/exhale/cr9.webp"
                 />
                 <Image
@@ -323,7 +323,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 8 by Elia Orsini"
                   src="/design/visualisers/exhale/cr5.jpg"
                 />
                 <Image
@@ -331,7 +331,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 9 by Elia Orsini"
                   src="/design/visualisers/exhale/cr10.webp"
                 />
                 <Image
@@ -339,7 +339,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 10 by Elia Orsini"
                   src="/design/visualisers/exhale/cr6.jpg"
                 />
                 <Image
@@ -347,7 +347,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 11 by Elia Orsini"
                   src="/design/visualisers/exhale/cr12.webp"
                 />
                 <Image
@@ -355,7 +355,7 @@ export default function TwoD() {
                   height={0}
                   style={{ width: "100%", height: "auto" }}
                   sizes="700px"
-                  alt=""
+                  alt="exhale image 12 by Elia Orsini"
                   src="/design/visualisers/exhale/cr7.jpg"
                 />
               </div>
