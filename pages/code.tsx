@@ -30,7 +30,7 @@ export default function Code() {
 
   return (
     <Navigation>
-      <Header title={`Code`} description="Code projects by Elia Orsini." />
+      <Header title={`Code | Elia Orsini`} description="Code projects by Elia Orsini." />
 
       <div className="mx-5 mt-10 flex gap-x-3 md:mt-20">
         <button

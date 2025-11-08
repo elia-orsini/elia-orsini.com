@@ -10,7 +10,7 @@ export default function TwoD() {
 
       <Navigation>
         <div className="mx-auto mt-10 grid grid-cols-4 flex-col gap-1 px-1 sm:w-4/5 sm:px-0 md:mx-0">
-          <div>
+          <div className="flex flex-col gap-1">
             <Image
               width={0}
               height={0}
@@ -84,7 +84,7 @@ export default function TwoD() {
               src="/design/2d/25.jpg"
             />
           </div>
-          <div>
+          <div className="flex flex-col gap-1">
             <Image
               width={0}
               height={0}
@@ -142,7 +142,7 @@ export default function TwoD() {
               src="/design/2d/23.jpg"
             />
           </div>
-          <div>
+          <div className="flex flex-col gap-1">
             <Image
               width={0}
               height={0}
@@ -200,7 +200,7 @@ export default function TwoD() {
               src="/design/2d/28.jpg"
             />
           </div>
-          <div>
+          <div className="flex flex-col gap-1">
             <Image
               width={0}
               height={0}

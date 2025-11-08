@@ -25,14 +25,14 @@ export default function About() {
     const appearingTexts = gsap.utils.toArray(".appearingText");
     gsap.from(appearingTexts, {
       opacity: 0,
-      duration: 0.08,
+      duration: 0.05,
       stagger: 0.03,
     });
   }, []);
 
   return (
     <Navigation>
-      <Header title={`About`} description="About page of Elia Orsini." />
+      <Header title={`About | Elia Orsini`} description="About page of Elia Orsini." />
 
       <div className="mb-20 flex h-full w-full flex-col px-4 sm:pr-10 md:mb-40 lg:pr-20">
         <div className="flex flex-row">
@@ -72,14 +72,19 @@ export default function About() {
                 <li className="appearingText">React</li>
                 <li className="appearingText">Next.js</li>
                 <li className="appearingText">Node.js</li>
-                <li className="appearingText">TailwindCSS</li>
-                <li className="appearingText">REST APIs</li>
-                <li className="appearingText">WebSockets</li>
-                <li className="appearingText">Figma / FigJam</li>
                 <li className="appearingText">AWS</li>
+                <li className="appearingText ml-4">EC2, EB</li>
+                <li className="appearingText ml-4">S3, CloudFront</li>
+                <li className="appearingText ml-4">RDS, DynamoDB</li>
+                <li className="appearingText ml-4">Cognito</li>
+                <li className="appearingText ml-4">Lambda</li>
+                <li className="appearingText">REST APIs</li>
+                <li className="appearingText">TailwindCSS</li>
+                <li className="appearingText">WebSockets</li>
+                <li className="appearingText">Figma</li>
                 <li className="appearingText">Python</li>
                 <li className="appearingText">Redux / Zustand</li>
-                <li className="appearingText">GSAP / Framer Motion</li>
+                <li className="appearingText">GSAP</li>
                 <li className="appearingText">Three.js</li>
                 <li className="appearingText">Babylon.js</li>
                 <li className="appearingText">GraphQL / SQL</li>
@@ -90,11 +95,9 @@ export default function About() {
                 <li className="appearingText">Strapi</li>
                 <li className="appearingText">ExpressJS</li>
                 <li className="appearingText">Sanity</li>
-                <li className="appearingText">Git / GH Actions</li>
-                <li className="appearingText">CircleCI</li>
                 <li className="appearingText">Postman</li>
                 <li className="appearingText">Bootstrap</li>
-                <li className="appearingText">Google Analytics</li>
+                <li className="appearingText">Git / GH Actions</li>
                 <li className="appearingText">Remix</li>
                 <li className="appearingText">Prisma</li>
               </ul>
@@ -102,8 +105,9 @@ export default function About() {
               <h3 className="mt-2 bg-lime pl-1 font-semibold text-black">3D</h3>
               <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Unreal Engine</li>
+                <li className="appearingText ml-4">Blueprints</li>
+                <li className="appearingText ml-4">C++</li>
                 <li className="appearingText">Blender</li>
-                <li className="appearingText">Blueprints / C++</li>
                 <li className="appearingText">Geometry Nodes</li>
                 <li className="appearingText">Adobe Suite</li>
                 <li className="appearingText">Marvelous Designer</li>
@@ -127,7 +131,7 @@ export default function About() {
                 <li className="appearingText">UI/UX Design</li>
                 <li className="appearingText">Backend dev</li>
                 <li className="appearingText">CI/CD Workflows</li>
-                <li className="appearingText">Scripts</li>
+                <li className="appearingText">Scripting</li>
                 <li className="appearingText">System Design</li>
                 <li className="appearingText">CMS Integration</li>
                 <li className="appearingText">Web Scraping</li>

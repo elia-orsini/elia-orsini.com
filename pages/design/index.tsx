@@ -23,7 +23,7 @@ function Design() {
 
   return (
     <>
-      <Header title={`Design`} description="All design works by Elia Orsini." />
+      <Header title={`Design | Elia Orsini`} description="All design works by Elia Orsini." />
 
       <Navigation>
         <div className="mx-5 mb-40 mt-10 text-2xl sm:mr-20 sm:mt-20">
