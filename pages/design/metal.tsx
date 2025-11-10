@@ -6,7 +6,10 @@ import Navigation from "@components/Navigation";
 export default function TwoD() {
   return (
     <>
-      <Header title={`Metallic Utopia`} />
+      <Header
+        title={`Metallic Utopia | Elia Orsini`}
+        description="Anarchy. A world without physical limits, ethical laws or aesthetic standards."
+      />
 
       <Navigation>
         <div className="mx-auto mt-20 w-4/5 flex-col md:mx-0">

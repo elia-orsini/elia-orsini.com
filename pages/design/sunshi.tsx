@@ -10,7 +10,7 @@ export default function TwoD() {
   return (
     <>
       <Header
-        title={`Sunshi`}
+        title={`Sunshi | Elia Orsini`}
         description="The sun always shines in the city of Sunshi. Thanks to the latest developments in solar energy, an artificial sun has been installed
             to light people's lives. It regulates the temperature and provides a warm and delicate light. and when it rains,
             the sky is full of rainbows and kids can play in the streets."
