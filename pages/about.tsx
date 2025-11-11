@@ -100,6 +100,7 @@ export default function About() {
                 <li className="appearingText">Bootstrap</li>
                 <li className="appearingText">Git / GH Actions</li>
                 <li className="appearingText">Remix</li>
+                <li className="appearingText">Notion API / Airtable</li>
                 <li className="appearingText">Prisma</li>
               </ul>
 
