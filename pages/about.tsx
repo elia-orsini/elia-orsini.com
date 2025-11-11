@@ -96,6 +96,7 @@ export default function About() {
                 <li className="appearingText">ExpressJS</li>
                 <li className="appearingText">Sanity</li>
                 <li className="appearingText">Postman</li>
+                <li className="appearingText">N8N</li>
                 <li className="appearingText">Bootstrap</li>
                 <li className="appearingText">Git / GH Actions</li>
                 <li className="appearingText">Remix</li>
