@@ -130,10 +130,10 @@ export default function About() {
 
               <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Frontend dev</li>
-                <li className="appearingText">UI/UX Design</li>
                 <li className="appearingText">Backend dev</li>
                 <li className="appearingText">CI/CD Workflows</li>
                 <li className="appearingText">Scripting</li>
+                <li className="appearingText">UI/UX Design</li>
                 <li className="appearingText">System Design</li>
                 <li className="appearingText">CMS Integration</li>
                 <li className="appearingText">Web Scraping</li>
@@ -161,6 +161,24 @@ export default function About() {
 
             <div className="mx-2">
               <Experience
+                role="Frontend Developer"
+                company="Evismart"
+                dates="Dec 2025 / Present"
+                descriptions={["Work in Progress..."]}
+              />
+
+              <Experience
+                role="Co-Founder"
+                company="fashionwiki"
+                dates="Aug 2025 / Present"
+                descriptions={[
+                  "A collaborative fashion encyclopedia made to document and expand fashion knowledge.",
+                  "Handled frontend development in Next.js and Tailwind CSS, building advanced features such as a fully custom web-based visual markdown editor.",
+                  "Built our backend in Nest.js and Postgres, implemented CI/CD across our tech stack and handled deployment in AWS.",
+                ]}
+              />
+
+              <Experience
                 role="Unreal Engine Developer"
                 company="Robohive"
                 dates="Nov 2024 / May 2025"
@@ -175,10 +193,10 @@ export default function About() {
                 dates="Oct 2022 / July 2024"
                 descriptions={[
                   `Part of the 3D Labs team developing 3D interactive experiences for the sports industry (clients include ATP, Roland Garros, The Open, MLS).`,
-                  `Used Unreal Engine, Babylon.js and Blender to produce 3D virtual experiences able to run on the web, 
-                  on VR headsets but also on any OS.`,
+                  `Used Unreal Engine and Blender to build high quality 3D models for sports streaming events.`,
+                  `Developed and maintained Babylon.js code to serve 3D environments able to run on the web on any device.`,
                   `Designed and built custom frontend solutions using React, Redux, 
-                  Node.js, WebSockets, Bootstrap CSS and Electron.`,
+                  Node.js, WebSockets, Bootstrap and Electron.`,
                 ]}
               >
                 <div>
@@ -208,8 +226,8 @@ export default function About() {
                 descriptions={[
                   `Software developer in charge of the Three.js team to develop
                   interactive 3D experiences for the browser using React and Next.js.`,
-                  ` Worked side by side with front-end developers and 3D artists
-                  to design and ship optimised 3D environments able to run on most devices.`,
+                  `Worked side by side with front-end developers and 3D artists
+                  to design, optimise and ship 3D environments able to run on any device.`,
                 ]}
               >
                 <div>
@@ -233,7 +251,7 @@ export default function About() {
                 company="Freelance"
                 dates="Nov 2019 / May 2022"
                 descriptions={[
-                  `Work remotely with music artists based all around the world to
+                  `Worked remotely with music artists based all around the world to
                   convert their idea of music into visually appealing and
                   creative cover arts.`,
                   `I was the designer of multiple music events
@@ -246,9 +264,9 @@ export default function About() {
                 company="Freelance"
                 dates="Feb 2018 / Nov 2021"
                 descriptions={[
-                  `Plan and direct photoshoots to match the brand image of
+                  `Planned and directed photoshoots to match the brand image of
                   clients. I worked with models and art directors to reach a
-                  coherent and creative vision for various projects.`,
+                  coherent and creative vision of their projects.`,
                   `A fundamental requirement has been the ability to visually
                   represent many different ideas in a timely and effective
                   manner.`,
