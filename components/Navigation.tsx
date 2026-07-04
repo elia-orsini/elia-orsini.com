@@ -6,7 +6,7 @@ export default function Navigation({
   path,
 }: {
   children?: React.ReactNode;
-  path: string;
+  path?: string;
 }) {
   const { pathname } = useRouter();
 
