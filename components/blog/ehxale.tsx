@@ -41,10 +41,8 @@ const Scene = () => {
   const ref = useRef<PrimitiveProps>();
   useFrame(() => {
     ref.current.rotation.x = Math.PI;
-    // ref.current.rotation.y += 0.005;
     ref.current.position.z = 0.2;
     ref.current.position.y = -0.4;
-    // ref.current.position.x = 0;
   });
   return (
     <>
@@ -58,7 +56,6 @@ const Scene = () => {
         autoRotateSpeed={0.5}
       />
       <camera position={[0, 0, 0]} />
-      {/* <color attach="background" args={["white"]} /> */}
       <primitive
         ref={ref}
         object={gltf.scene}

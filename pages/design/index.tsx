@@ -12,7 +12,7 @@ function Design() {
     <>
       <Header title={`Design | Elia Orsini`} description="All design works by Elia Orsini." />
 
-      <Navigation path="design">
+      <Navigation>
         <div className="mx-5 mb-40 mt-10 text-2xl sm:mr-20 sm:mt-20">
           <SectionHeader title="all design collections" />
           <p className="appearingText">

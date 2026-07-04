@@ -14,7 +14,7 @@ export default function Index() {
         <Image src="/bg-dots.png" alt="" fill priority className="object-cover" sizes="100vw" />
       </div>
 
-      <Navigation path="home" />
+      <Navigation />
     </>
   );
 }

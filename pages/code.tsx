@@ -5,7 +5,7 @@ import SectionHeader from "@components/code/SectionHeader";
 
 export default function Code() {
   return (
-    <Navigation path="code">
+    <Navigation>
       <Header title={`Code | Elia Orsini`} description="Code projects by Elia Orsini." />
 
       <div className="mb-20 flex w-full">
