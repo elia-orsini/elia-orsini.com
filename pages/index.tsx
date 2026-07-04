@@ -1,8 +1,8 @@
-import React from "react";
+import Image from "next/image";
 import Navigation from "@components/Navigation";
 import Header from "@components/Header";
 
-function Work() {
+export default function Index() {
   return (
     <>
       <Header
@@ -10,18 +10,11 @@ function Work() {
         description="Explore the work of Elia Orsini, Software Developer based in Glasgow, Scotland."
       />
 
-      <div className="absolute z-20 hidden h-20 w-full font-mono text-xs uppercase xl:flex">
-        <p className="mx-auto text-white">
-          This is a repository of ideas, unfinished projects, commercial works and experiments that
-          have been accumulating for the past 5 years
-        </p>
+      <div className="fixed inset-0 z-0">
+        <Image src="/bg-dots.png" alt="" fill priority className="object-cover" sizes="100vw" />
       </div>
 
-      <Navigation>
-        <></>
-      </Navigation>
+      <Navigation path="home" />
     </>
   );
 }
-
-export default Work;

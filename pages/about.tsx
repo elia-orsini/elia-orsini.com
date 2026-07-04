@@ -4,34 +4,12 @@ import Experience from "@components/about/Experience";
 import ImageScroller from "@components/about/ImageScroller";
 import { Koulen } from "next/font/google";
 import Image from "next/image";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
-  useGSAP(() => {
-    gsap.from(".headshot", {
-      opacity: 0,
-      duration: 1.5,
-    });
-
-    gsap.from(".imageScroller", {
-      opacity: 0,
-      duration: 1.5,
-      delay: 1.7,
-    });
-
-    const appearingTexts = gsap.utils.toArray(".appearingText");
-    gsap.from(appearingTexts, {
-      opacity: 0,
-      duration: 0.05,
-      stagger: 0.03,
-    });
-  }, []);
-
   return (
-    <Navigation>
+    <Navigation path="about">
       <Header title={`About | Elia Orsini`} description="About page of Elia Orsini." />
 
       <div className="mb-20 flex h-full w-full flex-col px-4 sm:pr-10 md:mb-40 lg:pr-20">
@@ -39,14 +17,14 @@ export default function About() {
           <div className="mt-10 w-[130px] sm:w-[200px]">
             <Image
               alt=""
-              src="/me.jpeg"
-              className="headshot border border-white"
+              src="/me.png"
+              className="headshot border border-red-600"
               width={200}
               height={200}
             />
           </div>
 
-          <div className="ml-2 mt-auto sm:ml-10">
+          <div className="ml-2 mt-auto sm:ml-6">
             <h1
               id="NameSurname"
               className={`${koulen.className} text-[40px] text-lime sm:text-[60px] lg:text-[80px]`}
@@ -60,13 +38,13 @@ export default function About() {
         </div>
 
         <div className="mt-6 grid w-full grid-cols-1 leading-[20px] backdrop-blur-xl md:mt-10 md:grid-cols-4">
-          <div className="border border-b-0 border-white text-sm md:border-b">
-            <h2 className="my-4 ml-2 font-bold uppercase md:my-2">tech</h2>
+          <div className="border border-b-0 border-red-600 text-sm md:border-b">
+            <h2 className="text-lg my-4 ml-2 font-bold uppercase md:my-2">tech</h2>
 
-            <hr className="mb-2 mt-0.5 border border-[0.5px] border-white" />
+            <hr className="mb-2 mt-0.5 border-[0.5px] border-red-600" />
 
             <div className="mx-2 pb-2">
-              <h3 className="bg-lime pl-1 font-semibold text-black">Software Development</h3>
+              <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
               <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Typescript / JS</li>
                 <li className="appearingText">React</li>
@@ -104,7 +82,7 @@ export default function About() {
                 <li className="appearingText">Prisma</li>
               </ul>
 
-              <h3 className="mt-2 bg-lime pl-1 font-semibold text-black">3D</h3>
+              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">3D</h3>
               <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Unreal Engine</li>
                 <li className="appearingText ml-4">Blueprints</li>
@@ -120,13 +98,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border border-b-0 border-white text-sm md:border-b md:border-l-0">
-            <h2 className="my-4 ml-2 font-bold uppercase md:my-2">skills</h2>
+          <div className="border border-b-0 border-red-600 text-sm md:border-b md:border-l-0">
+            <h2 className="text-lg my-4 ml-2 font-bold uppercase md:my-2">skills</h2>
 
-            <hr className="mb-2 mt-0.5 border border-[0.5px] border-white" />
+            <hr className="mb-2 mt-0.5 border-[0.5px] border-red-600" />
 
             <div className="mx-2 pb-2">
-              <h3 className="bg-lime pl-1 font-semibold text-black">Software Development</h3>
+              <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
 
               <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">Frontend dev</li>
@@ -139,7 +117,7 @@ export default function About() {
                 <li className="appearingText">Web Scraping</li>
               </ul>
 
-              <h3 className="mt-2 bg-lime pl-1 font-semibold text-black">3D</h3>
+              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">3D</h3>
 
               <ul className="ml-4 pt-2 font-mono">
                 <li className="appearingText">3D Modelling</li>
@@ -154,10 +132,10 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border border-white text-sm md:col-span-2 md:border-l-0">
-            <h2 className="my-4 ml-2 font-bold uppercase md:my-2">experience</h2>
+          <div className="border border-red-600 text-sm md:col-span-2 md:border-l-0">
+            <h2 className="text-lg my-4 ml-2 font-bold uppercase md:my-2">experience</h2>
 
-            <hr className="mb-2 mt-0.5 border border-[0.5px] border-white" />
+            <hr className="mb-2 mt-0.5 border-[0.5px] border-red-600" />
 
             <div className="mx-2">
               <Experience

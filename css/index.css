@@ -2,22 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-100;
+}
+
 ::selection {
-  background: #a3e635;
-  color: black;
+  background: #ff0000;
+  color: #ffffff;
 }
 
-.main-content {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 600ms;
-  opacity: 0;
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.main-content.loaded {
-  opacity: 1;
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0.1rem solid #dc2626;
 }
 
-.page-transition {
-  opacity: 0 !important;
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 0;
 }

@@ -29,7 +29,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
   return (
     <div
       id={`scrollingContainer-${sectionTitle}`}
-      className="imageScroller flex w-full select-none overflow-hidden bg-black"
+      className="imageScroller flex w-full select-none overflow-hidden"
     >
       <div ref={first} id={`innerContainer-${sectionTitle}`} className="flex w-max gap-x-1 py-1">
         {images &&
