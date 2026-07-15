@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const DesignFooter: React.FC<{ previous?: string; next?: string }> = ({
+const Footer: React.FC<{ previous?: string; next?: string }> = ({
   previous,
   next,
 }) => {
@@ -43,4 +43,4 @@ const DesignFooter: React.FC<{ previous?: string; next?: string }> = ({
   );
 };
 
-export default DesignFooter;
+export default Footer;

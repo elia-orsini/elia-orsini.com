@@ -12,18 +12,18 @@ const WebsiteCard: React.FC<{
 }> = ({ title, url, description, tech, imageSrc }) => {
   return (
     <a href={url} target="_blank" rel="noreferrer">
-      <div className="appearingCards flex h-48 w-[calc(100vw-45px)] overflow-hidden border bg-white border-red-600 sm:w-60">
+      <div className="appearingCards flex h-48 w-[calc(100vw-45px)] overflow-hidden border border-red-600 bg-white sm:w-60">
         {imageSrc && (
           // for desktop
           <div className="absolute hidden h-48 w-60 overflow-hidden sm:flex">
             <Image
               alt={`${title} Website by Elia Orsini`}
               src={imageSrc}
-              className="object-fill opacity-90 pb-[2px]"
+              className="object-fill pb-[2px] opacity-90"
               width={238}
               height={260}
             />
-            <div className="absolute inset-0 h-48 w-full bg-gradient-to-t from-transparent via-white/90 to-transparent" />
+            <div className="absolute -inset-x-0.5 -inset-y-0.5 h-48 w-full bg-gradient-to-t from-white to-transparent" />
           </div>
         )}
 
@@ -44,7 +44,7 @@ const WebsiteCard: React.FC<{
         )}
 
         <div className="z-20 mt-auto p-2">
-          <h1 className={`text-xl text-lime ${koulen.className}`}>
+          <h1 className={`text-lime text-xl ${koulen.className}`}>
             {">"} {title}
           </h1>
 

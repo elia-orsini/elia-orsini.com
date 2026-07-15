@@ -1,4 +1,4 @@
-import DesignFooter from "@components/design/footer";
+import Footer from "@components/design/Footer";
 import Image from "next/image";
 import Navigation from "@components/Navigation";
 import { Koulen } from "next/font/google";
@@ -108,7 +108,7 @@ export default function TwoD() {
             </div>
           </div>
         </div>
-        <DesignFooter next="/design/metal" />
+        <Footer next="/design/metal" />
       </Navigation>
     </>
   );

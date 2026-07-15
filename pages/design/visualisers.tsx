@@ -1,9 +1,8 @@
-import DesignFooter from "@components/design/footer";
+import Footer from "@components/design/Footer";
 import Header from "@components/Header";
 import Image from "next/image";
 import Navigation from "@components/Navigation";
 import { Koulen } from "next/font/google";
-import Link from "next/link";
 
 const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
@@ -30,7 +29,7 @@ export default function TwoD() {
                 feels like.
               </p>
               <a href="https://www.instagram.com/p/C2cJqhRKtb-/" target="_blank" rel="noreferrer">
-                <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
+                <h1 className={`text-lime text-xl ${koulen.className}`}>{">"} LINK</h1>
               </a>
               <div className="mx-auto mt-2 grid grid-cols-3 flex-col gap-2 sm:grid-cols-4">
                 <Image
@@ -135,7 +134,7 @@ export default function TwoD() {
             <div>
               <p className={`text-2xl ${koulen.className}`}>1975 - olive hatake</p>
               <a href="https://youtu.be/BbcvxFVh0wQ" target="_blank" rel="noreferrer">
-                <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
+                <h1 className={`text-lime text-xl ${koulen.className}`}>{">"} LINK</h1>
               </a>
               <div className="mx-auto mt-2 grid flex-col gap-2 sm:grid-cols-2">
                 <Image
@@ -176,7 +175,7 @@ export default function TwoD() {
             <div>
               <p className={`text-2xl ${koulen.className}`}>growing pains - olive hatake</p>
               <a href="https://youtu.be/TizlMnP-K7g" target="_blank" rel="noreferrer">
-                <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
+                <h1 className={`text-lime text-xl ${koulen.className}`}>{">"} LINK</h1>
               </a>
               <div className="mx-auto mt-2 grid flex-col gap-2 sm:grid-cols-2">
                 <Image
@@ -259,7 +258,7 @@ export default function TwoD() {
             <div>
               <p className={`text-2xl ${koulen.className}`}>exhale</p>
               <a href="https://vimeo.com/859099636" target="_blank" rel="noreferrer">
-                <h1 className={`text-xl text-lime ${koulen.className}`}>{">"} LINK</h1>
+                <h1 className={`text-lime text-xl ${koulen.className}`}>{">"} LINK</h1>
               </a>
               <div className="mx-auto mt-2 grid grid-cols-3 flex-col gap-2 lg:grid-cols-4">
                 <Image
@@ -362,7 +361,7 @@ export default function TwoD() {
             </div>
           </div>
         </div>
-        <DesignFooter previous="/design/metal" next="/design/photogrammetry" />
+        <Footer previous="/design/metal" next="/design/photogrammetry" />
       </Navigation>
     </>
   );

@@ -1,4 +1,4 @@
-import DesignFooter from "@components/design/footer";
+import Footer from "@components/design/Footer";
 import Header from "@components/Header";
 import Image from "next/image";
 import Navigation from "@components/Navigation";
@@ -41,7 +41,7 @@ export default function TwoD() {
             />
           </div>
         </div>
-        <DesignFooter previous="/design/2d" />
+        <Footer previous="/design/2d" />
       </Navigation>
     </>
   );

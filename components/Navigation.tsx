@@ -42,23 +42,23 @@ export default function Navigation({
               <p className="ml-auto mt-2 hover:cursor-pointer hover:underline md:ml-0">
                 <Link href="/design">design</Link>
               </p>
-            )}
-            {path === "code" ? (
-              <p className="ml-0 mt-2 underline hover:cursor-default md:mx-0">code</p>
-            ) : (
-              <p className="ml-0 mt-2 hover:cursor-pointer hover:underline md:mx-0">
-                <Link href="/code">code</Link>
-              </p>
             )} */}
             {path === "about" ? (
               <p className="mt-2 underline hover:cursor-default md:mr-0">about</p>
             ) : (
+              <p className={`mt-2 hover:cursor-pointer hover:underline md:mr-0`}>
+                <Link href="/about">about</Link>
+              </p>
+            )}
+            {path === "code" ? (
+              <p className="ml-0 mt-2 underline hover:cursor-default md:mx-0">code</p>
+            ) : (
               <p
                 className={`mt-2 hover:cursor-pointer hover:underline md:mr-0 ${
-                  pathname === "/" ? "mr-auto" : ""
+                  pathname === "/" ? "mr-aut" : ""
                 }`}
               >
-                <Link href="/about">about</Link>
+                <Link href="/code">code</Link>
               </p>
             )}
             <a
