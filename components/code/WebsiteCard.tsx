@@ -48,7 +48,7 @@ const WebsiteCard: React.FC<{
             {">"} {title}
           </h1>
 
-          <p className="-mt-1 text-sm">{description}</p>
+          <p className="-mt-1 text-sm font-medium">{description}</p>
 
           <div className="-ml-1">
             {tech.map((technology, i) => (

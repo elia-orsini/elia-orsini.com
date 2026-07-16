@@ -15,11 +15,11 @@ export default function Code() {
 
             <div className="grid w-max grid-cols-1 gap-2 sm:grid-cols-2 md:ml-0 lg:grid-cols-3 xl:grid-cols-4">
               <WebsiteCard
-                title="nine point six three"
-                url="https://ninepointsixthree.co/"
-                description="Website for creative studio Nine Point Six Three."
-                tech={["NEXT.JS", "SANITY", "TAILWIND"]}
-                imageSrc="/code/websites-screens/ninepointsixthree.webp"
+                title="fashionwiki"
+                url="https://fashionwiki.co/"
+                description="The largest collaborative fashion encyclopedia."
+                tech={["NEXT.JS", "TAILWIND", "NestJS", "Postgre"]}
+                imageSrc="/code/websites-screens/fashionwiki.jpeg"
               />
               <WebsiteCard
                 title="shelved fruits"
@@ -27,13 +27,6 @@ export default function Code() {
                 description="Explore the translated and indexed archive of Fruits magazine."
                 tech={["NEXT.JS", "SANITY", "SWIPER.JS"]}
                 imageSrc="/code/websites-screens/shelved-fruits.webp"
-              />
-              <WebsiteCard
-                title="readu"
-                url="https://readu-group-reading.vercel.app/"
-                description="Readu brings friends together through shared reading experiences."
-                tech={["NEXT.JS", "DYNAMO DB", "TAILWIND"]}
-                imageSrc="/code/websites-screens/readu.webp"
               />
               <WebsiteCard
                 title="angela ricciardi"
@@ -50,18 +43,18 @@ export default function Code() {
                 imageSrc="/code/websites-screens/talome.webp"
               />
               <WebsiteCard
-                title="yu's Cafes"
-                url="https://yu-coffee-map.vercel.app/"
-                description="Website for collecting cafes around the world."
-                tech={["NEXT.JS", "GSAP", "NOTION", "TAILWIND"]}
-                imageSrc="/code/websites-screens/yu.webp"
-              />
-              <WebsiteCard
                 title="la macina sonora"
                 url="https://www.lamacinasonora.com/"
                 description="Website for the recording studio La Macina Sonora."
                 tech={["REACT", "TAILWIND"]}
                 imageSrc="/code/websites-screens/macina.webp"
+              />
+              <WebsiteCard
+                title="elia's personal database"
+                url="https://elia-db.vercel.app/"
+                description="Little personal website to store things I enjoy (films, cafes, books)."
+                tech={["NEXT.JS", "TYPESCRIPT", "NOTION API"]}
+                imageSrc="/code/websites-screens/personal-db.webp"
               />
               <WebsiteCard
                 title="Immortal Mags"
@@ -71,13 +64,6 @@ export default function Code() {
                 imageSrc="/code/websites-screens/immortal.webp"
               />
               <WebsiteCard
-                title="elia's personal database"
-                url="https://eliaelia.xyz/"
-                description="Little personal website to store things I enjoy (films, cafes, books)."
-                tech={["NEXT.JS", "TYPESCRIPT", "NOTION API"]}
-                imageSrc="/code/websites-screens/personal-db.webp"
-              />
-              <WebsiteCard
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
                 description="Website for Scotland-based artist Rho Mcguire."
@@ -85,11 +71,18 @@ export default function Code() {
                 imageSrc="/code/websites-screens/rho.webp"
               />
               <WebsiteCard
-                title="insomnia events"
-                url="https://www.insomniaevents.xyz/"
-                description="Website for Insomnia Events."
-                tech={["REACT", "TAILWIND"]}
-                imageSrc="/code/websites-screens/insomnia.webp"
+                title="yu's Cafes"
+                url="https://yu-coffee-map.vercel.app/"
+                description="Website for collecting cafes around the world."
+                tech={["NEXT.JS", "GSAP", "NOTION", "TAILWIND"]}
+                imageSrc="/code/websites-screens/yu.webp"
+              />
+              <WebsiteCard
+                title="lazyLLM"
+                url="https://lazyllm.vercel.app/"
+                description="Toolkit to create, test and analyse prompts for Large Language Models."
+                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND"]}
+                imageSrc="/code/websites-screens/lazyllm.webp"
               />
               <WebsiteCard
                 title="gft forever"
@@ -99,11 +92,18 @@ export default function Code() {
                 imageSrc="/code/websites-screens/gft.webp"
               />
               <WebsiteCard
-                title="lazyLLM"
-                url="https://lazyllm.xyz/"
-                description="Toolkit to create, test and analyse prompts for Large Language Models."
-                tech={["TYPESCRIPT", "NEXT.JS", "TAILWIND"]}
-                imageSrc="/code/websites-screens/lazyllm.webp"
+                title="insomnia events"
+                url="https://www.insomniaevents.xyz/"
+                description="Website for Insomnia Events."
+                tech={["REACT", "TAILWIND"]}
+                imageSrc="/code/websites-screens/insomnia.webp"
+              />
+              <WebsiteCard
+                title="readu"
+                url="https://readu-group-reading.vercel.app/"
+                description="Readu brings friends together through shared reading experiences."
+                tech={["NEXT.JS", "DYNAMO DB", "TAILWIND"]}
+                imageSrc="/code/websites-screens/readu.webp"
               />
             </div>
           </div>

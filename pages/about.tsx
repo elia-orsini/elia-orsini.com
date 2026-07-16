@@ -27,7 +27,7 @@ export default function About() {
           <div className="ml-2 mt-auto sm:ml-6">
             <h1
               id="NameSurname"
-              className={`${koulen.className} text-[40px] text-lime sm:text-[60px] lg:text-[80px]`}
+              className={`${koulen.className} text-lime text-[40px] sm:text-[60px] lg:text-[80px]`}
             >
               Elia Orsini
             </h1>
@@ -150,9 +150,9 @@ export default function About() {
                 company="fashionwiki"
                 dates="Aug 2025 / Present"
                 descriptions={[
-                  "A collaborative fashion encyclopedia made to document and expand fashion knowledge.",
-                  "Handled frontend development in Next.js and Tailwind CSS, building advanced features such as a fully custom web-based visual markdown editor.",
-                  "Built our backend in Nest.js and Postgres, implemented CI/CD across our tech stack and handled deployment in AWS.",
+                  `Developed frontend in Next.js, Tailwind CSS, remark with advanced features such as a visual markdown editor with custom syntax.`,
+                  `Created backend REST API in NestJS with an event scheduler, semantic search, authentication and moderation system.`,
+                  `Deployed and maintained web app in AWS on EC2 instances with PostgreSQL database, Lambda functions and S3 buckets.`,
                 ]}
               />
 
@@ -161,7 +161,9 @@ export default function About() {
                 company="Robohive"
                 dates="Nov 2024 / May 2025"
                 descriptions={[
-                  `Developed a VR training application in Unreal Engine for orthopaedic robotic surgery for the NHS.`,
+                  `Developed a VR training application in Unreal Engine for orthopaedic robotic surgery for the NHS (UK's National Health Service).`,
+                  `Worked autonomously to satisfy requirements from non-technical people and collaborated effectively with design team.`,
+                  `Created a seamless VR user experience with custom interactions and UI interfaces using UE5 Blueprints.`,
                 ]}
               />
 
@@ -170,11 +172,9 @@ export default function About() {
                 company="IMG ARENA"
                 dates="Oct 2022 / July 2024"
                 descriptions={[
-                  `Part of the 3D Labs team developing 3D interactive experiences for the sports industry (clients include ATP, Roland Garros, The Open, MLS).`,
-                  `Used Unreal Engine and Blender to build high quality 3D models for sports streaming events.`,
-                  `Developed and maintained Babylon.js code to serve 3D environments able to run on the web on any device.`,
-                  `Designed and built custom frontend solutions using React, Redux, 
-                  Node.js, WebSockets, Bootstrap and Electron.`,
+                  `Part of the 3D Labs team building interactive 3D experiences for major sports brands, including ATP, Roland Garros, The Open, and MLS.`,
+                  `Built custom frontend applications with React, Redux, GraphQL, Node.js, WebSockets, Bootstrap, and Electron, delivering efficient data-driven experiences across web and desktop.`,
+                  `Used Unreal Engine, Babylon.js, and Blender with Geometry Nodes to produce high-quality 3D models deployable on the web, VR headsets, and any OS.`,
                 ]}
               >
                 <div>
@@ -202,10 +202,9 @@ export default function About() {
                 company="Houses of Rome"
                 dates="Jan 2022 / July 2022"
                 descriptions={[
-                  `Software developer in charge of the Three.js team to develop
-                  interactive 3D experiences for the browser using React and Next.js.`,
-                  `Worked side by side with front-end developers and 3D artists
-                  to design, optimise and ship 3D environments able to run on any device.`,
+                  `Led the Three.js team building interactive 3D browser experiences in Next.js and Three.js.`,
+                  `Contributed as part of a small team shipping a 3D browser-based game, owning 3D integration work and R&D.`,
+                  `Worked side by side with developers and 3D artists to ship optimised 3D environments able to run on most devices.`,
                 ]}
               >
                 <div>
@@ -229,11 +228,8 @@ export default function About() {
                 company="Freelance"
                 dates="Nov 2019 / May 2022"
                 descriptions={[
-                  `Worked remotely with music artists based all around the world to
-                  convert their idea of music into visually appealing and
-                  creative cover arts.`,
-                  `I was the designer of multiple music events
-                  in Italy for which I developed their marketing material.`,
+                  `Work remotely with music artists to convert their idea of music into visually appealing and creative cover arts.`,
+                  `Designed and produced 2D and 3D marketing material for multiple music events in Italy.`,
                 ]}
               />
 
