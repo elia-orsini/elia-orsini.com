@@ -7,7 +7,7 @@ export default function Index() {
     <>
       <Header
         title="Elia Orsini"
-        description="Explore the work of Elia Orsini, Software Developer based in Glasgow, Scotland."
+        description="Explore the work of Elia Orsini, Software Developer based in Shenzhen, China."
       />
 
       <div className="fixed inset-0 z-0">

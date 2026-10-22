@@ -17,7 +17,7 @@ export default function Code() {
               <WebsiteCard
                 title="fashionwiki"
                 url="https://fashionwiki.co/"
-                description="The largest collaborative fashion encyclopedia."
+                description="A collaborative encyclopedia focused on fashion."
                 tech={["NEXT.JS", "TAILWIND", "NestJS", "Postgre"]}
                 imageSrc="/code/websites-screens/fashionwiki.jpeg"
               />
