@@ -23,7 +23,7 @@ export default function Code() {
               />
               <WebsiteCard
                 title="shelved fruits"
-                url="https://shelved-fruits.vercel.app/"
+                url="https://shelvedfruits.eorsini.xyz/"
                 description="Explore the translated and indexed archive of Fruits magazine."
                 tech={["NEXT.JS", "SANITY", "SWIPER.JS"]}
                 imageSrc="/code/websites-screens/shelved-fruits.webp"
@@ -58,7 +58,7 @@ export default function Code() {
               />
               <WebsiteCard
                 title="Immortal Mags"
-                url="https://immortal-tau.vercel.app/"
+                url="https://immortalmags.eorsini.xyz/"
                 description="Documenting independent magazines."
                 tech={["NEXT.JS", "GSAP", "NOTION", "TAILWIND"]}
                 imageSrc="/code/websites-screens/immortal.webp"
@@ -112,7 +112,7 @@ export default function Code() {
             <SectionHeader title="websites i collaborated on" />
             <WebsiteCard
               title="ARCHIVE.pdf"
-              url="https://beta.archivepdf.net/"
+              url="https://archivepdf.net/"
               description="Fashion Scans Archive, Articles & Content for the World."
               tech={["TYPESCRIPT", "NEXT.JS", "STRAPI"]}
               imageSrc="/code/websites-screens/apdf.webp"

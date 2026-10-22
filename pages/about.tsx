@@ -27,7 +27,7 @@ export default function About() {
           <div className="ml-2 mt-auto sm:ml-6">
             <h1
               id="NameSurname"
-              className={`${koulen.className} text-lime text-[40px] sm:text-[60px] lg:text-[80px]`}
+              className={`${koulen.className} text-[40px] sm:text-[60px] lg:text-[80px]`}
             >
               Elia Orsini
             </h1>

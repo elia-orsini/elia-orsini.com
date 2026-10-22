@@ -44,7 +44,7 @@ const WebsiteCard: React.FC<{
         )}
 
         <div className="z-20 mt-auto p-2">
-          <h1 className={`text-lime text-xl ${koulen.className}`}>
+          <h1 className={`text-xl ${koulen.className}`}>
             {">"} {title}
           </h1>
 
