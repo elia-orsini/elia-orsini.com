@@ -36,7 +36,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
           images.map((image: string, index: number) => (
             <Image
               key={`${image}`}
-              className="imageScroller"
+              className="imageScroller border border-red-600"
               alt={`${sectionTitle} Image ${index + 1} by Elia Orsini`}
               width={270}
               height={200}
@@ -48,7 +48,7 @@ const ImageScroller: React.FC<{ images: string[]; sectionTitle: string }> = ({
           images.map((image: string, index: number) => (
             <Image
               key={`${image}`}
-              className="imageScroller"
+              className="imageScroller border border-red-600"
               alt={`${sectionTitle} Image ${index + 1} by Elia Orsini`}
               width={270}
               height={200}

@@ -16,6 +16,10 @@ module.exports = {
       "5xl": "3.052rem",
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-ioskeley)", "monospace"],
+        mono: ["var(--font-ioskeley)", "monospace"],
+      },
       height: {
         128: "32rem",
         150: "42rem",

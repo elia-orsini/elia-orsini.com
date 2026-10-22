@@ -1,10 +1,7 @@
 import Image from "next/image";
-import { Koulen } from "next/font/google";
 import { FC } from "react";
 import Header from "@components/Header";
 import BlogHeader from "./BlogHeader";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function BrutalistBuildings() {
   const width = 1300;
@@ -69,7 +66,7 @@ function BrutalistBuildings() {
             />
           </div>
 
-          <div className="grid  grid-cols-3 lg:p-5 gap-1 lg:gap-3">
+          <div className="grid grid-cols-3 lg:p-5 gap-1 lg:gap-3">
             <Image
               alt="barbican centre image 6 by Elia Orsini"
               src="/blog/brutalist/barbican/IMG_3725.jpg"
@@ -126,7 +123,7 @@ function BrutalistBuildings() {
 
           <SectionDescription description="The Brunswick Centre, completed in the 1970s, is a striking brutalist development with its distinctive stepped terraces and exposed concrete. Combining residential and commercial spaces, it stands out as a unique example of the style in London's urban fabric." />
 
-          <div className="grid grid-col gap-1 ">
+          <div className="grid grid-col gap-1">
             <div className="grid grid-cols-2 gap-4">
               <Image
                 alt="Brunswick Centre image 1 by Elia Orsini"
@@ -357,7 +354,7 @@ function BrutalistBuildings() {
 const SectionTitle: FC<{ title: string }> = ({ title }) => {
   return (
     <div className="flex h-40">
-      <p className={`mx-auto my-auto text-2xl sm:text-4xl ${koulen.className}`}>
+      <p className="mx-auto my-auto text-2xl sm:text-4xl">
         {title}
       </p>
     </div>

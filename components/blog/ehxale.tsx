@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import Image from "next/image";
-import { Koulen } from "next/font/google";
 import {
   Canvas,
   PrimitiveProps,
@@ -15,8 +14,6 @@ import { useRef } from "react";
 import Header from "@components/Header";
 
 import BlogHeader from "./BlogHeader";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 const Scene = () => {
   const gltf = useLoader(GLTFLoader, "/blog/exhale/real.glb", (loader) => {

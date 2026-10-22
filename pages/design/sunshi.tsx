@@ -1,10 +1,7 @@
 import Footer from "@components/design/Footer";
 import Image from "next/image";
 import Navigation from "@components/Navigation";
-import { Koulen } from "next/font/google";
 import Header from "@components/Header";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function TwoD() {
   return (
@@ -18,7 +15,7 @@ export default function TwoD() {
 
       <Navigation>
         <div className="mx-auto mt-20 w-4/5 flex-col justify-between md:mx-0">
-          <p className={`text-3xl ${koulen.className}`}>SUNSHI</p>
+          <p className="text-3xl">SUNSHI</p>
           <p className="text-sm lg:text-base">
             The sun always shines in the city of Sunshi. <br />
             Thanks to the latest developments in solar energy, an artificial sun has been installed

@@ -67,7 +67,7 @@ export default function Navigation({
               target="_blank"
               rel="noreferrer"
             >
-              diary<span className="text-base">↗</span>
+              diary
             </a>
           </div>
         </div>

@@ -2,10 +2,7 @@ import Header from "@components/Header";
 import Navigation from "@components/Navigation";
 import Experience from "@components/about/Experience";
 import ImageScroller from "@components/about/ImageScroller";
-import { Koulen } from "next/font/google";
 import Image from "next/image";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
   return (
@@ -27,11 +24,11 @@ export default function About() {
           <div className="ml-2 mt-auto sm:ml-6">
             <h1
               id="NameSurname"
-              className={`${koulen.className} text-[40px] sm:text-[60px] lg:text-[80px]`}
+              className="text-[40px] font-bold uppercase leading-none sm:text-[60px]"
             >
               Elia Orsini
             </h1>
-            <h1 className="-mt-2 text-[20px] sm:-mt-5 sm:text-[25px] lg:-mt-7 lg:text-[30px]">
+            <h1 className="text-[20px] leading-none sm:text-[25px] lg:text-[30px]">
               Software Developer
             </h1>
           </div>

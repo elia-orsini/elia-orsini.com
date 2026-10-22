@@ -2,9 +2,6 @@ import Footer from "@components/design/Footer";
 import Header from "@components/Header";
 import Image from "next/image";
 import Navigation from "@components/Navigation";
-import { Koulen } from "next/font/google";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 export default function TwoD() {
   return (
@@ -13,7 +10,7 @@ export default function TwoD() {
 
       <Navigation>
         <div className="mx-auto mt-20 w-4/5 flex-col justify-between md:mx-0">
-          <p className={`text-3xl ${koulen.className}`}>PHOTOGRAMMETRY</p>
+          <p className="text-3xl">PHOTOGRAMMETRY</p>
 
           <p className="mb-2 mt-10 text-sm lg:text-base">
             This is Edinburgh, Scotland . But, at the same time, this is not Edinburgh, Scotland .{" "}

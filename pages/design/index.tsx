@@ -1,11 +1,8 @@
 import Link from "next/link";
-import { Koulen } from "next/font/google";
 
 import Navigation from "@components/Navigation";
 import Header from "@components/Header";
 import SectionHeader from "@components/code/SectionHeader";
-
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
 
 function Design() {
   return (
@@ -16,7 +13,7 @@ function Design() {
         <div className="mx-5 mb-40 mt-10 text-2xl sm:mr-20 sm:mt-20">
           <SectionHeader title="all design collections" />
           <p className="appearingText">
-            <Link href="/design/sunshi" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/sunshi" className="text-lime">
               {">"} sunshi
             </Link>
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
@@ -25,7 +22,7 @@ function Design() {
           </p>
 
           <p className="appearingText">
-            <Link href="/design/metal" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/metal" className="text-lime">
               {">"} metallic utopia
             </Link>
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
@@ -34,7 +31,7 @@ function Design() {
           </p>
 
           <p className="appearingText">
-            <Link href="/design/visualisers" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/visualisers" className="text-lime">
               {">"} visualisers
             </Link>
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
@@ -43,7 +40,7 @@ function Design() {
           </p>
 
           <p className="appearingText">
-            <Link href="/design/photogrammetry" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/photogrammetry" className="text-lime">
               {">"} photogrammetry
             </Link>
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
@@ -52,7 +49,7 @@ function Design() {
           </p>
 
           <p className="appearingText">
-            <Link href="/design/2d" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/2d" className="text-lime">
               {">"} two dimensions
             </Link>
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
@@ -61,7 +58,7 @@ function Design() {
           </p>
 
           <p className="appearingText">
-            <Link href="/design/aliens" className={`text-lime ${koulen.className}`}>
+            <Link href="/design/aliens" className="text-lime">
               {">"} aliens
             </Link>
             <span className="-mt-1 mb-4 ml-5 block text-sm sm:text-base">
