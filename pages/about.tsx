@@ -13,7 +13,7 @@ export default function About() {
         <div className="flex flex-row">
           <div className="mt-10 w-[130px] sm:w-[200px]">
             <Image
-              alt=""
+              alt="Portrait of Elia Orsini"
               src="/me.png"
               className="headshot border border-red-600"
               width={200}
@@ -28,17 +28,23 @@ export default function About() {
             >
               Elia Orsini
             </h1>
-            <h1 className="text-[20px] leading-none sm:text-[25px] lg:text-[30px]">
+            <p className="text-[20px] sm:text-[25px] lg:text-[30px]">
               Software Developer
-            </h1>
+            </p>
           </div>
         </div>
 
         <div className="mt-6 grid w-full grid-cols-1 leading-[20px] backdrop-blur-xl md:mt-10 md:grid-cols-4">
-          <div className="border border-b-0 border-red-600 text-sm md:border-b">
-            <h2 className="text-lg my-4 ml-2 font-bold uppercase md:my-2">tech</h2>
-
-            <hr className="mb-2 mt-0.5 border-[0.5px] border-red-600" />
+          <section
+            aria-labelledby="about-tech"
+            className="border border-b-0 border-red-600 text-sm md:border-b"
+          >
+            <h2
+              id="about-tech"
+              className="stipple text-lg mb-2 mt-0.5 border-b border-red-600 px-3 py-4 font-bold uppercase md:py-2"
+            >
+              tech
+            </h2>
 
             <div className="mx-2 pb-2">
               <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
@@ -93,12 +99,18 @@ export default function About() {
                 <li className="appearingText">Draco</li>
               </ul>
             </div>
-          </div>
+          </section>
 
-          <div className="border border-b-0 border-red-600 text-sm md:border-b md:border-l-0">
-            <h2 className="text-lg my-4 ml-2 font-bold uppercase md:my-2">skills</h2>
-
-            <hr className="mb-2 mt-0.5 border-[0.5px] border-red-600" />
+          <section
+            aria-labelledby="about-skills"
+            className="border border-b-0 border-red-600 text-sm md:border-b md:border-l-0"
+          >
+            <h2
+              id="about-skills"
+              className="stipple text-lg mb-2 mt-0.5 border-b border-red-600 px-3 py-4 font-bold uppercase md:py-2"
+            >
+              skills
+            </h2>
 
             <div className="mx-2 pb-2">
               <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
@@ -127,12 +139,18 @@ export default function About() {
                 <li className="appearingText">UV Unwrapping</li>
               </ul>
             </div>
-          </div>
+          </section>
 
-          <div className="border border-red-600 text-sm md:col-span-2 md:border-l-0">
-            <h2 className="text-lg my-4 ml-2 font-bold uppercase md:my-2">experience</h2>
-
-            <hr className="mb-2 mt-0.5 border-[0.5px] border-red-600" />
+          <section
+            aria-labelledby="about-experience"
+            className="border border-red-600 text-sm md:col-span-2 md:border-l-0"
+          >
+            <h2
+              id="about-experience"
+              className="stipple text-lg my-0.5 border-b border-red-600 px-3 py-4 font-bold uppercase md:py-2"
+            >
+              experience
+            </h2>
 
             <div className="mx-2">
               <Experience
@@ -244,7 +262,7 @@ export default function About() {
                 ]}
               />
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </Navigation>

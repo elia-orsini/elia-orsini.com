@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Experience: React.FC<{
   role: string;
   company: string;
@@ -8,13 +6,13 @@ const Experience: React.FC<{
   children?;
 }> = ({ role, company, dates, descriptions, children }) => {
   return (
-    <div className="my-2">
+    <article className="my-2">
       <h3 className="bg-red-600 pl-1 font-semibold text-white">{role}</h3>
       <p className="mt-1 flex justify-between">
-        <span className="appearingText text-highlight px-1 font-bold">{company}</span>
-        <span className="appearingText text-highlight my-auto ml-3 font-mono text-sm font-bold">
+        <span className="appearingText px-1 font-bold text-highlight">{company}</span>
+        <time className="appearingText my-auto ml-3 font-mono text-sm font-bold text-highlight">
           {dates}
-        </span>
+        </time>
       </p>
 
       <ul className="mb-2 ml-6 mt-1 list-disc">
@@ -28,7 +26,7 @@ const Experience: React.FC<{
       </ul>
 
       <div>{children}</div>
-    </div>
+    </article>
   );
 };
 

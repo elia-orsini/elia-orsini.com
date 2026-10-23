@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import NavItem from "@components/NavItem";
 
 export default function Navigation({
   children,
@@ -8,8 +8,6 @@ export default function Navigation({
   children?: React.ReactNode;
   path?: string;
 }) {
-  const { pathname } = useRouter();
-
   return (
     <>
       <div className="z-30 flex min-h-screen w-screen flex-col overflow-clip md:flex-row">
@@ -36,39 +34,9 @@ export default function Navigation({
           </Link>
 
           <div className="mx-auto mt-3 flex w-max flex-row gap-x-14 space-y-2 text-xl md:mt-10 md:flex-col md:gap-x-0 md:text-left">
-            {/* {path === "design" ? (
-              <p className="ml-0 mt-2 underline hover:cursor-default md:mx-0">design</p>
-            ) : (
-              <p className="ml-auto mt-2 hover:cursor-pointer hover:underline md:ml-0">
-                <Link href="/design">design</Link>
-              </p>
-            )} */}
-            {path === "about" ? (
-              <p className="mt-2 underline hover:cursor-default md:mr-0">about</p>
-            ) : (
-              <p className={`mt-2 hover:cursor-pointer hover:underline md:mr-0`}>
-                <Link href="/about">about</Link>
-              </p>
-            )}
-            {path === "code" ? (
-              <p className="ml-0 mt-2 underline hover:cursor-default md:mx-0">code</p>
-            ) : (
-              <p
-                className={`mt-2 hover:cursor-pointer hover:underline md:mr-0 ${
-                  pathname === "/" ? "mr-aut" : ""
-                }`}
-              >
-                <Link href="/code">code</Link>
-              </p>
-            )}
-            <a
-              className="mr-auto hover:cursor-pointer hover:underline md:mr-0"
-              href="https://diary.elia-orsini.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              diary
-            </a>
+            <NavItem href="/about" label="about" active={path === "about"} />
+            <NavItem href="/code" label="code" active={path === "code"} />
+            <NavItem href="https://diary.elia-orsini.com" label="diary" external />
           </div>
         </div>
 
