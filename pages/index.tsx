@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Navigation from "@components/Navigation";
 import Header from "@components/Header";
+import AsciiAnimation from "@components/AsciiAnimation";
 
 export default function Index() {
   return (
@@ -10,8 +10,14 @@ export default function Index() {
         description="Explore the work of Elia Orsini, Software Developer based in Shenzhen, China."
       />
 
-      <div className="fixed inset-0 z-0">
-        <Image src="/bg-dots.png" alt="" fill priority className="object-cover" sizes="100vw" />
+      <div className="pointer-events-none fixed inset-0 z-10 h-full w-full text-red-600">
+        <AsciiAnimation
+          framesUrl="/videoAsciiFrames.json.gz"
+          fps={24}
+          tiles={3}
+          mediumTiles={2}
+          mobileStack={2}
+        />
       </div>
 
       <Navigation />
