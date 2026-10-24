@@ -106,7 +106,7 @@ export default function AsciiAnimation({
     let tileW = 1;
     let tileH = 1;
     let glyph: GlyphLayout | null = null;
-    const tileGap = 0.1;
+    const tileGap = 0.05;
 
     // Offscreen tile only needed when blitting a multi-cell grid.
     const source = document.createElement("canvas");
