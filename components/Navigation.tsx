@@ -33,7 +33,7 @@ export default function Navigation({
             </div>
           </Link>
 
-          <div className="mx-auto mt-3 flex w-max flex-row gap-x-14 space-y-2 text-xl md:mt-10 md:flex-col md:gap-x-0 md:text-left">
+          <div className="mx-auto mt-3 flex w-max flex-row gap-x-14 space-y-2 text-xl font-bold md:mt-10 md:flex-col md:gap-x-0 md:text-left">
             <NavItem href="/about" label="about" active={path === "about"} />
             <NavItem href="/code" label="code" active={path === "code"} />
             <NavItem href="https://diary.elia-orsini.com" label="diary" external />

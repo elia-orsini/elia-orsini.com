@@ -20,6 +20,10 @@
 .env*
 tsconfig.tsbuildinfo
 
+# Large ASCII frame dumps (site loads public/*.json.gz instead)
+data/videoAsciiFrames.json
+data/videoAsciiFrames.json.gz
+
 # debug
 npm-debug.log*
 yarn-debug.log*

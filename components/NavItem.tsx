@@ -15,34 +15,30 @@ export default function NavItem({
     <>
       {label}
       {active && (
-        <span aria-hidden className="inline-block h-2 w-2 shrink-0 rounded-full bg-current" />
+        <span
+          aria-hidden
+          className="absolute left-full top-1/2 ml-2 h-2 w-2 -translate-y-1/2 rounded-full bg-current"
+        />
       )}
     </>
   );
 
+  const itemClass = "relative mt-2 w-max hover:cursor-pointer hover:no-underline md:mr-0";
+
   if (active) {
-    return (
-      <p className="mt-2 flex items-center gap-2 hover:cursor-pointer hover:no-underline md:mr-0">
-        {content}
-      </p>
-    );
+    return <p className={itemClass}>{content}</p>;
   }
 
   if (external) {
     return (
-      <a
-        className="mt-2 flex items-center gap-2 hover:cursor-pointer hover:no-underline md:mr-0"
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a className={itemClass} href={href} target="_blank" rel="noreferrer">
         {content}
       </a>
     );
   }
 
   return (
-    <p className="mt-2 flex items-center gap-2 hover:cursor-pointer hover:no-underline md:mr-0">
+    <p className={itemClass}>
       <Link href={href}>{content}</Link>
     </p>
   );
