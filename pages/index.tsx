@@ -4,7 +4,7 @@ import AsciiAnimation from "@components/AsciiAnimation";
 
 export default function Index() {
   return (
-    <>
+    <div className="h-[100dvh] overflow-hidden md:h-auto md:min-h-[100dvh] md:overflow-visible">
       <Header
         title="Elia Orsini"
         description="Explore the work of Elia Orsini, Software Developer based in Shenzhen, China."
@@ -21,6 +21,6 @@ export default function Index() {
       </div>
 
       <Navigation />
-    </>
+    </div>
   );
 }

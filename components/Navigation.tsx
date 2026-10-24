@@ -10,7 +10,7 @@ export default function Navigation({
 }) {
   return (
     <>
-      <div className="z-30 flex h-dvh w-full flex-col overflow-x-clip md:h-auto md:min-h-screen md:flex-row">
+      <div className="z-30 flex min-h-[100dvh] w-full flex-col overflow-x-clip md:min-h-screen md:flex-row">
         <div className="z-40 flex h-full w-full flex-col md:fixed md:h-screen md:w-max md:pl-20 md:pr-10">
           <Link href="/" passHref>
             <div className="mx-auto mt-10">

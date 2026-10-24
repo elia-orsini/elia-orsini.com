@@ -26,7 +26,12 @@ export default function AboutSectionHeading({
         aria-hidden
       >
         {Array.from({ length: count }, (_, i) => (
-          <div key={i} className={`relative h-full min-w-0 flex-1 ${i > 0 ? "-ml-px" : ""}`}>
+          <div
+            key={i}
+            className={`relative h-full min-w-0 flex-1 ${
+              i > 0 ? "-ml-px hidden md:block" : ""
+            }`}
+          >
             <AsciiAnimation
               className="absolute inset-0 h-full w-full"
               framesUrl="/videoAsciiFrames.json.gz"

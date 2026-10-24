@@ -137,13 +137,16 @@ export default function AsciiAnimation({
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.imageSmoothingEnabled = !crisp;
 
-      const single = grid.cols === 1 && grid.rows === 1;
+      // Direct paint only when 1×1 and unmirrored; mirrorX still needs the
+      // offscreen source that paint() blits from (e.g. about heading panels).
+      const single = grid.cols === 1 && grid.rows === 1 && !mirrorX;
       if (single) {
         glyph = measureGlyphs(ctx, linesByFrame[0], cssW, cssH, fontFamily, crisp, fit);
       } else {
         source.width = Math.floor(tileW * dpr);
         source.height = Math.max(1, Math.floor(tileH * dpr));
         sourceCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        sourceCtx.imageSmoothingEnabled = !crisp;
         glyph = measureGlyphs(sourceCtx, linesByFrame[0], tileW, tileH, fontFamily, crisp, fit);
       }
     };
