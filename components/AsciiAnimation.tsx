@@ -36,6 +36,8 @@ type AsciiAnimationProps = {
   crisp?: boolean;
   /** How the ASCII grid fills the canvas (default: cover). */
   fit?: AsciiFit;
+  /** Canvas font; defaults to computed style (site mono). */
+  fontFamily?: string;
   className?: string;
 };
 
@@ -51,6 +53,7 @@ export default function AsciiAnimation({
   mirrorX = false,
   crisp = false,
   fit = "cover",
+  fontFamily: fontFamilyProp,
   className,
 }: AsciiAnimationProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -99,14 +102,14 @@ export default function AsciiAnimation({
     let lastTs = 0;
     let accum = 0;
     let colour = "#dc2626";
-    let fontFamily = "monospace";
+    let fontFamily = fontFamilyProp || "monospace";
     let disposed = false;
     let cssW = 1;
     let cssH = 1;
     let tileW = 1;
     let tileH = 1;
     let glyph: GlyphLayout | null = null;
-    const tileGap = 0.05;
+    const tileGap = 0.1;
 
     // Offscreen tile only needed when blitting a multi-cell grid.
     const source = document.createElement("canvas");
@@ -116,7 +119,7 @@ export default function AsciiAnimation({
     const readStyles = () => {
       const styles = getComputedStyle(container);
       colour = styles.color || colour;
-      fontFamily = styles.fontFamily || fontFamily;
+      fontFamily = fontFamilyProp || styles.fontFamily || fontFamily;
     };
 
     const resize = () => {
@@ -228,7 +231,7 @@ export default function AsciiAnimation({
       mqMd.removeEventListener("change", onViewportChange);
       mqLg.removeEventListener("change", onViewportChange);
     };
-  }, [frames, fps, tiles, mediumTiles, mobileStack, mirrorX, crisp, fit]);
+  }, [frames, fps, tiles, mediumTiles, mobileStack, mirrorX, crisp, fit, fontFamilyProp]);
 
   if (!frames.length) return null;
 

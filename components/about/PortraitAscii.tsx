@@ -14,6 +14,7 @@ export default function PortraitAscii() {
         tiles={1}
         crisp
         fit="cover"
+        fontFamily="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
       />
     </div>
   );
