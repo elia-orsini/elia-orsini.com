@@ -1,5 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
+import {
+  type AsciiFit,
+  type GlyphLayout,
+  gridForViewport,
+  loadGzipJson,
+  measureGlyphs,
+  paintGlyphs,
+  sliceFrames,
+  splitFrames,
+} from "../lib/asciiAnimation";
 
 type AsciiAnimationProps = {
   /** Inline frames (large). Prefer `framesUrl` for gzip. */
@@ -7,6 +17,10 @@ type AsciiAnimationProps = {
   /** URL to a gzip-compressed JSON array of frame strings. */
   framesUrl?: string;
   fps?: number;
+  /** Inclusive start index into the loaded frame list. */
+  frameStart?: number;
+  /** Exclusive end index into the loaded frame list. */
+  frameEnd?: number;
   /** N×N grid on lg+ (default: 1). */
   tiles?: number;
   /** N×N grid on md–lg (falls back to `tiles`). */
@@ -16,74 +30,38 @@ type AsciiAnimationProps = {
    * (falls back to `mediumTiles` / `tiles` as an N×N square).
    */
   mobileStack?: number;
+  /** Mirror every tile on the X axis. */
+  mirrorX?: boolean;
+  /** Snap glyphs to whole pixels (sharper, less antialias blur). */
+  crisp?: boolean;
+  /** How the ASCII grid fills the canvas (default: cover). */
+  fit?: AsciiFit;
   className?: string;
 };
-
-async function loadGzipJson(url: string): Promise<string[]> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to load ${url}`);
-  const stream = res.body?.pipeThrough(new DecompressionStream("gzip"));
-  if (!stream) throw new Error("DecompressionStream unavailable");
-  const text = await new Response(stream).text();
-  return JSON.parse(text) as string[];
-}
-
-function drawAsciiCover(
-  ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D,
-  frame: string,
-  width: number,
-  height: number,
-  color: string,
-  fontFamily: string,
-) {
-  ctx.clearRect(0, 0, width, height);
-
-  const lines = frame.split("\n");
-  const cols = Math.max(1, ...lines.map((l) => l.length));
-  const rows = lines.length;
-  if (rows === 0) return;
-
-  // Probe metrics at 10px, then scale to cover the tile.
-  let fontSize = 10;
-  ctx.font = `400 ${fontSize}px ${fontFamily}`;
-  let charW = ctx.measureText("M").width || fontSize * 0.6;
-  let gridW = cols * charW;
-  let gridH = rows * fontSize;
-  fontSize *= Math.max(width / gridW, height / gridH);
-
-  ctx.font = `400 ${fontSize}px ${fontFamily}`;
-  charW = ctx.measureText("M").width || fontSize * 0.6;
-  gridW = cols * charW;
-  gridH = rows * fontSize;
-
-  const x0 = (width - gridW) / 2;
-  const y0 = (height - gridH) / 2;
-
-  ctx.fillStyle = color;
-  ctx.textBaseline = "top";
-  ctx.textAlign = "left";
-
-  for (let i = 0; i < rows; i++) {
-    ctx.fillText(lines[i], x0, y0 + i * fontSize);
-  }
-}
 
 export default function AsciiAnimation({
   frames: framesProp,
   framesUrl,
   fps = 12,
+  frameStart,
+  frameEnd,
   tiles = 1,
   mediumTiles,
   mobileStack,
+  mirrorX = false,
+  crisp = false,
+  fit = "cover",
   className,
 }: AsciiAnimationProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [frames, setFrames] = useState<string[]>(framesProp ?? []);
+  const [frames, setFrames] = useState<string[]>(() =>
+    sliceFrames(framesProp ?? [], frameStart, frameEnd)
+  );
 
   useEffect(() => {
     if (framesProp?.length) {
-      setFrames(framesProp);
+      setFrames(sliceFrames(framesProp, frameStart, frameEnd));
       return;
     }
     if (!framesUrl) return;
@@ -91,13 +69,13 @@ export default function AsciiAnimation({
     let cancelled = false;
     loadGzipJson(framesUrl)
       .then((loaded) => {
-        if (!cancelled) setFrames(loaded);
+        if (!cancelled) setFrames(sliceFrames(loaded, frameStart, frameEnd));
       })
       .catch((err) => console.error(err));
     return () => {
       cancelled = true;
     };
-  }, [framesProp, framesUrl]);
+  }, [framesProp, framesUrl, frameStart, frameEnd]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -110,21 +88,27 @@ export default function AsciiAnimation({
     const desktopN = Math.max(1, Math.floor(tiles));
     const mediumN = Math.max(1, Math.floor(mediumTiles ?? tiles));
     const stackRows = mobileStack != null ? Math.max(1, Math.floor(mobileStack)) : null;
-
     const mqMd = window.matchMedia("(min-width: 768px)");
     const mqLg = window.matchMedia("(min-width: 1024px)");
+    const frameMs = 1000 / fps;
+    const linesByFrame = splitFrames(frames);
 
-    let cols = 1;
-    let rows = 1;
+    let grid = gridForViewport(desktopN, mediumN, stackRows, mqMd.matches, mqLg.matches);
     let frameIndex = 0;
     let raf = 0;
     let lastTs = 0;
-    const frameMs = 1000 / fps;
+    let accum = 0;
     let colour = "#dc2626";
     let fontFamily = "monospace";
     let disposed = false;
+    let cssW = 1;
+    let cssH = 1;
+    let tileW = 1;
+    let tileH = 1;
+    let glyph: GlyphLayout | null = null;
+    const tileGap = 0.1;
 
-    // Source tile — painted once per frame, then GPU-blitted into the grid.
+    // Offscreen tile only needed when blitting a multi-cell grid.
     const source = document.createElement("canvas");
     const sourceCtx = source.getContext("2d", { alpha: true });
     if (!sourceCtx) return;
@@ -135,81 +119,59 @@ export default function AsciiAnimation({
       fontFamily = styles.fontFamily || fontFamily;
     };
 
-    const syncGrid = () => {
-      if (mqLg.matches) {
-        cols = desktopN;
-        rows = desktopN;
-      } else if (mqMd.matches) {
-        cols = mediumN;
-        rows = mediumN;
-      } else if (stackRows != null) {
-        cols = 1;
-        rows = stackRows;
+    const resize = () => {
+      grid = gridForViewport(desktopN, mediumN, stackRows, mqMd.matches, mqLg.matches);
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const rect = container.getBoundingClientRect();
+      cssW = Math.max(1, Math.floor(rect.width));
+      cssH = Math.max(1, Math.floor(rect.height));
+      const gapX = Math.max(0, grid.cols - 1) * tileGap;
+      const gapY = Math.max(0, grid.rows - 1) * tileGap;
+      tileW = Math.max(1, Math.floor((cssW - gapX) / grid.cols));
+      tileH = Math.max(1, Math.floor((cssH - gapY) / grid.rows));
+
+      canvas.width = Math.floor(cssW * dpr);
+      canvas.height = Math.floor(cssH * dpr);
+      canvas.style.width = `${cssW}px`;
+      canvas.style.height = `${cssH}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.imageSmoothingEnabled = !crisp;
+
+      const single = grid.cols === 1 && grid.rows === 1;
+      if (single) {
+        glyph = measureGlyphs(ctx, linesByFrame[0], cssW, cssH, fontFamily, crisp, fit);
       } else {
-        cols = mediumN;
-        rows = mediumN;
+        source.width = Math.floor(tileW * dpr);
+        source.height = Math.max(1, Math.floor(tileH * dpr));
+        sourceCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        glyph = measureGlyphs(sourceCtx, linesByFrame[0], tileW, tileH, fontFamily, crisp, fit);
       }
     };
 
-    const resize = () => {
-      syncGrid();
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      const { width, height } = container.getBoundingClientRect();
-      const w = Math.max(1, Math.floor(width));
-      const h = Math.max(1, Math.floor(height));
-
-      canvas.width = Math.floor(w * dpr);
-      canvas.height = Math.floor(h * dpr);
-      canvas.style.width = `${w}px`;
-      canvas.style.height = `${h}px`;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-      const tileW = Math.max(1, Math.floor(w / cols));
-      const tileH = Math.max(1, Math.floor(h / rows));
-      source.width = Math.floor(tileW * dpr);
-      source.height = Math.max(1, Math.floor(tileH * dpr));
-      sourceCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    };
-
     const paint = () => {
-      const { width, height } = container.getBoundingClientRect();
-      const w = Math.max(1, Math.floor(width));
-      const h = Math.max(1, Math.floor(height));
-      const tileW = w / cols;
-      const tileH = h / rows;
+      if (!glyph) return;
+      const lines = linesByFrame[frameIndex];
+      const single = grid.cols === 1 && grid.rows === 1 && !mirrorX;
 
-      drawAsciiCover(
-        sourceCtx,
-        frames[frameIndex],
-        tileW,
-        tileH,
-        colour,
-        fontFamily,
-      );
+      if (single) {
+        paintGlyphs(ctx, lines, glyph, colour, fontFamily, crisp, cssW, cssH);
+        return;
+      }
 
-      ctx.clearRect(0, 0, w, h);
-      for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < cols; col++) {
-          // Odd columns flip X; 2nd & 4th rows (1-based) flip Y.
-          const flipX = col % 2 === 1;
+      paintGlyphs(sourceCtx, lines, glyph, colour, fontFamily, crisp, tileW, tileH);
+      ctx.clearRect(0, 0, cssW, cssH);
+      const strideX = tileW + tileGap;
+      const strideY = tileH + tileGap;
+      for (let row = 0; row < grid.rows; row++) {
+        for (let col = 0; col < grid.cols; col++) {
+          const flipX = mirrorX || col % 2 === 1;
           const flipY = row === 1 || row === 3;
-          const dx = col * tileW;
-          const dy = row * tileH;
-
+          const dx = col * strideX;
+          const dy = row * strideY;
           ctx.save();
           ctx.translate(dx + (flipX ? tileW : 0), dy + (flipY ? tileH : 0));
           ctx.scale(flipX ? -1 : 1, flipY ? -1 : 1);
-          ctx.drawImage(
-            source,
-            0,
-            0,
-            source.width,
-            source.height,
-            0,
-            0,
-            tileW,
-            tileH,
-          );
+          ctx.drawImage(source, 0, 0, source.width, source.height, 0, 0, tileW, tileH);
           ctx.restore();
         }
       }
@@ -218,11 +180,15 @@ export default function AsciiAnimation({
     const tick = (ts: number) => {
       if (disposed) return;
       if (!lastTs) lastTs = ts;
-      if (ts - lastTs >= frameMs) {
-        frameIndex = (frameIndex + 1) % frames.length;
-        lastTs = ts;
-        paint();
+      accum += ts - lastTs;
+      lastTs = ts;
+      let advanced = false;
+      while (accum >= frameMs) {
+        accum -= frameMs;
+        frameIndex = (frameIndex + 1) % linesByFrame.length;
+        advanced = true;
       }
+      if (advanced) paint();
       raf = requestAnimationFrame(tick);
     };
 
@@ -259,13 +225,17 @@ export default function AsciiAnimation({
       mqMd.removeEventListener("change", onViewportChange);
       mqLg.removeEventListener("change", onViewportChange);
     };
-  }, [frames, fps, tiles, mediumTiles, mobileStack]);
+  }, [frames, fps, tiles, mediumTiles, mobileStack, mirrorX, crisp, fit]);
 
   if (!frames.length) return null;
 
   return (
     <div ref={containerRef} className={classNames("h-full w-full", className)}>
-      <canvas ref={canvasRef} className="block h-full w-full" aria-hidden />
+      <canvas
+        ref={canvasRef}
+        className={classNames("block h-full w-full", crisp && "crisp-ascii")}
+        aria-hidden
+      />
     </div>
   );
 }

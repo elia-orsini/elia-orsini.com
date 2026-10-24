@@ -33,7 +33,8 @@ gzip in `public/`.
 | Converter | `scripts/video_to_ascii.py` |
 | Intermediate JSON | `data/videoAsciiFrames.json` (gitignored) |
 | **Shipped asset** | `public/videoAsciiFrames.json.gz` |
-| Consumer | `pages/index.tsx` → `framesUrl="/videoAsciiFrames.json.gz"` |
+| Portrait | `public/portraitAsciiFrames.json.gz` (about headshot) |
+| Consumer | index → full; about headings → birds slice; about headshot → portrait gzip |
 
 `ffmpeg` is often **not** on PATH. Prefer **OpenCV (`cv2`)** for concat,
 cuts, cover-fit, and writing mp4.
@@ -133,6 +134,12 @@ After any edit:
 - [ ] Frame count ≈ `duration_sec × 20`.
 - [ ] Site still points at `/videoAsciiFrames.json.gz` (not the raw JSON).
 - [ ] Optional: `open` Desktop mp4 for scene review.
+
+## About section headings (birds slice)
+
+`AboutSectionHeading` plays the birds segment via `frameStart`/`frameEnd` on
+the main gzip (2nd-from-last cut). Update indices in that component when the
+concat timeline changes.
 
 ## Out of scope / pitfalls
 

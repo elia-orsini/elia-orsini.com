@@ -1,8 +1,9 @@
 import Header from "@components/Header";
 import Navigation from "@components/Navigation";
+import AboutSectionHeading from "@components/about/AboutSectionHeading";
 import Experience from "@components/about/Experience";
 import ImageScroller from "@components/about/ImageScroller";
-import Image from "next/image";
+import PortraitAscii from "@components/about/PortraitAscii";
 
 export default function About() {
   return (
@@ -12,13 +13,7 @@ export default function About() {
       <div className="mb-20 flex h-full w-full flex-col px-4 sm:pr-10 md:mb-40 lg:pr-20">
         <div className="flex flex-row">
           <div className="mt-10 w-[130px] sm:w-[200px]">
-            <Image
-              alt="Portrait of Elia Orsini"
-              src="/me.png"
-              className="headshot border border-red-600"
-              width={200}
-              height={200}
-            />
+            <PortraitAscii />
           </div>
 
           <div className="ml-2 mt-auto sm:ml-6">
@@ -28,9 +23,7 @@ export default function About() {
             >
               Elia Orsini
             </h1>
-            <p className="text-[20px] sm:text-[25px] lg:text-[30px]">
-              Software Developer
-            </p>
+            <p className="text-[20px] sm:text-[25px] lg:text-[30px]">Software Developer</p>
           </div>
         </div>
 
@@ -39,12 +32,7 @@ export default function About() {
             aria-labelledby="about-tech"
             className="border border-b-0 border-red-600 text-sm md:border-b"
           >
-            <h2
-              id="about-tech"
-              className="stipple text-lg mb-2 mt-0.5 border-b border-red-600 px-3 py-4 font-bold uppercase md:py-2"
-            >
-              tech
-            </h2>
+            <AboutSectionHeading id="about-tech">tech</AboutSectionHeading>
 
             <div className="mx-2 pb-2">
               <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
@@ -105,12 +93,7 @@ export default function About() {
             aria-labelledby="about-skills"
             className="border border-b-0 border-red-600 text-sm md:border-b md:border-l-0"
           >
-            <h2
-              id="about-skills"
-              className="stipple text-lg mb-2 mt-0.5 border-b border-red-600 px-3 py-4 font-bold uppercase md:py-2"
-            >
-              skills
-            </h2>
+            <AboutSectionHeading id="about-skills">skills</AboutSectionHeading>
 
             <div className="mx-2 pb-2">
               <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
@@ -145,12 +128,9 @@ export default function About() {
             aria-labelledby="about-experience"
             className="border border-red-600 text-sm md:col-span-2 md:border-l-0"
           >
-            <h2
-              id="about-experience"
-              className="stipple text-lg my-0.5 border-b border-red-600 px-3 py-4 font-bold uppercase md:py-2"
-            >
+            <AboutSectionHeading id="about-experience" panels={2}>
               experience
-            </h2>
+            </AboutSectionHeading>
 
             <div className="mx-2">
               <Experience

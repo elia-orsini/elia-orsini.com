@@ -20,9 +20,9 @@
 .env*
 tsconfig.tsbuildinfo
 
-# Large ASCII frame dumps (site loads public/*.json.gz instead)
-data/videoAsciiFrames.json
-data/videoAsciiFrames.json.gz
+# Intermediate ASCII dumps in data/ (site loads public/*.json.gz)
+data/*
+!data/designImages.ts
 
 # debug
 npm-debug.log*
