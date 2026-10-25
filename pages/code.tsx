@@ -46,7 +46,7 @@ export default function Code() {
               />
               <WebsiteCard
                 title="elia's personal database"
-                url="https://elia-db.vercel.app/"
+                url="https://db.eorsini.xyz/"
                 description="Personal website to store things I enjoy."
                 tech={["NEXT.JS", "NOTION API"]}
               />
@@ -57,10 +57,22 @@ export default function Code() {
                 tech={["NEXT.JS", "NOTION API"]}
               />
               <WebsiteCard
+                title="gft forever"
+                url="https://gft-forever.vercel.app/"
+                description="An archive of every film shown at my local independent cinema."
+                tech={["NEXT.JS"]}
+              />
+              <WebsiteCard
                 title="rho mcguire"
                 url="https://rhomcguire.uk"
                 description="Website for Scotland-based artist Rho Mcguire."
                 tech={["NEXT.JS", "NOTION API"]}
+              />
+              <WebsiteCard
+                title="insomnia events"
+                url="https://www.insomniaevents.xyz/"
+                description="Website for Insomnia Events."
+                tech={["REACT"]}
               />
               <WebsiteCard
                 title="yu's Cafes"
@@ -70,21 +82,9 @@ export default function Code() {
               />
               <WebsiteCard
                 title="lazyLLM"
-                url="https://lazyllm.vercel.app/"
+                url="https://lazyllm.eorsini.xyz/"
                 description="Toolkit to create, test and analyse LLMs agains cognitive bias."
                 tech={["NEXT.JS"]}
-              />
-              <WebsiteCard
-                title="gft forever"
-                url="https://gft-forever.vercel.app/"
-                description="An archive of every film shown at my local independent cinema."
-                tech={["NEXT.JS"]}
-              />
-              <WebsiteCard
-                title="insomnia events"
-                url="https://www.insomniaevents.xyz/"
-                description="Website for Insomnia Events."
-                tech={["REACT"]}
               />
               <WebsiteCard
                 title="readu"
