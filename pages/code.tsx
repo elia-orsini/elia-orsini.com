@@ -27,6 +27,12 @@ export default function Code() {
                 tech={["Next.js", "Sanity"]}
               />
               <WebsiteCard
+                title="nine point six three"
+                url="https://ninepointsixthree.co/"
+                description="Website for creative studio Nine Point Six Three."
+                tech={["Next.js", "Sanity"]}
+              />
+              <WebsiteCard
                 title="angela ricciardi"
                 url="https://www.angelaricciardi.com/"
                 description="Website for photographer and artist Angela Ricciardi."
