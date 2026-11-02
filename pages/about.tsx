@@ -1,11 +1,22 @@
 import Header from "@components/Header";
 import Navigation from "@components/Navigation";
 import AboutSectionHeading from "@components/about/AboutSectionHeading";
-import Experience from "@components/about/Experience";
-import ImageScroller from "@components/about/ImageScroller";
 import PortraitAscii from "@components/about/PortraitAscii";
+import {
+  getCurrentlyReading,
+  getRecentFilms,
+  type ReadingBook,
+  type RecentFilm,
+} from "../lib/dbPreference";
+import { getTopArtists, type TopArtist } from "../lib/lastfm";
 
-export default function About() {
+type AboutProps = {
+  reading: ReadingBook[];
+  films: RecentFilm[];
+  artists: TopArtist[];
+};
+
+export default function About({ reading, films, artists }: AboutProps) {
   return (
     <Navigation path="about">
       <Header title={`About | Elia Orsini`} description="About page of Elia Orsini." />
@@ -32,7 +43,7 @@ export default function About() {
             aria-labelledby="about-tech"
             className="border border-b-0 border-red-600 text-sm md:border-b"
           >
-            <AboutSectionHeading id="about-tech">tech</AboutSectionHeading>
+            <AboutSectionHeading id="about-tech">tech stack</AboutSectionHeading>
 
             <div className="mx-2 pb-2">
               <h3 className="bg-red-600 pl-1 font-semibold text-white">Software Development</h3>
@@ -125,126 +136,76 @@ export default function About() {
           </section>
 
           <section
-            aria-labelledby="about-experience"
+            aria-labelledby="about-preference"
             className="border border-red-600 text-sm md:col-span-2 md:border-l-0"
           >
-            <AboutSectionHeading id="about-experience" panels={2}>
-              experience
+            <AboutSectionHeading id="about-preference" panels={2}>
+              preference
             </AboutSectionHeading>
 
-            <div className="mx-2">
-              <Experience
-                role="Frontend Developer"
-                company="Evismart"
-                dates="Dec 2025 / Present"
-                descriptions={["Work in Progress..."]}
-              />
+            <div className="mx-2 pb-2">
+              <h3 className="bg-red-600 pl-1 font-semibold text-white">Currently reading</h3>
+              <ul className="ml-4 pt-2 font-mono">
+                {reading.length === 0 ? (
+                  <li className="appearingText">—</li>
+                ) : (
+                  reading.map((book) => (
+                    <li className="appearingText" key={book.id}>
+                      {book.title} — {book.author}
+                    </li>
+                  ))
+                )}
+              </ul>
 
-              <Experience
-                role="Co-Founder"
-                company="fashionwiki"
-                dates="Aug 2025 / Present"
-                descriptions={[
-                  `Developed frontend in Next.js, Tailwind CSS, remark with advanced features such as a visual markdown editor with custom syntax.`,
-                  `Created backend REST API in NestJS with an event scheduler, semantic search, authentication and moderation system.`,
-                  `Deployed and maintained web app in AWS on EC2 instances with PostgreSQL database, Lambda functions and S3 buckets.`,
-                ]}
-              />
+              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">
+                Good stuff I&apos;ve recently watched
+              </h3>
+              <ul className="ml-4 pt-2 font-mono">
+                {films.length === 0 ? (
+                  <li className="appearingText">—</li>
+                ) : (
+                  films.map((film) => (
+                    <li className="appearingText flex min-w-0" key={film.id} title={film.name}>
+                      <span className="truncate">{film.name}</span>
+                      {film.year != null && (
+                        <span className="flex-shrink-0">&nbsp;({film.year})</span>
+                      )}
+                    </li>
+                  ))
+                )}
+              </ul>
 
-              <Experience
-                role="Unreal Engine Developer"
-                company="Robohive"
-                dates="Nov 2024 / May 2025"
-                descriptions={[
-                  `Developed a VR training application in Unreal Engine for orthopaedic robotic surgery for the NHS (UK's National Health Service).`,
-                  `Worked autonomously to satisfy requirements from non-technical people and collaborated effectively with design team.`,
-                  `Created a seamless VR user experience with custom interactions and UI interfaces using UE5 Blueprints.`,
-                ]}
-              />
-
-              <Experience
-                role="Junior Software Developer"
-                company="IMG ARENA"
-                dates="Oct 2022 / July 2024"
-                descriptions={[
-                  `Part of the 3D Labs team building interactive 3D experiences for major sports brands, including ATP, Roland Garros, The Open, and MLS.`,
-                  `Built custom frontend applications with React, Redux, GraphQL, Node.js, WebSockets, Bootstrap, and Electron, delivering efficient data-driven experiences across web and desktop.`,
-                  `Used Unreal Engine, Babylon.js, and Blender with Geometry Nodes to produce high-quality 3D models deployable on the web, VR headsets, and any OS.`,
-                ]}
-              >
-                <div>
-                  <ImageScroller
-                    images={[
-                      "/about/img/img1.jpg",
-                      "/about/img/img2.jpg",
-                      "/about/img/img3.jpg",
-                      "/about/img/img4.jpg",
-                      "/about/img/img5.jpg",
-                      "/about/img/img6.jpg",
-                      "/about/img/img7.jpg",
-                      "/about/img/img8.jpg",
-                      "/about/img/img9.jpg",
-                      "/about/img/img10.jpg",
-                      "/about/img/img11.jpg",
-                    ]}
-                    sectionTitle="IMG Arena"
-                  />
-                </div>
-              </Experience>
-
-              <Experience
-                role="Three.js Lead"
-                company="Houses of Rome"
-                dates="Jan 2022 / July 2022"
-                descriptions={[
-                  `Led the Three.js team building interactive 3D browser experiences in Next.js and Three.js.`,
-                  `Contributed as part of a small team shipping a 3D browser-based game, owning 3D integration work and R&D.`,
-                  `Worked side by side with developers and 3D artists to ship optimised 3D environments able to run on most devices.`,
-                ]}
-              >
-                <div>
-                  <ImageScroller
-                    images={[
-                      "/about/HoR/hor1.jpg",
-                      "/about/HoR/hor2.jpg",
-                      "/about/HoR/hor3.jpg",
-                      "/about/HoR/hor4.jpg",
-                      "/about/HoR/hor5.jpg",
-                      "/about/HoR/hor6.jpg",
-                      "/about/HoR/hor7.jpg",
-                    ]}
-                    sectionTitle="Houses of Rome"
-                  />
-                </div>
-              </Experience>
-
-              <Experience
-                role="3D Graphic Designer"
-                company="Freelance"
-                dates="Nov 2019 / May 2022"
-                descriptions={[
-                  `Work remotely with music artists to convert their idea of music into visually appealing and creative cover arts.`,
-                  `Designed and produced 2D and 3D marketing material for multiple music events in Italy.`,
-                ]}
-              />
-
-              <Experience
-                role="Photographer"
-                company="Freelance"
-                dates="Feb 2018 / Nov 2021"
-                descriptions={[
-                  `Planned and directed photoshoots to match the brand image of
-                  clients. I worked with models and art directors to reach a
-                  coherent and creative vision of their projects.`,
-                  `A fundamental requirement has been the ability to visually
-                  represent many different ideas in a timely and effective
-                  manner.`,
-                ]}
-              />
+              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">
+                Music I&apos;ve been listening
+              </h3>
+              <ul className="ml-4 pt-2 font-mono">
+                {artists.length === 0 ? (
+                  <li className="appearingText">—</li>
+                ) : (
+                  artists.map((artist) => (
+                    <li className="appearingText" key={artist.name}>
+                      {artist.name}
+                    </li>
+                  ))
+                )}
+              </ul>
             </div>
           </section>
         </div>
       </div>
     </Navigation>
   );
+}
+
+export async function getStaticProps() {
+  const [reading, films, artists] = await Promise.all([
+    getCurrentlyReading(),
+    getRecentFilms(),
+    getTopArtists(5),
+  ]);
+
+  return {
+    props: { reading, films, artists },
+    revalidate: 3600,
+  };
 }
