@@ -17,7 +17,7 @@ export default function NavItem({
       {active && (
         <span
           aria-hidden
-          className="absolute left-full top-1/2 ml-2 h-2 w-2 -translate-y-1/2 rounded-full bg-current"
+          className="absolute left-full top-1/2 ml-2 h-2 w-2 -translate-y-1/2 bg-current"
         />
       )}
     </>

@@ -5,7 +5,7 @@ const WebsiteCard: React.FC<{
   tech: Array<string>;
 }> = ({ title, url, description, tech }) => {
   return (
-    <li className="appearingCards list-disc">
+    <li className="appearingCards">
       <a href={url} target="_blank" rel="noreferrer" className="font-bold hover:underline">
         {title}
       </a>

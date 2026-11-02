@@ -144,7 +144,7 @@ export default function About({ reading, films, artists }: AboutProps) {
             </AboutSectionHeading>
 
             <div className="mx-2 pb-2">
-              <h3 className="bg-red-600 pl-1 font-semibold text-white">Currently reading</h3>
+              <h3 className="bg-red-600 pl-1 font-semibold text-white">Reading</h3>
               <ul className="ml-4 pt-2 font-mono">
                 {reading.length === 0 ? (
                   <li className="appearingText">—</li>
@@ -157,9 +157,7 @@ export default function About({ reading, films, artists }: AboutProps) {
                 )}
               </ul>
 
-              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">
-                Good stuff I&apos;ve recently watched
-              </h3>
+              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">Watched</h3>
               <ul className="ml-4 pt-2 font-mono">
                 {films.length === 0 ? (
                   <li className="appearingText">—</li>
@@ -175,9 +173,7 @@ export default function About({ reading, films, artists }: AboutProps) {
                 )}
               </ul>
 
-              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">
-                Music I&apos;ve been listening
-              </h3>
+              <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">Listening</h3>
               <ul className="ml-4 pt-2 font-mono">
                 {artists.length === 0 ? (
                   <li className="appearingText">—</li>

@@ -11,9 +11,7 @@ export default function Code() {
       <div className="mb-20 flex w-full">
         <div className="mx-5 flex w-full max-w-3xl flex-col">
           <div className="mt-6 flex w-full flex-col sm:mt-14">
-            <SectionHeader title="websites I built" />
-
-            <ul className="ml-5 flex flex-col gap-4">
+            <ul className="ml-5 list-square space-y-4 pl-1">
               <WebsiteCard
                 title="fashionwiki"
                 url="https://fashionwiki.co/"
@@ -51,9 +49,9 @@ export default function Code() {
                 tech={["Next.js", "Sanity"]}
               />
               <WebsiteCard
-                title="elia's personal database"
+                title="elia's personal db"
                 url="https://db.eorsini.xyz/"
-                description="Personal website to store things I enjoy."
+                description="Trying to remember things I enjoy."
                 tech={["Next.js", "Notion API"]}
               />
               <WebsiteCard
@@ -69,41 +67,17 @@ export default function Code() {
                 tech={["Next.js"]}
               />
               <WebsiteCard
-                title="rho mcguire"
-                url="https://rhomcguire.uk"
-                description="Website for Scotland-based artist Rho Mcguire."
-                tech={["Next.js", "Notion API"]}
-              />
-              <WebsiteCard
                 title="insomnia events"
                 url="https://www.insomniaevents.xyz/"
                 description="Website for Insomnia Events."
                 tech={["React"]}
               />
-              <WebsiteCard
-                title="yu's Cafes"
-                url="https://yu-coffee-map.vercel.app/"
-                description="Website for collecting cafes around the world."
-                tech={["Next.js", "Notion API"]}
-              />
-              <WebsiteCard
-                title="lazyLLM"
-                url="https://lazyllm.eorsini.xyz/"
-                description="Toolkit to create, test and analyse LLMs agains cognitive bias."
-                tech={["Next.js"]}
-              />
-              <WebsiteCard
-                title="readu"
-                url="https://readu-group-reading.vercel.app/"
-                description="Readu brings friends together through shared reading experiences."
-                tech={["Next.js", "Dynamo DB"]}
-              />
             </ul>
           </div>
 
           <div className="mt-10 flex flex-col sm:mt-20">
-            <SectionHeader title="websites i collaborated on" />
-            <ul className="ml-5 flex flex-col gap-4">
+            <SectionHeader title="collaborated on" />
+            <ul className="ml-5 list-square space-y-4 pl-1">
               <WebsiteCard
                 title="ARCHIVE.pdf"
                 url="https://archivepdf.net/"
@@ -116,7 +90,7 @@ export default function Code() {
           <div className="mt-10 flex flex-col sm:mt-20">
             <SectionHeader title="3D projects" />
 
-            <ul className="ml-5 flex flex-col gap-4">
+            <ul className="ml-5 list-square space-y-4 pl-1">
               <WebsiteCard
                 title="blenderWebViewer"
                 url="https://github.com/elia-orsini/BlenderWebViewer"
@@ -141,7 +115,31 @@ export default function Code() {
           <div className="mt-10 flex flex-col sm:mt-20">
             <SectionHeader title="other projects" />
 
-            <ul className="ml-5 flex flex-col gap-4">
+            <ul className="ml-5 list-square space-y-4 pl-1">
+              <WebsiteCard
+                title="rho mcguire"
+                url="https://rhomcguire.uk"
+                description="Website for Scotland-based artist Rho Mcguire."
+                tech={["Next.js", "Notion API"]}
+              />
+              <WebsiteCard
+                title="yu's cafes"
+                url="https://yu-coffee-map.vercel.app/"
+                description="Website for collecting cafes around the world."
+                tech={["Next.js", "Notion API"]}
+              />
+              <WebsiteCard
+                title="lazyLLM"
+                url="https://lazyllm.eorsini.xyz/"
+                description="Toolkit to create, test and analyse LLMs agains cognitive bias."
+                tech={["Next.js"]}
+              />
+              <WebsiteCard
+                title="readu"
+                url="https://readu-group-reading.vercel.app/"
+                description="Readu brings friends together through shared reading experiences."
+                tech={["Next.js", "Dynamo DB"]}
+              />
               <WebsiteCard
                 title="visual gpx"
                 url="https://visual-gpx.vercel.app/"
