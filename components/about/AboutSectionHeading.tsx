@@ -19,7 +19,7 @@ export default function AboutSectionHeading({
   return (
     <h2
       id={id}
-      className="text-lg relative mb-2 overflow-hidden border-b border-red-600 bg-gray-100 px-3 py-4 font-bold uppercase md:py-2"
+      className="relative mb-2 overflow-hidden border-b border-red-600 bg-gray-100 px-3 py-4 text-sm font-bold uppercase md:py-2"
     >
       <div
         className="pointer-events-none absolute inset-0 flex text-red-600 opacity-70"
