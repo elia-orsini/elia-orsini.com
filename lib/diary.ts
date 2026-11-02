@@ -48,7 +48,9 @@ export async function getLatestDiaryPhotos(limit = 3): Promise<DiaryPhoto[]> {
   const photos: DiaryPhoto[] = [];
 
   for (const group of groups || []) {
-    for (const [i, img] of (group.images || []).entries()) {
+    const images = group.images || [];
+    for (let i = 0; i < images.length; i++) {
+      const img = images[i];
       if (!img?.asset?._id) continue;
       const dims = img.asset.metadata?.dimensions;
       photos.push({
