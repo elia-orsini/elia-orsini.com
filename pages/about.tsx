@@ -9,14 +9,16 @@ import {
   type RecentFilm,
 } from "../lib/dbPreference";
 import { getTopArtists, type TopArtist } from "../lib/lastfm";
+import { getLatestDiaryPhotos, type DiaryPhoto } from "../lib/diary";
 
 type AboutProps = {
   reading: ReadingBook[];
   films: RecentFilm[];
   artists: TopArtist[];
+  diaryPhotos: DiaryPhoto[];
 };
 
-export default function About({ reading, films, artists }: AboutProps) {
+export default function About({ reading, films, artists, diaryPhotos }: AboutProps) {
   return (
     <Navigation path="about">
       <Header title={`About | Elia Orsini`} description="About page of Elia Orsini." />
@@ -185,6 +187,44 @@ export default function About({ reading, films, artists }: AboutProps) {
                   ))
                 )}
               </ul>
+
+              {diaryPhotos.length > 0 && (
+                <>
+                  <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">Staring</h3>
+                  <a
+                    href="https://diary.eorsini.xyz"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 grid grid-cols-3 gap-1 hover:no-underline"
+                  >
+                    {diaryPhotos.map((photo) => (
+                      <div
+                        key={photo.key}
+                        className="relative w-full overflow-hidden bg-black"
+                        style={{ aspectRatio: "3 / 4" }}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={photo.src}
+                          alt={photo.place ? `Diary — ${photo.place}` : "Diary photo"}
+                          width={photo.width}
+                          height={photo.height}
+                          loading="lazy"
+                          className="absolute inset-0 h-full w-full object-cover object-top"
+                          style={
+                            photo.lqip
+                              ? {
+                                  backgroundImage: `url(${photo.lqip})`,
+                                  backgroundSize: "cover",
+                                }
+                              : undefined
+                          }
+                        />
+                      </div>
+                    ))}
+                  </a>
+                </>
+              )}
             </div>
           </section>
         </div>
@@ -194,14 +234,15 @@ export default function About({ reading, films, artists }: AboutProps) {
 }
 
 export async function getStaticProps() {
-  const [reading, films, artists] = await Promise.all([
+  const [reading, films, artists, diaryPhotos] = await Promise.all([
     getCurrentlyReading(),
     getRecentFilms(),
     getTopArtists(5),
+    getLatestDiaryPhotos(6),
   ]);
 
   return {
-    props: { reading, films, artists },
+    props: { reading, films, artists, diaryPhotos },
     revalidate: 3600,
   };
 }
