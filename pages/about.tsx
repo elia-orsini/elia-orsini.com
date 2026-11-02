@@ -136,11 +136,11 @@ export default function About({ reading, films, artists }: AboutProps) {
           </section>
 
           <section
-            aria-labelledby="about-preference"
+            aria-labelledby="about-lately"
             className="border border-red-600 text-sm md:col-span-2 md:border-l-0"
           >
-            <AboutSectionHeading id="about-preference" panels={2}>
-              preference
+            <AboutSectionHeading id="about-lately" panels={2}>
+              lately
             </AboutSectionHeading>
 
             <div className="mx-2 pb-2">
