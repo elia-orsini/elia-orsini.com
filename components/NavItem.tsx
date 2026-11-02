@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowFatLineLeft } from "@phosphor-icons/react";
 
 export default function NavItem({
   href,
@@ -13,7 +14,16 @@ export default function NavItem({
 }) {
   const content = (
     <>
-      {label}
+      <span className="inline-flex items-center gap-x-0">
+        {external && (
+          <ArrowFatLineLeft
+            aria-hidden
+            weight="bold"
+            className="mt-0.5 h-3.5 w-3.5 md:h-4 md:w-4"
+          />
+        )}
+        {label}
+      </span>
       {active && (
         <span
           aria-hidden
