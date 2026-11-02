@@ -14,5 +14,5 @@ export const ioskeleyMono = localFont({
     },
   ],
   variable: "--font-ioskeley",
-  display: "swap",
+  display: "block",
 });
