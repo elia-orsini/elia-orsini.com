@@ -23,22 +23,27 @@ export default function NavItem({
     </>
   );
 
-  const itemClass = "relative mt-2 w-max hover:cursor-pointer hover:no-underline md:mr-0";
+  const itemClass = "relative mt-0 w-max md:mt-2 md:mr-0";
 
   if (active) {
-    return <p className={itemClass}>{content}</p>;
+    return <p className={`${itemClass} cursor-default`}>{content}</p>;
   }
 
   if (external) {
     return (
-      <a className={itemClass} href={href} target="_blank" rel="noreferrer">
+      <a
+        className={`${itemClass} hover:cursor-pointer hover:no-underline`}
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+      >
         {content}
       </a>
     );
   }
 
   return (
-    <p className={itemClass}>
+    <p className={`${itemClass} hover:cursor-pointer hover:no-underline`}>
       <Link href={href}>{content}</Link>
     </p>
   );

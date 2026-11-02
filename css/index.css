@@ -6,6 +6,11 @@ body {
   @apply bg-gray-100 font-sans;
 }
 
+/* Tailwind 2 has no list-square utility */
+.list-square {
+  list-style-type: square;
+}
+
 /* Disable glyph antialiasing for crisp ASCII canvases. */
 .crisp-ascii {
   -webkit-font-smoothing: none;

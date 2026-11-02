@@ -10,8 +10,8 @@ export default function Navigation({
 }) {
   return (
     <>
-      <div className="z-30 flex min-h-[100dvh] w-full flex-col overflow-x-clip md:min-h-screen md:flex-row">
-        <div className="z-40 flex h-full w-full flex-col md:fixed md:h-screen md:w-max md:pl-20 md:pr-10">
+      <div className="z-30 flex min-h-[100dvh] w-full flex-col md:min-h-screen md:flex-row">
+        <div className="z-40 flex h-full w-full flex-col md:fixed md:h-screen md:w-max md:pl-20 md:pr-16 lg:pr-10">
           <Link href="/" passHref>
             <div className="mx-auto mt-10">
               <svg
@@ -33,14 +33,15 @@ export default function Navigation({
             </div>
           </Link>
 
-          <div className="mx-auto mt-3 flex w-max flex-row gap-x-14 space-y-2 text-xl font-bold md:mt-10 md:flex-col md:gap-x-0 md:text-left">
+          <div className="mx-auto mt-3 flex w-full flex-row justify-between px-5 text-base font-bold md:mt-10 md:w-max md:flex-col md:justify-start md:space-y-2 md:px-0 md:text-left md:text-lg">
             <NavItem href="/about" label="about" active={path === "about"} />
             <NavItem href="/code" label="code" active={path === "code"} />
-            <NavItem href="https://diary.elia-orsini.com" label="diary" external />
+            <NavItem href="/visual" label="visual" active={path === "visual"} />
+            <NavItem href="https://diary.eorsini.xyz" label="diary" external />
           </div>
         </div>
 
-        <div className="main-content z-30 flex w-full max-w-[110rem] flex-col md:pl-44 lg:pl-60">
+        <div className="main-content z-30 flex w-full max-w-[110rem] flex-col md:pl-52 lg:pl-60">
           {children}
         </div>
       </div>

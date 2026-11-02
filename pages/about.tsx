@@ -21,7 +21,7 @@ export default function About({ reading, films, artists }: AboutProps) {
     <Navigation path="about">
       <Header title={`About | Elia Orsini`} description="About page of Elia Orsini." />
 
-      <div className="mb-20 flex h-full w-full flex-col px-4 sm:pr-10 md:mb-40 lg:pr-20">
+      <div className="mb-20 flex h-full w-full flex-col px-5 pr-5 sm:pr-10 md:mb-40 md:pl-0 lg:pr-20">
         <div className="flex flex-row">
           <div className="mt-10 w-[130px] sm:w-[200px]">
             <PortraitAscii />

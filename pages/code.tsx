@@ -8,8 +8,8 @@ export default function Code() {
     <Navigation path="code">
       <Header title={`Code | Elia Orsini`} description="Code projects by Elia Orsini." />
 
-      <div className="mb-20 flex w-full">
-        <div className="mx-5 flex w-full max-w-3xl flex-col">
+      <div className="mb-20 flex w-full px-5 md:pl-0 md:pr-5">
+        <div className="flex w-full max-w-3xl flex-col">
           <div className="mt-6 flex w-full flex-col sm:mt-14">
             <ul className="ml-5 list-square space-y-4 pl-1">
               <WebsiteCard
