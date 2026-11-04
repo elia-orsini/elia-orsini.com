@@ -1,8 +1,20 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import Navigation from "@components/Navigation";
 import Header from "@components/Header";
 import AsciiAnimation from "@components/AsciiAnimation";
 
+const PREFETCH_ROUTES = ["/about", "/code", "/visual"];
+
 export default function Index() {
+  const router = useRouter();
+
+  useEffect(() => {
+    PREFETCH_ROUTES.forEach((href) => {
+      void router.prefetch(href);
+    });
+  }, [router]);
+
   return (
     <div className="h-[100dvh] overflow-hidden md:h-auto md:min-h-[100dvh] md:overflow-visible">
       <Header
