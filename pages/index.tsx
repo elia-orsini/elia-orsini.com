@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Navigation from "@components/Navigation";
 import Header from "@components/Header";
 import AsciiAnimation from "@components/AsciiAnimation";
+import { prefetchGzipJson } from "../lib/asciiAnimation";
 
 const PREFETCH_ROUTES = ["/about", "/code", "/visual"];
 
@@ -13,6 +14,7 @@ export default function Index() {
     PREFETCH_ROUTES.forEach((href) => {
       void router.prefetch(href);
     });
+    prefetchGzipJson("/portraitAsciiFrames.json.gz");
   }, [router]);
 
   return (

@@ -12,23 +12,51 @@ export type AsciiGrid = {
   rows: number;
 };
 
-export function sliceFrames(
-  all: string[],
-  start?: number,
-  end?: number,
-): string[] {
+export function sliceFrames(all: string[], start?: number, end?: number): string[] {
   if (start == null && end == null) return all;
   const from = Math.max(0, start ?? 0);
   const to = Math.min(all.length, end ?? all.length);
   return from >= to ? all : all.slice(from, to);
 }
 
+/** In-flight loads so concurrent mounts share one fetch/decompress. */
+const gzipJsonPromises = new Map<string, Promise<string[]>>();
+/** Resolved packs for synchronous first paint after a prior load. */
+const gzipJsonData = new Map<string, string[]>();
+
+/** Already-decoded frames, or null if not loaded yet. */
+export function peekGzipJson(url: string): string[] | null {
+  return gzipJsonData.get(url) ?? null;
+}
+
 export async function loadGzipJson(url: string): Promise<string[]> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to load ${url}`);
-  const stream = res.body?.pipeThrough(new DecompressionStream("gzip"));
-  if (!stream) throw new Error("DecompressionStream unavailable");
-  return JSON.parse(await new Response(stream).text()) as string[];
+  const ready = gzipJsonData.get(url);
+  if (ready) return ready;
+
+  const cached = gzipJsonPromises.get(url);
+  if (cached) return cached;
+
+  const pending = (async () => {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to load ${url}`);
+    const stream = res.body?.pipeThrough(new DecompressionStream("gzip"));
+    if (!stream) throw new Error("DecompressionStream unavailable");
+    const data = JSON.parse(await new Response(stream).text()) as string[];
+    gzipJsonData.set(url, data);
+    return data;
+  })();
+
+  gzipJsonPromises.set(url, pending);
+  pending.catch(() => {
+    gzipJsonPromises.delete(url);
+    gzipJsonData.delete(url);
+  });
+  return pending;
+}
+
+/** Warm the gzip JSON cache without mounting an animation. */
+export function prefetchGzipJson(url: string): void {
+  void loadGzipJson(url);
 }
 
 /** Pre-split once so paint never re-parses frame strings. */
@@ -43,7 +71,7 @@ export function measureGlyphs(
   height: number,
   fontFamily: string,
   crisp: boolean,
-  fit: AsciiFit,
+  fit: AsciiFit
 ): GlyphLayout {
   const cols = Math.max(1, ...sample.map((l) => l.length));
   const rows = sample.length || 1;
@@ -57,10 +85,7 @@ export function measureGlyphs(
       : Math.max(width / (cols * charW), height / (rows * fontSize));
   fontSize *= scale;
   if (crisp) {
-    fontSize = Math.max(
-      1,
-      fit === "contain" ? Math.floor(fontSize) : Math.ceil(fontSize),
-    );
+    fontSize = Math.max(1, fit === "contain" ? Math.floor(fontSize) : Math.ceil(fontSize));
   }
 
   ctx.font = `400 ${fontSize}px ${fontFamily}`;
@@ -82,7 +107,7 @@ export function paintGlyphs(
   fontFamily: string,
   crisp: boolean,
   width: number,
-  height: number,
+  height: number
 ) {
   const { fontSize, charW, x0, y0 } = layout;
   ctx.clearRect(0, 0, width, height);
@@ -109,7 +134,7 @@ export function gridForViewport(
   mediumN: number,
   stackRows: number | null,
   md: boolean,
-  lg: boolean,
+  lg: boolean
 ): AsciiGrid {
   if (lg) return { cols: desktopN, rows: desktopN };
   if (md) return { cols: mediumN, rows: mediumN };

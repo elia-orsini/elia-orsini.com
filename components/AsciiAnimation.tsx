@@ -7,9 +7,24 @@ import {
   loadGzipJson,
   measureGlyphs,
   paintGlyphs,
+  peekGzipJson,
   sliceFrames,
   splitFrames,
 } from "../lib/asciiAnimation";
+
+function framesFromProps(
+  framesProp: string[] | undefined,
+  framesUrl: string | undefined,
+  frameStart: number | undefined,
+  frameEnd: number | undefined
+): string[] {
+  if (framesProp?.length) return sliceFrames(framesProp, frameStart, frameEnd);
+  if (framesUrl) {
+    const cached = peekGzipJson(framesUrl);
+    if (cached) return sliceFrames(cached, frameStart, frameEnd);
+  }
+  return [];
+}
 
 type AsciiAnimationProps = {
   /** Inline frames (large). Prefer `framesUrl` for gzip. */
@@ -59,7 +74,7 @@ export default function AsciiAnimation({
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [frames, setFrames] = useState<string[]>(() =>
-    sliceFrames(framesProp ?? [], frameStart, frameEnd)
+    framesFromProps(framesProp, framesUrl, frameStart, frameEnd)
   );
 
   useEffect(() => {
@@ -69,10 +84,15 @@ export default function AsciiAnimation({
     }
     if (!framesUrl) return;
 
+    // Already warm from homepage (or prior visit) — keep sync-initialized frames.
+    if (peekGzipJson(framesUrl)) return;
+
     let cancelled = false;
     loadGzipJson(framesUrl)
       .then((loaded) => {
-        if (!cancelled) setFrames(sliceFrames(loaded, frameStart, frameEnd));
+        if (cancelled) return;
+        const next = sliceFrames(loaded, frameStart, frameEnd);
+        setFrames((prev) => (prev.length === next.length && prev[0] === next[0] ? prev : next));
       })
       .catch((err) => console.error(err));
     return () => {
@@ -198,20 +218,18 @@ export default function AsciiAnimation({
       raf = requestAnimationFrame(tick);
     };
 
-    const start = async () => {
-      readStyles();
-      try {
-        await document.fonts.ready;
-      } catch {
-        /* ignore */
-      }
+    // Paint immediately; remeasure once fonts settle (avoids blank wait on about headings).
+    readStyles();
+    resize();
+    paint();
+    raf = requestAnimationFrame(tick);
+
+    document.fonts.ready.then(() => {
       if (disposed) return;
+      readStyles();
       resize();
       paint();
-      raf = requestAnimationFrame(tick);
-    };
-
-    start();
+    });
 
     const onViewportChange = () => {
       readStyles();
