@@ -190,7 +190,7 @@ export default function About({ reading, films, artists, diaryPhotos }: AboutPro
 
               {diaryPhotos.length > 0 && (
                 <>
-                  <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">Staring</h3>
+                  <h3 className="mt-2 bg-red-600 pl-1 font-semibold text-white">Staring at</h3>
                   <a
                     href="https://diary.eorsini.xyz"
                     target="_blank"
